@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net" modified="2021-03-01T12:19:02.286Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="7aykGFyb-WTG-hacA8wV" version="14.4.3" type="github">
+  <diagram id="ig4ONSyhfNFMPqTWKNNK" name="Page-1">
+    <mxGraphModel dx="2005" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E092-3JNbuzqqDDcSKRp-1" value="p: Palya" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="110" width="100" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="E092-3JNbuzqqDDcSKRp-1" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-5" value="1. Kor()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="E092-3JNbuzqqDDcSKRp-1" target="E092-3JNbuzqqDDcSKRp-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-25" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-6" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.033;exitY=0.989;exitDx=0;exitDy=0;exitPerimeter=0;" parent="E092-3JNbuzqqDDcSKRp-1" edge="1">
+          <mxGeometry x="-0.2735" y="-94" relative="1" as="geometry">
+            <mxPoint x="-50" y="363.4" as="targetPoint" />
+            <mxPoint as="offset" />
+            <mxPoint x="45.32999999999993" y="363.35" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-51" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="E092-3JNbuzqqDDcSKRp-1" vertex="1">
+          <mxGeometry x="55" y="319.4" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-52" value="8. Napvihar()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="E092-3JNbuzqqDDcSKRp-1" target="E092-3JNbuzqqDDcSKRp-51" edge="1">
+          <mxGeometry x="0.1429" relative="1" as="geometry">
+            <mxPoint x="55" y="299.4" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="299.4" />
+              <mxPoint x="85" y="319.4" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-2" value="l1: Leptetheto" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="270" y="110" width="100" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="E092-3JNbuzqqDDcSKRp-2" vertex="1">
+          <mxGeometry x="45" y="110" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-3" value="l2: Leptetheto" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="450" y="110" width="100" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="E092-3JNbuzqqDDcSKRp-3" vertex="1">
+          <mxGeometry x="45" y="190" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-8" value="2. Lepes()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="E092-3JNbuzqqDDcSKRp-1" target="E092-3JNbuzqqDDcSKRp-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-9" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="1" source="E092-3JNbuzqqDDcSKRp-7" target="E092-3JNbuzqqDDcSKRp-1" edge="1">
+          <mxGeometry x="-0.0313" y="-6" relative="1" as="geometry">
+            <mxPoint x="245" y="276" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-17" value="3. Lepes()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="E092-3JNbuzqqDDcSKRp-1" target="E092-3JNbuzqqDDcSKRp-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-18" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.1;exitY=0.989;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="139.5" y="385.65999999999997" as="targetPoint" />
+            <mxPoint x="496" y="385.65999999999997" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-33" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="200" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-34" value="[ for all l1:&amp;nbsp; Leptetheto in jatekosVezerli]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="240" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-62" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="280" width="640" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="E092-3JNbuzqqDDcSKRp-63" value="&lt;br&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;[ for all l2: Leptetheto in aiVezerli]&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="320" width="240" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

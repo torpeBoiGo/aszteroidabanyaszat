@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" modified="2021-03-01T12:03:58.284Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="igvUp7bplq9JuJ4HB93Y" version="14.4.3" type="github">
+  <diagram id="gYCGAOHoS-yqgG8-SADd" name="Page-1">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-1" value="r:Robot" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="110" y="20" width="100" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-3" value="1. Robbanas()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" target="Tspy3b9MTVW8Zo1M1Fkv-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-40" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-4" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.167;exitY=0.99;exitDx=0;exitDy=0;exitPerimeter=0;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" source="Tspy3b9MTVW8Zo1M1Fkv-2" edge="1">
+          <mxGeometry x="0.1917" y="-61" relative="1" as="geometry">
+            <mxPoint x="-60" y="327" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" vertex="1">
+          <mxGeometry x="55" y="170" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-11" value="3. Mozog(random_szomszed: Mezo)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" source="Tspy3b9MTVW8Zo1M1Fkv-2" target="bhVs4hMy1G6yBb9_UU6s-10" edge="1">
+          <mxGeometry x="0.1429" relative="1" as="geometry">
+            <mxPoint x="60" y="150" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="150" />
+              <mxPoint x="85" y="170" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MkYdgz0fgRJRBJU0TxrT-21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" vertex="1">
+          <mxGeometry x="55" y="270" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MkYdgz0fgRJRBJU0TxrT-22" value="3. Meghal()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" target="MkYdgz0fgRJRBJU0TxrT-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="250" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-1" value="a: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="380" y="20" width="100" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="bhVs4hMy1G6yBb9_UU6s-1" vertex="1">
+          <mxGeometry x="45" y="80" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-3" value="2. getSzomszedok()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="Tspy3b9MTVW8Zo1M1Fkv-1" target="bhVs4hMy1G6yBb9_UU6s-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-4" value="szomszedok: Aszteroida[0..*]" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="1" source="bhVs4hMy1G6yBb9_UU6s-2" target="Tspy3b9MTVW8Zo1M1Fkv-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="176" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-17" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="150" width="610" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-19" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;exitX=0.002;exitY=0.545;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.007;entryY=0.506;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="bhVs4hMy1G6yBb9_UU6s-17" target="bhVs4hMy1G6yBb9_UU6s-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="270" as="sourcePoint" />
+            <mxPoint x="110" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-20" value="[van szomszedja az aszteroidanak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="200" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bhVs4hMy1G6yBb9_UU6s-21" value="[nincs szomszedja az aszteroidanak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="270" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="egQ0DdjsUjFFibvf3DTN-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="740" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
