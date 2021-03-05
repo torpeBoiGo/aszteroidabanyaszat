@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-05T19:24:46.960Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="o6fWQnXpGyM3EM8sTsNY" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-05T19:32:15.794Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="WrpKgx-SPp6bTyCeV8BP" version="14.4.4" type="github">
   <diagram id="BaAd8qnuqPxdzigUYkmS" name="Page-1">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -27,7 +27,7 @@
         <mxCell id="VGAZBNyqSztdIwJ0QUs4-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="VGAZBNyqSztdIwJ0QUs4-2" vertex="1">
           <mxGeometry x="45" y="250" width="10" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="Sreo9v6_qLGOxP1sX1zR-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="VGAZBNyqSztdIwJ0QUs4-2">
+        <mxCell id="Sreo9v6_qLGOxP1sX1zR-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="VGAZBNyqSztdIwJ0QUs4-2" vertex="1">
           <mxGeometry x="45" y="90" width="10" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VGAZBNyqSztdIwJ0QUs4-35" value="3. Fur()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" target="VGAZBNyqSztdIwJ0QUs4-34" edge="1">
@@ -50,7 +50,7 @@
         <mxCell id="3axIb1djayuMP6Ug5s31-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="3axIb1djayuMP6Ug5s31-1" vertex="1">
           <mxGeometry x="45" y="280" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3axIb1djayuMP6Ug5s31-3" value="4. Megfurva()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" target="3axIb1djayuMP6Ug5s31-2" edge="1">
+        <mxCell id="3axIb1djayuMP6Ug5s31-3" value="4. Megfurva(a: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" target="3axIb1djayuMP6Ug5s31-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="509.5" y="590" as="sourcePoint" />
           </mxGeometry>
@@ -72,12 +72,12 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Sreo9v6_qLGOxP1sX1zR-3" value="2. getKulsoRetegek()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="Sreo9v6_qLGOxP1sX1zR-2" parent="1" source="VGAZBNyqSztdIwJ0QUs4-1">
+        <mxCell id="Sreo9v6_qLGOxP1sX1zR-3" value="2. getKulsoRetegek()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="VGAZBNyqSztdIwJ0QUs4-1" target="Sreo9v6_qLGOxP1sX1zR-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="400" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Sreo9v6_qLGOxP1sX1zR-4" value="kereg:int" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;entryX=0.5;entryY=0.303;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="Sreo9v6_qLGOxP1sX1zR-2" parent="1" target="VGAZBNyqSztdIwJ0QUs4-3">
+        <mxCell id="Sreo9v6_qLGOxP1sX1zR-4" value="kereg:int" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;entryX=0.5;entryY=0.303;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Sreo9v6_qLGOxP1sX1zR-2" target="VGAZBNyqSztdIwJ0QUs4-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="476" as="targetPoint" />
           </mxGeometry>
