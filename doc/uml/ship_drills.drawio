@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T17:40:55.159Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="GqBEArfF6r5udrwRgFiV" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-06T17:42:16.039Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="dTzklXTo9JTTiQfW7mOM" version="14.4.3" type="github">
   <diagram id="BaAd8qnuqPxdzigUYkmS" name="Page-1">
     <mxGraphModel dx="782" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -11,7 +11,7 @@
           <mxGeometry x="380" y="435" width="350" height="70" as="geometry" />
         </mxCell>
         <mxCell id="VGAZBNyqSztdIwJ0QUs4-1" value="h: Hajo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="200" y="310" width="100" height="450" as="geometry" />
+          <mxGeometry x="200" y="310" width="100" height="320" as="geometry" />
         </mxCell>
         <mxCell id="VGAZBNyqSztdIwJ0QUs4-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="VGAZBNyqSztdIwJ0QUs4-1" vertex="1">
           <mxGeometry x="45" y="60" width="10" height="200" as="geometry" />
@@ -30,7 +30,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VGAZBNyqSztdIwJ0QUs4-2" value="a: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="460" y="310" width="100" height="450" as="geometry" />
+          <mxGeometry x="460" y="310" width="100" height="320" as="geometry" />
         </mxCell>
         <mxCell id="VGAZBNyqSztdIwJ0QUs4-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="VGAZBNyqSztdIwJ0QUs4-2" vertex="1">
           <mxGeometry x="45" y="100" width="10" height="130" as="geometry" />
@@ -47,7 +47,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="3axIb1djayuMP6Ug5s31-1" value="ny: Nyersanyag" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="660" y="310" width="100" height="450" as="geometry" />
+          <mxGeometry x="660" y="310" width="100" height="320" as="geometry" />
         </mxCell>
         <mxCell id="3axIb1djayuMP6Ug5s31-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="3axIb1djayuMP6Ug5s31-1" vertex="1">
           <mxGeometry x="45" y="145" width="10" height="40" as="geometry" />
