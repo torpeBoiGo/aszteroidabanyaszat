@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T20:37:17.161Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="LKwYqlcXgcna1RML9ywJ" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-06T20:37:35.005Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="LNwuswd6uE-vmb8gqK6K" version="14.4.3" type="github">
   <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
     <mxGraphModel dx="1303" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -88,8 +88,8 @@
         <mxCell id="xU6cLdoSn_yKBml9IV3j-25" value="RemoveSzomszed(m: Mező)" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="xU6cLdoSn_yKBml9IV3j-26">
           <mxGeometry x="-0.3939" y="20" relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="270" y="700" />
-              <mxPoint x="640" y="700" />
+              <mxPoint x="270" y="725" />
+              <mxPoint x="640" y="725" />
               <mxPoint x="640" y="736" />
             </Array>
             <mxPoint as="offset" />
