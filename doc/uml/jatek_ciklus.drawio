@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T22:08:53.759Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Oa9yPnioYyGqf_JCsQtQ" version="14.4.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-03-06T22:08:59.938Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="7jiIPnIQdj44_vEYpL23" version="14.4.3" type="github" pages="3">
   <diagram id="XYwKMM7jnjSHmwa1re68" name="Page-2">
     <mxGraphModel dx="1960" dy="1268" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -442,9 +442,6 @@
         <mxCell id="_q2CTPJjcUrm57wt5f-j-1" parent="_q2CTPJjcUrm57wt5f-j-0" />
         <mxCell id="fK6OXjkUPVN38VF1DxoN-0" value="Játék ciklusa" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="_q2CTPJjcUrm57wt5f-j-1">
           <mxGeometry x="-1600" y="30" width="1000" height="720" as="geometry" />
-        </mxCell>
-        <mxCell id="_q2CTPJjcUrm57wt5f-j-2" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="_q2CTPJjcUrm57wt5f-j-1" vertex="1">
-          <mxGeometry x="-1530" y="170" width="900" height="460" as="geometry" />
         </mxCell>
         <mxCell id="_q2CTPJjcUrm57wt5f-j-4" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="_q2CTPJjcUrm57wt5f-j-1" vertex="1">
           <mxGeometry x="-1410" y="290" width="540" height="70" as="geometry" />
