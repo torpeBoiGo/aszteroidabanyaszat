@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T19:28:00.683Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="lGtBk3fRSHbPmJ5VCa8w" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-06T19:33:56.443Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="6cpAT4MNVSgMIPy54cTX" version="14.4.4" type="github">
   <diagram name="Copy of Page-1" id="09w6EivkNQ-RvyWk3LRT">
     <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="6wzPRZiQXYQK_gMtY--v-5" vertex="1">
-          <mxGeometry x="45" y="80" width="10" height="630" as="geometry" />
+          <mxGeometry x="45" y="80" width="10" height="500" as="geometry" />
         </mxCell>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-11" value="e: RobotEpito" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
           <mxGeometry x="340" y="80" width="100" height="760" as="geometry" />
@@ -123,7 +123,7 @@
         <mxCell id="6wzPRZiQXYQK_gMtY--v-37" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.1;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;" parent="6wzPRZiQXYQK_gMtY--v-1" source="6wzPRZiQXYQK_gMtY--v-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="160" y="800" as="sourcePoint" />
-            <mxPoint x="50" y="789" as="targetPoint" />
+            <mxPoint x="40" y="659" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
@@ -160,6 +160,9 @@
         </mxCell>
         <mxCell id="DGdex3WbjVzhF06E8LQB-0" value="Player" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="6wzPRZiQXYQK_gMtY--v-1">
           <mxGeometry x="30" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DGdex3WbjVzhF06E8LQB-2" value="Robot építése" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=30;" vertex="1" parent="6wzPRZiQXYQK_gMtY--v-1">
+          <mxGeometry y="70" width="1010" height="610" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
