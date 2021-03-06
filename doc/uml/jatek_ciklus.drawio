@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T18:03:44.848Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="M2TRAwFcSVq0ThYm6vzm" version="14.4.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-03-06T19:12:37.378Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="tIB-lZ-97zjKmxMZn_xe" version="14.4.4" type="github" pages="3">
   <diagram id="ALm2lJae90JCpoT5wneu" name="Page-1">
-    <mxGraphModel dx="1849" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2489" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -193,11 +193,14 @@
         <mxCell id="-gRdJ_-rrog418CzQ1uQ-33" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="370" width="240" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="0gVK6Mxvv2H767pG1lwg-1" value="&lt;h1&gt;A 3. lap a mostani!!!!!&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="20" width="190" height="120" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="zbWYzgv6-6gmVX1VNKGA" name="Page-2">
-    <mxGraphModel dx="2436" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3316" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="_q2CTPJjcUrm57wt5f-j-0" />
         <mxCell id="_q2CTPJjcUrm57wt5f-j-1" parent="_q2CTPJjcUrm57wt5f-j-0" />
@@ -354,7 +357,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="XYwKMM7jnjSHmwa1re68" name="Page-2">
-    <mxGraphModel dx="1564" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="UW_OAQmKXaL1REWa_Gpy-0" />
         <mxCell id="UW_OAQmKXaL1REWa_Gpy-1" parent="UW_OAQmKXaL1REWa_Gpy-0" />
@@ -397,19 +400,19 @@
         <mxCell id="EWzqx7MmDM_D0yYkstTS-47" value="[az osszes telepesre]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="tZIklSv6UKWIALs6BuAf-0" vertex="1">
           <mxGeometry x="130" y="555" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-3" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="tZIklSv6UKWIALs6BuAf-0">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-3" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="tZIklSv6UKWIALs6BuAf-0" vertex="1">
           <mxGeometry x="-40" y="330" width="910" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-4" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="tZIklSv6UKWIALs6BuAf-0">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-4" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="tZIklSv6UKWIALs6BuAf-0" vertex="1">
           <mxGeometry x="90" y="340" width="770" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-8" value="[for all a2: Aszteroida in aszteroidak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tZIklSv6UKWIALs6BuAf-0">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-8" value="[for all a2: Aszteroida in aszteroidak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="tZIklSv6UKWIALs6BuAf-0" vertex="1">
           <mxGeometry x="-40" y="380" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-9" value="[a1 es a2 szomszedok]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tZIklSv6UKWIALs6BuAf-0">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-9" value="[a1 es a2 szomszedok]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="tZIklSv6UKWIALs6BuAf-0" vertex="1">
           <mxGeometry x="132.5" y="380" width="75" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-5" value="[for all a1: Aszteroida in aszteroidak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tZIklSv6UKWIALs6BuAf-0">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-5" value="[for all a1: Aszteroida in aszteroidak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="tZIklSv6UKWIALs6BuAf-0" vertex="1">
           <mxGeometry x="-140" y="380" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="EWzqx7MmDM_D0yYkstTS-43" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="UW_OAQmKXaL1REWa_Gpy-1" vertex="1">
@@ -476,10 +479,10 @@
         <mxCell id="EWzqx7MmDM_D0yYkstTS-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="EWzqx7MmDM_D0yYkstTS-8" vertex="1">
           <mxGeometry x="45" y="120" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-0" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="EWzqx7MmDM_D0yYkstTS-8">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-0" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="EWzqx7MmDM_D0yYkstTS-8" vertex="1">
           <mxGeometry x="44" y="240" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="EWzqx7MmDM_D0yYkstTS-8">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="EWzqx7MmDM_D0yYkstTS-8" vertex="1">
           <mxGeometry x="45" y="360" width="10" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EWzqx7MmDM_D0yYkstTS-10" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;: Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="EWzqx7MmDM_D0yYkstTS-9" edge="1">
@@ -499,7 +502,7 @@
         <mxCell id="EWzqx7MmDM_D0yYkstTS-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="EWzqx7MmDM_D0yYkstTS-12" vertex="1">
           <mxGeometry x="45" y="180" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="EWzqx7MmDM_D0yYkstTS-12">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="EWzqx7MmDM_D0yYkstTS-12" vertex="1">
           <mxGeometry x="45" y="410" width="10" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EWzqx7MmDM_D0yYkstTS-14" value="4. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;: Nyersanyag()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="EWzqx7MmDM_D0yYkstTS-13" edge="1">
@@ -553,34 +556,34 @@
         <mxCell id="EWzqx7MmDM_D0yYkstTS-44" value="[az osszes aszteroidara]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" vertex="1">
           <mxGeometry x="310" y="210" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-1" value="5. AddMag(n: Nyersanyag)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="BgFgvHg0UsxG7nisXvli-0" parent="UW_OAQmKXaL1REWa_Gpy-1">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-1" value="5. AddMag(n: Nyersanyag)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="BgFgvHg0UsxG7nisXvli-0" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="445" y="280" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-2" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="BgFgvHg0UsxG7nisXvli-0" parent="UW_OAQmKXaL1REWa_Gpy-1">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-2" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="UW_OAQmKXaL1REWa_Gpy-1" source="BgFgvHg0UsxG7nisXvli-0" edge="1">
           <mxGeometry x="0.1324" y="-248" relative="1" as="geometry">
             <mxPoint x="445" y="318" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-11" value="6. AddSzomszed(a2: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="BgFgvHg0UsxG7nisXvli-10" parent="UW_OAQmKXaL1REWa_Gpy-1" source="EWzqx7MmDM_D0yYkstTS-2">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-11" value="6. AddSzomszed(a2: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" source="EWzqx7MmDM_D0yYkstTS-2" target="BgFgvHg0UsxG7nisXvli-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="595" y="420" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-12" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="BgFgvHg0UsxG7nisXvli-10" parent="UW_OAQmKXaL1REWa_Gpy-1" target="tZIklSv6UKWIALs6BuAf-6">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-12" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="UW_OAQmKXaL1REWa_Gpy-1" source="BgFgvHg0UsxG7nisXvli-10" target="tZIklSv6UKWIALs6BuAf-6" edge="1">
           <mxGeometry x="1" y="-334" relative="1" as="geometry">
             <mxPoint x="595" y="496" as="targetPoint" />
             <mxPoint x="-299" y="185" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-17" value="7. AddSzomszed(a1: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="BgFgvHg0UsxG7nisXvli-16" parent="UW_OAQmKXaL1REWa_Gpy-1" source="EWzqx7MmDM_D0yYkstTS-2">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-17" value="7. AddSzomszed(a1: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" source="EWzqx7MmDM_D0yYkstTS-2" target="BgFgvHg0UsxG7nisXvli-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="765" y="450" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BgFgvHg0UsxG7nisXvli-18" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="BgFgvHg0UsxG7nisXvli-16" parent="UW_OAQmKXaL1REWa_Gpy-1" target="EWzqx7MmDM_D0yYkstTS-2">
+        <mxCell id="BgFgvHg0UsxG7nisXvli-18" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="UW_OAQmKXaL1REWa_Gpy-1" source="BgFgvHg0UsxG7nisXvli-16" target="EWzqx7MmDM_D0yYkstTS-2" edge="1">
           <mxGeometry x="1" y="-464" relative="1" as="geometry">
             <mxPoint x="765" y="526" as="targetPoint" />
             <mxPoint x="-415" y="255" as="offset" />
