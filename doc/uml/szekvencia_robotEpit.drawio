@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T19:26:17.371Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="qncqAoOB6foi0UrLM1Ak" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-06T19:28:00.683Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="lGtBk3fRSHbPmJ5VCa8w" version="14.4.4" type="github">
   <diagram name="Copy of Page-1" id="09w6EivkNQ-RvyWk3LRT">
     <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-0" />
         <mxCell id="6wzPRZiQXYQK_gMtY--v-1" parent="6wzPRZiQXYQK_gMtY--v-0" />
         <mxCell id="6wzPRZiQXYQK_gMtY--v-2" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
-          <mxGeometry x="30" y="390" width="790" height="350" as="geometry" />
+          <mxGeometry x="30" y="390" width="790" height="240" as="geometry" />
         </mxCell>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-3" value="4 : EpithetoE()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="6wzPRZiQXYQK_gMtY--v-1" source="6wzPRZiQXYQK_gMtY--v-7" target="6wzPRZiQXYQK_gMtY--v-12" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -26,18 +26,6 @@
         </mxCell>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="6wzPRZiQXYQK_gMtY--v-5" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="630" as="geometry" />
-        </mxCell>
-        <mxCell id="6wzPRZiQXYQK_gMtY--v-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="6wzPRZiQXYQK_gMtY--v-5" vertex="1">
-          <mxGeometry x="55" y="600" width="10" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="6wzPRZiQXYQK_gMtY--v-9" value="13 : Tetlen()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="6wzPRZiQXYQK_gMtY--v-5" source="6wzPRZiQXYQK_gMtY--v-7" target="6wzPRZiQXYQK_gMtY--v-8" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="70" y="640" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="95" y="570" />
-              <mxPoint x="95" y="600" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-11" value="e: RobotEpito" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
           <mxGeometry x="340" y="80" width="100" height="760" as="geometry" />
@@ -90,7 +78,7 @@
         <mxCell id="6wzPRZiQXYQK_gMtY--v-26" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="6wzPRZiQXYQK_gMtY--v-25" vertex="1">
           <mxGeometry x="45" y="420" width="10" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="6wzPRZiQXYQK_gMtY--v-27" value="10 : AddRobot(r, t.GetAszteroida())" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="6wzPRZiQXYQK_gMtY--v-1" source="6wzPRZiQXYQK_gMtY--v-16" target="6wzPRZiQXYQK_gMtY--v-26" edge="1">
+        <mxCell id="6wzPRZiQXYQK_gMtY--v-27" value="10 : AddRobot(r, a)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="6wzPRZiQXYQK_gMtY--v-1" source="6wzPRZiQXYQK_gMtY--v-16" target="6wzPRZiQXYQK_gMtY--v-26" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="550" y="160" as="sourcePoint" />
             <Array as="points" />
@@ -139,16 +127,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6wzPRZiQXYQK_gMtY--v-38" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" parent="6wzPRZiQXYQK_gMtY--v-1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="27" y="640" as="sourcePoint" />
-            <mxPoint x="827" y="640" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6wzPRZiQXYQK_gMtY--v-39" value="[!epitheto]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
-          <mxGeometry x="50" y="660" width="40" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="6wzPRZiQXYQK_gMtY--v-40" value="8 : Letrejon(t)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="6wzPRZiQXYQK_gMtY--v-1" source="6wzPRZiQXYQK_gMtY--v-7" target="6wzPRZiQXYQK_gMtY--v-16" edge="1">
+        <mxCell id="6wzPRZiQXYQK_gMtY--v-40" value="8 : Letrejon(a)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="6wzPRZiQXYQK_gMtY--v-1" source="6wzPRZiQXYQK_gMtY--v-7" target="6wzPRZiQXYQK_gMtY--v-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="315" y="710" as="sourcePoint" />
             <Array as="points">
@@ -160,6 +139,11 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="315" y="786" as="targetPoint" />
             <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGdex3WbjVzhF06E8LQB-1" value="null" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6wzPRZiQXYQK_gMtY--v-41">
+          <mxGeometry x="0.2168" y="1" relative="1" as="geometry">
+            <mxPoint x="22.6" y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ymCQV6ztO2GV4Nq3IxV4-0" value="r :Robot" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
