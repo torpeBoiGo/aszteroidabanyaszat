@@ -1,82 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T17:43:39.509Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="zG32ZlQWe89CDjBJgMgg" version="14.4.4" type="github" pages="2">
-  <diagram id="CuYRw0UmWYSndbiADmUi" name="Page-1">
-    <mxGraphModel dx="1022" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="mRbqdd93eqI1T6xmOEbw-7" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="490" width="380" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="iwN8fNS6PVqgQ101F-CN-2" value="a: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="130" y="210" width="100" height="520" as="geometry" />
-        </mxCell>
-        <mxCell id="iwN8fNS6PVqgQ101F-CN-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="iwN8fNS6PVqgQ101F-CN-2" vertex="1">
-          <mxGeometry x="45" y="80" width="10" height="360" as="geometry" />
-        </mxCell>
-        <mxCell id="iwN8fNS6PVqgQ101F-CN-4" value="1. Fur()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="iwN8fNS6PVqgQ101F-CN-2" target="iwN8fNS6PVqgQ101F-CN-3" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-25" y="80" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="iwN8fNS6PVqgQ101F-CN-5" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="iwN8fNS6PVqgQ101F-CN-2" source="iwN8fNS6PVqgQ101F-CN-3" edge="1">
-          <mxGeometry x="1" y="-64" relative="1" as="geometry">
-            <mxPoint x="-50" y="422" as="targetPoint" />
-            <mxPoint x="-20" y="3" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mRbqdd93eqI1T6xmOEbw-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="iwN8fNS6PVqgQ101F-CN-2" vertex="1">
-          <mxGeometry x="55" y="320" width="10" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="iwN8fNS6PVqgQ101F-CN-8" value="v: Vizjeg" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="320" y="210" width="130" height="530" as="geometry" />
-        </mxCell>
-        <mxCell id="iwN8fNS6PVqgQ101F-CN-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="iwN8fNS6PVqgQ101F-CN-8" vertex="1">
-          <mxGeometry x="60" y="120" width="10" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="iwN8fNS6PVqgQ101F-CN-11" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="1" source="iwN8fNS6PVqgQ101F-CN-9" target="iwN8fNS6PVqgQ101F-CN-2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="375" y="406" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="iwN8fNS6PVqgQ101F-CN-12" value="2. Megfurva(a:Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="iwN8fNS6PVqgQ101F-CN-2" target="iwN8fNS6PVqgQ101F-CN-9" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="375" y="330" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mRbqdd93eqI1T6xmOEbw-6" value="ny:Nyersanyag" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="384.5" y="568" as="targetPoint" />
-            <mxPoint x="200" y="568" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mRbqdd93eqI1T6xmOEbw-8" value="[napkozelben]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="70" y="550" width="60" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="m0vZQ4zLyi02EuOjhw6R-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
-          <mxGeometry x="185" y="380" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="m0vZQ4zLyi02EuOjhw6R-3" value="3. getNapkozelben()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="iwN8fNS6PVqgQ101F-CN-8" target="m0vZQ4zLyi02EuOjhw6R-2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="369.5" y="380" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m0vZQ4zLyi02EuOjhw6R-4" value="napkozelben:bool" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="1" source="m0vZQ4zLyi02EuOjhw6R-2" target="iwN8fNS6PVqgQ101F-CN-9" edge="1">
-          <mxGeometry x="0.0298" relative="1" as="geometry">
-            <mxPoint x="369.5" y="437" as="targetPoint" />
-            <mxPoint x="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m0vZQ4zLyi02EuOjhw6R-6" value="4. Kinyer()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.5;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="mRbqdd93eqI1T6xmOEbw-4" edge="1">
-          <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="380" y="540" as="sourcePoint" />
-            <mxPoint x="360" y="530" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="app.diagrams.net" modified="2021-03-06T17:52:39.058Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="CLxO5UZKMmxTc2xGuslZ" version="14.4.4" type="github">
   <diagram id="uMHCdDmu51lUruLCewqE" name="Page-2">
-    <mxGraphModel dx="1022" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="rQEQEOdsTUd7wWxaEc2Q-0" />
         <mxCell id="rQEQEOdsTUd7wWxaEc2Q-1" parent="rQEQEOdsTUd7wWxaEc2Q-0" />
@@ -117,6 +41,9 @@
         </mxCell>
         <mxCell id="tSZZtqSjgruDq3-IJyse-0" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" parent="rQEQEOdsTUd7wWxaEc2Q-1" vertex="1">
           <mxGeometry x="195" y="280" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nc3qBXWwIngRQdGXPClH-0" value="Szublimáló nyersanyag felszínre kerül" style="shape=umlFrame;whiteSpace=wrap;html=1;width=130;height=30;" vertex="1" parent="rQEQEOdsTUd7wWxaEc2Q-1">
+          <mxGeometry x="20" y="10" width="440" height="310" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
