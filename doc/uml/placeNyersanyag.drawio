@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T17:59:23.149Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="BxZy8QSVTo98q2966HKT" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-06T22:13:37.645Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Z_XFwvuDZyouBG0zKYuD" version="14.4.3" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1117" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="784" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="srczL9WE6WNW8JsuDgXF-2" value="Teleport lerak" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="40" width="710" height="530" as="geometry" />
+        </mxCell>
         <mxCell id="pmfMfa2IUyMt7tXiD2yf-2" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="170" width="400" height="320" as="geometry" />
         </mxCell>
@@ -19,7 +22,7 @@
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="55" y="160" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="yMqLdswsQX3L9AiM1ZZN-1" value="1: KapuLerak(k: Teleportkapu)" style="endArrow=classic;html=1;" parent="1" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
+        <mxCell id="yMqLdswsQX3L9AiM1ZZN-1" value="1: KapuLerak(k: Teleportkapu)" style="endArrow=classic;html=1;entryX=0.433;entryY=0.052;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1" source="VdQBYoIOuccDySGhW8ns-1">
           <mxGeometry x="0.0046" y="22" width="50" height="50" relative="1" as="geometry">
             <mxPoint x="110" y="130" as="sourcePoint" />
             <mxPoint x="225" y="122" as="targetPoint" />
@@ -103,11 +106,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="B-AxN1TR0uFgrxDC0y_i-1" value="Player" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="70" y="100" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="srczL9WE6WNW8JsuDgXF-2" value="Teleport lerak" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="40" width="710" height="530" as="geometry" />
+        <mxCell id="VdQBYoIOuccDySGhW8ns-1" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="60" width="20" height="480" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
