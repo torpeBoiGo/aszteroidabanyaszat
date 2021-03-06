@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T21:02:48.735Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="gPngp5pX_aVNE7Yo_Cgc" version="14.4.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-03-06T22:08:53.759Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Oa9yPnioYyGqf_JCsQtQ" version="14.4.3" type="github" pages="3">
   <diagram id="XYwKMM7jnjSHmwa1re68" name="Page-2">
-    <mxGraphModel dx="1662" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1960" dy="1268" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="UW_OAQmKXaL1REWa_Gpy-0" />
         <mxCell id="UW_OAQmKXaL1REWa_Gpy-1" parent="UW_OAQmKXaL1REWa_Gpy-0" />
@@ -236,7 +236,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ALm2lJae90JCpoT5wneu" name="Page-1">
-    <mxGraphModel dx="2489" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1611" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -429,17 +429,20 @@
         <mxCell id="-gRdJ_-rrog418CzQ1uQ-33" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="370" width="240" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="0gVK6Mxvv2H767pG1lwg-1" value="&lt;h1&gt;A 3. lap a mostani!!!!!&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="0gVK6Mxvv2H767pG1lwg-1" value="&lt;h1&gt;A 3. lap a mostani!!!!!&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-80" y="20" width="190" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="zbWYzgv6-6gmVX1VNKGA" name="Page-2">
-    <mxGraphModel dx="3316" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2774" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="_q2CTPJjcUrm57wt5f-j-0" />
         <mxCell id="_q2CTPJjcUrm57wt5f-j-1" parent="_q2CTPJjcUrm57wt5f-j-0" />
+        <mxCell id="fK6OXjkUPVN38VF1DxoN-0" value="Játék ciklusa" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="_q2CTPJjcUrm57wt5f-j-1">
+          <mxGeometry x="-1600" y="30" width="1000" height="720" as="geometry" />
+        </mxCell>
         <mxCell id="_q2CTPJjcUrm57wt5f-j-2" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="_q2CTPJjcUrm57wt5f-j-1" vertex="1">
           <mxGeometry x="-1530" y="170" width="900" height="460" as="geometry" />
         </mxCell>
@@ -473,12 +476,6 @@
         <mxCell id="_q2CTPJjcUrm57wt5f-j-13" value="1. Inditas()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="_q2CTPJjcUrm57wt5f-j-11" target="_q2CTPJjcUrm57wt5f-j-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-280" y="70" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_q2CTPJjcUrm57wt5f-j-14" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" parent="_q2CTPJjcUrm57wt5f-j-11" source="_q2CTPJjcUrm57wt5f-j-12" edge="1">
-          <mxGeometry x="1" y="-120" relative="1" as="geometry">
-            <mxPoint x="-260" y="620" as="targetPoint" />
-            <mxPoint x="-10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="_q2CTPJjcUrm57wt5f-j-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="_q2CTPJjcUrm57wt5f-j-11" vertex="1">
@@ -588,6 +585,12 @@
         </mxCell>
         <mxCell id="_q2CTPJjcUrm57wt5f-j-43" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="_q2CTPJjcUrm57wt5f-j-1" vertex="1">
           <mxGeometry x="-890" y="410" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_q2CTPJjcUrm57wt5f-j-14" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;entryX=0.001;entryY=0.899;entryDx=0;entryDy=0;entryPerimeter=0;" parent="_q2CTPJjcUrm57wt5f-j-1" source="_q2CTPJjcUrm57wt5f-j-12" edge="1" target="fK6OXjkUPVN38VF1DxoN-0">
+          <mxGeometry x="1" y="-120" relative="1" as="geometry">
+            <mxPoint x="-1580" y="680" as="targetPoint" />
+            <mxPoint x="-10" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
