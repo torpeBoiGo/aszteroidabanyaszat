@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T11:24:07.011Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="HYJ5gcndtevOgK0sKxo3" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T17:54:05.619Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="gU99RuWYeNRBSFlegtJP" version="14.4.4" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="2414" dy="1014" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1888" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="OJHVrh3Ytr9lQXy4VEQ4-1" value="Telepes lépés" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="50" width="640" height="910" as="geometry" />
+        <mxCell id="OJHVrh3Ytr9lQXy4VEQ4-1" value="Telepes lépés" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="50" width="700" height="910" as="geometry" />
         </mxCell>
         <mxCell id="uRkDX2cLYLujfDHaDzAk-1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="30" y="170" width="580" height="710" as="geometry" />
@@ -162,6 +162,9 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-13" y="150" as="sourcePoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="aOzXbXCq_N-NWvyWJOZP-1" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="90" width="20" height="840" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
