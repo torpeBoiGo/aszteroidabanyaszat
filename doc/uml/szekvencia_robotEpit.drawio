@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T17:42:48.398Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="SZSMDeUA_ypk1pr9Cc-M" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T18:08:45.681Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="fWkep9A503gFYLyh9z6Y" version="14.4.4" type="github">
   <diagram name="Copy of Page-1" id="09w6EivkNQ-RvyWk3LRT">
-    <mxGraphModel dx="3316" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3218" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-0" />
         <mxCell id="6wzPRZiQXYQK_gMtY--v-1" parent="6wzPRZiQXYQK_gMtY--v-0" />
         <mxCell id="DGdex3WbjVzhF06E8LQB-2" value="Robot építése" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=30;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
           <mxGeometry x="-70" y="30" width="1090" height="650" as="geometry" />
         </mxCell>
-        <mxCell id="6wzPRZiQXYQK_gMtY--v-2" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
+        <mxCell id="6wzPRZiQXYQK_gMtY--v-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
           <mxGeometry x="30" y="390" width="790" height="240" as="geometry" />
         </mxCell>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-3" value="4 : EpithetoE()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="6wzPRZiQXYQK_gMtY--v-1" source="6wzPRZiQXYQK_gMtY--v-7" target="6wzPRZiQXYQK_gMtY--v-12" edge="1">
