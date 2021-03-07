@@ -1,16 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T21:48:39.346Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="NKb8mrYuXhwyedfaIadp" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T18:15:53.119Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="MlrGmP9wo73FNSAhRDG6" version="14.4.3" type="github">
   <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
     <mxGraphModel dx="1117" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-1" value="Aszteroida állapot" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-1" value="Aszteroida állapot" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
           <mxGeometry x="30" y="35" width="1050" height="755" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-2" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;direction=south;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-2" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;direction=south;" parent="1" vertex="1">
           <mxGeometry x="130" y="135" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-8" value="Aszteroida&amp;nbsp; létrehoz" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;" edge="1" parent="1" source="xU6cLdoSn_yKBml9IV3j-2">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-8" value="Aszteroida&amp;nbsp; létrehoz" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;" parent="1" source="xU6cLdoSn_yKBml9IV3j-2" edge="1">
           <mxGeometry x="-0.3939" y="20" relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="550" y="150" />
@@ -20,35 +20,35 @@
             <mxPoint x="550" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-12" value="Fur [kulsoRetegek ==1]" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="xU6cLdoSn_yKBml9IV3j-5" target="xU6cLdoSn_yKBml9IV3j-13">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-12" value="Fur [kulsoRetegek ==1]" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="xU6cLdoSn_yKBml9IV3j-5" target="xU6cLdoSn_yKBml9IV3j-13" edge="1">
           <mxGeometry x="-0.3151" y="-15" relative="1" as="geometry">
             <mxPoint x="490" y="325" as="targetPoint" />
             <Array as="points" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-13" value="Nincs külsőréteg" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-13" value="Nincs külsőréteg" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
           <mxGeometry x="790" y="295" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-17" value="" style="endArrow=none;html=1;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xU6cLdoSn_yKBml9IV3j-4" target="xU6cLdoSn_yKBml9IV3j-4">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-17" value="" style="endArrow=none;html=1;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xU6cLdoSn_yKBml9IV3j-4" target="xU6cLdoSn_yKBml9IV3j-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="500" as="sourcePoint" />
             <mxPoint x="440" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-4" value="Aszteroida" style="swimlane;whiteSpace=wrap;html=1;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-4" value="Aszteroida" style="swimlane;whiteSpace=wrap;html=1;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
           <mxGeometry x="90" y="230" width="930" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-6" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;" edge="1" parent="xU6cLdoSn_yKBml9IV3j-4" source="xU6cLdoSn_yKBml9IV3j-7" target="xU6cLdoSn_yKBml9IV3j-5">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-6" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;" parent="xU6cLdoSn_yKBml9IV3j-4" source="xU6cLdoSn_yKBml9IV3j-7" target="xU6cLdoSn_yKBml9IV3j-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-7" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;direction=south;" vertex="1" parent="xU6cLdoSn_yKBml9IV3j-4">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-7" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;direction=south;" parent="xU6cLdoSn_yKBml9IV3j-4" vertex="1">
           <mxGeometry x="75" y="80" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-5" value="Van külsőréteg" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="xU6cLdoSn_yKBml9IV3j-4">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-5" value="Van külsőréteg" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="xU6cLdoSn_yKBml9IV3j-4" vertex="1">
           <mxGeometry x="215" y="65" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-27" value="Fur [kulsoRetegek &amp;gt; 1]" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="xU6cLdoSn_yKBml9IV3j-4" source="xU6cLdoSn_yKBml9IV3j-5">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-27" value="Fur [kulsoRetegek &amp;gt; 1]" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="xU6cLdoSn_yKBml9IV3j-4" source="xU6cLdoSn_yKBml9IV3j-5" edge="1">
           <mxGeometry x="0.1257" y="-17" relative="1" as="geometry">
             <mxPoint x="300" y="125" as="targetPoint" />
             <Array as="points">
@@ -59,7 +59,7 @@
             <mxPoint x="345" y="105" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-19" value="Banyasz" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="xU6cLdoSn_yKBml9IV3j-23" target="xU6cLdoSn_yKBml9IV3j-20">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-19" value="Banyasz" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="xU6cLdoSn_yKBml9IV3j-23" target="xU6cLdoSn_yKBml9IV3j-20" edge="1">
           <mxGeometry x="-0.1619" y="-10" relative="1" as="geometry">
             <mxPoint x="475" y="520" as="targetPoint" />
             <Array as="points">
@@ -68,19 +68,19 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-20" value="Mag üres" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-20" value="Mag üres" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
           <mxGeometry x="775" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-21" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;" edge="1" parent="1" source="xU6cLdoSn_yKBml9IV3j-22" target="xU6cLdoSn_yKBml9IV3j-23">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-21" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;" parent="1" source="xU6cLdoSn_yKBml9IV3j-22" target="xU6cLdoSn_yKBml9IV3j-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-22" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;direction=south;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-22" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;direction=south;" parent="1" vertex="1">
           <mxGeometry x="150" y="505" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-23" value="Magban nyersanyag" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-23" value="Magban nyersanyag" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
           <mxGeometry x="290" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-24" value="Nyersanyag visszatesz" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="xU6cLdoSn_yKBml9IV3j-20" target="xU6cLdoSn_yKBml9IV3j-23">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-24" value="AnyagVisszatesz" style="edgeStyle=elbowEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xU6cLdoSn_yKBml9IV3j-20" target="xU6cLdoSn_yKBml9IV3j-23" edge="1">
           <mxGeometry x="0.0796" y="-20" relative="1" as="geometry">
             <mxPoint x="835" y="580" as="targetPoint" />
             <Array as="points">
@@ -90,7 +90,7 @@
             <mxPoint x="350" y="580" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-25" value="RemoveSzomszed(m: Mező)" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="xU6cLdoSn_yKBml9IV3j-26">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-25" value="RemoveSzomszed(m: Mező)" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="xU6cLdoSn_yKBml9IV3j-26" edge="1">
           <mxGeometry x="-0.3939" y="20" relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="270" y="725" />
@@ -100,13 +100,13 @@
             <mxPoint x="640" y="780" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-26" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-26" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
           <mxGeometry x="670" y="710" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-28" value="Külső rétegek" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-28" value="Külső rétegek" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="90" y="260" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="xU6cLdoSn_yKBml9IV3j-29" value="Nyersanyag a magban" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="xU6cLdoSn_yKBml9IV3j-29" value="Nyersanyag a magban" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="90" y="450" width="140" height="20" as="geometry" />
         </mxCell>
       </root>
