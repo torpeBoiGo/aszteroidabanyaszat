@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T09:51:38.336Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="MRMDnjFSqYF8KJb-7uqR" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T09:51:45.307Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="zLthP_wTWuLNaQoLcpbq" version="14.4.3" type="github">
   <diagram id="gYCGAOHoS-yqgG8-SADd" name="Page-1">
-    <mxGraphModel dx="1611" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1947" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -67,9 +67,6 @@
         </mxCell>
         <mxCell id="bhVs4hMy1G6yBb9_UU6s-21" value="[nincs szomszedja az aszteroidanak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="270" width="110" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="egQ0DdjsUjFFibvf3DTN-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
-          <mxGeometry x="740" y="30" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-3" value="1. Robbanas()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;exitX=0.003;exitY=0.212;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="Tspy3b9MTVW8Zo1M1Fkv-2" edge="1" source="tdtGR2GT4tWcyWMYt-Sy-1">
           <mxGeometry relative="1" as="geometry">
