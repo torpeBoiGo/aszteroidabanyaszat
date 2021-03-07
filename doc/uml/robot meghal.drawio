@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T10:34:14.220Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="PIATfS5wB6dxdpsX544b" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T22:46:09.018Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="0EK_JBDyy7uaIOtPOLos" version="14.4.4" type="github">
   <diagram id="87kSOXtyuZORir1cVNWZ" name="Page-1">
-    <mxGraphModel dx="784" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="YUkx3vms2a5XjrrqAEAg-1" value="Robot meghal" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="YUkx3vms2a5XjrrqAEAg-1" value="Robot meghal" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="10" width="540" height="320" as="geometry" />
         </mxCell>
         <mxCell id="Sjt6vZLdT5mPOzY2PxLy-1" value="r:Robot" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
@@ -48,7 +48,7 @@
         <mxCell id="Sjt6vZLdT5mPOzY2PxLy-11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="Sjt6vZLdT5mPOzY2PxLy-10" vertex="1">
           <mxGeometry x="45" y="150" width="10" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Sjt6vZLdT5mPOzY2PxLy-12" value="3. RemoveAiVezerli(r, a)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="Sjt6vZLdT5mPOzY2PxLy-1" target="Sjt6vZLdT5mPOzY2PxLy-11" edge="1">
+        <mxCell id="Sjt6vZLdT5mPOzY2PxLy-12" value="3. RemoveAiVezerli(r: Robot)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="Sjt6vZLdT5mPOzY2PxLy-1" target="Sjt6vZLdT5mPOzY2PxLy-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="445" y="150" as="sourcePoint" />
           </mxGeometry>
@@ -59,7 +59,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Sjt6vZLdT5mPOzY2PxLy-3" value="1. Meghal()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=1;entryY=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="Sjt6vZLdT5mPOzY2PxLy-2" edge="1" source="YUkx3vms2a5XjrrqAEAg-1">
+        <mxCell id="Sjt6vZLdT5mPOzY2PxLy-3" value="1. Meghal()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=1;entryY=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="YUkx3vms2a5XjrrqAEAg-1" target="Sjt6vZLdT5mPOzY2PxLy-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="70" y="90" as="sourcePoint" />
           </mxGeometry>
