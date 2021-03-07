@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T17:32:13.507Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="j0Cy_zpf2HdjxeZzON3o" version="14.4.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-07T18:21:55.711Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="rSz6i1cjYCFQCs1ESVb5" version="14.4.4" type="github" pages="2">
   <diagram id="Uunz18mgdW6OLQOuuJnR" name="Page-1">
     <mxGraphModel dx="3076" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -73,7 +73,7 @@
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-39" value="&lt;i&gt;+ Megfurva(a:Aszteroida)&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ KompatibilisE(n Nyersanyag) : bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="Yu_vnYscOk4ueQ48UthJ-37" vertex="1">
           <mxGeometry y="34" width="210" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-41" value="Urán" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-41" value="Uran" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="9" y="252" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-41" vertex="1">
@@ -230,7 +230,7 @@
             <mxPoint x="-390" y="-92" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="j5BLqk-0MgdrymZYCmfH-1" value="Szén" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" parent="1" vertex="1">
+        <mxCell id="j5BLqk-0MgdrymZYCmfH-1" value="Szen" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="360" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="j5BLqk-0MgdrymZYCmfH-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="j5BLqk-0MgdrymZYCmfH-1" vertex="1">
@@ -258,7 +258,7 @@
         <mxCell id="c0RVI4-9g-hND24otLmP-8" value="+ Hozzaad(n: Nyersanyag)&lt;br&gt;+ KellE(n: Nyersanyag) : bool&lt;br&gt;+ EpithetoE() : bool&lt;br&gt;+ Reset()&lt;br&gt;+ &lt;i&gt;Letrejon(a: Aszteroida) :&amp;nbsp;&lt;/i&gt;Szallithato[]&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="c0RVI4-9g-hND24otLmP-5" vertex="1">
           <mxGeometry y="30" width="220" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="g-Dt7dvurQJU8qSfWDLR-1" value="Vízjég" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+        <mxCell id="g-Dt7dvurQJU8qSfWDLR-1" value="Vizjeg" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="10" y="158" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g-Dt7dvurQJU8qSfWDLR-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="g-Dt7dvurQJU8qSfWDLR-1" vertex="1">
