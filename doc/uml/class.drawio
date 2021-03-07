@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T00:42:32.191Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="jAXw4Wo6R3fPEw61aNOw" version="14.4.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-07T17:24:08.377Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="OCplMS6z1il855vcjJKo" version="14.4.4" type="github" pages="2">
   <diagram id="Uunz18mgdW6OLQOuuJnR" name="Page-1">
-    <mxGraphModel dx="3316" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3076" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,7 +10,7 @@
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-1" vertex="1">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-4" value="+ Inditas()&#xa;- JatekCiklus()&#xa;- Gyozelem()&#xa;- JatekVege()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-1" vertex="1">
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-4" value="+ Inditas()&#xa;- JatekCiklus()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-1" vertex="1">
           <mxGeometry y="34" width="160" height="66" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-9" value="Palya" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -372,7 +372,7 @@
             <mxPoint x="230" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="otTIYUXG52ubzt-L9H4G-18" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.995;entryY=0.722;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="otTIYUXG52ubzt-L9H4G-15" edge="1" target="c0RVI4-9g-hND24otLmP-8">
+        <mxCell id="otTIYUXG52ubzt-L9H4G-18" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.995;entryY=0.722;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="otTIYUXG52ubzt-L9H4G-15" target="c0RVI4-9g-hND24otLmP-8" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="350" y="870" as="sourcePoint" />
             <mxPoint x="190" y="860" as="targetPoint" />
