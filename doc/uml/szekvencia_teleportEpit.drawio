@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T18:02:37.116Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="dOJcSjDZVjtZHotzlDDw" version="14.4.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-07T18:06:54.245Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="iYKtXaFXGwUirxzPuztN" version="14.4.4" type="github" pages="2">
   <diagram id="UfEcpHCbDVrySbEqps7D" name="Page-2">
     <mxGraphModel dx="2574" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="_W0hZLIVAOP-aF1G-cph-0" />
         <mxCell id="_W0hZLIVAOP-aF1G-cph-1" parent="_W0hZLIVAOP-aF1G-cph-0" />
-        <mxCell id="WyK5ILOvFsa9TS53uxQq-0" value="robot építése" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="_W0hZLIVAOP-aF1G-cph-1">
-          <mxGeometry x="-60" width="900" height="670" as="geometry" />
+        <mxCell id="WyK5ILOvFsa9TS53uxQq-0" value="teleportkapu építése" style="shape=umlFrame;whiteSpace=wrap;html=1;width=80;height=40;" vertex="1" parent="_W0hZLIVAOP-aF1G-cph-1">
+          <mxGeometry x="-80" width="920" height="670" as="geometry" />
         </mxCell>
         <mxCell id="_W0hZLIVAOP-aF1G-cph-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="_W0hZLIVAOP-aF1G-cph-1" vertex="1">
           <mxGeometry x="60" y="380" width="460" height="230" as="geometry" />
