@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T17:24:08.377Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="OCplMS6z1il855vcjJKo" version="14.4.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-07T17:24:57.977Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="4Pvwof-0OIzXTld5ZDRS" version="14.4.4" type="github" pages="2">
   <diagram id="Uunz18mgdW6OLQOuuJnR" name="Page-1">
     <mxGraphModel dx="3076" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -43,26 +43,26 @@
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-27" vertex="1">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-30" value="+ Lepes()&#xa;+ Napvihar()&#xa;+ Robbanas()&#xa;+ Meghal()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-27" vertex="1">
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-30" value="+ Lepes()&#xa;+ Napvihar()&#xa;+ Robbanas()&#xa;+ Meghal()&#xa;+ NyerEllenoriz(gy) : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-27" vertex="1">
           <mxGeometry y="34" width="160" height="76" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-31" value="Telepes" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="820" y="560" width="240" height="160" as="geometry" />
+          <mxGeometry x="820" y="560" width="240" height="180" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-32" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-31" vertex="1">
           <mxGeometry y="26" width="240" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-33" value="+ AnyagVisszatesz(n: Nyersanyag)&#xa;+ Banyasz()&#xa;+ Lepes()&#xa;+ Napvihar()&#xa;+ Robbanas()&#xa;+ Epit(e: Epitheto)&#xa;+ KapuLerak(k: Teleportkapu)&#xa;+ Meghal()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-31" vertex="1">
-          <mxGeometry y="34" width="240" height="126" as="geometry" />
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-33" value="+ AnyagVisszatesz(n: Nyersanyag)&#xa;+ Banyasz()&#xa;+ Lepes()&#xa;+ Napvihar()&#xa;+ Robbanas()&#xa;+ Epit(e: Epitheto)&#xa;+ KapuLerak(k: Teleportkapu)&#xa;+ Meghal()&#xa;+ NyerEllenoriz(gy) : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-31" vertex="1">
+          <mxGeometry y="34" width="240" height="146" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-34" value="Hajo" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1110" y="380" width="160" height="160" as="geometry" />
+          <mxGeometry x="1110" y="380" width="160" height="180" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-35" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-34" vertex="1">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-36" value="+ Fur()&lt;br&gt;+ Mozog(m: Mezo)&lt;br&gt;+ Napvihar()&lt;br&gt;&lt;i&gt;+ Robbanas()&lt;br&gt;+ Lepes()&lt;br&gt;+ Meghal()&lt;/i&gt;&lt;br&gt;+ Tetlen()&lt;br&gt;+ MezoBeallit(m: Mezo)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;html=1;" parent="Yu_vnYscOk4ueQ48UthJ-34" vertex="1">
-          <mxGeometry y="34" width="160" height="126" as="geometry" />
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-36" value="+ Fur()&lt;br&gt;+ Mozog(m: Mezo)&lt;br&gt;+ Napvihar()&lt;br&gt;&lt;i&gt;+ Robbanas()&lt;br&gt;+ Lepes()&lt;br&gt;+ Meghal()&lt;/i&gt;&lt;br&gt;+ Tetlen()&lt;br&gt;+ MezoBeallit(m: Mezo)&lt;br&gt;&lt;i&gt;+ NyerEllenoriz(gy) : bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;html=1;" parent="Yu_vnYscOk4ueQ48UthJ-34" vertex="1">
+          <mxGeometry y="34" width="160" height="146" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-37" value="Nyersanyag" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="220" y="240" width="210" height="84" as="geometry" />
