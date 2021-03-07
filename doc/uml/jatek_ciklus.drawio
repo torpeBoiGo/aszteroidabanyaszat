@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T17:39:21.023Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="LhQcDxMirr6IyYdHb80Y" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T17:39:26.512Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="KV5QWV4JmAacHxvC9BQb" version="14.4.4" type="github">
   <diagram id="XYwKMM7jnjSHmwa1re68" name="Page-2">
     <mxGraphModel dx="2489" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -233,10 +233,10 @@
             <mxPoint x="-415" y="255" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cCvIJezg6q6K9lctGrE9-2" value="nyerhetoE : bool" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;entryX=0.9;entryY=0.517;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.7;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="UW_OAQmKXaL1REWa_Gpy-1" source="cCvIJezg6q6K9lctGrE9-0" target="tZIklSv6UKWIALs6BuAf-4">
+        <mxCell id="cCvIJezg6q6K9lctGrE9-2" value="nyerhetoE : bool" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.7;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="UW_OAQmKXaL1REWa_Gpy-1" source="cCvIJezg6q6K9lctGrE9-0">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="740" y="790" as="sourcePoint" />
-            <mxPoint x="520" y="870" as="targetPoint" />
+            <mxPoint x="234" y="870" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Fc7KeZ_pcNBLS6BU6MmA-1" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="UW_OAQmKXaL1REWa_Gpy-1">
