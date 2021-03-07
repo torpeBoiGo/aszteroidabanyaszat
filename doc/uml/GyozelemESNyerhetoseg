@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T17:38:49.045Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="B4nPzMGhwIB09CSef6b1" version="14.4.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-07T17:55:16.473Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="5t7eTSj9Iz0kFjFS2JDr" version="14.4.4" type="github" pages="2">
   <diagram id="we767fWMCFN1PUCaSYvW" name="gyozelem">
     <mxGraphModel dx="1662" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -115,7 +115,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="tnMPFXGnX1jyvgbLEvFk-1" value="Van másik lap is, az is fontos!&lt;br&gt;&lt;br&gt;Itt fura, mert az epitheto-e &lt;br&gt;bool ja valójában az érdemi&amp;nbsp;&lt;br&gt;történés, de mivel belső bool-t&lt;br&gt;billent át, nem tudom hogy kéne jelölni&amp;nbsp;" style="html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="870" y="515" width="230" height="90" as="geometry" />
+          <mxGeometry x="1190" y="20" width="230" height="90" as="geometry" />
         </mxCell>
         <mxCell id="UH4-I0ZFCzaRQ3ZWJtvx-4" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="UH4-I0ZFCzaRQ3ZWJtvx-2" edge="1">
           <mxGeometry x="1" y="-88" relative="1" as="geometry">
