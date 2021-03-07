@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T22:11:04.950Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="zknkgn8ZkG6KTlKyeh13" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T16:42:40.882Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="qadSMDu0Na6r9siyIWWD" version="14.4.4" type="github">
   <diagram id="ig4ONSyhfNFMPqTWKNNK" name="Page-1">
-    <mxGraphModel dx="1947" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2489" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="CgsBrZeZ4YsTduIbn2P8-1" value="Kör lefolyása" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="CgsBrZeZ4YsTduIbn2P8-1" value="Kör lefolyása" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=30;" parent="1" vertex="1">
           <mxGeometry x="-160" y="80" width="1100" height="640" as="geometry" />
         </mxCell>
         <mxCell id="LFI0uOlP6w1G6OlFuXaL-17" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -93,7 +93,7 @@
         <mxCell id="LFI0uOlP6w1G6OlFuXaL-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="LFI0uOlP6w1G6OlFuXaL-1" vertex="1">
           <mxGeometry x="45" y="380" width="10" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="LFI0uOlP6w1G6OlFuXaL-3" value="5. Lepes?()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="E092-3JNbuzqqDDcSKRp-1" target="LFI0uOlP6w1G6OlFuXaL-2" edge="1">
+        <mxCell id="LFI0uOlP6w1G6OlFuXaL-3" value="5. Lepes()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="E092-3JNbuzqqDDcSKRp-1" target="LFI0uOlP6w1G6OlFuXaL-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="595" y="480" as="sourcePoint" />
           </mxGeometry>
