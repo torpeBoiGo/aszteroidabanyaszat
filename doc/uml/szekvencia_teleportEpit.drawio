@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T19:55:19.201Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="0rVd9qYa-UDTbzv5P6jF" version="14.4.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-07T10:58:36.658Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="LbY6fDH_3uxn_u-J5lMS" version="14.4.3" type="github" pages="2">
   <diagram id="UfEcpHCbDVrySbEqps7D" name="Page-2">
-    <mxGraphModel dx="3316" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1120" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="_W0hZLIVAOP-aF1G-cph-0" />
         <mxCell id="_W0hZLIVAOP-aF1G-cph-1" parent="_W0hZLIVAOP-aF1G-cph-0" />
+        <mxCell id="nn06zfq0ZJ4uP89F7FBS-1" value="Teleportkapu építése" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=30;" parent="_W0hZLIVAOP-aF1G-cph-1" vertex="1">
+          <mxGeometry width="830" height="660" as="geometry" />
+        </mxCell>
         <mxCell id="_W0hZLIVAOP-aF1G-cph-2" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="_W0hZLIVAOP-aF1G-cph-1" vertex="1">
           <mxGeometry x="60" y="380" width="460" height="230" as="geometry" />
         </mxCell>
@@ -55,17 +58,17 @@
             <mxPoint x="170" y="279" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_W0hZLIVAOP-aF1G-cph-23" value="1 : Epit(e: TeleportBOM)" style="verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;shadow=0;strokeWidth=1;startFill=0;" parent="_W0hZLIVAOP-aF1G-cph-1" edge="1">
+        <mxCell id="_W0hZLIVAOP-aF1G-cph-23" value="1 : Epit(e: TeleportBOM)" style="verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;shadow=0;strokeWidth=1;startFill=0;" parent="_W0hZLIVAOP-aF1G-cph-1" edge="1" source="oPYK4GuPaLemkLElQahe-0">
           <mxGeometry x="0.2414" y="20" relative="1" as="geometry">
             <mxPoint x="60" y="120" as="sourcePoint" />
             <mxPoint x="165" y="120" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_W0hZLIVAOP-aF1G-cph-26" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" parent="_W0hZLIVAOP-aF1G-cph-1" edge="1" source="_W0hZLIVAOP-aF1G-cph-6">
+        <mxCell id="_W0hZLIVAOP-aF1G-cph-26" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" parent="_W0hZLIVAOP-aF1G-cph-1" source="_W0hZLIVAOP-aF1G-cph-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="166" y="759" as="sourcePoint" />
-            <mxPoint y="640" as="targetPoint" />
+            <mxPoint x="20" y="640" as="targetPoint" />
             <Array as="points">
               <mxPoint x="120" y="640" />
               <mxPoint x="90" y="640" />
@@ -83,7 +86,7 @@
             <mxPoint x="315" y="676" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nn06zfq0ZJ4uP89F7FBS-0" value="(k1,k2): TeleportKapu[2]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_W0hZLIVAOP-aF1G-cph-30">
+        <mxCell id="nn06zfq0ZJ4uP89F7FBS-0" value="(k1,k2): TeleportKapu[2]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="_W0hZLIVAOP-aF1G-cph-30" vertex="1" connectable="0">
           <mxGeometry x="-0.2" y="-3" relative="1" as="geometry">
             <mxPoint x="-11" y="-7.5" as="offset" />
           </mxGeometry>
@@ -136,14 +139,8 @@
         <mxCell id="_W0hZLIVAOP-aF1G-cph-46" value="&amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="_W0hZLIVAOP-aF1G-cph-1" vertex="1">
           <mxGeometry x="532" y="392.75" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_W0hZLIVAOP-aF1G-cph-47" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="_W0hZLIVAOP-aF1G-cph-1" vertex="1">
-          <mxGeometry x="60" y="50" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="Fsv9zb_8Ufu4lgB7prhw-0" value="Player" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="_W0hZLIVAOP-aF1G-cph-1">
-          <mxGeometry x="20" y="90" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nn06zfq0ZJ4uP89F7FBS-1" value="Teleportkapu építése" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=30;" vertex="1" parent="_W0hZLIVAOP-aF1G-cph-1">
-          <mxGeometry width="830" height="660" as="geometry" />
+        <mxCell id="oPYK4GuPaLemkLElQahe-0" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="_W0hZLIVAOP-aF1G-cph-1">
+          <mxGeometry x="10" y="40" width="20" height="610" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
