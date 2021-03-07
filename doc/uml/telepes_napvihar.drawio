@@ -1,30 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2021-03-01T12:01:04.275Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="2st2QiIw5CjLEnJfHEkB" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T11:27:05.825Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="vtfG9a21fXrvZbRuAhYZ" version="14.4.3" type="github">
   <diagram id="uzViwOyGUtEhU4CUfSxx" name="Page-1">
-    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BciS2KbI5CgX0F9-49an-1" value="t: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="UfvIxouragVUdYBHpdjv-1" value="Telepes napvihar" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="10" width="270" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="BciS2KbI5CgX0F9-49an-1" value="t: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="150" y="20" width="100" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="BciS2KbI5CgX0F9-49an-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="BciS2KbI5CgX0F9-49an-1">
+        <mxCell id="BciS2KbI5CgX0F9-49an-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="BciS2KbI5CgX0F9-49an-1" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="BciS2KbI5CgX0F9-49an-3" value="1. Napvihar()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="BciS2KbI5CgX0F9-49an-1" target="BciS2KbI5CgX0F9-49an-2">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-25" y="80" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BciS2KbI5CgX0F9-49an-4" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.033;exitY=0.936;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="BciS2KbI5CgX0F9-49an-1" source="BciS2KbI5CgX0F9-49an-2">
-          <mxGeometry x="1" y="48" relative="1" as="geometry">
-            <mxPoint x="-25" y="192" as="targetPoint" />
-            <mxPoint x="-5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BciS2KbI5CgX0F9-49an-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="BciS2KbI5CgX0F9-49an-1">
+        <mxCell id="BciS2KbI5CgX0F9-49an-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="BciS2KbI5CgX0F9-49an-1" vertex="1">
           <mxGeometry x="55" y="130" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BciS2KbI5CgX0F9-49an-6" value="2. Meghal()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="BciS2KbI5CgX0F9-49an-1" target="BciS2KbI5CgX0F9-49an-5">
+        <mxCell id="BciS2KbI5CgX0F9-49an-6" value="2. Meghal()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="BciS2KbI5CgX0F9-49an-1" target="BciS2KbI5CgX0F9-49an-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="50" y="110" as="sourcePoint" />
             <Array as="points">
@@ -33,11 +25,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BciS2KbI5CgX0F9-49an-7" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="BciS2KbI5CgX0F9-49an-1">
+        <mxCell id="BciS2KbI5CgX0F9-49an-7" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" parent="BciS2KbI5CgX0F9-49an-1" vertex="1">
           <mxGeometry x="35" y="230" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BciS2KbI5CgX0F9-49an-8" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="50" y="30" width="30" height="30" as="geometry" />
+        <mxCell id="BciS2KbI5CgX0F9-49an-3" value="1. Napvihar()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;exitX=0.002;exitY=0.288;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="BciS2KbI5CgX0F9-49an-2" edge="1" source="UfvIxouragVUdYBHpdjv-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BciS2KbI5CgX0F9-49an-4" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.033;exitY=0.936;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.007;entryY=0.658;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="BciS2KbI5CgX0F9-49an-2" edge="1" target="UfvIxouragVUdYBHpdjv-1">
+          <mxGeometry x="1" y="48" relative="1" as="geometry">
+            <mxPoint x="125" y="212" as="targetPoint" />
+            <mxPoint x="-5" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
