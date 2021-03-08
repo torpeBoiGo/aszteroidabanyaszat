@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-06T22:14:05.094Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="re-R85OaHjs80lc0ogFD" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-08T11:03:57.288Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="t6dClFUdio8dd9I1h6Ts" version="14.4.4" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="784" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,7 +22,7 @@
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="55" y="160" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="yMqLdswsQX3L9AiM1ZZN-1" value="1: KapuLerak(k: Teleportkapu)" style="endArrow=classic;html=1;entryX=0.433;entryY=0.052;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1" source="VdQBYoIOuccDySGhW8ns-1">
+        <mxCell id="yMqLdswsQX3L9AiM1ZZN-1" value="1: KapuLerak(k: Teleportkapu)" style="endArrow=classic;html=1;entryX=0.433;entryY=0.052;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="VdQBYoIOuccDySGhW8ns-1" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
           <mxGeometry x="0.0046" y="22" width="50" height="50" relative="1" as="geometry">
             <mxPoint x="110" y="130" as="sourcePoint" />
             <mxPoint x="225" y="122" as="targetPoint" />
@@ -85,10 +85,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pmfMfa2IUyMt7tXiD2yf-13" value="[!MukodikE]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="pmfMfa2IUyMt7tXiD2yf-13" value="[!mukodikE]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="290" y="320" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="pmfMfa2IUyMt7tXiD2yf-15" value="[MukodikE]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="pmfMfa2IUyMt7tXiD2yf-15" value="[mukodikE]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="290" y="210" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="_9Nf5Z6jAj5F_BvomrrG-1" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" parent="1" edge="1">
@@ -106,7 +106,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="VdQBYoIOuccDySGhW8ns-1" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="VdQBYoIOuccDySGhW8ns-1" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="70" y="60" width="20" height="480" as="geometry" />
         </mxCell>
       </root>
