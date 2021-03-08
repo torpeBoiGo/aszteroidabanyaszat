@@ -1,25 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T17:54:05.619Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="gU99RuWYeNRBSFlegtJP" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-08T10:06:31.670Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="HKe4lCCf8AWchOtD5AjG" version="14.4.4" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1888" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="OJHVrh3Ytr9lQXy4VEQ4-1" value="Telepes lépés" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-70" y="50" width="700" height="910" as="geometry" />
+          <mxGeometry x="-70" y="50" width="700" height="980" as="geometry" />
         </mxCell>
         <mxCell id="uRkDX2cLYLujfDHaDzAk-1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="170" width="580" height="710" as="geometry" />
+          <mxGeometry x="30" y="170" width="580" height="810" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-1" value="t: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="80" width="100" height="880" as="geometry" />
+          <mxGeometry x="120" y="80" width="100" height="950" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-1" vertex="1">
-          <mxGeometry x="45" y="70" width="10" height="760" as="geometry" />
+          <mxGeometry x="45" y="70" width="10" height="850" as="geometry" />
         </mxCell>
-        <mxCell id="3nuBFxr9cyL0pnOWT2aG-7" value="" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
+        <mxCell id="bBBTcv6rRsUC5Qvaf5vw-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-1">
+          <mxGeometry x="50" y="740" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bBBTcv6rRsUC5Qvaf5vw-4" value="2 : TeleportEpit(teleport: Epitheto)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="3nuBFxr9cyL0pnOWT2aG-1" target="bBBTcv6rRsUC5Qvaf5vw-3" source="3nuBFxr9cyL0pnOWT2aG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="710" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="720" />
+              <mxPoint x="80" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-7" value="" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2" edge="1" target="aOzXbXCq_N-NWvyWJOZP-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-10" y="910" as="targetPoint" />
             <mxPoint x="345" y="311.9999999999998" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="120" y="990" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="uRkDX2cLYLujfDHaDzAk-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
@@ -80,24 +95,25 @@
         <mxCell id="uRkDX2cLYLujfDHaDzAk-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
           <mxGeometry x="170" y="700" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uRkDX2cLYLujfDHaDzAk-13" value="2 : Epit(robotVagyKapu: Epitheto)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="1" target="uRkDX2cLYLujfDHaDzAk-12" edge="1">
+        <mxCell id="uRkDX2cLYLujfDHaDzAk-13" value="2 : RobotEpit(robot: Epitheto)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="1" target="uRkDX2cLYLujfDHaDzAk-12" edge="1" source="3nuBFxr9cyL0pnOWT2aG-2">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="175" y="660" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="175" y="670" />
               <mxPoint x="200" y="670" />
               <mxPoint x="200" y="700" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="uRkDX2cLYLujfDHaDzAk-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
-          <mxGeometry x="170" y="810" width="10" height="40" as="geometry" />
+          <mxGeometry x="170" y="930" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="uRkDX2cLYLujfDHaDzAk-15" value="2 : KapuLerak()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="1" target="uRkDX2cLYLujfDHaDzAk-14" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="175" y="790" as="sourcePoint" />
+            <mxPoint x="175" y="900" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="200" y="790" />
+              <mxPoint x="175" y="900" />
+              <mxPoint x="200" y="900" />
+              <mxPoint x="200" y="930" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -152,19 +168,28 @@
         <mxCell id="uRkDX2cLYLujfDHaDzAk-28" value="[a kiválasztott művelet a nyersanyagvisszatétel]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="560" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="uRkDX2cLYLujfDHaDzAk-29" value="[a kiválasztott művelet az építés]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="uRkDX2cLYLujfDHaDzAk-29" value="[a kiválasztott művelet a robotépítés]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="670" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uRkDX2cLYLujfDHaDzAk-30" value="[a kiválasztott művelet a kapulerakás" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="30" y="780" width="130" height="20" as="geometry" />
+          <mxGeometry x="35" y="910" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-3" value="1 : Lepes()" style="verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;shadow=0;strokeWidth=1;startFill=0;" parent="1" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-13" y="150" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aOzXbXCq_N-NWvyWJOZP-1" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="-20" y="90" width="20" height="840" as="geometry" />
+        <mxCell id="aOzXbXCq_N-NWvyWJOZP-1" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="-20" y="90" width="20" height="930" as="geometry" />
+        </mxCell>
+        <mxCell id="bBBTcv6rRsUC5Qvaf5vw-1" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="880" as="sourcePoint" />
+            <mxPoint x="610" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBBTcv6rRsUC5Qvaf5vw-2" value="[a kiválasztott művelet a teleportépítés]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="35" y="780" width="120" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
