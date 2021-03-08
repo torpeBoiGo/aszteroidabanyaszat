@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T18:11:17.930Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="0k9uT9rFXOPWNLaiAxqR" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-08T09:30:12.887Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="fm2c5ihdoq44IgGwARL3" version="14.4.4" type="github">
   <diagram name="Copy of Page-1" id="09w6EivkNQ-RvyWk3LRT">
-    <mxGraphModel dx="2436" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2692" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="6wzPRZiQXYQK_gMtY--v-0" />
         <mxCell id="6wzPRZiQXYQK_gMtY--v-1" parent="6wzPRZiQXYQK_gMtY--v-0" />
@@ -21,7 +21,7 @@
         <mxCell id="6wzPRZiQXYQK_gMtY--v-5" value="t: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="6wzPRZiQXYQK_gMtY--v-1" vertex="1">
           <mxGeometry x="120" y="80" width="100" height="600" as="geometry" />
         </mxCell>
-        <mxCell id="6wzPRZiQXYQK_gMtY--v-6" value="1 : Epit(e: RobotEpito)" style="verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;shadow=0;strokeWidth=1;startFill=0;" parent="6wzPRZiQXYQK_gMtY--v-5" source="YILgDzvVQB1xxuH1iU07-0" edge="1">
+        <mxCell id="6wzPRZiQXYQK_gMtY--v-6" value="1 : RobotEpit(e: RobotEpito)" style="verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;shadow=0;strokeWidth=1;startFill=0;" parent="6wzPRZiQXYQK_gMtY--v-5" source="YILgDzvVQB1xxuH1iU07-0" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-50" y="80" as="sourcePoint" />
             <mxPoint x="45" y="80" as="targetPoint" />
