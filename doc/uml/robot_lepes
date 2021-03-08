@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T18:07:46.774Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Ec8NruXXmdnnNhrZwfKT" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-08T10:41:11.310Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="4G8es9dRHgPHYMZzhpA-" version="14.4.4" type="github">
   <diagram id="nnhSJWiSPquYjUWfShLg" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -44,10 +44,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7_spL_hXoe6cIpFybr6s-7" value="1. Lepes()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" target="7_spL_hXoe6cIpFybr6s-6" edge="1">
+        <mxCell id="7_spL_hXoe6cIpFybr6s-7" value="1. Lepes()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" target="7_spL_hXoe6cIpFybr6s-6" edge="1" source="gQzef4cPbgVGmIHJo-lx-4">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="70" y="170" as="sourcePoint" />
+            <mxPoint x="150" y="170" as="sourcePoint" />
             <mxPoint x="240" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="170" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="7_spL_hXoe6cIpFybr6s-17" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" parent="1" edge="1">
@@ -63,27 +66,30 @@
         <mxCell id="7_spL_hXoe6cIpFybr6s-22" value="[kulsoRetegek != 0]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="180" y="380" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="7_spL_hXoe6cIpFybr6s-25" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.26;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" source="7_spL_hXoe6cIpFybr6s-8">
+        <mxCell id="7_spL_hXoe6cIpFybr6s-25" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.26;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="7_spL_hXoe6cIpFybr6s-8" edge="1" target="gQzef4cPbgVGmIHJo-lx-4">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="410" as="sourcePoint" />
-            <mxPoint x="65" y="454" as="targetPoint" />
+            <mxPoint x="160" y="454" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HhKjjpN3MEj3c_5HOTTE-1" value="a : Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="HhKjjpN3MEj3c_5HOTTE-1" value="a : Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="440" y="80" width="100" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="HhKjjpN3MEj3c_5HOTTE-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="HhKjjpN3MEj3c_5HOTTE-1">
+        <mxCell id="HhKjjpN3MEj3c_5HOTTE-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="HhKjjpN3MEj3c_5HOTTE-1" vertex="1">
           <mxGeometry x="45" y="110" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HhKjjpN3MEj3c_5HOTTE-3" value="2. GetKulsoRetegek()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.1;entryY=0.045;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" target="HhKjjpN3MEj3c_5HOTTE-2" parent="1" source="7_spL_hXoe6cIpFybr6s-8">
+        <mxCell id="HhKjjpN3MEj3c_5HOTTE-3" value="2. GetKulsoRetegek()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.1;entryY=0.045;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7_spL_hXoe6cIpFybr6s-8" target="HhKjjpN3MEj3c_5HOTTE-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="340" y="170.0000000000001" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HhKjjpN3MEj3c_5HOTTE-4" value="kulsoRetegek" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="HhKjjpN3MEj3c_5HOTTE-2" parent="1" target="7_spL_hXoe6cIpFybr6s-8">
+        <mxCell id="HhKjjpN3MEj3c_5HOTTE-4" value="kulsoRetegek" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="1" source="HhKjjpN3MEj3c_5HOTTE-2" target="7_spL_hXoe6cIpFybr6s-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="415" y="246" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="gQzef4cPbgVGmIHJo-lx-4" value="Controller" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="85" width="20" height="385" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
