@@ -1,25 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2021-03-01T12:03:58.284Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="igvUp7bplq9JuJ4HB93Y" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T09:51:45.307Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="zLthP_wTWuLNaQoLcpbq" version="14.4.3" type="github">
   <diagram id="gYCGAOHoS-yqgG8-SADd" name="Page-1">
-    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1947" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="tdtGR2GT4tWcyWMYt-Sy-1" value="Robot robban" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="10" width="560" height="380" as="geometry" />
+        </mxCell>
         <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-1" value="r:Robot" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="110" y="20" width="100" height="360" as="geometry" />
         </mxCell>
         <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" vertex="1">
           <mxGeometry x="45" y="70" width="10" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-3" value="1. Robbanas()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" target="Tspy3b9MTVW8Zo1M1Fkv-2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-40" y="70" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-4" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.167;exitY=0.99;exitDx=0;exitDy=0;exitPerimeter=0;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" source="Tspy3b9MTVW8Zo1M1Fkv-2" edge="1">
-          <mxGeometry x="0.1917" y="-61" relative="1" as="geometry">
-            <mxPoint x="-60" y="327" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="bhVs4hMy1G6yBb9_UU6s-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="Tspy3b9MTVW8Zo1M1Fkv-1" vertex="1">
           <mxGeometry x="55" y="170" width="10" height="40" as="geometry" />
@@ -62,7 +54,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bhVs4hMy1G6yBb9_UU6s-17" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="10" y="150" width="610" height="170" as="geometry" />
+          <mxGeometry x="10" y="150" width="510" height="170" as="geometry" />
         </mxCell>
         <mxCell id="bhVs4hMy1G6yBb9_UU6s-19" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;exitX=0.002;exitY=0.545;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.007;entryY=0.506;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="bhVs4hMy1G6yBb9_UU6s-17" target="bhVs4hMy1G6yBb9_UU6s-17" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -76,8 +68,16 @@
         <mxCell id="bhVs4hMy1G6yBb9_UU6s-21" value="[nincs szomszedja az aszteroidanak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="270" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="egQ0DdjsUjFFibvf3DTN-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="740" y="30" width="30" height="30" as="geometry" />
+        <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-3" value="1. Robbanas()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;exitX=0.003;exitY=0.212;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="Tspy3b9MTVW8Zo1M1Fkv-2" edge="1" source="tdtGR2GT4tWcyWMYt-Sy-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="90" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tspy3b9MTVW8Zo1M1Fkv-4" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.167;exitY=0.99;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.003;entryY=0.888;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Tspy3b9MTVW8Zo1M1Fkv-2" edge="1" target="tdtGR2GT4tWcyWMYt-Sy-1">
+          <mxGeometry x="0.1917" y="-61" relative="1" as="geometry">
+            <mxPoint x="50" y="347" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
