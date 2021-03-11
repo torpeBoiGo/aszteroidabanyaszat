@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2021-03-11T13:56:20.196Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="6ZFP5yKXFl-p1CObr4ca" version="14.4.4" type="github">
+  <diagram name="vizjeg" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
+    <mxGraphModel dx="1237" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-1" value="Telepes fúr vízjeget" style="shape=umlFrame;whiteSpace=wrap;html=1;width=140;height=30;" parent="1" vertex="1">
+          <mxGeometry x="90" y="170" width="730" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="355" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-3" value="t: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="230" width="100" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="8bqFY7UUH3lUDRtA-rW4-3" vertex="1">
+          <mxGeometry x="45" y="60" width="10" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-5" value="1. Fur()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="8bqFY7UUH3lUDRtA-rW4-3" target="8bqFY7UUH3lUDRtA-rW4-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-70" y="60" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-6" value="a: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="480" y="230" width="100" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="8bqFY7UUH3lUDRtA-rW4-6" vertex="1">
+          <mxGeometry x="45" y="100" width="10" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-8" value="2. Fur()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="8bqFY7UUH3lUDRtA-rW4-4" target="8bqFY7UUH3lUDRtA-rW4-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-9" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="1" source="8bqFY7UUH3lUDRtA-rW4-7" target="8bqFY7UUH3lUDRtA-rW4-4" edge="1">
+          <mxGeometry x="0.0222" y="54" relative="1" as="geometry">
+            <mxPoint x="270" y="576" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-10" value="vizjeg: Nyersanyag" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="680" y="230" width="110" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="8bqFY7UUH3lUDRtA-rW4-10" vertex="1">
+          <mxGeometry x="50" y="145" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-12" value="3. Megfurva()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" source="8bqFY7UUH3lUDRtA-rW4-7" target="8bqFY7UUH3lUDRtA-rW4-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="529.5" y="510" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-13" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="1" source="8bqFY7UUH3lUDRtA-rW4-11" target="8bqFY7UUH3lUDRtA-rW4-7" edge="1">
+          <mxGeometry x="-0.093" y="52" relative="1" as="geometry">
+            <mxPoint x="530" y="547" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-14" value="[kulsoRetegek == 0 &amp;amp;&amp;amp; napkozelben]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="410" y="390" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-15" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="140" y="210" width="20" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-16" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.1;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="8bqFY7UUH3lUDRtA-rW4-4" target="8bqFY7UUH3lUDRtA-rW4-15" edge="1">
+          <mxGeometry x="0.2362" y="77" relative="1" as="geometry">
+            <mxPoint x="140" y="490" as="targetPoint" />
+            <mxPoint as="offset" />
+            <mxPoint x="274" y="700" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
