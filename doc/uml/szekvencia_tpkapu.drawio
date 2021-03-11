@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-11T18:48:21.618Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Ut5aN0wUK4y-DCrqgsTv" version="14.4.7" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-11T20:27:43.021Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Vt7VWTyngMJ2GqOANM_K" version="14.4.7" type="github" pages="5">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -95,18 +95,18 @@
     </mxGraphModel>
   </diagram>
   <diagram id="eOElBsU3ixKA3WqPtz8O" name="telepes_komm_diag">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="nh1I7vMnc_5VSL2TyZD0-0" />
         <mxCell id="nh1I7vMnc_5VSL2TyZD0-1" parent="nh1I7vMnc_5VSL2TyZD0-0" />
         <mxCell id="nh1I7vMnc_5VSL2TyZD0-2" value="Telepes mozog teleportkapun keresztül" style="shape=umlFrame;whiteSpace=wrap;html=1;width=180;height=30;" vertex="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
-          <mxGeometry x="20" y="50" width="710" height="450" as="geometry" />
+          <mxGeometry x="20" y="50" width="710" height="440" as="geometry" />
         </mxCell>
         <mxCell id="nh1I7vMnc_5VSL2TyZD0-3" value="t: Telepes" style="html=1;" vertex="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
-          <mxGeometry x="480" y="210" width="90" height="40" as="geometry" />
+          <mxGeometry x="550" y="220" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nh1I7vMnc_5VSL2TyZD0-4" value="a: Aszteroida" style="html=1;" vertex="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
-          <mxGeometry x="420" y="70" width="90" height="40" as="geometry" />
+          <mxGeometry x="530" y="140" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nh1I7vMnc_5VSL2TyZD0-5" value="tp: Teleportkapu" style="html=1;" vertex="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
           <mxGeometry x="520" y="340" width="110" height="40" as="geometry" />
@@ -121,9 +121,9 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nh1I7vMnc_5VSL2TyZD0-8" value="" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="nh1I7vMnc_5VSL2TyZD0-1" source="nh1I7vMnc_5VSL2TyZD0-6" target="nh1I7vMnc_5VSL2TyZD0-4">
+        <mxCell id="nh1I7vMnc_5VSL2TyZD0-8" value="" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="nh1I7vMnc_5VSL2TyZD0-1" target="nh1I7vMnc_5VSL2TyZD0-4">
           <mxGeometry x="0.1692" y="-40" width="80" relative="1" as="geometry">
-            <mxPoint x="170" y="230" as="sourcePoint" />
+            <mxPoint x="160" y="230" as="sourcePoint" />
             <mxPoint x="400" y="130" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
@@ -136,25 +136,15 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nh1I7vMnc_5VSL2TyZD0-13" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
-          <mxGeometry x="-0.616" y="18" width="80" relative="1" as="geometry">
-            <mxPoint x="190" y="189.5" as="sourcePoint" />
-            <mxPoint x="230" y="170" as="targetPoint" />
-            <mxPoint y="1" as="offset" />
+          <mxGeometry x="-0.1746" y="-2" width="80" relative="1" as="geometry">
+            <mxPoint x="320" y="190" as="sourcePoint" />
+            <mxPoint x="440" y="161" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7wD32De6sUAgyROnqUvv-0" value="a2: Aszteroida" style="html=1;" vertex="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
-          <mxGeometry x="460" y="130" width="90" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="7wD32De6sUAgyROnqUvv-1" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
-          <mxGeometry x="-0.616" y="18" width="80" relative="1" as="geometry">
-            <mxPoint x="330" y="170" as="sourcePoint" />
-            <mxPoint x="400" y="150" as="targetPoint" />
-            <mxPoint y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="7wD32De6sUAgyROnqUvv-2" value="" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="nh1I7vMnc_5VSL2TyZD0-1" source="nh1I7vMnc_5VSL2TyZD0-6" target="7wD32De6sUAgyROnqUvv-0">
+        <mxCell id="7wD32De6sUAgyROnqUvv-2" value="" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="nh1I7vMnc_5VSL2TyZD0-1" source="nh1I7vMnc_5VSL2TyZD0-6" target="7wD32De6sUAgyROnqUvv-0">
           <mxGeometry x="0.1692" y="-40" width="80" relative="1" as="geometry">
-            <mxPoint x="190" y="230" as="sourcePoint" />
+            <mxPoint x="150" y="180" as="sourcePoint" />
             <mxPoint x="450" y="100" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
@@ -193,8 +183,18 @@
         </mxCell>
         <mxCell id="iw1Pdsc0vNOmfEYXf4JM-7" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
           <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
-            <mxPoint x="300" y="220" as="sourcePoint" />
-            <mxPoint x="400" y="220" as="targetPoint" />
+            <mxPoint x="340" y="230" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7wD32De6sUAgyROnqUvv-0" value="a2: Aszteroida" style="html=1;" vertex="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
+          <mxGeometry x="420" y="90" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7wD32De6sUAgyROnqUvv-1" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="nh1I7vMnc_5VSL2TyZD0-1">
+          <mxGeometry x="290" y="90" width="80" as="geometry">
+            <mxPoint x="240" y="170" as="sourcePoint" />
+            <mxPoint x="320" y="130" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -326,7 +326,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jNYmWQsC2J_FQD3Y6qSj" name="telepes_tp">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="MbUJpDbh-RiQc9VeX4BV-0" />
         <mxCell id="MbUJpDbh-RiQc9VeX4BV-1" parent="MbUJpDbh-RiQc9VeX4BV-0" />
