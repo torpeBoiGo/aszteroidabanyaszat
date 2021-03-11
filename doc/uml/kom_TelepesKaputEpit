@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-11T16:36:31.261Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="S56yB3fCNWKUAF68rw4i" version="14.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-11T20:50:43.504Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="J4bKGf78kgpXCxsLe89N" version="14.4.7" type="github">
   <diagram id="HolWiXEPeuLV7ym3ct0_" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -16,7 +16,7 @@
         <mxCell id="GyvDfbJIoFV9S9uWPGpv-4" value="k2: Teleportkapu" style="html=1;" vertex="1" parent="1">
           <mxGeometry x="450" y="370" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GyvDfbJIoFV9S9uWPGpv-7" value="Kontroller" style="html=1;" vertex="1" parent="1">
+        <mxCell id="GyvDfbJIoFV9S9uWPGpv-7" value="Controller" style="html=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="210" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="GyvDfbJIoFV9S9uWPGpv-11" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="GyvDfbJIoFV9S9uWPGpv-7" target="GyvDfbJIoFV9S9uWPGpv-1">
@@ -50,7 +50,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="GyvDfbJIoFV9S9uWPGpv-19" value="Nem valószínű, hogy jó!" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="565" y="10" width="200" height="80" as="geometry" />
+          <mxGeometry x="630" y="10" width="200" height="80" as="geometry" />
         </mxCell>
         <mxCell id="GyvDfbJIoFV9S9uWPGpv-21" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
           <mxGeometry x="-0.3333" width="80" relative="1" as="geometry">
