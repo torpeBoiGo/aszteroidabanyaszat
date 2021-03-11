@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-11T20:27:43.021Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Vt7VWTyngMJ2GqOANM_K" version="14.4.7" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-11T20:42:40.226Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="ray0rSVDTrrXCpkpl0mi" version="14.4.7" type="github" pages="5">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -202,7 +202,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="robot_komm_diag" id="rKqp-3bMWVml0ah7KlOs">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="6T7pkcpEuxGdTnAkfy7--0" />
         <mxCell id="6T7pkcpEuxGdTnAkfy7--1" parent="6T7pkcpEuxGdTnAkfy7--0" />
@@ -221,7 +221,7 @@
         <mxCell id="6T7pkcpEuxGdTnAkfy7--6" value="Controller" style="html=1;" vertex="1" parent="6T7pkcpEuxGdTnAkfy7--1">
           <mxGeometry x="70" y="220" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6T7pkcpEuxGdTnAkfy7--7" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Robot()" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1" source="6T7pkcpEuxGdTnAkfy7--6" target="6T7pkcpEuxGdTnAkfy7--3">
+        <mxCell id="6T7pkcpEuxGdTnAkfy7--7" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Robot(a)" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1" source="6T7pkcpEuxGdTnAkfy7--6" target="6T7pkcpEuxGdTnAkfy7--3">
           <mxGeometry x="-0.1863" y="6" width="80" relative="1" as="geometry">
             <mxPoint x="530" y="230" as="sourcePoint" />
             <mxPoint x="610" y="230" as="targetPoint" />
@@ -235,7 +235,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6T7pkcpEuxGdTnAkfy7--9" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleporlkapu()" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1" target="6T7pkcpEuxGdTnAkfy7--5">
+        <mxCell id="6T7pkcpEuxGdTnAkfy7--9" value="4. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleporlkapu()" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1" target="6T7pkcpEuxGdTnAkfy7--5">
           <mxGeometry x="-0.013" y="30" width="80" relative="1" as="geometry">
             <mxPoint x="160" y="250" as="sourcePoint" />
             <mxPoint x="500" y="250" as="targetPoint" />
@@ -269,14 +269,14 @@
         <mxCell id="6T7pkcpEuxGdTnAkfy7--14" value="tp2: Teleportkapu" style="html=1;" vertex="1" parent="6T7pkcpEuxGdTnAkfy7--1">
           <mxGeometry x="370" y="420" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6T7pkcpEuxGdTnAkfy7--15" value="6. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleportkapu()" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1" source="6T7pkcpEuxGdTnAkfy7--6" target="6T7pkcpEuxGdTnAkfy7--14">
+        <mxCell id="6T7pkcpEuxGdTnAkfy7--15" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleportkapu()" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1" source="6T7pkcpEuxGdTnAkfy7--6" target="6T7pkcpEuxGdTnAkfy7--14">
           <mxGeometry x="0.451" y="27" width="80" relative="1" as="geometry">
             <mxPoint x="140" y="330" as="sourcePoint" />
             <mxPoint x="480" y="320" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6T7pkcpEuxGdTnAkfy7--16" value="7. SetPar(tp2)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1">
+        <mxCell id="6T7pkcpEuxGdTnAkfy7--16" value="6. SetPar(tp2)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1">
           <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
             <mxPoint x="440" y="310" as="sourcePoint" />
             <mxPoint x="510" y="330" as="targetPoint" />
@@ -305,20 +305,17 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6T7pkcpEuxGdTnAkfy7--20" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1" source="6T7pkcpEuxGdTnAkfy7--21">
+        <mxCell id="6T7pkcpEuxGdTnAkfy7--20" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1">
           <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
-            <mxPoint x="370" y="220" as="sourcePoint" />
+            <mxPoint x="470" y="220" as="sourcePoint" />
             <mxPoint x="470" y="220" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6T7pkcpEuxGdTnAkfy7--21" value="4. SetAszteroida(a)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="6T7pkcpEuxGdTnAkfy7--1">
-          <mxGeometry x="365" y="200" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="6T7pkcpEuxGdTnAkfy7--22" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1" target="6T7pkcpEuxGdTnAkfy7--21">
+        <mxCell id="6T7pkcpEuxGdTnAkfy7--22" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="6T7pkcpEuxGdTnAkfy7--1">
           <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
             <mxPoint x="370" y="220" as="sourcePoint" />
-            <mxPoint x="470" y="220" as="targetPoint" />
+            <mxPoint x="370" y="220" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
