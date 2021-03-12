@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T19:40:38.014Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="dyIzCLrQFEU03YPanFFw" version="14.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T19:43:01.451Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="qI8luifCcRyqywU8Mrqx" version="14.4.7" type="github">
   <diagram id="CffJKjGhPBJw8yxEx1cV" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="42FGR9jnh6-A2oNOu_BW-1" value="Teleport lerak" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="42FGR9jnh6-A2oNOu_BW-1" value="Teleport kapu lerakása" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;" vertex="1" parent="1">
           <mxGeometry x="20" y="40" width="710" height="530" as="geometry" />
         </mxCell>
         <mxCell id="42FGR9jnh6-A2oNOu_BW-2" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -107,7 +107,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="42FGR9jnh6-A2oNOu_BW-20" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="60" width="20" height="480" as="geometry" />
+          <mxGeometry x="70" y="80" width="20" height="480" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
