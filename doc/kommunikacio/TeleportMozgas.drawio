@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T18:21:26.542Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="jDAHOZzCFCpvAtbvnG1l" version="14.4.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-03-12T20:28:25.029Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="p6hMtUUBPhOADAkNJY7K" version="14.4.7" type="github" pages="3">
   <diagram id="dgq3hNaPbA1aemBsWa1h" name="TelepesTPMozgas">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="f-pRjbWSpJ0C2EvB-05d-29" value="Telepes mozog teleportkapun keresztül" style="shape=umlFrame;whiteSpace=wrap;html=1;width=180;height=30;" vertex="1" parent="1">
-          <mxGeometry x="30" y="60" width="710" height="550" as="geometry" />
+          <mxGeometry x="30" y="60" width="710" height="10" as="geometry" />
         </mxCell>
         <mxCell id="f-pRjbWSpJ0C2EvB-05d-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="f-pRjbWSpJ0C2EvB-05d-31" target="f-pRjbWSpJ0C2EvB-05d-32">
           <mxGeometry relative="1" as="geometry">
@@ -173,11 +173,21 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="yG6NY596McW3MukncXTL-1" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="130" as="sourcePoint" />
+            <mxPoint x="480" y="130" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yG6NY596McW3MukncXTL-2" value="6. Mezobeallit(a)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="140" width="100" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="QKDi689OXvSkPJ4fIELd" name="RobotTPMozgas">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-0" />
         <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-1" parent="zt4Wvpgv5EqCv4RG_Eg1-0" />
@@ -349,6 +359,16 @@
             <mxPoint x="390" y="390" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="wb6zJG2vBQJwuO7AmdBb-0" value="" style="endArrow=classic;html=1;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="120" as="sourcePoint" />
+            <mxPoint x="470" y="120" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wb6zJG2vBQJwuO7AmdBb-1" value="6. Mezobeallit(a)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="460" y="130" width="100" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
