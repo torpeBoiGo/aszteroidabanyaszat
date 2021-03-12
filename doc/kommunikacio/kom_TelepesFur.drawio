@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T21:38:26.784Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="XHy9MSjtcs2uTqN91ewl" version="14.4.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-03-12T21:40:17.826Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="J-45QZjNJozzTle6hSdV" version="14.4.7" type="github" pages="4">
   <diagram name="vas" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1588" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -45,12 +45,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CrDE_HKF1igJwcs6KLZx-16" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CrDE_HKF1igJwcs6KLZx-5" target="CrDE_HKF1igJwcs6KLZx-4">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="450" y="460" as="sourcePoint" />
-            <mxPoint x="500" y="410" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="CrDE_HKF1igJwcs6KLZx-20" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="CrDE_HKF1igJwcs6KLZx-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="260" y="370" as="sourcePoint" />
@@ -64,12 +58,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CrDE_HKF1igJwcs6KLZx-22" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CrDE_HKF1igJwcs6KLZx-5" target="CrDE_HKF1igJwcs6KLZx-6">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="430" y="450" as="sourcePoint" />
-            <mxPoint x="480" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="CrDE_HKF1igJwcs6KLZx-23" value="4. AddMag(vas)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.233;exitY=0.452;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.334;entryY=0.628;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CrDE_HKF1igJwcs6KLZx-3" target="CrDE_HKF1igJwcs6KLZx-3">
           <mxGeometry x="-0.1258" y="-37" width="80" relative="1" as="geometry">
             <mxPoint x="490" y="380" as="sourcePoint" />
@@ -81,7 +69,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hEZUABEg-rENolsBnNcB" name="vizjeg">
-    <mxGraphModel dx="1022" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1315" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="dut3-IT22sQD79QXI1fX-0" />
         <mxCell id="dut3-IT22sQD79QXI1fX-1" parent="dut3-IT22sQD79QXI1fX-0" />
@@ -138,7 +126,7 @@
             <mxPoint x="500" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-9ideDR4PiwxzPZpXDLq-11" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vizjeg(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="dut3-IT22sQD79QXI1fX-1">
+        <mxCell id="-9ideDR4PiwxzPZpXDLq-11" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vizjeg()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="dut3-IT22sQD79QXI1fX-1">
           <mxGeometry x="-0.087" width="80" relative="1" as="geometry">
             <mxPoint x="298" y="357" as="sourcePoint" />
             <mxPoint x="390" y="357" as="targetPoint" />
