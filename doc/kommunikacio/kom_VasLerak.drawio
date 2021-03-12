@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T20:37:10.560Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="U7ZLZIHIIigJB17cJKF-" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T21:16:42.963Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="eCAerSRMam1NwUZJ6Ke6" version="14.4.8" type="github">
   <diagram id="GtCJi55NrTxSH6r_MgJl" name="Page-1">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -34,16 +34,17 @@
             <mxPoint x="190" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cWKhQ9bBEnF3WANWQqg7-8" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+        <mxCell id="cWKhQ9bBEnF3WANWQqg7-8" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="370" y="280" as="sourcePoint" />
-            <mxPoint x="450" y="280" as="targetPoint" />
+            <mxPoint x="340" y="284.5" as="sourcePoint" />
+            <mxPoint x="420" y="284.5" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="cWKhQ9bBEnF3WANWQqg7-9" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
-          <mxGeometry x="-0.4615" y="11" width="80" relative="1" as="geometry">
-            <mxPoint x="240" y="230" as="sourcePoint" />
-            <mxPoint x="300" y="190" as="targetPoint" />
+          <mxGeometry x="-0.6923" y="17" width="80" relative="1" as="geometry">
+            <mxPoint x="210" y="250" as="sourcePoint" />
+            <mxPoint x="270" y="210" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -67,12 +68,21 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cWKhQ9bBEnF3WANWQqg7-13" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vas(a)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+        <mxCell id="cWKhQ9bBEnF3WANWQqg7-13" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vas()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry x="0.4615" y="11" width="80" relative="1" as="geometry">
             <mxPoint x="270" y="330" as="sourcePoint" />
             <mxPoint x="330" y="370" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="EwOol-uLwARk7H9y83MP-1" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="200" as="sourcePoint" />
+            <mxPoint x="340" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwOol-uLwARk7H9y83MP-2" value="6. AddRakter(v)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-30;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="100" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
