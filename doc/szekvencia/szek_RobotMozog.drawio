@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T21:24:29.914Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="kdZX30z7Ayps_CSZMqS2" version="14.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T21:26:28.769Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="_GFLO5WenBS7Y-Zt85C3" version="14.4.7" type="github">
   <diagram name="TelepesFromAszteroidaToAszteroida" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="3018" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -84,6 +84,9 @@
         </mxCell>
         <mxCell id="8tZX-4wy2sQ4AK6EXETs-18" value="Ai" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="-1030" y="110" width="20" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="eKuTOnKP7rXMy6YAmNFx-20" value="Ezt a Mezo beallitba!" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-680" y="160" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
