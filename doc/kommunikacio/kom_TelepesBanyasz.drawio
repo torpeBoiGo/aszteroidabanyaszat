@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T21:28:54.437Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="k42V_pRo0RR5oBHZPvSu" version="14.4.8" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-03-12T21:41:24.576Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="bDrFBmgtlMxORQc13crL" version="14.4.8" type="github" pages="4">
   <diagram id="mSBwQwfx3CwS4T_sDQXH" name="vas">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -27,8 +27,8 @@
         </mxCell>
         <mxCell id="zPh9PCib5AjK0qB6NiXp-8" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="370" y="280" as="sourcePoint" />
-            <mxPoint x="450" y="280" as="targetPoint" />
+            <mxPoint x="260" y="280" as="sourcePoint" />
+            <mxPoint x="340" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="zPh9PCib5AjK0qB6NiXp-9" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
@@ -67,22 +67,16 @@
             <mxPoint x="270" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zPh9PCib5AjK0qB6NiXp-19" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPh9PCib5AjK0qB6NiXp-16" target="zPh9PCib5AjK0qB6NiXp-3">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="550" y="410" as="sourcePoint" />
-            <mxPoint x="600" y="360" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zPh9PCib5AjK0qB6NiXp-20" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vas(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+        <mxCell id="zPh9PCib5AjK0qB6NiXp-20" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vas()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="260" y="330" as="sourcePoint" />
             <mxPoint x="310" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="zPh9PCib5AjK0qB6NiXp-21" value="6. AddMag(va)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
-          <mxGeometry x="-0.0667" y="-4" width="80" relative="1" as="geometry">
-            <mxPoint x="480" y="380" as="sourcePoint" />
-            <mxPoint x="550" y="340" as="targetPoint" />
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="390" y="280" as="sourcePoint" />
+            <mxPoint x="470" y="280" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -117,8 +111,8 @@
         </mxCell>
         <mxCell id="Lrld9zMTtW-H9mIsWt6y-7" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="Lrld9zMTtW-H9mIsWt6y-1">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="370" y="280" as="sourcePoint" />
-            <mxPoint x="450" y="280" as="targetPoint" />
+            <mxPoint x="260" y="270" as="sourcePoint" />
+            <mxPoint x="340" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Lrld9zMTtW-H9mIsWt6y-8" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="Lrld9zMTtW-H9mIsWt6y-1">
@@ -157,22 +151,16 @@
             <mxPoint x="270" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lrld9zMTtW-H9mIsWt6y-14" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="Lrld9zMTtW-H9mIsWt6y-1" source="Lrld9zMTtW-H9mIsWt6y-12" target="Lrld9zMTtW-H9mIsWt6y-4">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="550" y="410" as="sourcePoint" />
-            <mxPoint x="600" y="360" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Lrld9zMTtW-H9mIsWt6y-15" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vizjeg(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="Lrld9zMTtW-H9mIsWt6y-1">
+        <mxCell id="Lrld9zMTtW-H9mIsWt6y-15" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vizjeg()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="Lrld9zMTtW-H9mIsWt6y-1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="260" y="330" as="sourcePoint" />
             <mxPoint x="310" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Lrld9zMTtW-H9mIsWt6y-16" value="6. AddMag(vi)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="Lrld9zMTtW-H9mIsWt6y-1">
-          <mxGeometry x="-0.0667" y="-4" width="80" relative="1" as="geometry">
-            <mxPoint x="480" y="380" as="sourcePoint" />
-            <mxPoint x="550" y="340" as="targetPoint" />
+          <mxGeometry x="0.0123" width="80" relative="1" as="geometry">
+            <mxPoint x="399" y="280" as="sourcePoint" />
+            <mxPoint x="480" y="280" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -207,8 +195,9 @@
         </mxCell>
         <mxCell id="NFVHDCeCT0kcMkhd-uTM-7" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="NFVHDCeCT0kcMkhd-uTM-1">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="370" y="280" as="sourcePoint" />
-            <mxPoint x="450" y="280" as="targetPoint" />
+            <mxPoint x="270" y="280" as="sourcePoint" />
+            <mxPoint x="350" y="280" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="NFVHDCeCT0kcMkhd-uTM-8" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="NFVHDCeCT0kcMkhd-uTM-1">
@@ -247,22 +236,16 @@
             <mxPoint x="270" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NFVHDCeCT0kcMkhd-uTM-14" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="NFVHDCeCT0kcMkhd-uTM-1" source="NFVHDCeCT0kcMkhd-uTM-12" target="NFVHDCeCT0kcMkhd-uTM-4">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="550" y="410" as="sourcePoint" />
-            <mxPoint x="600" y="360" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="NFVHDCeCT0kcMkhd-uTM-15" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Szen(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="NFVHDCeCT0kcMkhd-uTM-1">
+        <mxCell id="NFVHDCeCT0kcMkhd-uTM-15" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Szen()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="NFVHDCeCT0kcMkhd-uTM-1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="260" y="330" as="sourcePoint" />
             <mxPoint x="310" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="NFVHDCeCT0kcMkhd-uTM-16" value="6. AddMag(sz)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="NFVHDCeCT0kcMkhd-uTM-1">
-          <mxGeometry x="-0.0667" y="-4" width="80" relative="1" as="geometry">
-            <mxPoint x="480" y="380" as="sourcePoint" />
-            <mxPoint x="550" y="340" as="targetPoint" />
+          <mxGeometry x="-0.0989" width="80" relative="1" as="geometry">
+            <mxPoint x="399" y="280" as="sourcePoint" />
+            <mxPoint x="490" y="280" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -297,8 +280,8 @@
         </mxCell>
         <mxCell id="ZqkXRbBNMIlHCoTTsl9z-5" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1-pa6sI_tgptzE4sBRYD-1">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="370" y="280" as="sourcePoint" />
-            <mxPoint x="450" y="280" as="targetPoint" />
+            <mxPoint x="270" y="280" as="sourcePoint" />
+            <mxPoint x="350" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ZqkXRbBNMIlHCoTTsl9z-6" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1-pa6sI_tgptzE4sBRYD-1">
@@ -337,22 +320,16 @@
             <mxPoint x="270" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZqkXRbBNMIlHCoTTsl9z-12" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1-pa6sI_tgptzE4sBRYD-1" source="ZqkXRbBNMIlHCoTTsl9z-10" target="ZqkXRbBNMIlHCoTTsl9z-2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="550" y="410" as="sourcePoint" />
-            <mxPoint x="600" y="360" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ZqkXRbBNMIlHCoTTsl9z-13" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Uran(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1-pa6sI_tgptzE4sBRYD-1">
+        <mxCell id="ZqkXRbBNMIlHCoTTsl9z-13" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Uran()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1-pa6sI_tgptzE4sBRYD-1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="260" y="330" as="sourcePoint" />
             <mxPoint x="310" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ZqkXRbBNMIlHCoTTsl9z-14" value="6. AddMag(u)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1-pa6sI_tgptzE4sBRYD-1">
-          <mxGeometry x="-0.0667" y="-4" width="80" relative="1" as="geometry">
-            <mxPoint x="480" y="380" as="sourcePoint" />
-            <mxPoint x="550" y="340" as="targetPoint" />
+          <mxGeometry x="-0.1429" width="80" relative="1" as="geometry">
+            <mxPoint x="430" y="284.5" as="sourcePoint" />
+            <mxPoint x="500" y="284.5" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
