@@ -1,1 +1,100 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T15:23:58.729Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" version="14.4.7" etag="JJrWr6raiHlV5hUFYGZ2" type="github"><diagram id="vTyr74SlyG9KKut7wSUd">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-12T15:33:30.348Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="oZhhiwLoAzhNqX2ms3Gl" version="14.4.7" type="github">
+  <diagram id="vTyr74SlyG9KKut7wSUd" name="Page-1">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-1" value="Telepes lerak szenet" style="shape=umlFrame;whiteSpace=wrap;html=1;width=78;height=40;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="770" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="382.07" y="210" width="330" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-3" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="92.07" y="190" width="690" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-4" value="sz: Szen" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="632.07" y="60" width="110" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-5" value="t: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="242.07" y="60" width="110" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="bBSNkXg9Lyj1QNYUrX4s-5">
+          <mxGeometry x="50" y="100" width="10" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-7" value="a: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="437.07" y="60" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="bBSNkXg9Lyj1QNYUrX4s-7">
+          <mxGeometry x="45" y="110" width="10" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-9" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;exitX=-0.29;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bBSNkXg9Lyj1QNYUrX4s-6" target="bBSNkXg9Lyj1QNYUrX4s-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="530" as="sourcePoint" />
+            <mxPoint x="80" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-10" value="[teljesen at van furva &amp;amp;&amp;amp; ureges a magja]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="152.07" y="250" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-11" value="2. AddMag(sz: Szen)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="1" source="bBSNkXg9Lyj1QNYUrX4s-6" target="bBSNkXg9Lyj1QNYUrX4s-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="297.07" y="390.0000000000001" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-12" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" source="bBSNkXg9Lyj1QNYUrX4s-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-13" value="[az aszteroida napkozelben van]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="255" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="682.07" y="240" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-15" value="3. Megfurva(a: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="1" target="bBSNkXg9Lyj1QNYUrX4s-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="492.06999999999994" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-16" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="1" source="bBSNkXg9Lyj1QNYUrX4s-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="492.06999999999994" y="268.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-17" value="true" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="362.07" y="310" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-18" value="" style="endArrow=open;html=1;dashed=1;exitX=0.4;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;" edge="1" parent="1" source="bBSNkXg9Lyj1QNYUrX4s-8" target="bBSNkXg9Lyj1QNYUrX4s-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="472.07" y="450" as="sourcePoint" />
+            <mxPoint x="522.07" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-19" value="&lt;span&gt;[nincs teljesen atfurva ||&lt;br&gt;&amp;nbsp;nem ureges a mag]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="380" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-20" value="false" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="372.07" y="360" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-21" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="782.0700000000002" y="360" as="sourcePoint" />
+            <mxPoint x="100" y="361" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-22" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="20" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="bBSNkXg9Lyj1QNYUrX4s-23" value="1. AnyagVisszatesz(sz: Szen)" style="verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;shadow=0;strokeWidth=1;startFill=0;" edge="1" parent="1" source="bBSNkXg9Lyj1QNYUrX4s-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="162.07" y="130" as="sourcePoint" />
+            <mxPoint x="291" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
