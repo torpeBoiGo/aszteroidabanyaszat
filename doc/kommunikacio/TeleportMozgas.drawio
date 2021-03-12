@@ -1,1 +1,233 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T15:20:28.549Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" version="14.4.7" etag="egP30vR6vdlfUdtIJuoA" type="github"><diagram id="dgq3hNaPbA1aemBsWa1h">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-12T15:27:33.952Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="YrEEWVaDKblyDK49pDLX" version="14.4.7" type="github" pages="2">
+  <diagram id="dgq3hNaPbA1aemBsWa1h" name="TelepesTPMozgas">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-1" value="Telepes mozog teleportkapun keresztül" style="shape=umlFrame;whiteSpace=wrap;html=1;width=180;height=30;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="710" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-2" value="t: Telepes" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="220" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-3" value="a: Aszteroida" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-4" value="tp: Teleportkapu" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="340" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-5" value="Controller" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-6" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" source="oQ9ayc_qQIFh_kkbEc69-5" target="oQ9ayc_qQIFh_kkbEc69-2">
+          <mxGeometry x="0.2225" y="16" width="80" relative="1" as="geometry">
+            <mxPoint x="530" y="230" as="sourcePoint" />
+            <mxPoint x="610" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-7" value="" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" target="oQ9ayc_qQIFh_kkbEc69-3">
+          <mxGeometry x="0.1692" y="-40" width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="230" as="sourcePoint" />
+            <mxPoint x="400" y="130" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-8" value="4. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleporlkapu()" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" target="oQ9ayc_qQIFh_kkbEc69-4">
+          <mxGeometry x="-0.013" y="30" width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="250" as="sourcePoint" />
+            <mxPoint x="500" y="250" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-9" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="-0.1746" y="-2" width="80" relative="1" as="geometry">
+            <mxPoint x="320" y="190" as="sourcePoint" />
+            <mxPoint x="440" y="161" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-10" value="" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="oQ9ayc_qQIFh_kkbEc69-5" target="oQ9ayc_qQIFh_kkbEc69-17">
+          <mxGeometry x="0.1692" y="-40" width="80" relative="1" as="geometry">
+            <mxPoint x="150" y="180" as="sourcePoint" />
+            <mxPoint x="450" y="100" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-11" value="tp2: Teleportkapu" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="420" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-12" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleportkapu()" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" source="oQ9ayc_qQIFh_kkbEc69-5" target="oQ9ayc_qQIFh_kkbEc69-11">
+          <mxGeometry x="0.451" y="27" width="80" relative="1" as="geometry">
+            <mxPoint x="140" y="330" as="sourcePoint" />
+            <mxPoint x="480" y="320" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-13" value="6. SetPar(tp2)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="440" y="310" as="sourcePoint" />
+            <mxPoint x="510" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-14" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="310" y="280" as="sourcePoint" />
+            <mxPoint x="380" y="300" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-15" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="280" y="340" as="sourcePoint" />
+            <mxPoint x="350" y="400" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-16" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="340" y="230" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-17" value="a2: Aszteroida" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="90" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oQ9ayc_qQIFh_kkbEc69-18" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="290" y="90" width="80" as="geometry">
+            <mxPoint x="240" y="170" as="sourcePoint" />
+            <mxPoint x="320" y="130" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="QKDi689OXvSkPJ4fIELd" name="RobotTPMozgas">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-0" />
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-1" parent="zt4Wvpgv5EqCv4RG_Eg1-0" />
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-2" value="Robot mozog teleportkapun keresztül" style="shape=umlFrame;whiteSpace=wrap;html=1;width=180;height=30;" vertex="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="20" y="50" width="710" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1" source="zt4Wvpgv5EqCv4RG_Eg1-4" target="zt4Wvpgv5EqCv4RG_Eg1-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-4" value="r: Robot" style="html=1;" vertex="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="480" y="210" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-5" value="a: Aszteroida" style="html=1;" vertex="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="420" y="70" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-6" value="tp: Teleportkapu" style="html=1;" vertex="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="520" y="340" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-7" value="Controller" style="html=1;" vertex="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="70" y="220" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-8" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Robot(a)" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1" source="zt4Wvpgv5EqCv4RG_Eg1-7" target="zt4Wvpgv5EqCv4RG_Eg1-4">
+          <mxGeometry x="-0.1863" y="6" width="80" relative="1" as="geometry">
+            <mxPoint x="530" y="230" as="sourcePoint" />
+            <mxPoint x="610" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-9" value="" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1" source="zt4Wvpgv5EqCv4RG_Eg1-7" target="zt4Wvpgv5EqCv4RG_Eg1-5">
+          <mxGeometry x="0.1692" y="-40" width="80" relative="1" as="geometry">
+            <mxPoint x="170" y="230" as="sourcePoint" />
+            <mxPoint x="400" y="130" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-10" value="4. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleporlkapu()" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1" target="zt4Wvpgv5EqCv4RG_Eg1-6">
+          <mxGeometry x="-0.013" y="30" width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="250" as="sourcePoint" />
+            <mxPoint x="500" y="250" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-11" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="-0.616" y="18" width="80" relative="1" as="geometry">
+            <mxPoint x="190" y="189.5" as="sourcePoint" />
+            <mxPoint x="230" y="170" as="targetPoint" />
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-12" value="a2: Aszteroida" style="html=1;" vertex="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="460" y="130" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-13" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="-0.616" y="18" width="80" relative="1" as="geometry">
+            <mxPoint x="330" y="170" as="sourcePoint" />
+            <mxPoint x="400" y="150" as="targetPoint" />
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-14" value="" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1" source="zt4Wvpgv5EqCv4RG_Eg1-7" target="zt4Wvpgv5EqCv4RG_Eg1-12">
+          <mxGeometry x="0.1692" y="-40" width="80" relative="1" as="geometry">
+            <mxPoint x="190" y="230" as="sourcePoint" />
+            <mxPoint x="450" y="100" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-15" value="tp2: Teleportkapu" style="html=1;" vertex="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="370" y="420" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-16" value="5. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleportkapu()" style="html=1;verticalAlign=bottom;endArrow=none;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1" source="zt4Wvpgv5EqCv4RG_Eg1-7" target="zt4Wvpgv5EqCv4RG_Eg1-15">
+          <mxGeometry x="0.451" y="27" width="80" relative="1" as="geometry">
+            <mxPoint x="140" y="330" as="sourcePoint" />
+            <mxPoint x="480" y="320" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-17" value="6. SetPar(tp2)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="440" y="310" as="sourcePoint" />
+            <mxPoint x="510" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-18" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="310" y="280" as="sourcePoint" />
+            <mxPoint x="380" y="300" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-19" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="280" y="340" as="sourcePoint" />
+            <mxPoint x="350" y="400" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-20" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="240" y="229.5" as="sourcePoint" />
+            <mxPoint x="340" y="229.5" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-21" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="470" y="220" as="sourcePoint" />
+            <mxPoint x="470" y="220" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt4Wvpgv5EqCv4RG_Eg1-22" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="zt4Wvpgv5EqCv4RG_Eg1-1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="370" y="220" as="sourcePoint" />
+            <mxPoint x="370" y="220" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
