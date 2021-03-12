@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T19:45:40.438Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="2pFrDSviOrykbfTUdcot" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T19:47:06.247Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="fSzMh7-fJ33u98I5xFXt" version="14.4.3" type="github">
   <diagram id="H8HGOpEqS0bW2-LlgVmp" name="Page-1">
     <mxGraphModel dx="782" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -46,7 +46,7 @@
             <mxPoint x="400" y="422.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OdKvxqfeoW4QCdjhVHYH-10" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+        <mxCell id="OdKvxqfeoW4QCdjhVHYH-10" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Robot(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
           <mxGeometry x="-0.4615" y="11" width="80" relative="1" as="geometry">
             <mxPoint x="250" y="150" as="sourcePoint" />
             <mxPoint x="310" y="100" as="targetPoint" />
