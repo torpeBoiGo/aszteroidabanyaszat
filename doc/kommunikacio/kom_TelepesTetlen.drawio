@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T17:30:27.909Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="xx6hvzSQhPsAKKdjV2QR" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-14T18:33:05.686Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="4kQ9HW0YZEUF8f4JAQxD" version="14.4.8" type="github">
   <diagram id="7B5r28qhJ5weyJIrJBID" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
             <mxPoint x="460" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lqMxQeydhuz74noJYmAE-5" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+        <mxCell id="lqMxQeydhuz74noJYmAE-5" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry x="-0.1429" y="10" width="80" relative="1" as="geometry">
             <mxPoint x="210" y="170" as="sourcePoint" />
             <mxPoint x="280" y="170" as="targetPoint" />
