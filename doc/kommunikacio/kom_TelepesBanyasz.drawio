@@ -1,10 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T13:13:43.857Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="tBu9E7z6LbKaxG0RHHb-" version="14.4.8" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-03-14T17:33:28.425Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="sitIOQ9gj8ldrC-kme6L" version="14.4.8" type="github" pages="4">
   <diagram id="mSBwQwfx3CwS4T_sDQXH" name="vas">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="zPh9PCib5AjK0qB6NiXp-1" value="Controller" style="html=1;" parent="1" vertex="1">
+        <mxCell id="ZrnHeWVXAaGyBvouWp3e-1" value="telepes banyasz vasat" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" parent="1" vertex="1">
+          <mxGeometry x="70" y="120" width="640" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="zPh9PCib5AjK0qB6NiXp-1" value="SkeletonController" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="260" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="zPh9PCib5AjK0qB6NiXp-2" value="t: Telepes" style="html=1;" parent="1" vertex="1">
@@ -80,9 +83,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZrnHeWVXAaGyBvouWp3e-1" value="telepes banyasz vasat" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" vertex="1" parent="1">
-          <mxGeometry x="70" y="120" width="640" height="340" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -91,7 +91,10 @@
       <root>
         <mxCell id="Lrld9zMTtW-H9mIsWt6y-0" />
         <mxCell id="Lrld9zMTtW-H9mIsWt6y-1" parent="Lrld9zMTtW-H9mIsWt6y-0" />
-        <mxCell id="Lrld9zMTtW-H9mIsWt6y-2" value="Controller" style="html=1;" parent="Lrld9zMTtW-H9mIsWt6y-1" vertex="1">
+        <mxCell id="yyYQkuor_cFL5kJWMNGv-0" value="telepes banyasz vizjeget" style="shape=umlFrame;whiteSpace=wrap;html=1;width=100;height=30;" parent="Lrld9zMTtW-H9mIsWt6y-1" vertex="1">
+          <mxGeometry x="70" y="120" width="640" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Lrld9zMTtW-H9mIsWt6y-2" value="SkeletonController" style="html=1;" parent="Lrld9zMTtW-H9mIsWt6y-1" vertex="1">
           <mxGeometry x="80" y="260" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Lrld9zMTtW-H9mIsWt6y-3" value="t: Telepes" style="html=1;" parent="Lrld9zMTtW-H9mIsWt6y-1" vertex="1">
@@ -167,9 +170,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yyYQkuor_cFL5kJWMNGv-0" value="telepes banyasz vizjeget" style="shape=umlFrame;whiteSpace=wrap;html=1;width=100;height=30;" vertex="1" parent="Lrld9zMTtW-H9mIsWt6y-1">
-          <mxGeometry x="70" y="120" width="640" height="340" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -178,7 +178,10 @@
       <root>
         <mxCell id="NFVHDCeCT0kcMkhd-uTM-0" />
         <mxCell id="NFVHDCeCT0kcMkhd-uTM-1" parent="NFVHDCeCT0kcMkhd-uTM-0" />
-        <mxCell id="NFVHDCeCT0kcMkhd-uTM-2" value="Controller" style="html=1;" parent="NFVHDCeCT0kcMkhd-uTM-1" vertex="1">
+        <mxCell id="5kbhF3PzBn3XDwydeNcq-0" value="telepes banyasz szenet" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" parent="NFVHDCeCT0kcMkhd-uTM-1" vertex="1">
+          <mxGeometry x="70" y="120" width="640" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="NFVHDCeCT0kcMkhd-uTM-2" value="SkeletonController" style="html=1;" parent="NFVHDCeCT0kcMkhd-uTM-1" vertex="1">
           <mxGeometry x="80" y="260" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="NFVHDCeCT0kcMkhd-uTM-3" value="t: Telepes" style="html=1;" parent="NFVHDCeCT0kcMkhd-uTM-1" vertex="1">
@@ -255,9 +258,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5kbhF3PzBn3XDwydeNcq-0" value="telepes banyasz szenet" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" vertex="1" parent="NFVHDCeCT0kcMkhd-uTM-1">
-          <mxGeometry x="70" y="120" width="640" height="340" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -266,7 +266,10 @@
       <root>
         <mxCell id="1-pa6sI_tgptzE4sBRYD-0" />
         <mxCell id="1-pa6sI_tgptzE4sBRYD-1" parent="1-pa6sI_tgptzE4sBRYD-0" />
-        <mxCell id="ZqkXRbBNMIlHCoTTsl9z-0" value="Controller" style="html=1;" parent="1-pa6sI_tgptzE4sBRYD-1" vertex="1">
+        <mxCell id="9Va1uxmSrO83X45sEyjG-0" value="telepes banyasz urant" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" parent="1-pa6sI_tgptzE4sBRYD-1" vertex="1">
+          <mxGeometry x="70" y="120" width="640" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ZqkXRbBNMIlHCoTTsl9z-0" value="SkeletonController" style="html=1;" parent="1-pa6sI_tgptzE4sBRYD-1" vertex="1">
           <mxGeometry x="80" y="260" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="ZqkXRbBNMIlHCoTTsl9z-1" value="t: Telepes" style="html=1;" parent="1-pa6sI_tgptzE4sBRYD-1" vertex="1">
@@ -341,9 +344,6 @@
             <mxPoint x="500" y="284.5" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="9Va1uxmSrO83X45sEyjG-0" value="telepes banyasz urant" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" vertex="1" parent="1-pa6sI_tgptzE4sBRYD-1">
-          <mxGeometry x="70" y="120" width="640" height="340" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
