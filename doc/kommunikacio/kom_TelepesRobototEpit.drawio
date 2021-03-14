@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T10:00:33.247Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="mjD0jFSyARKIKdhxjiSo" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-14T17:27:44.972Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="JjlcCI7HEMsVU3cpkxKw" version="14.4.8" type="github">
   <diagram id="iL3k7XcaUQwhEXji2diZ" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ItiB5R7a2HmLv1XGC4YS-1" value="Telepes robotot épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=40;" vertex="1" parent="1">
+        <mxCell id="ItiB5R7a2HmLv1XGC4YS-1" value="Telepes robotot épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=40;" parent="1" vertex="1">
           <mxGeometry x="10" y="10" width="550" height="410" as="geometry" />
         </mxCell>
         <mxCell id="aNzbc31fKJ_Hpfi3j9VX-1" value="t: Telepes" style="html=1;" parent="1" vertex="1">
@@ -13,7 +13,7 @@
         <mxCell id="aNzbc31fKJ_Hpfi3j9VX-2" value="e: RobotEpito" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="340" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-3" value="Controller" style="html=1;" parent="1" vertex="1">
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-3" value="SkeletonController" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="210" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="aNzbc31fKJ_Hpfi3j9VX-4" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-3" target="aNzbc31fKJ_Hpfi3j9VX-1" edge="1">
