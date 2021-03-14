@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T17:33:28.425Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="sitIOQ9gj8ldrC-kme6L" version="14.4.8" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-03-14T18:36:33.174Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="-fKXzvoEs3gLVt1ysoHJ" version="14.4.8" type="github" pages="4">
   <diagram id="mSBwQwfx3CwS4T_sDQXH" name="vas">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
             <mxPoint x="310" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zPh9PCib5AjK0qB6NiXp-8" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+        <mxCell id="zPh9PCib5AjK0qB6NiXp-8" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="260" y="280" as="sourcePoint" />
             <mxPoint x="340" y="280" as="targetPoint" />
@@ -115,7 +115,7 @@
             <mxPoint x="310" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lrld9zMTtW-H9mIsWt6y-7" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" parent="Lrld9zMTtW-H9mIsWt6y-1" edge="1">
+        <mxCell id="Lrld9zMTtW-H9mIsWt6y-7" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="Lrld9zMTtW-H9mIsWt6y-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="260" y="270" as="sourcePoint" />
             <mxPoint x="340" y="270" as="targetPoint" />
@@ -202,7 +202,7 @@
             <mxPoint x="310" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NFVHDCeCT0kcMkhd-uTM-7" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" parent="NFVHDCeCT0kcMkhd-uTM-1" edge="1">
+        <mxCell id="NFVHDCeCT0kcMkhd-uTM-7" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="NFVHDCeCT0kcMkhd-uTM-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="270" y="280" as="sourcePoint" />
             <mxPoint x="350" y="280" as="targetPoint" />
@@ -290,7 +290,7 @@
             <mxPoint x="310" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZqkXRbBNMIlHCoTTsl9z-5" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1-pa6sI_tgptzE4sBRYD-1" edge="1">
+        <mxCell id="ZqkXRbBNMIlHCoTTsl9z-5" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1-pa6sI_tgptzE4sBRYD-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="270" y="280" as="sourcePoint" />
             <mxPoint x="350" y="280" as="targetPoint" />
