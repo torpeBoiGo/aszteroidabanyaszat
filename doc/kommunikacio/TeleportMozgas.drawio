@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T17:25:58.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="5gVh9qfwyG8af45wHwGH" version="14.4.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-03-14T17:26:07.373Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="8ldQeUKZgj9rNaVkQElj" version="14.4.8" type="github" pages="3">
   <diagram id="dgq3hNaPbA1aemBsWa1h" name="TelepesTPMozgas">
     <mxGraphModel dx="700" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -24,8 +24,8 @@
         <mxCell id="f-pRjbWSpJ0C2EvB-05d-33" value="tp: Teleportkapu" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="320" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="f-pRjbWSpJ0C2EvB-05d-34" value="Controller" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="80" y="280" width="90" height="40" as="geometry" />
+        <mxCell id="f-pRjbWSpJ0C2EvB-05d-34" value="SkeletonController" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="280" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="f-pRjbWSpJ0C2EvB-05d-35" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" parent="1" target="f-pRjbWSpJ0C2EvB-05d-31" edge="1">
           <mxGeometry x="-0.5138" y="41" width="80" relative="1" as="geometry">
