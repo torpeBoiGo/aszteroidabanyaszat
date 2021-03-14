@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T17:46:27.145Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="VXD6CVsnE2F12uDjRAnv" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-14T17:46:44.939Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="MwcAOSCjnTi7TQ0bqkWv" version="14.4.8" type="github">
   <diagram id="vkK4ECCgDQGF7RrjNrob" name="Page-1">
-    <mxGraphModel dx="3128" dy="2028" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1303" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,7 +45,7 @@
         <mxCell id="V2GIf_YcROcg7Klgl-BS-11" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="V2GIf_YcROcg7Klgl-BS-10">
           <mxGeometry x="45" y="150" width="10" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="V2GIf_YcROcg7Klgl-BS-12" value="h:Hajo" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-12" value="t:Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="540" y="50" width="100" height="520" as="geometry" />
         </mxCell>
         <mxCell id="V2GIf_YcROcg7Klgl-BS-13" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="V2GIf_YcROcg7Klgl-BS-12">
