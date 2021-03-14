@@ -1,1 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T20:02:21.773Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" version="14.4.3" etag="wOiw7gfvWxGomVTNZkgd" type="github"><diagram id="vkK4ECCgDQGF7RrjNrob">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-14T17:46:27.145Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="VXD6CVsnE2F12uDjRAnv" version="14.4.8" type="github">
+  <diagram id="vkK4ECCgDQGF7RrjNrob" name="Page-1">
+    <mxGraphModel dx="3128" dy="2028" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-1" value="Napvihar" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="40" width="750" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-2" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="160" width="640" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-3" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="230" width="490" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-4" value="p:Palya" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="50" width="100" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-5" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="V2GIf_YcROcg7Klgl-BS-4">
+          <mxGeometry x="45" y="100" width="10" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-6" value="1: Napvihar()" style="endArrow=classic;html=1;entryX=0.516;entryY=0.218;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="V2GIf_YcROcg7Klgl-BS-20" target="V2GIf_YcROcg7Klgl-BS-4">
+          <mxGeometry x="-0.0016" y="16" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="148" as="sourcePoint" />
+            <mxPoint x="182" y="130" as="targetPoint" />
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-7" value="[for each Aszteroida]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="190" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-8" value="2: Napvihar()" style="endArrow=classic;html=1;entryX=0.086;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="V2GIf_YcROcg7Klgl-BS-11">
+          <mxGeometry x="-0.0333" y="20" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="212" as="sourcePoint" />
+            <mxPoint x="324" y="221" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-9" value="[kulsoretegek !=0 || mag != null ]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="270" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-10" value="a:Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="60" width="100" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-11" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="V2GIf_YcROcg7Klgl-BS-10">
+          <mxGeometry x="45" y="150" width="10" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-12" value="h:Hajo" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="50" width="100" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-13" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="V2GIf_YcROcg7Klgl-BS-12">
+          <mxGeometry x="45" y="290" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-14" value="[for each h: Hajo on a:Aszteroida]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="340" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-15" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 11px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;3: Napvihar()&lt;/span&gt;" style="endArrow=classic;html=1;exitX=1.419;exitY=0.618;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="V2GIf_YcROcg7Klgl-BS-11" target="V2GIf_YcROcg7Klgl-BS-12">
+          <mxGeometry x="0.0554" y="15" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="340" as="sourcePoint" />
+            <mxPoint x="600" y="290" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-16" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="589" y="395" as="sourcePoint" />
+            <mxPoint x="403" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-17" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="426" as="sourcePoint" />
+            <mxPoint x="175" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-18" value="" style="endArrow=classic;html=1;dashed=1;exitX=0.133;exitY=0.978;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="V2GIf_YcROcg7Klgl-BS-5" target="V2GIf_YcROcg7Klgl-BS-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="104.02999999999992" y="489.99999999999994" as="sourcePoint" />
+            <mxPoint x="30" y="463" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-19" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;width=60;height=20;" vertex="1" parent="1">
+          <mxGeometry x="230" y="300" width="390" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="V2GIf_YcROcg7Klgl-BS-20" value="Controller" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="82.5" width="20" height="457.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
