@@ -1,25 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T10:04:34.097Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="qSDZK8ImOTQ1Ov-tz5lw" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-14T17:30:27.909Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="xx6hvzSQhPsAKKdjV2QR" version="14.4.8" type="github">
   <diagram id="7B5r28qhJ5weyJIrJBID" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="lqMxQeydhuz74noJYmAE-1" value="Telepes tétlen" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="lqMxQeydhuz74noJYmAE-1" value="Telepes tétlen" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="50" width="420" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="lqMxQeydhuz74noJYmAE-2" value="Controller" style="html=1;" vertex="1" parent="1">
+        <mxCell id="lqMxQeydhuz74noJYmAE-2" value="SkeletonController" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="160" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="lqMxQeydhuz74noJYmAE-3" value="t: Telepes" style="html=1;" vertex="1" parent="1">
+        <mxCell id="lqMxQeydhuz74noJYmAE-3" value="t: Telepes" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="330" y="160" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="lqMxQeydhuz74noJYmAE-4" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" target="lqMxQeydhuz74noJYmAE-3" source="lqMxQeydhuz74noJYmAE-2">
+        <mxCell id="lqMxQeydhuz74noJYmAE-4" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" parent="1" source="lqMxQeydhuz74noJYmAE-2" target="lqMxQeydhuz74noJYmAE-3" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="132.77777777777783" y="210" as="sourcePoint" />
             <mxPoint x="460" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lqMxQeydhuz74noJYmAE-5" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+        <mxCell id="lqMxQeydhuz74noJYmAE-5" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry x="-0.1429" y="10" width="80" relative="1" as="geometry">
             <mxPoint x="210" y="170" as="sourcePoint" />
             <mxPoint x="280" y="170" as="targetPoint" />
