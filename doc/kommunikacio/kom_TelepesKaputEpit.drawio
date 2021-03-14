@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T09:59:29.169Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="VlMRt16seJSDWmoF4Pp1" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-14T17:27:13.890Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="CQQptJMGktj2IXFTOqRq" version="14.4.8" type="github">
   <diagram id="HolWiXEPeuLV7ym3ct0_" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GDSmTgQ28c6nQmGwlQfQ-1" value="Telepes teleportkaput épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=110;height=40;" vertex="1" parent="1">
+        <mxCell id="GDSmTgQ28c6nQmGwlQfQ-1" value="Telepes teleportkaput épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=110;height=40;" parent="1" vertex="1">
           <mxGeometry x="10" y="50" width="460" height="330" as="geometry" />
         </mxCell>
         <mxCell id="GyvDfbJIoFV9S9uWPGpv-1" value="t: Telepes" style="html=1;" parent="1" vertex="1">
@@ -13,7 +13,7 @@
         <mxCell id="GyvDfbJIoFV9S9uWPGpv-2" value="e: TeleportEpito" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="280" y="300" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GyvDfbJIoFV9S9uWPGpv-7" value="Controller" style="html=1;" parent="1" vertex="1">
+        <mxCell id="GyvDfbJIoFV9S9uWPGpv-7" value="SkeletonController" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="210" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="GyvDfbJIoFV9S9uWPGpv-11" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" parent="1" source="GyvDfbJIoFV9S9uWPGpv-7" target="GyvDfbJIoFV9S9uWPGpv-1" edge="1">
