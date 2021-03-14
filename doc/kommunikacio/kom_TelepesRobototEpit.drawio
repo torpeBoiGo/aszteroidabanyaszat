@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T21:59:53.615Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="IXF9Re2k7icoRw6w0Wku" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-14T10:00:33.247Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="mjD0jFSyARKIKdhxjiSo" version="14.4.8" type="github">
   <diagram id="iL3k7XcaUQwhEXji2diZ" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ItiB5R7a2HmLv1XGC4YS-1" value="Telepes robotot épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=40;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="550" height="410" as="geometry" />
+        </mxCell>
         <mxCell id="aNzbc31fKJ_Hpfi3j9VX-1" value="t: Telepes" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="30" width="110" height="50" as="geometry" />
         </mxCell>
@@ -62,13 +65,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VtVtpAuPuRpJdiW_7L0x-1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-8" target="aNzbc31fKJ_Hpfi3j9VX-1">
+        <mxCell id="VtVtpAuPuRpJdiW_7L0x-1" value="" style="endArrow=none;html=1;" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-8" target="aNzbc31fKJ_Hpfi3j9VX-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="310" as="sourcePoint" />
             <mxPoint x="450" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VtVtpAuPuRpJdiW_7L0x-5" value="5: MezoBeallit(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+        <mxCell id="VtVtpAuPuRpJdiW_7L0x-5" value="5: MezoBeallit(a)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry x="-0.76" y="-31" width="80" relative="1" as="geometry">
             <mxPoint x="450" y="250" as="sourcePoint" />
             <mxPoint x="410" y="190" as="targetPoint" />
