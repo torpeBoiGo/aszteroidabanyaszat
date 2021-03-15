@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T20:16:42.930Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="V3WiOcicYZp5Qy8tRYsE" version="14.4.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:19:51.807Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="fDkExLep1II85F9Uk59A" version="14.4.8" type="github" pages="2">
   <diagram id="vkK4ECCgDQGF7RrjNrob" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -94,12 +94,12 @@
         <mxCell id="UfM_HxCeRYC_M5ZdGhQm-0" />
         <mxCell id="UfM_HxCeRYC_M5ZdGhQm-1" parent="UfM_HxCeRYC_M5ZdGhQm-0" />
         <mxCell id="Z385c-rDR6_sjMR08yQ6-0" value="Napvihar telepest ér" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=30;" vertex="1" parent="UfM_HxCeRYC_M5ZdGhQm-1">
-          <mxGeometry y="40" width="750" height="510" as="geometry" />
+          <mxGeometry y="40" width="750" height="370" as="geometry" />
         </mxCell>
         <mxCell id="Z385c-rDR6_sjMR08yQ6-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="UfM_HxCeRYC_M5ZdGhQm-1">
           <mxGeometry x="70" y="160" width="490" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="Z385c-rDR6_sjMR08yQ6-5" value="1: Napvihar()" style="endArrow=classic;html=1;exitX=0.475;exitY=0.148;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="UfM_HxCeRYC_M5ZdGhQm-1" source="Z385c-rDR6_sjMR08yQ6-19" target="Z385c-rDR6_sjMR08yQ6-10">
+        <mxCell id="Z385c-rDR6_sjMR08yQ6-5" value="1: Napvihar()" style="endArrow=classic;html=1;entryX=-0.212;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="UfM_HxCeRYC_M5ZdGhQm-1" source="Z385c-rDR6_sjMR08yQ6-19" target="Z385c-rDR6_sjMR08yQ6-10">
           <mxGeometry x="-0.0016" y="16" width="50" height="50" relative="1" as="geometry">
             <mxPoint x="10" y="148" as="sourcePoint" />
             <mxPoint x="181.5999999999999" y="148.10000000000002" as="targetPoint" />
@@ -110,13 +110,13 @@
           <mxGeometry x="60" y="200" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Z385c-rDR6_sjMR08yQ6-9" value="a:Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="UfM_HxCeRYC_M5ZdGhQm-1">
-          <mxGeometry x="210" y="56.25" width="100" height="510" as="geometry" />
+          <mxGeometry x="210" y="56.25" width="100" height="343.75" as="geometry" />
         </mxCell>
         <mxCell id="Z385c-rDR6_sjMR08yQ6-10" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="Z385c-rDR6_sjMR08yQ6-9">
           <mxGeometry x="45" y="90" width="10" height="230" as="geometry" />
         </mxCell>
         <mxCell id="Z385c-rDR6_sjMR08yQ6-11" value="t:Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="UfM_HxCeRYC_M5ZdGhQm-1">
-          <mxGeometry x="425" y="56.25" width="100" height="520" as="geometry" />
+          <mxGeometry x="425" y="56.25" width="100" height="293.75" as="geometry" />
         </mxCell>
         <mxCell id="Z385c-rDR6_sjMR08yQ6-12" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="Z385c-rDR6_sjMR08yQ6-11">
           <mxGeometry x="45" y="133.75" width="10" height="106.25" as="geometry" />
@@ -144,7 +144,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Z385c-rDR6_sjMR08yQ6-19" value="Controller" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="UfM_HxCeRYC_M5ZdGhQm-1">
-          <mxGeometry x="20" y="82.5" width="20" height="457.5" as="geometry" />
+          <mxGeometry x="20" y="82.5" width="20" height="317.5" as="geometry" />
         </mxCell>
         <mxCell id="Z385c-rDR6_sjMR08yQ6-21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="UfM_HxCeRYC_M5ZdGhQm-1">
           <mxGeometry x="480" y="230" width="10" height="40" as="geometry" />
