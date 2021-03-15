@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T20:28:41.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="NTpizMpRLsT6kmtX_rzr" version="14.4.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:33:19.509Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="Uw4n-URGZuU1Exe49YCR" version="14.4.8" type="github" pages="5">
   <diagram id="JArwNnWl9Kpd9FcY6FAO" name="uran lerak">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -379,18 +379,18 @@
     </mxGraphModel>
   </diagram>
   <diagram id="DUO3NhltA_ly9f8djq1f" name="teleportkapu robban">
-    <mxGraphModel dx="920" dy="1683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1117" dy="1793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="bq9LGPC_qlVPB5JeOToq-0" />
         <mxCell id="bq9LGPC_qlVPB5JeOToq-1" parent="bq9LGPC_qlVPB5JeOToq-0" />
+        <mxCell id="bq9LGPC_qlVPB5JeOToq-2" value="Teleportkapu aszteroidája felrobban" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=50;" parent="bq9LGPC_qlVPB5JeOToq-1" vertex="1">
+          <mxGeometry x="55" y="-10" width="815" height="620" as="geometry" />
+        </mxCell>
         <mxCell id="bq9LGPC_qlVPB5JeOToq-3" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=15;" parent="bq9LGPC_qlVPB5JeOToq-1" vertex="1">
-          <mxGeometry x="100" y="245" width="750" height="230" as="geometry" />
+          <mxGeometry x="100" y="245" width="750" height="245" as="geometry" />
         </mxCell>
         <mxCell id="8XOuJdt_-CQ8Cdnh6kOb-28" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="bq9LGPC_qlVPB5JeOToq-1">
           <mxGeometry x="390" y="380" width="430" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="bq9LGPC_qlVPB5JeOToq-2" value="Teleportkapu aszteroidája felrobban" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=50;" parent="bq9LGPC_qlVPB5JeOToq-1" vertex="1">
-          <mxGeometry x="55" y="-10" width="815" height="620" as="geometry" />
         </mxCell>
         <mxCell id="bq9LGPC_qlVPB5JeOToq-4" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=15;" parent="bq9LGPC_qlVPB5JeOToq-1" vertex="1">
           <mxGeometry x="110" y="120" width="400" height="60" as="geometry" />
@@ -414,7 +414,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bq9LGPC_qlVPB5JeOToq-11" value="par: Teleportkapu" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="bq9LGPC_qlVPB5JeOToq-1" vertex="1">
-          <mxGeometry x="570" y="30" width="100" height="480" as="geometry" />
+          <mxGeometry x="570" y="30" width="100" height="580" as="geometry" />
         </mxCell>
         <mxCell id="bq9LGPC_qlVPB5JeOToq-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="bq9LGPC_qlVPB5JeOToq-11" vertex="1">
           <mxGeometry x="45" y="281.5" width="10" height="158.5" as="geometry" />
@@ -435,7 +435,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bq9LGPC_qlVPB5JeOToq-14" value="a: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="bq9LGPC_qlVPB5JeOToq-1" vertex="1">
-          <mxGeometry x="410" y="30" width="100" height="470" as="geometry" />
+          <mxGeometry x="410" y="30" width="100" height="580" as="geometry" />
         </mxCell>
         <mxCell id="bq9LGPC_qlVPB5JeOToq-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="bq9LGPC_qlVPB5JeOToq-14" vertex="1">
           <mxGeometry x="45" y="110" width="10" height="30" as="geometry" />
@@ -484,7 +484,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8XOuJdt_-CQ8Cdnh6kOb-23" value="a2: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="bq9LGPC_qlVPB5JeOToq-1">
-          <mxGeometry x="740" y="30" width="100" height="480" as="geometry" />
+          <mxGeometry x="740" y="30" width="100" height="580" as="geometry" />
         </mxCell>
         <mxCell id="8XOuJdt_-CQ8Cdnh6kOb-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="8XOuJdt_-CQ8Cdnh6kOb-23">
           <mxGeometry x="45" y="370" width="10" height="40" as="geometry" />
