@@ -1,4 +1,4 @@
 package Skeleton;
 
-public class Szen extends Nyersanyag{
+public class Szen {
 }
