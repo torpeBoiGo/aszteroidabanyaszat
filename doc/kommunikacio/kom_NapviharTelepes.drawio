@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T20:19:59.433Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="s0nMQH2Z8RwgfDHWqBpb" version="14.4.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:20:27.295Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="DxzCmi7oXx5J2qB884MF" version="14.4.8" type="github" pages="2">
   <diagram id="dJKw4Sf-032qiLhtuMxW" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -133,6 +133,9 @@
             <mxPoint x="480" y="210" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-13" value="Napvihar telepest ér" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" vertex="1" parent="A8_gPmQUiT6VFr7Xka69-1">
+          <mxGeometry x="50" y="30" width="550" height="340" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
