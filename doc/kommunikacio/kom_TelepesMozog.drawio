@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" modified="2021-03-14T16:29:40.795Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="8NlD7rmxjiD7e0VHnBKm" version="14.4.8" type="github">
+  <diagram id="TZgk3oL2Dy5LgdHwzk9w" name="Page-1">
+    <mxGraphModel dx="583" dy="627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-1" value="Telepes mozog szomszédos aszteroidára" style="shape=umlFrame;whiteSpace=wrap;html=1;width=180;height=30;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="710" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="_NmjWLg-QleQK-FVTTyi-3" target="_NmjWLg-QleQK-FVTTyi-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="120" />
+              <mxPoint x="590" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-3" value="t: Telepes" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="100" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-4" value="jelenlegi: Aszteroida" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-5" value="uj: Aszteroida" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="320" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-6" value="Controller" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-7" value="3. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" target="_NmjWLg-QleQK-FVTTyi-3">
+          <mxGeometry x="-0.5138" y="41" width="80" relative="1" as="geometry">
+            <mxPoint x="170" y="280" as="sourcePoint" />
+            <mxPoint x="620" y="290" as="targetPoint" />
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-8" value="" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" target="_NmjWLg-QleQK-FVTTyi-4">
+          <mxGeometry x="0.1692" y="-40" width="80" relative="1" as="geometry">
+            <mxPoint x="170" y="290" as="sourcePoint" />
+            <mxPoint x="410" y="190" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-9" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" target="_NmjWLg-QleQK-FVTTyi-5">
+          <mxGeometry x="-0.4872" y="20" width="80" relative="1" as="geometry">
+            <mxPoint x="170" y="310" as="sourcePoint" />
+            <mxPoint x="510" y="310" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-10" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="1" y="-104" width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="239.5" as="sourcePoint" />
+            <mxPoint x="220" y="210" as="targetPoint" />
+            <mxPoint x="38" y="-54" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-11" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="270" y="260" as="sourcePoint" />
+            <mxPoint x="400" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-12" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="210" y="304.5" as="sourcePoint" />
+            <mxPoint x="310" y="310" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-13" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="280" y="660" as="sourcePoint" />
+            <mxPoint x="280" y="660" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-14" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.0566" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="365" y="294.5" as="sourcePoint" />
+            <mxPoint x="365" y="294.5" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-15" value="4. HajoErkezik(t)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="90" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-16" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="110" as="sourcePoint" />
+            <mxPoint x="560" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-18" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="130" as="sourcePoint" />
+            <mxPoint x="480" y="130" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_NmjWLg-QleQK-FVTTyi-19" value="5. Mezobeallit(a)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="140" width="100" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

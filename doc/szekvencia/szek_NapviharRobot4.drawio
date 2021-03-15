@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:23:46.738Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="qR7bIR0bDyGtvEUP4RQM" version="14.4.8" type="github">
+  <diagram id="TvWlXhr4NTcMfiA6zXi_" name="Page-1">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-1" value="Napvihar telepest ér" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=30;" vertex="1" parent="1">
+          <mxGeometry y="40" width="600" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="510" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-3" value="1: Napvihar()" style="endArrow=classic;html=1;entryX=-0.212;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ek8wapu2LdcBIJfYpkFN-13" target="ek8wapu2LdcBIJfYpkFN-6">
+          <mxGeometry x="-0.0016" y="16" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="148" as="sourcePoint" />
+            <mxPoint x="181.5999999999999" y="148.10000000000002" as="targetPoint" />
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-4" value="[kulsoretegek !=0 || mag != null ]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-5" value="a:Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="56.25" width="100" height="343.75" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="ek8wapu2LdcBIJfYpkFN-5">
+          <mxGeometry x="45" y="90" width="10" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-7" value="r: Robot" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="56.25" width="100" height="293.75" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-8" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="ek8wapu2LdcBIJfYpkFN-7">
+          <mxGeometry x="45" y="133.75" width="10" height="106.25" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-9" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="ek8wapu2LdcBIJfYpkFN-7">
+          <mxGeometry x="35" y="253.75" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-10" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 11px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;2: Napvihar()&lt;/span&gt;" style="endArrow=classic;html=1;entryX=-0.08;entryY=0.066;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ek8wapu2LdcBIJfYpkFN-6" target="ek8wapu2LdcBIJfYpkFN-8">
+          <mxGeometry x="0.0554" y="15" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="340" as="sourcePoint" />
+            <mxPoint x="600" y="290" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-11" value="" style="endArrow=classic;html=1;dashed=1;exitX=-0.4;exitY=0.958;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ek8wapu2LdcBIJfYpkFN-8" target="ek8wapu2LdcBIJfYpkFN-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="589" y="395" as="sourcePoint" />
+            <mxPoint x="403" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-12" value="" style="endArrow=classic;html=1;dashed=1;exitX=-0.024;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ek8wapu2LdcBIJfYpkFN-6" target="ek8wapu2LdcBIJfYpkFN-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="176.32999999999993" y="462.96000000000004" as="sourcePoint" />
+            <mxPoint x="30" y="463" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-13" value="Controller" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="82.5" width="20" height="317.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="480" y="230" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ek8wapu2LdcBIJfYpkFN-15" value="3: Meghal()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="1" source="ek8wapu2LdcBIJfYpkFN-8" target="ek8wapu2LdcBIJfYpkFN-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="213.06" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="515" y="213" />
+              <mxPoint x="515" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

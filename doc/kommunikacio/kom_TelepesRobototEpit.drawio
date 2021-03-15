@@ -1,101 +1,80 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T16:49:47.933Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="NWBwOg8q4iyqCpHDYLOw" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-14T17:27:44.972Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="JjlcCI7HEMsVU3cpkxKw" version="14.4.8" type="github">
   <diagram id="iL3k7XcaUQwhEXji2diZ" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-1" value="t: Telepes" style="html=1;" vertex="1" parent="1">
+        <mxCell id="ItiB5R7a2HmLv1XGC4YS-1" value="Telepes robotot épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=40;" parent="1" vertex="1">
+          <mxGeometry x="10" y="10" width="550" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-1" value="t: Telepes" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="250" y="30" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-2" value="e: RobotEpito" style="html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="370" width="110" height="50" as="geometry" />
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-2" value="e: RobotEpito" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="340" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-3" value="Controller" style="html=1;" vertex="1" parent="1">
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-3" value="SkeletonController" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="210" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-4" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-3" target="aNzbc31fKJ_Hpfi3j9VX-1">
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-4" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-3" target="aNzbc31fKJ_Hpfi3j9VX-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="380" y="180" as="sourcePoint" />
             <mxPoint x="460" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-5" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-3" target="aNzbc31fKJ_Hpfi3j9VX-2">
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-5" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-3" target="aNzbc31fKJ_Hpfi3j9VX-2" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="209.23076923076928" y="270" as="sourcePoint" />
             <mxPoint x="350.7692307692307" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-6" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
-          <mxGeometry x="-0.6471" y="17" width="80" relative="1" as="geometry">
-            <mxPoint x="130" y="190" as="sourcePoint" />
-            <mxPoint x="180" y="150" as="targetPoint" />
-            <mxPoint as="offset" />
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-6" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+          <mxGeometry x="-1" y="28" width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="150" as="sourcePoint" />
+            <mxPoint x="210" y="110" as="targetPoint" />
+            <mxPoint x="-3" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-7" value="2: &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
-          <mxGeometry x="-0.2973" y="7" width="80" relative="1" as="geometry">
-            <mxPoint x="200" y="200" as="sourcePoint" />
-            <mxPoint x="260" y="190" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-8" value="a: Aszteroida" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="290" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-8" value="a: Aszteroida" style="html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="350" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-9" value="p: Palya" style="html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="110" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-11" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-3" target="aNzbc31fKJ_Hpfi3j9VX-9">
-          <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="150" y="220" as="sourcePoint" />
-            <mxPoint x="290" y="120" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-12" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-3" target="aNzbc31fKJ_Hpfi3j9VX-8">
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-12" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-3" target="aNzbc31fKJ_Hpfi3j9VX-8" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="160" y="230" as="sourcePoint" />
             <mxPoint x="300" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-13" value="3: &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-13" value="2: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry x="0.2877" y="10" width="80" relative="1" as="geometry">
-            <mxPoint x="210" y="260" as="sourcePoint" />
-            <mxPoint x="265" y="280" as="targetPoint" />
+            <mxPoint x="210" y="250" as="sourcePoint" />
+            <mxPoint x="290" y="270" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-14" value="4: &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-14" value="3: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; RobotEpito()" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
           <mxGeometry x="0.5882" y="19" width="80" relative="1" as="geometry">
-            <mxPoint x="150" y="300" as="sourcePoint" />
-            <mxPoint x="180" y="350" as="targetPoint" />
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="170" y="330" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-15" value="6: MezoBeallit(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
-          <mxGeometry x="-0.6471" y="17" width="80" relative="1" as="geometry">
-            <mxPoint x="190" y="140" as="sourcePoint" />
-            <mxPoint x="240" y="100" as="targetPoint" />
+        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-16" value="4: HajoErkezik(t)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+          <mxGeometry x="0.6154" y="33" width="80" relative="1" as="geometry">
+            <mxPoint x="360" y="110" as="sourcePoint" />
+            <mxPoint x="400" y="170" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-16" value="5: HajoErkezik(t)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
-          <mxGeometry x="0.3793" y="15" width="80" relative="1" as="geometry">
-            <mxPoint x="300" y="290" as="sourcePoint" />
-            <mxPoint x="360" y="310" as="targetPoint" />
-            <mxPoint as="offset" />
+        <mxCell id="VtVtpAuPuRpJdiW_7L0x-1" value="" style="endArrow=none;html=1;" parent="1" source="aNzbc31fKJ_Hpfi3j9VX-8" target="aNzbc31fKJ_Hpfi3j9VX-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="310" as="sourcePoint" />
+            <mxPoint x="450" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-17" value="&lt;b&gt;&lt;i&gt;7: AddJatekosVezerli(t)&lt;/i&gt;&lt;/b&gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
-          <mxGeometry x="-0.2973" y="7" width="80" relative="1" as="geometry">
-            <mxPoint x="300" y="180" as="sourcePoint" />
-            <mxPoint x="360" y="170" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="aNzbc31fKJ_Hpfi3j9VX-18" value="&lt;b&gt;&lt;i&gt;8: AddAszteroida(a)&lt;/i&gt;&lt;/b&gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
-          <mxGeometry x="-0.2973" y="7" width="80" relative="1" as="geometry">
-            <mxPoint x="410" y="150" as="sourcePoint" />
-            <mxPoint x="470" y="140" as="targetPoint" />
+        <mxCell id="VtVtpAuPuRpJdiW_7L0x-5" value="5: MezoBeallit(a)" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" edge="1">
+          <mxGeometry x="-0.76" y="-31" width="80" relative="1" as="geometry">
+            <mxPoint x="450" y="250" as="sourcePoint" />
+            <mxPoint x="410" y="190" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>

@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T18:40:22.014Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="YfCQPKTuuolfMfaASmkv" version="14.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T21:58:12.085Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="4gaXckWfI0Y1USwGeAca" version="14.4.7" type="github">
   <diagram name="TelepesFromAszteroidaToAszteroida" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="3018" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8tZX-4wy2sQ4AK6EXETs-19" value="Telepes mozog Aszteroidára" style="shape=umlFrame;whiteSpace=wrap;html=1;width=160;height=30;" vertex="1" parent="1">
+        <mxCell id="8tZX-4wy2sQ4AK6EXETs-19" value="Robot mozog Aszteroidára" style="shape=umlFrame;whiteSpace=wrap;html=1;width=160;height=30;" vertex="1" parent="1">
           <mxGeometry x="-1080" y="70" width="670" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="8tZX-4wy2sQ4AK6EXETs-2" value="t: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="8tZX-4wy2sQ4AK6EXETs-2" value="r: Robot" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="-890" y="110" width="100" height="360" as="geometry" />
         </mxCell>
         <mxCell id="8tZX-4wy2sQ4AK6EXETs-3" value="jelenlegi: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
@@ -22,7 +22,7 @@
         <mxCell id="8tZX-4wy2sQ4AK6EXETs-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="8tZX-4wy2sQ4AK6EXETs-5">
           <mxGeometry x="45" y="180" width="10" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="8tZX-4wy2sQ4AK6EXETs-7" value="2. HajoElhagy (t: Telepes)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.733;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8tZX-4wy2sQ4AK6EXETs-2" target="8tZX-4wy2sQ4AK6EXETs-4">
+        <mxCell id="8tZX-4wy2sQ4AK6EXETs-7" value="2. HajoElhagy (r: Robot)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.733;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8tZX-4wy2sQ4AK6EXETs-2" target="8tZX-4wy2sQ4AK6EXETs-4">
           <mxGeometry x="0.0473" relative="1" as="geometry">
             <mxPoint x="-840" y="210" as="sourcePoint" />
             <mxPoint as="offset" />
@@ -37,7 +37,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8tZX-4wy2sQ4AK6EXETs-9" value="3. HajoErkezik (t: Telepes)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;exitX=1.2;exitY=0.419;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8tZX-4wy2sQ4AK6EXETs-11" target="8tZX-4wy2sQ4AK6EXETs-6">
+        <mxCell id="8tZX-4wy2sQ4AK6EXETs-9" value="3. HajoErkezik (r: Robot)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;exitX=1.2;exitY=0.419;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8tZX-4wy2sQ4AK6EXETs-11" target="8tZX-4wy2sQ4AK6EXETs-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-300" y="393.84615384615415" as="sourcePoint" />
           </mxGeometry>
@@ -82,8 +82,11 @@
             <mxPoint x="-810" y="349" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8tZX-4wy2sQ4AK6EXETs-18" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="8tZX-4wy2sQ4AK6EXETs-18" value="Ai" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="-1030" y="110" width="20" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="eKuTOnKP7rXMy6YAmNFx-20" value="Ezt a Mezo beallitba!" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-680" y="160" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
