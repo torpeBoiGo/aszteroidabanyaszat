@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-14T17:27:17.582Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="maVF2myYAp5S040TJkkT" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:19:59.433Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="s0nMQH2Z8RwgfDHWqBpb" version="14.4.8" type="github" pages="2">
   <diagram id="dJKw4Sf-032qiLhtuMxW" name="Page-1">
-    <mxGraphModel dx="782" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -69,6 +69,69 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="590" y="100" as="sourcePoint" />
             <mxPoint x="680" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ExtpQXXdmQS5gmvjafrQ" name="Page-2">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="A8_gPmQUiT6VFr7Xka69-0" />
+        <mxCell id="A8_gPmQUiT6VFr7Xka69-1" parent="A8_gPmQUiT6VFr7Xka69-0" />
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-0" value="SkeletonController" style="html=1;" vertex="1" parent="A8_gPmQUiT6VFr7Xka69-1">
+          <mxGeometry x="100" y="210" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-1" value="t: Telepes" style="html=1;" vertex="1" parent="A8_gPmQUiT6VFr7Xka69-1">
+          <mxGeometry x="360" y="50" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-2" value="a: Aszteroida" style="html=1;" vertex="1" parent="A8_gPmQUiT6VFr7Xka69-1">
+          <mxGeometry x="440" y="290" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-4" value="" style="endArrow=none;html=1;" edge="1" parent="A8_gPmQUiT6VFr7Xka69-1" source="7Iv59Yqbe7wx8qJlg-Kn-0" target="7Iv59Yqbe7wx8qJlg-Kn-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="290" as="sourcePoint" />
+            <mxPoint x="430" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-6" value="" style="endArrow=none;html=1;" edge="1" parent="A8_gPmQUiT6VFr7Xka69-1" source="7Iv59Yqbe7wx8qJlg-Kn-0" target="7Iv59Yqbe7wx8qJlg-Kn-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="267.5" as="sourcePoint" />
+            <mxPoint x="400" y="422.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-7" value="2. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="A8_gPmQUiT6VFr7Xka69-1">
+          <mxGeometry x="-0.8689" y="22" width="80" relative="1" as="geometry">
+            <mxPoint x="230" y="170" as="sourcePoint" />
+            <mxPoint x="310" y="120" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-8" value="1. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="A8_gPmQUiT6VFr7Xka69-1">
+          <mxGeometry x="0.2667" y="9" width="80" relative="1" as="geometry">
+            <mxPoint x="270" y="240" as="sourcePoint" />
+            <mxPoint x="360" y="270" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-10" value="" style="endArrow=none;html=1;" edge="1" parent="A8_gPmQUiT6VFr7Xka69-1" source="7Iv59Yqbe7wx8qJlg-Kn-2" target="7Iv59Yqbe7wx8qJlg-Kn-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="130" as="sourcePoint" />
+            <mxPoint x="610" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-11" value="5. MezoBeallit(a)" style="endArrow=classic;html=1;" edge="1" parent="A8_gPmQUiT6VFr7Xka69-1">
+          <mxGeometry x="0.3" y="28" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="220" as="sourcePoint" />
+            <mxPoint x="420" y="160" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Iv59Yqbe7wx8qJlg-Kn-12" value="4. HajoErkezik()" style="endArrow=classic;html=1;" edge="1" parent="A8_gPmQUiT6VFr7Xka69-1">
+          <mxGeometry x="-0.0137" y="27" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="130" as="sourcePoint" />
+            <mxPoint x="480" y="210" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
