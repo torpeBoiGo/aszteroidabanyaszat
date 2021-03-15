@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T20:41:58.193Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="fkyx5GhT_pVQF_2HMTQ7" version="14.4.8" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:57:55.967Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="6tAefxfx2zBoAA6_FFIA" version="14.4.8" type="github" pages="7">
   <diagram id="CDpCEDxQ0OrWF1zA0EX5" name="Vas">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -566,8 +566,8 @@
             <mxPoint x="225" y="510" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZBvjwLNOEfcbsQ4V32j1-31" value="[par aszteroidan van(SajatAszteroida!=null) &amp;amp;&amp;amp; es ez az a2: Aszteroida" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZBvjwLNOEfcbsQ4V32j1-1">
-          <mxGeometry x="510" y="405" width="60" height="20" as="geometry" />
+        <mxCell id="ZBvjwLNOEfcbsQ4V32j1-31" value="[par aszteroidan van és ez az a2: Aszteroida]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZBvjwLNOEfcbsQ4V32j1-1">
+          <mxGeometry x="460" y="405" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="ZBvjwLNOEfcbsQ4V32j1-32" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;entryX=0.173;entryY=0.228;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="ZBvjwLNOEfcbsQ4V32j1-1" source="ZBvjwLNOEfcbsQ4V32j1-12" target="ZBvjwLNOEfcbsQ4V32j1-3">
           <mxGeometry x="0.0117" y="82" relative="1" as="geometry">
