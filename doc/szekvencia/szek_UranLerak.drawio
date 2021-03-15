@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T20:28:16.784Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="p9nYGZ71bNdVSwWvfJ5o" version="14.4.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:28:41.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="NTpizMpRLsT6kmtX_rzr" version="14.4.8" type="github" pages="5">
   <diagram id="JArwNnWl9Kpd9FcY6FAO" name="uran lerak">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -477,7 +477,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bq9LGPC_qlVPB5JeOToq-23" value="1. RemoveSzomszed(a)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="bq9LGPC_qlVPB5JeOToq-1" target="bq9LGPC_qlVPB5JeOToq-6" edge="1">
+        <mxCell id="bq9LGPC_qlVPB5JeOToq-23" value="1. RemoveSzomszed(a)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;exitX=0.002;exitY=0.194;exitDx=0;exitDy=0;exitPerimeter=0;" parent="bq9LGPC_qlVPB5JeOToq-1" source="bq9LGPC_qlVPB5JeOToq-2" target="bq9LGPC_qlVPB5JeOToq-6" edge="1">
           <mxGeometry x="-0.1111" relative="1" as="geometry">
             <mxPoint x="80" y="110" as="sourcePoint" />
             <mxPoint as="offset" />
@@ -503,7 +503,7 @@
             <mxPoint x="625" y="400" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bq9LGPC_qlVPB5JeOToq-7" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" parent="bq9LGPC_qlVPB5JeOToq-1" edge="1">
+        <mxCell id="bq9LGPC_qlVPB5JeOToq-7" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;entryX=-0.006;entryY=0.839;entryDx=0;entryDy=0;entryPerimeter=0;" parent="bq9LGPC_qlVPB5JeOToq-1" target="bq9LGPC_qlVPB5JeOToq-2" edge="1">
           <mxGeometry x="1" y="-52" relative="1" as="geometry">
             <mxPoint x="80" y="512" as="targetPoint" />
             <mxPoint x="-15" y="2" as="offset" />
