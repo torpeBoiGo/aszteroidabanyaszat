@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T20:25:00.044Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="xVXQlCJDFVFeNJgsm6X6" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:25:45.077Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="svfNr8EohHnJoe0i6ihQ" version="14.4.8" type="github">
   <diagram id="WT_lnRqrg5Ym0wtdkimR" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Q0kFrNGrZZAoQRoOs5nT-11" value="Napvihar telepest ér" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" vertex="1" parent="1">
+        <mxCell id="Q0kFrNGrZZAoQRoOs5nT-11" value="Napvihar robotot ér" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" vertex="1" parent="1">
           <mxGeometry x="50" y="30" width="550" height="340" as="geometry" />
         </mxCell>
         <mxCell id="Q0kFrNGrZZAoQRoOs5nT-1" value="SkeletonController" style="html=1;" vertex="1" parent="1">
