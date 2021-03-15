@@ -1,4 +1,4 @@
 package Skeleton;
 
-public class Uran {
+public class Uran extends Nyersanyag{
 }

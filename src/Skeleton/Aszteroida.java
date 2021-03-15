@@ -2,7 +2,7 @@ package Skeleton;
 
 import java.util.List;
 
-public class Aszteroida {
+public class Aszteroida implements Mezo{
     List<Aszteroida> szomszedok;
     int kulsoRetegek;
     Nyersanyag mag;
@@ -20,9 +20,26 @@ public class Aszteroida {
     public void AddSzomszed(Mezo m){
 
     }
+
+    @Override
+    public void Robban() {
+
+    }
+
     public void RemoveSzomszed(Mezo m){
 
     }
+
+    @Override
+    public void HajoErkezik(Hajo h) {
+
+    }
+
+    @Override
+    public void HajoElhagy(Hajo h) {
+
+    }
+
     public void Napvihar(){
 
     }

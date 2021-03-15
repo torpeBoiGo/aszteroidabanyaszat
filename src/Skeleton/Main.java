@@ -1,3 +1,4 @@
+
 package Skeleton;
 
 import java.io.BufferedReader;
@@ -5,18 +6,18 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) {
-        int choosed = -1;
+        int chosen = -1;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        while (choosed != 0) {
-            System.out.println("Kérlek válassz egy opciót!");
+        while (chosen != 0) {
+            System.out.print("Kerlek válassz egy opciot!");
             try {
                 String line = reader.readLine();
-                choosed = Integer.parseInt(String.valueOf(line));
+                chosen = Integer.parseInt(String.valueOf(line));
             } catch (Exception e) {
                 System.out.println(e.getMessage());
-                choosed = 0;
+                chosen = 0;
             }
-            switch (choosed) {
+            switch (chosen) {
                 case 0:
                     SkeletonController.Kilepes();
                     break;

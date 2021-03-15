@@ -1,4 +1,4 @@
 package Skeleton;
 
-public class Vas {
+public class Vas extends Nyersanyag{
 }

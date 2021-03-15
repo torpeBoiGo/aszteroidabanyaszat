@@ -1,4 +1,4 @@
 package Skeleton;
 
-public class Vizjeg {
+public class Vizjeg extends Nyersanyag{
 }
