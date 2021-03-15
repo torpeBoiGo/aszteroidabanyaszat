@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T20:19:51.807Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="fDkExLep1II85F9Uk59A" version="14.4.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-15T20:23:25.816Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="s5Q_svVXi4Z9Cn5rsSjQ" version="14.4.8" type="github" pages="2">
   <diagram id="vkK4ECCgDQGF7RrjNrob" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -94,7 +94,7 @@
         <mxCell id="UfM_HxCeRYC_M5ZdGhQm-0" />
         <mxCell id="UfM_HxCeRYC_M5ZdGhQm-1" parent="UfM_HxCeRYC_M5ZdGhQm-0" />
         <mxCell id="Z385c-rDR6_sjMR08yQ6-0" value="Napvihar telepest ér" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=30;" vertex="1" parent="UfM_HxCeRYC_M5ZdGhQm-1">
-          <mxGeometry y="40" width="750" height="370" as="geometry" />
+          <mxGeometry y="40" width="610" height="370" as="geometry" />
         </mxCell>
         <mxCell id="Z385c-rDR6_sjMR08yQ6-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="UfM_HxCeRYC_M5ZdGhQm-1">
           <mxGeometry x="70" y="160" width="490" height="190" as="geometry" />
