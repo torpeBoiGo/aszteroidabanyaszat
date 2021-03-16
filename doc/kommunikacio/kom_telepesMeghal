@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-16T09:45:12.892Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="DIpAyVaKZ0OqZZBSJrZZ" version="14.4.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-16T09:53:43.559Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="Mobm5pqA8AETb1qtpztR" version="14.4.8" type="github" pages="2">
   <diagram id="u8IuUCSck-NaWwd4844v" name="Page-1">
-    <mxGraphModel dx="1609" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1695" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="FB5XWMmyiZEYiHVHH_ib-34" value="telepes meghal" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FB5XWMmyiZEYiHVHH_ib-34" value="Telepes meghal - tárolójában a teleportkapu pár egyik fele van csak&amp;nbsp;" style="shape=umlFrame;whiteSpace=wrap;html=1;width=150;height=60;" parent="1" vertex="1">
           <mxGeometry x="-30" y="10" width="720" height="570" as="geometry" />
         </mxCell>
         <mxCell id="FB5XWMmyiZEYiHVHH_ib-1" value="SkeletonController" style="html=1;" parent="1" vertex="1">
@@ -191,11 +191,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ALNIt0fNEODKQ7smR8u-" name="Page-2">
-    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="roY4SDuIpolwy_YOqe56-0" />
         <mxCell id="roY4SDuIpolwy_YOqe56-1" parent="roY4SDuIpolwy_YOqe56-0" />
-        <mxCell id="PPpMb7_u1wTqeKgLrEcF-29" value="telepes meghal" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="roY4SDuIpolwy_YOqe56-1" vertex="1">
+        <mxCell id="PPpMb7_u1wTqeKgLrEcF-29" value="Telepes meghal&amp;nbsp;- tárolójában van a teleportkapu pár mindkét fele" style="shape=umlFrame;whiteSpace=wrap;html=1;width=140;height=60;" parent="roY4SDuIpolwy_YOqe56-1" vertex="1">
           <mxGeometry width="700" height="510" as="geometry" />
         </mxCell>
         <mxCell id="PPpMb7_u1wTqeKgLrEcF-0" value="SkeletonController" style="html=1;" parent="roY4SDuIpolwy_YOqe56-1" vertex="1">
