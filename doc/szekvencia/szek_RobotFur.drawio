@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T21:58:15.108Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="9yq3un5Mwi-Be7lLB9oK" version="14.4.7" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-16T09:10:23.188Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="q_2Etq5tsy6qaVdsE4r9" version="14.4.8" type="github" pages="5">
   <diagram id="CDpCEDxQ0OrWF1zA0EX5" name="Vas">
-    <mxGraphModel dx="1588" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="xroRfhQLQv70-I8TeShX-0" />
         <mxCell id="xroRfhQLQv70-I8TeShX-1" parent="xroRfhQLQv70-I8TeShX-0" />
@@ -58,7 +58,7 @@
         <mxCell id="YGFzv0T0JZMLWO8J6dj3-13" value="[kulsoRetegek == 0 &amp;amp;&amp;amp; napkozelben]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="xroRfhQLQv70-I8TeShX-1" vertex="1">
           <mxGeometry x="420" y="370" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="YGFzv0T0JZMLWO8J6dj3-14" value="Ai" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="xroRfhQLQv70-I8TeShX-1" vertex="1">
+        <mxCell id="YGFzv0T0JZMLWO8J6dj3-14" value="Controller" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="xroRfhQLQv70-I8TeShX-1" vertex="1">
           <mxGeometry x="150" y="190" width="20" height="300" as="geometry" />
         </mxCell>
         <mxCell id="YGFzv0T0JZMLWO8J6dj3-15" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.1;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="xroRfhQLQv70-I8TeShX-1" source="YGFzv0T0JZMLWO8J6dj3-3" target="YGFzv0T0JZMLWO8J6dj3-14" edge="1">
@@ -73,7 +73,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="vizjeg" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="1315" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -140,7 +140,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8bqFY7UUH3lUDRtA-rW4-15" value="Ai" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="1" vertex="1">
+        <mxCell id="8bqFY7UUH3lUDRtA-rW4-15" value="Controller" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="140" y="210" width="20" height="330" as="geometry" />
         </mxCell>
         <mxCell id="8bqFY7UUH3lUDRtA-rW4-16" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.1;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="8bqFY7UUH3lUDRtA-rW4-4" target="8bqFY7UUH3lUDRtA-rW4-15" edge="1">
@@ -165,7 +165,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="LYxVntFBDKWVJXlRVGpD" name="urán">
-    <mxGraphModel dx="1588" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="jmFCy8ng7Hv5kdzz33bZ-0" />
         <mxCell id="jmFCy8ng7Hv5kdzz33bZ-1" parent="jmFCy8ng7Hv5kdzz33bZ-0" />
@@ -221,7 +221,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zxYIpDab9cN8d_UvFNXW-14" value="Ai" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="jmFCy8ng7Hv5kdzz33bZ-1" vertex="1">
+        <mxCell id="zxYIpDab9cN8d_UvFNXW-14" value="Controller" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="jmFCy8ng7Hv5kdzz33bZ-1" vertex="1">
           <mxGeometry x="230" y="220" width="20" height="330" as="geometry" />
         </mxCell>
         <mxCell id="zxYIpDab9cN8d_UvFNXW-15" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.1;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="jmFCy8ng7Hv5kdzz33bZ-1" source="zxYIpDab9cN8d_UvFNXW-3" target="zxYIpDab9cN8d_UvFNXW-14" edge="1">
@@ -241,7 +241,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="P8kHbXw9BYw-AoUryL1_" name="urán-folyt">
-    <mxGraphModel dx="2302" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="lV6RWOIlh8FrzK2vhsJU-0" />
         <mxCell id="lV6RWOIlh8FrzK2vhsJU-1" parent="lV6RWOIlh8FrzK2vhsJU-0" />
@@ -369,17 +369,17 @@
             <mxPoint x="495.5" y="330" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4M-g-cPLXR9fZ-5eMuC5-0" value="Itt kéne a TP kapu másik szomszédjával foglalkozni nem?" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="lV6RWOIlh8FrzK2vhsJU-1">
+        <mxCell id="4M-g-cPLXR9fZ-5eMuC5-0" value="Itt kéne a TP kapu másik szomszédjával foglalkozni nem?" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" parent="lV6RWOIlh8FrzK2vhsJU-1" vertex="1">
           <mxGeometry x="940" y="305" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="HzssWzbbAgy_aTg6rr15-0" value="Ezzel itt mi a szitu?" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="lV6RWOIlh8FrzK2vhsJU-1">
+        <mxCell id="HzssWzbbAgy_aTg6rr15-0" value="Ezzel itt mi a szitu?" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" parent="lV6RWOIlh8FrzK2vhsJU-1" vertex="1">
           <mxGeometry x="1040" y="410" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="SUpyBKdeYvnhuWhUGH0t" name="Szen">
-    <mxGraphModel dx="2302" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="B_OEtBdegU5DsNwxrJ19-0" />
         <mxCell id="B_OEtBdegU5DsNwxrJ19-1" parent="B_OEtBdegU5DsNwxrJ19-0" />
@@ -437,7 +437,7 @@
         <mxCell id="Ez5X9ZRmJf39nqyiPll7-13" value="[kulsoRetegek == 0 &amp;amp;&amp;amp; napkozelben]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="B_OEtBdegU5DsNwxrJ19-1" vertex="1">
           <mxGeometry x="420" y="370" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Ez5X9ZRmJf39nqyiPll7-14" value="Ai" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="B_OEtBdegU5DsNwxrJ19-1" vertex="1">
+        <mxCell id="Ez5X9ZRmJf39nqyiPll7-14" value="Controller" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="B_OEtBdegU5DsNwxrJ19-1" vertex="1">
           <mxGeometry x="150" y="190" width="20" height="300" as="geometry" />
         </mxCell>
         <mxCell id="Ez5X9ZRmJf39nqyiPll7-15" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.1;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="B_OEtBdegU5DsNwxrJ19-1" source="Ez5X9ZRmJf39nqyiPll7-3" target="Ez5X9ZRmJf39nqyiPll7-14" edge="1">
