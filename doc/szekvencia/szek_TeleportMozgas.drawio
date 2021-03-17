@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T11:12:58.636Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="mHxPgC2t-2k0qc4LYcf6" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T15:32:12.359Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="m4BObRxih6_H2jGk3_0O" version="14.4.7" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="1568" dy="1014" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="FDuW5T6w23psz0ph_W9L-1" value="Teleport működése" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=40;" vertex="1" parent="1">
+        <mxCell id="FDuW5T6w23psz0ph_W9L-1" value="Teleport működése" style="shape=umlFrame;whiteSpace=wrap;html=1;width=90;height=40;" parent="1" vertex="1">
           <mxGeometry x="140" y="20" width="770" height="400" as="geometry" />
         </mxCell>
         <mxCell id="xq6RAXwcccBxe6sGR83r-1" value="h: Hajo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
