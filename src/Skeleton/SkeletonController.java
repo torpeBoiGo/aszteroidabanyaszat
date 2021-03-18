@@ -52,11 +52,9 @@ public class SkeletonController {
             System.out.println(e.getMessage());
             chosen = -1;
         }
-    	if(chosen > choices.size()+1)
-    		return -1;
+    	if(chosen > choices.size()+1 || chosen <= 0 )
+    		throw new RuntimeException();
     	
-    	if(chosen <= 0 )
-    		Kilepes();
     	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
     	return chosen; 
@@ -72,6 +70,7 @@ public class SkeletonController {
 
     public static void Kilepes() {
         System.out.println("Bye(t)!");
+        System.exit(0);
     }
 
     
@@ -99,7 +98,10 @@ public class SkeletonController {
     	
     	
     	//Kezdõhivás
-    	t.Mozog(uj);
+    	
+    		t.Mozog(uj);
+		
+    	
     	
     	//Hogy ne legyen konflikt másik esettel
     	NamesMap.clear();
