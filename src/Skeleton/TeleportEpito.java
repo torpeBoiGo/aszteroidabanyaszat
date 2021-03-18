@@ -2,9 +2,9 @@ package Skeleton;
 
 import java.util.Vector;
 
-public class TeleportEpito extends Epitheto{
+public class TeleportEpito extends Epitheto {
     @Override
     public Vector<Szallithato> Letrejon(Aszteroida a) {
-        return super.Letrejon(a);
+        return new Vector<Szallithato>();
     }
 }
