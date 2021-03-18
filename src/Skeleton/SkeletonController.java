@@ -3,8 +3,18 @@ package Skeleton;
 
 public class SkeletonController {
 
-    public static void FunctionCall(String callerFunctionName, Object called, String calledFunctionName) {
-        System.out.println("SkeletonController:" + callerFunctionName + " -> " + called.toString() + "." + calledFunctionName);
+	static int depth = 0;
+	
+    public static void FunctionCall(Object called, String calledFunctionName) {
+    	for(int i = 0; i< depth;i++) {
+    		System.out.print("\t");
+    	}
+        System.out.print("-> " + called.toString() + "." + calledFunctionName+ "\n");
+        depth++;
+    }
+    
+    public static void FunctionReturn() {
+    	depth--;
     }
 
     public static void ObjectCreated(Object obj) {
@@ -15,6 +25,21 @@ public class SkeletonController {
         System.out.println("Bye(t)!");
     }
 
+    public static void TelepesMozog() {
+    	// A számozás rossz a diagramunkon (5.4.4)
+    	Aszteroida jelenlegi =  new Aszteroida();
+    	Aszteroida uj = new Aszteroida();
+    	Telepes t = new Telepes(jelenlegi);
+    	
+    	jelenlegi.AddSzomszed(uj);
+    	uj.AddSzomszed(jelenlegi);
+    	
+    	t.Mozog(uj);
+    	
+    }
+    
+    //old implementation
+    /*
     public static void TelepesBanyaszikVasat() {
         System.out.println("TelepesBanyaszikVasat Use-Case:");
         Aszteroida a = new Aszteroida();
@@ -29,4 +54,6 @@ public class SkeletonController {
 
 
     }
+    
+    */
 }

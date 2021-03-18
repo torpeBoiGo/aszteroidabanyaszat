@@ -9,7 +9,7 @@ public class Main {
         int chosen = -1;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
-            System.out.print("Kerlek válassz egy opciot!");
+            System.out.print("Kerlek valassz egy opciot!\n");
             try {
                 String line = reader.readLine();
                 chosen = Integer.parseInt(String.valueOf(line));
@@ -22,7 +22,7 @@ public class Main {
                     SkeletonController.Kilepes();
                     break;
                 case 1:
-                    SkeletonController.TelepesBanyaszikVasat();
+                    SkeletonController.TelepesMozog();
                     break;
             }
         }

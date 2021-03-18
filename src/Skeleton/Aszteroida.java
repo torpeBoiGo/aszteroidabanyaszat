@@ -1,12 +1,13 @@
 package Skeleton;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Aszteroida implements Mezo{
-    List<Aszteroida> szomszedok;
+    List<Mezo> szomszedok = new ArrayList<Mezo>();
     int kulsoRetegek;
     Nyersanyag mag;
-    List<Hajo> hajok;
+    List<Hajo> hajok = new ArrayList<Hajo>();
 
     public void Fur() {
 
@@ -18,7 +19,7 @@ public class Aszteroida implements Mezo{
         return true;
     }
     public void AddSzomszed(Mezo m){
-
+    	szomszedok.add(m);
     }
 
     @Override
@@ -32,12 +33,19 @@ public class Aszteroida implements Mezo{
 
     @Override
     public void HajoErkezik(Hajo h) {
-
+    	SkeletonController.FunctionCall("Aszteroida", "HajoErkezik");
+    	
+    	hajok.add(h);
+    	h.MezoBeallit(this);
+    	
+    	SkeletonController.FunctionReturn();
     }
 
     @Override
     public void HajoElhagy(Hajo h) {
-
+    	SkeletonController.FunctionCall("Aszteroida", "HajoElhagy()");
+    	hajok.remove(h);
+    	
     }
 
     public void Napvihar(){
