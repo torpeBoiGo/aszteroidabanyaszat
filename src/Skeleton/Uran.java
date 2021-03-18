@@ -1,7 +1,7 @@
 package Skeleton;
 
 public class Uran extends Nyersanyag{
-  @Override
+	@Override
 	public void Megfurva(Aszteroida a) {
 		a.Robban();
 	}
