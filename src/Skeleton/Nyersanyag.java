@@ -1,7 +1,7 @@
 package Skeleton;
 
 public class Nyersanyag {
-  public void Megsemmisul() {
+	 public void Megsemmisul() {
 		
 	} 
 	
