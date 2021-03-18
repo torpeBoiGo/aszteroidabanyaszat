@@ -1,7 +1,7 @@
 package Skeleton;
 
 public class Vizjeg extends Nyersanyag{
-  @Override
+  	@Override
 	public void Megfurva(Aszteroida a) {
 			Nyersanyag kinyert = a.Kinyer();
 	}
