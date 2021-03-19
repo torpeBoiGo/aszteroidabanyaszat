@@ -36,6 +36,7 @@ public class Telepes extends Hajo {
     
     public void KapuLerak(Teleportkapu k) {
     	
+    	
     }
     
 	@Override
@@ -49,7 +50,7 @@ public class Telepes extends Hajo {
 		// TODO Auto-generated method stub
 		
 	}
-
+  
 	@Override
 	boolean NyerEllenoriz(Epitheto e) {
 		// TODO Auto-generated method stub
