@@ -9,7 +9,10 @@ public class Main {
         int chosen = -1;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
-            System.out.print("Kerlek valassz egy opciot!\n");
+            System.out.println("Kerlek valassz egy opciot!\n");
+            System.out.println("0. Kilepes");
+            System.out.println("1. Telepes mozog szomszedos aszteroidara");
+            System.out.print("Valasztas: ");
             try {
                 String line = reader.readLine();
                 chosen = Integer.parseInt(String.valueOf(line));
@@ -17,7 +20,9 @@ public class Main {
                 System.out.println(e.getMessage());
                 chosen = 0;
             }
-            switch (chosen) {
+            
+            try {
+            	switch (chosen) {
                 case 0:
                     SkeletonController.Kilepes();
                     break;
@@ -30,7 +35,10 @@ public class Main {
                 case 3:
                 	SkeletonController.TelepesMozogTeleport();
                 	break;
-            }
+            	}
+			} catch (Exception e) {
+				
+			}
         }
     }
 }

@@ -12,6 +12,7 @@ public class Telepes extends Hajo {
         SkeletonController.ObjectCreated(this);
         a.HajoErkezik(this);
         aszteroida = a;
+        
     }
 	public Telepes() {
         SkeletonController.ObjectCreated(this);
@@ -52,7 +53,6 @@ public class Telepes extends Hajo {
 	@Override
 	void Lepes() {
 		// TODO Auto-generated method stub
-		
 	}
   
 	@Override
@@ -60,4 +60,8 @@ public class Telepes extends Hajo {
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
+	public void setName(String input) {
+    	super.name = input;
+    }
 }
