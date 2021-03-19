@@ -56,5 +56,15 @@ public class Aszteroida implements Mezo{
         return false;
     }
 
+    public Nyersanyag Kinyer(){
+        if(kulsoRetegek>0 || mag == null){
+            return null;
+        }
+        else{
+            return mag;
+        }
+
+    }
+
 
 }
