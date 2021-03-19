@@ -10,6 +10,10 @@ public class Aszteroida implements Mezo{
     Nyersanyag mag;
     List<Hajo> hajok = new ArrayList<Hajo>();
 
+    public Aszteroida() {
+		SkeletonController.ObjectCreated(this);
+	}
+    
     public void Fur() {
 
     }

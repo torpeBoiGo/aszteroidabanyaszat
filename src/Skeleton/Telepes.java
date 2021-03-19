@@ -25,8 +25,4 @@ public class Telepes extends Hajo{
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
-	public void setName(String input) {
-    	super.name = input;
-    }
 }
