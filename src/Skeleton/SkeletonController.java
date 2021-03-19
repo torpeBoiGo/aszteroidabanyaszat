@@ -12,20 +12,21 @@ public class SkeletonController {
 	static HashMap<String, String> NamesMap = new HashMap<String, String>();
 	
     public static void FunctionCall(Object called, String calledFunctionName) {
-    	for(int i = 0; i< depth;i++) {
+    	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
-    	}
+
         System.out.print("-> " + called.toString() + "." + calledFunctionName+ "\n");
         depth++;
     }
     
     public static void FunctionCall(String calledFunctionName, Object callerObject) {
-    	for(int i = 0; i< depth;i++) {
+    	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
-    	}
+    	
     	if(NamesMap.containsKey(callerObject.toString()))
     		System.out.print("-> " + NamesMap.get(callerObject.toString()));
-    	else System.out.print("-> NINCS NÉV REGISZTRÁLVA");
+    	else System.out.print("-> most letrejott " + callerObject.getClass().getSimpleName());
+    	
         System.out.print("." + calledFunctionName+ "()\n");
         depth++;
     }
@@ -33,16 +34,16 @@ public class SkeletonController {
     public static int AskForInput(String kerdes, ArrayList<String> choices) {
     	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
-    		
     	System.out.println(kerdes);
     	
     	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
     	System.out.print(0 + ". kilepes,   ");
-    	for (int i = 0; i< choices.size();i++) {
+    	for (int i = 0; i< choices.size();i++)
 			System.out.print(i+1 + ". " + choices.get(i) + ",  ");
-		}
+   
     	System.out.print("Valasz: ");
+    	
     	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     	int chosen = -1;
     	try {
@@ -57,6 +58,7 @@ public class SkeletonController {
     	
     	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
+    	
     	return chosen; 
     }
     
@@ -65,7 +67,7 @@ public class SkeletonController {
     }
 
     public static void ObjectCreated(Object obj) {
-        System.out.println("Created: " + obj.toString());
+        System.out.println("Created: " + obj.getClass().getSimpleName());
     }
 
     public static void Kilepes() {
@@ -74,37 +76,50 @@ public class SkeletonController {
     }
 
     
-    public static void TelepesMozog() {
-    	// A számozás rossz a diagramunkon (5.4.4)
+    public static void TelepesMozogSzomszedosAszteroidara() {
+    	// A szï¿½mozï¿½s rossz a diagramunkon (5.4.4)
     	
-    	//Inicializálás
-    	Aszteroida jelenlegi;
-    	Aszteroida uj;
-    	Telepes t;
+    	//Inicializï¿½lï¿½s
     	
-    	
-    	//Név regisztráció és inicializálás
-    	//Még nem tudom hogy lehet kikerülni hogy csak a konstruktor után lehet elnevezni
-    	//Fel lehetne mindenre venni egy új paramétert, de az sok munka lenne, megpróbálom Goldit megkérdezni majd hogy kéne
-    	jelenlegi =  new Aszteroida();
+    	//Nï¿½v regisztrï¿½ciï¿½ ï¿½s inicializï¿½lï¿½s
+    	Aszteroida jelenlegi =  new Aszteroida(); 
+    	//Mikor letrehozunk valamit, rogton el is nevezzuk
     	NamesMap.put(jelenlegi.toString(), "jelenlegi");
-    	uj = new Aszteroida();
+    	
+    	Aszteroida uj = new Aszteroida();
     	NamesMap.put(uj.toString(), "uj");
-    	t = new Telepes(jelenlegi);
+    	Telepes t = new Telepes(jelenlegi);
     	NamesMap.put(t.toString(), "t");
     	
     	jelenlegi.AddSzomszed(uj);
     	uj.AddSzomszed(jelenlegi);
     	
     	
-    	//Kezdõhivás
+    	//Kezdï¿½hivï¿½s
+    	t.Mozog(uj);
+    }
+    
+    public static void RobotMozogSzomszedosAszteroidara() {
+    	// A szï¿½mozï¿½s rossz a diagramunkon (5.4.4)
     	
-    		t.Mozog(uj);
-		
+    	//Inicializï¿½lï¿½s
+    	
+    	//Nï¿½v regisztrï¿½ciï¿½ ï¿½s inicializï¿½lï¿½s
+    	Aszteroida jelenlegi =  new Aszteroida(); 
+    	//Mikor letrehozunk valamit, rogton el is nevezzuk
+    	NamesMap.put(jelenlegi.toString(), "jelenlegi");
+    	
+    	Aszteroida uj = new Aszteroida();
+    	NamesMap.put(uj.toString(), "uj");
+    	Robot t = new Robot(jelenlegi);
+    	NamesMap.put(t.toString(), "t");
+    	
+    	jelenlegi.AddSzomszed(uj);
+    	uj.AddSzomszed(jelenlegi);
     	
     	
-    	//Hogy ne legyen konflikt másik esettel
-    	NamesMap.clear();
+    	//Kezdï¿½hivï¿½s
+    	t.Mozog(uj);
     }
     
     public static void TelepesTetlen() {
@@ -168,20 +183,6 @@ public class SkeletonController {
     	r.Mozog(uj);
     	NamesMap.clear();
     }
-    //old implementation
-    /*
-    public static void TelepesBanyaszikVasat() {
-        System.out.println("TelepesBanyaszikVasat Use-Case:");
-        Aszteroida a = new Aszteroida();
-        Telepes t = new Telepes(a);
-        a.HajoErkezik(t);
-        FunctionCall("TelepesBanyaszikVasat()", a, "HajoErkezik(t)");
-        t.MezoBeallit(a);
-        FunctionCall("TelepesBanyaszikVasat()", t, "MezoBeallit(a)");
-        Vas va = new Vas();
-        a.AddMag(va);
-        FunctionCall("TelepesBanyaszikVasat()", a, "AddMag(va)");
-
 
     }
     

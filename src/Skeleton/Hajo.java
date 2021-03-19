@@ -41,12 +41,12 @@ abstract class Hajo {
     	int res = SkeletonController.AskForInput("null az aszteroida?", new ArrayList<String>() {{
 																    add("igen");
 																    add("nem");}});
-    	
+    	//Ez nem feltetlen kell
+    	//Lehet szebb lesz a kod és a kimenet ha nem raktuk oda
     	switch (res) {
         case 0:
         	System.out.println("kilepes");
         	return;
-            
         case 1:
         	System.out.println("null az aszteroida");
             break;

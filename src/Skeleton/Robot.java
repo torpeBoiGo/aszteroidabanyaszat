@@ -1,11 +1,12 @@
 package Skeleton;
 
-public class Robot extends Hajo {
+public class Robot extends Hajo{
 	public Robot(Aszteroida a) {
         SkeletonController.ObjectCreated(this);
         a.HajoErkezik(this);
-        aszteroida = a;   
+        aszteroida = a;
     }
+
 	@Override
 	void Robbanas() {
 		// TODO Auto-generated method stub
@@ -15,7 +16,6 @@ public class Robot extends Hajo {
 	@Override
 	void Lepes() {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
@@ -23,5 +23,4 @@ public class Robot extends Hajo {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
 }
