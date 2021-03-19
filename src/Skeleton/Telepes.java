@@ -25,4 +25,9 @@ public class Telepes extends Hajo{
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+	void AnyagVisszatesz(Nyersanyag n){
+	    aszteroida.addMag(n);
+
+	}
 }

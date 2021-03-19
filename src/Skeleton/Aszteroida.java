@@ -9,6 +9,8 @@ public class Aszteroida implements Mezo{
     int kulsoRetegek;
     Nyersanyag mag;
     List<Hajo> hajok = new ArrayList<Hajo>();
+    boolean napkozelben;
+
 
     public Aszteroida() {
 		SkeletonController.ObjectCreated(this);
@@ -21,7 +23,7 @@ public class Aszteroida implements Mezo{
         return new Nyersanyag();
     }
     public boolean NapkozelbenE(){
-        return true;
+        return napkozelben;
     }
     public void AddSzomszed(Mezo m){
     	szomszedok.add(m);
@@ -68,6 +70,16 @@ public class Aszteroida implements Mezo{
             return mag;
         }
 
+    }
+
+    public boolean addMag(Nyersanyag n){
+        if(mag== null && kulsoRetegek ==0){
+             if(napkozelben){
+                 n.Megfurva();
+             }
+        return true;
+    }
+        return false;
     }
 
 
