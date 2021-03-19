@@ -12,7 +12,10 @@ public class Main {
         ArrayList<MenuItem> menuItems= new ArrayList<MenuItem>();
         menuItems.add(new MenuItem("Kilepes", SkeletonController::Kilepes));
         menuItems.add(new MenuItem("Telepes mozog szomszedos aszteroidara", SkeletonController::TelepesMozogSzomszedosAszteroidara));
-        
+        menuItems.add(new MenuItem("Robot mozog szomszedos aszteroidara", SkeletonController::RobotMozogSzomszedosAszteroidara));
+        menuItems.add(new MenuItem("Telepes tetlen", SkeletonController::TelepesTetlen));
+        menuItems.add(new MenuItem("Telepes mozog teleporton keresztul", SkeletonController::TelepesMozogTeleport));
+        menuItems.add(new MenuItem("Robot mozog teleporton keresztul", SkeletonController::RobotMozogTeleport));
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
             System.out.println("Kerlek valassz egy opciot!\n");

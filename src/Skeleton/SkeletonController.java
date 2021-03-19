@@ -169,19 +169,5 @@ public class SkeletonController {
     	r.Mozog(tp);
     	NamesMap.clear();
     }
-    public static void RobotMozog() {
-    	Aszteroida jelenlegi;
-    	Aszteroida uj;
-    	jelenlegi =  new Aszteroida();
-    	NamesMap.put(jelenlegi.toString(), "jelenlegi");
-    	uj = new Aszteroida();
-    	NamesMap.put(uj.toString(), "uj");
-    	Robot r = new Robot(jelenlegi);
-    	NamesMap.put(r.toString(), "r");
-    	jelenlegi.AddSzomszed(uj);
-    	uj.AddSzomszed(jelenlegi);
-    	r.Mozog(uj);
-    	NamesMap.clear();
-    }
 
 }
