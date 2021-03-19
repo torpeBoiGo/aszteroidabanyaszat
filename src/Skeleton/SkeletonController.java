@@ -38,6 +38,25 @@ public class SkeletonController {
     	
     }
     
+    public static void TelepesTetlen() {
+    	Telepes t = new Telepes();
+    	t.Tetlen();
+    }
+    
+    public static void TelepesMozogTeleport() {
+    	Aszteroida a =  new Aszteroida();
+    	Aszteroida a2 = new Aszteroida();
+    	Telepes t = new Telepes(a);
+    	Teleportkapu tp = new Teleportkapu();
+    	Teleportkapu par = new Teleportkapu();
+    	tp.SetPar(par);
+    	tp.SetSajatAszteroida(a);
+    	par.SetPar(tp);
+    	par.SetSajatAszteroida(a2);
+    	a.AddSzomszed(tp);
+    	a2.AddSzomszed(par);
+    	t.Mozog(tp);
+    }
     //old implementation
     /*
     public static void TelepesBanyaszikVasat() {

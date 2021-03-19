@@ -13,6 +13,10 @@ public class Telepes extends Hajo {
         a.HajoErkezik(this);
         aszteroida = a;
     }
+	public Telepes() {
+        SkeletonController.ObjectCreated(this);
+        aszteroida = null;
+    }
     
     public void AnyagVisszatesz(Nyersanyag n) {
     	

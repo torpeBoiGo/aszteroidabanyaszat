@@ -24,6 +24,12 @@ public class Main {
                 case 1:
                     SkeletonController.TelepesMozog();
                     break;
+                case 2:
+                	SkeletonController.TelepesTetlen();
+                	break;
+                case 3:
+                	SkeletonController.TelepesMozogTeleport();
+                	break;
             }
         }
     }

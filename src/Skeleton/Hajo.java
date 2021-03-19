@@ -24,7 +24,11 @@ abstract class Hajo {
     public void Meghal(){
 
     }
-    public void Tetlen(){}
+    public void Tetlen(){
+    	SkeletonController.ObjectCreated(this);
+    	SkeletonController.FunctionCall("Telepes", "Tetlen");
+    	SkeletonController.FunctionReturn();
+    }
     
     //Ezt elbaltáztuk... Aszteroidabeallit kellett volna hogy legyen
     public void MezoBeallit(Mezo m){
