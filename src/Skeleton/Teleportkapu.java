@@ -12,7 +12,7 @@ public class Teleportkapu implements Mezo{
 		this.sajatAszteroida = a;
 	}
 	public void HajoTeleportErkezik(Hajo h) {
-		SkeletonController.FunctionCall("Teleportkapu", "HajoTeleportErkezik");
+		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		if (sajatAszteroida != null) {
 			sajatAszteroida.HajoErkezik(h);
 			
@@ -37,7 +37,7 @@ public class Teleportkapu implements Mezo{
 	}
 	@Override
 	public void HajoErkezik(Hajo h) {
-		SkeletonController.FunctionCall("Teleportkapu", "HajoErkezik");
+		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		if (par != null) {
 			par.HajoTeleportErkezik(h);
 		}

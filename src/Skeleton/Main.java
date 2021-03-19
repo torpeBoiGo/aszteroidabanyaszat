@@ -12,6 +12,10 @@ public class Main {
             System.out.println("Kerlek valassz egy opciot!\n");
             System.out.println("0. Kilepes");
             System.out.println("1. Telepes mozog szomszedos aszteroidara");
+            System.out.println("2. Robot mozog szomszedos aszteroidara");
+            System.out.println("3. Telepes tetlen");
+            System.out.println("4. Telepes mozog teleportkapun keresztul");
+            System.out.println("5. Robot mozog teleportkapun keresztul");
             System.out.print("Valasztas: ");
             try {
                 String line = reader.readLine();
@@ -30,10 +34,16 @@ public class Main {
                     SkeletonController.TelepesMozog();
                     break;
                 case 2:
+                    SkeletonController.RobotMozog();
+                    break;
+                case 3:
                 	SkeletonController.TelepesTetlen();
                 	break;
-                case 3:
+                case 4:
                 	SkeletonController.TelepesMozogTeleport();
+                	break;
+                case 5:
+                	SkeletonController.RobotMozogTeleport();
                 	break;
             	}
 			} catch (Exception e) {

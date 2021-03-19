@@ -109,15 +109,22 @@ public class SkeletonController {
     
     public static void TelepesTetlen() {
     	Telepes t = new Telepes();
+    	NamesMap.put(t.toString(), "t");
     	t.Tetlen();
+    	NamesMap.clear();
     }
     
     public static void TelepesMozogTeleport() {
     	Aszteroida a =  new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
     	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
     	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
     	Teleportkapu tp = new Teleportkapu();
+    	NamesMap.put(tp.toString(), "tp");
     	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
     	tp.SetPar(par);
     	tp.SetSajatAszteroida(a);
     	par.SetPar(tp);
@@ -125,6 +132,41 @@ public class SkeletonController {
     	a.AddSzomszed(tp);
     	a2.AddSzomszed(par);
     	t.Mozog(tp);
+    	NamesMap.clear();
+    }
+    public static void RobotMozogTeleport() {
+    	Aszteroida a =  new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
+    	Robot r = new Robot(a);
+    	NamesMap.put(r.toString(), "r");
+    	Teleportkapu tp = new Teleportkapu();
+    	NamesMap.put(tp.toString(), "tp");
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	tp.SetPar(par);
+    	tp.SetSajatAszteroida(a);
+    	par.SetPar(tp);
+    	par.SetSajatAszteroida(a2);
+    	a.AddSzomszed(tp);
+    	a2.AddSzomszed(par);
+    	r.Mozog(tp);
+    	NamesMap.clear();
+    }
+    public static void RobotMozog() {
+    	Aszteroida jelenlegi;
+    	Aszteroida uj;
+    	jelenlegi =  new Aszteroida();
+    	NamesMap.put(jelenlegi.toString(), "jelenlegi");
+    	uj = new Aszteroida();
+    	NamesMap.put(uj.toString(), "uj");
+    	Robot r = new Robot(jelenlegi);
+    	NamesMap.put(r.toString(), "r");
+    	jelenlegi.AddSzomszed(uj);
+    	uj.AddSzomszed(jelenlegi);
+    	r.Mozog(uj);
+    	NamesMap.clear();
     }
     //old implementation
     /*

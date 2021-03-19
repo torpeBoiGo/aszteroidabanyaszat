@@ -27,8 +27,7 @@ abstract class Hajo {
 
     }
     public void Tetlen(){
-    	SkeletonController.ObjectCreated(this);
-    	SkeletonController.FunctionCall("Telepes", "Tetlen");
+    	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
     	SkeletonController.FunctionReturn();
     }
     
