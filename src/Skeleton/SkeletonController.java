@@ -184,7 +184,4 @@ public class SkeletonController {
     	NamesMap.clear();
     }
 
-    }
-    
-    */
 }
