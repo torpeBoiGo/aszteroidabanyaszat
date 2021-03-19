@@ -77,11 +77,11 @@ public class SkeletonController {
 
     
     public static void TelepesMozogSzomszedosAszteroidara() {
-    	// A számozás rossz a diagramunkon (5.4.4)
+    	// A szï¿½mozï¿½s rossz a diagramunkon (5.4.4)
     	
-    	//Inicializálás
+    	//Inicializï¿½lï¿½s
     	
-    	//Név regisztráció és inicializálás
+    	//Nï¿½v regisztrï¿½ciï¿½ ï¿½s inicializï¿½lï¿½s
     	Aszteroida jelenlegi =  new Aszteroida(); 
     	//Mikor letrehozunk valamit, rogton el is nevezzuk
     	NamesMap.put(jelenlegi.toString(), "jelenlegi");
@@ -95,16 +95,16 @@ public class SkeletonController {
     	uj.AddSzomszed(jelenlegi);
     	
     	
-    	//Kezdõhivás
+    	//Kezdï¿½hivï¿½s
     	t.Mozog(uj);
     }
     
     public static void RobotMozogSzomszedosAszteroidara() {
-    	// A számozás rossz a diagramunkon (5.4.4)
+    	// A szï¿½mozï¿½s rossz a diagramunkon (5.4.4)
     	
-    	//Inicializálás
+    	//Inicializï¿½lï¿½s
     	
-    	//Név regisztráció és inicializálás
+    	//Nï¿½v regisztrï¿½ciï¿½ ï¿½s inicializï¿½lï¿½s
     	Aszteroida jelenlegi =  new Aszteroida(); 
     	//Mikor letrehozunk valamit, rogton el is nevezzuk
     	NamesMap.put(jelenlegi.toString(), "jelenlegi");
@@ -118,7 +118,56 @@ public class SkeletonController {
     	uj.AddSzomszed(jelenlegi);
     	
     	
-    	//Kezdõhivás
+    	//Kezdï¿½hivï¿½s
     	t.Mozog(uj);
     }
+    
+    public static void TelepesTetlen() {
+    	Telepes t = new Telepes();
+    	NamesMap.put(t.toString(), "t");
+    	t.Tetlen();
+    	NamesMap.clear();
+    }
+    
+    public static void TelepesMozogTeleport() {
+    	Aszteroida a =  new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Teleportkapu tp = new Teleportkapu();
+    	NamesMap.put(tp.toString(), "tp");
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	tp.SetPar(par);
+    	tp.SetSajatAszteroida(a);
+    	par.SetPar(tp);
+    	par.SetSajatAszteroida(a2);
+    	a.AddSzomszed(tp);
+    	a2.AddSzomszed(par);
+    	t.Mozog(tp);
+    	NamesMap.clear();
+    }
+    public static void RobotMozogTeleport() {
+    	Aszteroida a =  new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
+    	Robot r = new Robot(a);
+    	NamesMap.put(r.toString(), "r");
+    	Teleportkapu tp = new Teleportkapu();
+    	NamesMap.put(tp.toString(), "tp");
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	tp.SetPar(par);
+    	tp.SetSajatAszteroida(a);
+    	par.SetPar(tp);
+    	par.SetSajatAszteroida(a2);
+    	a.AddSzomszed(tp);
+    	a2.AddSzomszed(par);
+    	r.Mozog(tp);
+    	NamesMap.clear();
+    }
+
 }
