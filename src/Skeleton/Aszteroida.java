@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Aszteroida implements Mezo{
+	public String name;
     List<Mezo> szomszedok = new ArrayList<Mezo>();
     int kulsoRetegek;
     Nyersanyag mag;
@@ -33,7 +34,7 @@ public class Aszteroida implements Mezo{
 
     @Override
     public void HajoErkezik(Hajo h) {
-    	SkeletonController.FunctionCall("Aszteroida", "HajoErkezik");
+    	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
     	
     	hajok.add(h);
     	h.MezoBeallit(this);
@@ -43,7 +44,7 @@ public class Aszteroida implements Mezo{
 
     @Override
     public void HajoElhagy(Hajo h) {
-    	SkeletonController.FunctionCall("Aszteroida", "HajoElhagy()");
+    	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
     	hajok.remove(h);
     	
     }
