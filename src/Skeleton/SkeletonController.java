@@ -121,4 +121,234 @@ public class SkeletonController {
     	//Kezdõhivás
     	t.Mozog(uj);
     }
+    
+    /**Telepes fúr vasat*/
+    public static void TelepesFurVasat() {
+    	depth=0;
+    	//Inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Vas vas = new Vas();
+    	NamesMap.put(vas.toString(), "vas");
+    	
+    	a.AddMag(vas);
+    	
+    	//Kezdo hivas
+    	t.Fur();
+    }
+    
+    /**Telepes fúr szenet*/
+    public static void TelepesFurSzenet() {
+    	depth=0;
+    	//Inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Szen sz = new Szen();
+    	NamesMap.put(sz.toString(), "sz");
+    	
+    	a.AddMag(sz);
+    	
+    	//Kezdo hivas
+    	t.Fur();
+    }
+    
+    /**Telepes fúr vízjeget*/
+    public static void TelepesFurVizjeget() {
+    	depth=0;
+    	//Inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Vizjeg v= new Vizjeg();
+    	NamesMap.put(v.toString(), "v");
+    	
+    	a.AddMag(v);
+    	
+    	//Kezdo hivas
+    	t.Fur();
+    }
+    
+    /**Telepes fúr uránt*/
+    public static void TelepesFurUrant() {
+    	depth=0;
+    	//Inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Robot r = new Robot(a);
+    	NamesMap.put(r.toString(), "r");
+    	Uran u = new Uran();
+    	NamesMap.put(u.toString(), "u");
+    	a.AddMag(u);
+    	
+    	Aszteroida szomsz1 = new Aszteroida();
+    	NamesMap.put(szomsz1.toString(), "szomsz1");
+    	a.AddSzomszed(szomsz1);
+    	szomsz1.AddSzomszed(a);
+    	
+    	Teleportkapu szomsz2 = new Teleportkapu();
+    	NamesMap.put(szomsz2.toString(), "szomsz2");
+    	szomsz2.SetSajatAszteroida(a);
+    	a.AddSzomszed(szomsz2);
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	szomsz2.SetPar(par);
+    	par.SetPar(szomsz2);
+    	
+    	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
+    	par.SetSajatAszteroida(a2);
+    	a2.AddSzomszed(par);
+    	
+    	//Kezdo hivas
+    	t.Fur();
+    }
+    
+    /**Robot fúr vasat*/
+    public static void RobotFurVasat() {
+    	depth=0;
+    	//Inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Robot r = new Robot(a);
+    	NamesMap.put(r.toString(), "r");
+    	Vas vas = new Vas();
+    	NamesMap.put(vas.toString(), "vas");
+    	
+    	a.AddMag(vas);
+    	
+    	//Kezdo hivas
+    	r.Fur();
+    }
+    
+    /**Robot fúr szenet*/
+    public static void RobotFurSzenet() {
+    	depth=0;
+    	//Inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Robot r = new Robot(a);
+    	NamesMap.put(r.toString(), "r");
+    	Szen sz = new Szen();
+    	NamesMap.put(sz.toString(), "sz");
+    	
+    	a.AddMag(sz);
+    	
+    	//Kezdo hivas
+    	r.Fur();
+    }
+    
+    /**Robot fúr vízjeget*/
+    public static void RobotFurVizjeget() {
+    	depth=0;
+    	//Inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Robot r = new Robot(a);
+    	NamesMap.put(r.toString(), "r");
+    	Vizjeg v= new Vizjeg();
+    	NamesMap.put(v.toString(), "v");
+    	
+    	a.AddMag(v);
+    	
+    	//Kezdo hivas
+    	r.Fur();
+    }
+    
+    /**Robot fúr uránt*/
+    public static void RobotFurUrant() {
+    	depth=0;
+    	//Inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Robot r = new Robot(a);
+    	NamesMap.put(r.toString(), "r");
+    	Uran u = new Uran();
+    	NamesMap.put(u.toString(), "u");
+    	a.AddMag(u);
+    	
+    	Aszteroida szomsz1 = new Aszteroida();
+    	NamesMap.put(szomsz1.toString(), "szomsz1");
+    	a.AddSzomszed(szomsz1);
+    	szomsz1.AddSzomszed(a);
+    	
+    	Teleportkapu szomsz2 = new Teleportkapu();
+    	NamesMap.put(szomsz2.toString(), "szomsz2");
+    	szomsz2.SetSajatAszteroida(a);
+    	a.AddSzomszed(szomsz2);
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	szomsz2.SetPar(par);
+    	par.SetPar(szomsz2);
+    	
+    	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
+    	par.SetSajatAszteroida(a2);
+    	a2.AddSzomszed(par);
+    	
+    	//Kezdo hivas
+    	r.Fur();
+    }
+    
+    /**telepes meghal, egy teleportkapu par van nala*/
+    public static void TelepesMeghalKapupar() {
+    	depth=0;
+    	//inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Vas v = new Vas();
+    	NamesMap.put(v.toString(), "v");
+    	t.AddNyersanyagRakter(v);
+    	
+    	Teleportkapu tp = new Teleportkapu();
+    	NamesMap.put(tp.toString(), "tp");
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	tp.SetPar(par);
+    	par.SetPar(tp);
+    	t.AddTeleportkapuRakter(tp);
+    	t.AddTeleportkapuRakter(par);
+    	
+    	//Kezdo hivas
+    	t.Meghal();   	
+    }
+    
+    /**telepes meghal, csak a kapupár fele van nála*/
+    public static void TelepesMeghalKapuKulon() {
+    	depth=0;
+    	//inicializalas
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Vas v = new Vas();
+    	NamesMap.put(v.toString(), "v");
+    	t.AddNyersanyagRakter(v);
+    	
+    	Teleportkapu tp = new Teleportkapu();
+    	NamesMap.put(tp.toString(), "tp");
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	tp.SetPar(par);
+    	par.SetPar(tp);
+    	t.AddTeleportkapuRakter(tp);
+    	
+    	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
+    	par.SetSajatAszteroida(a2);
+    	a2.AddSzomszed(par);
+    	
+    	//Kezdo hivas
+    	t.Meghal();   	
+    }
 }
