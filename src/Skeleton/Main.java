@@ -20,7 +20,7 @@ public class Main {
         menuItems.add(new MenuItem("Robot fur szenet",SkeletonController::RobotFurSzenet));
         menuItems.add(new MenuItem("Robot fur vizjeget",SkeletonController::RobotFurVizjeget));
         menuItems.add(new MenuItem("Robot fur urant",SkeletonController::RobotFurUrant));
-        menuItems.add(new MenuItem("Telepes meghal, csak a kapup�r fele van n�la",SkeletonController::TelepesMeghalKapuKulon));
+        menuItems.add(new MenuItem("Telepes meghal, csak a kapup�r fele van nala",SkeletonController::TelepesMeghalKapuKulon));
         menuItems.add(new MenuItem("Telepes meghal, egy teleportkapu par van nala",SkeletonController::TelepesMeghalKapupar));
         menuItems.add(new MenuItem("Robot mozog szomszedos aszteroidara", SkeletonController::RobotMozogSzomszedosAszteroidara));
         menuItems.add(new MenuItem("Telepes tetlen", SkeletonController::TelepesTetlen));
