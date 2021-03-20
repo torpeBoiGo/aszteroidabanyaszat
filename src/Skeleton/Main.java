@@ -26,6 +26,8 @@ public class Main {
         menuItems.add(new MenuItem("Telepes tetlen", SkeletonController::TelepesTetlen));
         menuItems.add(new MenuItem("Telepes mozog teleporton keresztul", SkeletonController::TelepesMozogTeleport));
         menuItems.add(new MenuItem("Robot mozog teleporton keresztul", SkeletonController::RobotMozogTeleport));
+        menuItems.add(new MenuItem("Telepes teleportkaput epit", SkeletonController::TelepesTeleportkaputEpit));
+        menuItems.add(new MenuItem("Telepes robotot epit", SkeletonController::TelepesRobototEpit));
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
             System.out.println("Kerlek valassz egy opciot!\n");

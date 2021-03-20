@@ -22,10 +22,10 @@ public abstract class Nyersanyag implements Szallithato{
 		 SkeletonController.FunctionReturn();
 	}
 	
-	/**A  függvény  megvizsgálja, hogy a paraméterként kapott nyersanyag
+	/**A  fï¿½ggvï¿½ny  megvizsgï¿½lja, hogy a paramï¿½terkï¿½nt kapott nyersanyag
 	 * azonos vagy kompatibilis-e a nyersanyaggal
-	 * @param ny Az összehasonlítandó nyersanyag
-	 * @return igaz, ha a két nyersanyag azonos típusú, egyébként hamis
+	 * @param ny Az ï¿½sszehasonlï¿½tandï¿½ nyersanyag
+	 * @return igaz, ha a kï¿½t nyersanyag azonos tï¿½pusï¿½, egyï¿½bkï¿½nt hamis
 	 */
 	public boolean KompatibilisE(Nyersanyag ny) {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
