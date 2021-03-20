@@ -3,32 +3,58 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Telepes extends Hajo{
-	ArrayList<Nyersanyag> nyersanyagRakter;
-	ArrayList<Teleportkapu> teleportkapuRakter;
+public class Telepes extends Hajo {
+    List<Szallithato> nyersanyagRakter = new ArrayList<Szallithato>();
+    List<Szallithato> teleportkapuRakter = new ArrayList<Szallithato>();
 	
-    public Telepes(Aszteroida a) {
+	
+	public Telepes(Aszteroida a) {
         SkeletonController.ObjectCreated(this);
         a.HajoErkezik(this);
         aszteroida = a;
         
     }
+	public Telepes() {
+        SkeletonController.ObjectCreated(this);
+        aszteroida = null;
+    }
+    
+    public void AnyagVisszatesz(Nyersanyag n) {
+    	
+    }
+    
+    public void Banyasz() {
+    	
+    }
+    
+    public void RobotEpit(Epitheto e) {
+    	
+    }
     
     void AddNyersanyagRakter(Nyersanyag n) {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-		int rakter = SkeletonController.AskForInput("Van hely a raktérben?", new ArrayList<String>() {{
+		int rakter = SkeletonController.AskForInput("Van hely a raktï¿½rben?", new ArrayList<String>() {{
 			add("igen");
 			add("nem");}});
 
+    public void TeleportEpit(Epitheto e) {
+    	
+    }
+    
+    public void KapuLerak(Teleportkapu k) {
+    	
+    	
+    }
+    
 		switch (rakter) {
 		case 0:
 			System.out.println("kilepes");
 			break;
 		case 1:
-			System.out.println("van hely a raktérben");
+			System.out.println("van hely a raktï¿½rben");
 			break;
 		case 2:
-			System.out.println("nincs hely a raktérben");
+			System.out.println("nincs hely a raktï¿½rben");
 			break;
 		default:
 			System.out.println("Rossz bemenet");
@@ -41,7 +67,7 @@ public class Telepes extends Hajo{
     
     void AddTeleportkapuRakter(Teleportkapu t) {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-		int rakter = SkeletonController.AskForInput("Van hely a raktérben?", new ArrayList<String>() {{
+		int rakter = SkeletonController.AskForInput("Van hely a raktï¿½rben?", new ArrayList<String>() {{
 			add("igen");
 			add("nem");}});
 
@@ -50,10 +76,10 @@ public class Telepes extends Hajo{
 			System.out.println("kilepes");
 			break;
 		case 1:
-			System.out.println("van hely a raktérben");
+			System.out.println("van hely a raktï¿½rben");
 			break;
 		case 2:
-			System.out.println("nincs hely a raktérben");
+			System.out.println("nincs hely a raktï¿½rben");
 			break;
 		default:
 			System.out.println("Rossz bemenet");
@@ -85,7 +111,7 @@ public class Telepes extends Hajo{
 	void Lepes() {
 		// TODO Auto-generated method stub
 	}
-
+  
 	@Override
 	boolean NyerEllenoriz(Epitheto e) {
 		// TODO Auto-generated method stub

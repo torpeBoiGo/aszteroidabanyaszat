@@ -13,13 +13,13 @@ public class Teleportkapu implements Mezo, Szallithato{
 	public void SetPar(Teleportkapu par) {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		this.par = par;
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 	
 	public void SetSajatAszteroida(Aszteroida a) {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		this.sajatAszteroida = a;
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 	
 	public void HajoTeleportErkezik(Hajo h) {
@@ -29,13 +29,13 @@ public class Teleportkapu implements Mezo, Szallithato{
 			
 		}
 		
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 	
 	public void Elront() {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		mukodikE = false;
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 	
 	@Override
@@ -52,7 +52,7 @@ public class Teleportkapu implements Mezo, Szallithato{
 			par.SetPar(null);
 			par.RemoveSzomszed(this);
 		}
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 		
 	}
 	@Override
@@ -62,7 +62,7 @@ public class Teleportkapu implements Mezo, Szallithato{
 			par.HajoTeleportErkezik(h);
 		}
 		
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 	
 	@Override
@@ -78,6 +78,6 @@ public class Teleportkapu implements Mezo, Szallithato{
 			par.SetPar(null);
 			par.RemoveSzomszed(this);
 		}
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 }
