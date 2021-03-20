@@ -5,7 +5,7 @@ public abstract class Nyersanyag implements Szallithato{
 		
 	} 
 	
-	public void Megfurva() {
+	public void Megfurva(Aszteroida a) {
 		
 	}
 	
