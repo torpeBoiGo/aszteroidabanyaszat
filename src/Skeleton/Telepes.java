@@ -103,7 +103,9 @@ public class Telepes extends Hajo {
 	    	break;
 	    }
 	    if (res1 == 1 && res2 == 1) { 		// epitheto es van hely a rakterben
-	    	e.Letrejon(aszteroida);
+	    	List<Szallithato> ujak = e.Letrejon(aszteroida);
+	    	teleportkapuRakter.add(ujak.get(0));
+	    	teleportkapuRakter.add(ujak.get(1));
 	    }
     	SkeletonController.FunctionReturn();
     }
