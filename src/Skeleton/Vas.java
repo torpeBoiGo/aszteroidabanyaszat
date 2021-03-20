@@ -1,4 +1,5 @@
 package Skeleton;
 
-public class Vas extends Nyersanyag{
+/**A jatekban szereplo vas nyersanyag*/
+public class Vas extends Nyersanyag{	
 }

@@ -14,6 +14,7 @@ public class Telepes extends Hajo {
         aszteroida = a;
         
     }
+	
 	public Telepes() {
         SkeletonController.ObjectCreated(this);
         aszteroida = null;
@@ -24,10 +25,6 @@ public class Telepes extends Hajo {
     }
     
     public void Banyasz() {
-    	
-    }
-    
-    public void AddRakter(Szallithato sz) {
     	
     }
     
@@ -60,7 +57,7 @@ public class Telepes extends Hajo {
 	    }
     	SkeletonController.FunctionReturn();
     }
-
+    
     public void TeleportEpit(Epitheto e) {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
     	for (int i = 0; i < nyersanyagRakter.size(); i++) {
@@ -114,11 +111,25 @@ public class Telepes extends Hajo {
     	
     	
     }
+
+    @Override
+	public void Meghal() {
+    	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
+    	aszteroida.HajoElhagy(this);
+    	//palya.removeAIVezerli(this);
+    	List<Szallithato> temp_nyersanyagRakter = new ArrayList<Szallithato>(nyersanyagRakter);
+    	List<Szallithato> temp_teleportkapuRakter = new ArrayList<Szallithato>(teleportkapuRakter);
+    
+		for (Szallithato szallithato : temp_nyersanyagRakter) szallithato.Megsemmisul();
+		for (Szallithato szallithato : temp_teleportkapuRakter) szallithato.Megsemmisul();
+    	SkeletonController.FunctionReturn();
+	}
     
 	@Override
-	void Robbanas() {
-		// TODO Auto-generated method stub
-		
+	public void Robbanas() {
+		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
+    	Meghal();
+		SkeletonController.FunctionReturn();
 	}
 
 	@Override
@@ -131,4 +142,6 @@ public class Telepes extends Hajo {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+	
 }

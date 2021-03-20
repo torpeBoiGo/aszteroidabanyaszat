@@ -7,7 +7,9 @@ abstract class Hajo {
 	protected Aszteroida aszteroida;
 	public String name;
     public void Fur(){
+    	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		aszteroida.Fur();
+		SkeletonController.FunctionReturn();
     }
     
     public void Mozog(Mezo uj_mezo){
@@ -31,18 +33,18 @@ abstract class Hajo {
     	SkeletonController.FunctionReturn();
     }
     
-    //Ezt elbaltáztuk... Aszteroidabeallit kellett volna hogy legyen
+    //Ezt elbaltï¿½ztuk... Aszteroidabeallit kellett volna hogy legyen
     public void MezoBeallit(Mezo m){
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
     	
     	
     	
-    	//Ez ide nem kell, csak mint bemutató kódot tettem bele
+    	//Ez ide nem kell, csak mint bemutatï¿½ kï¿½dot tettem bele
     	int res = SkeletonController.AskForInput("null az aszteroida?", new ArrayList<String>() {{
 																    add("igen");
 																    add("nem");}});
     	//Ez nem feltetlen kell
-    	//Lehet szebb lesz a kod és a kimenet ha nem raktuk oda
+    	//Lehet szebb lesz a kod ï¿½s a kimenet ha nem raktuk oda
     	switch (res) {
         case 0:
         	System.out.println("kilepes");
