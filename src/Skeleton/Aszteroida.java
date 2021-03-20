@@ -19,6 +19,11 @@ public class Aszteroida implements Mezo{
     public void Fur() {
 
     }
+
+    public Nyersanyag Kinyer(){
+        return mag;
+    }
+
     public boolean NapkozelbenE(){
         return napkozelben;
     }
@@ -55,9 +60,7 @@ public class Aszteroida implements Mezo{
     public void Napvihar(){
 
     }
-    public boolean AddMag(Nyersanyag n){
-        return false;
-    }
+  
 
     public Nyersanyag Kinyer(){
         if(kulsoRetegek>0 || mag == null){

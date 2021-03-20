@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" modified="2021-03-20T11:20:48.100Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="Jkj2xs58Q8Ewp6e-5snm" version="14.4.9" type="github">
+  <diagram id="UBtueItej0Stc1DGRFdP" name="Page-1">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-1" value="Telepes robotot épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=40;" vertex="1" parent="1">
+          <mxGeometry x="10" width="550" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-2" value="t: Telepes" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="50" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-3" value="e: RobotEpito" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="340" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-4" value="SkeletonController" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-5" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="9OBwQuoiIjoGCdgPyO5L-4" target="9OBwQuoiIjoGCdgPyO5L-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="380" y="180" as="sourcePoint" />
+            <mxPoint x="460" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-6" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="9OBwQuoiIjoGCdgPyO5L-4" target="9OBwQuoiIjoGCdgPyO5L-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="209.23076923076928" y="270" as="sourcePoint" />
+            <mxPoint x="350.7692307692307" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-7" value="2: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="-0.7931" y="18" width="80" relative="1" as="geometry">
+            <mxPoint x="200" y="180" as="sourcePoint" />
+            <mxPoint x="270" y="150" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-8" value="a: Aszteroida" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="320" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-9" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="9OBwQuoiIjoGCdgPyO5L-4" target="9OBwQuoiIjoGCdgPyO5L-8">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="230" as="sourcePoint" />
+            <mxPoint x="300" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-10" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Aszteroida()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.2877" y="10" width="80" relative="1" as="geometry">
+            <mxPoint x="210" y="260" as="sourcePoint" />
+            <mxPoint x="290" y="280" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-11" value="5: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; RobotEpito()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.5882" y="19" width="80" relative="1" as="geometry">
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="170" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-12" value="3: HajoErkezik(t)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.6154" y="33" width="80" relative="1" as="geometry">
+            <mxPoint x="480" y="120" as="sourcePoint" />
+            <mxPoint x="480" y="180" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-13" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="9OBwQuoiIjoGCdgPyO5L-8" target="9OBwQuoiIjoGCdgPyO5L-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="310" as="sourcePoint" />
+            <mxPoint x="450" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-14" value="4: MezoBeallit(a)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="-0.1429" y="30" width="80" relative="1" as="geometry">
+            <mxPoint x="450" y="280" as="sourcePoint" />
+            <mxPoint x="450" y="210" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-15" value="v: Vas" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-16" value="" style="endArrow=none;html=1;" edge="1" parent="1" target="9OBwQuoiIjoGCdgPyO5L-15" source="9OBwQuoiIjoGCdgPyO5L-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-180" y="63.382352941176464" as="sourcePoint" />
+            <mxPoint x="110" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-17" value="6: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vas()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry y="20" width="80" relative="1" as="geometry">
+            <mxPoint x="90" y="180" as="sourcePoint" />
+            <mxPoint x="90" y="120" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OBwQuoiIjoGCdgPyO5L-18" value="7: AddRakter(v)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="-0.3103" y="11" width="80" relative="1" as="geometry">
+            <mxPoint x="280" y="140" as="sourcePoint" />
+            <mxPoint x="350" y="110" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

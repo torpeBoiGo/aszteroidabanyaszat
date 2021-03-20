@@ -272,4 +272,80 @@ public class SkeletonController {
 	}
 
 
+
+    
+    public static void TelepesTetlen() {
+    	Telepes t = new Telepes();
+    	NamesMap.put(t.toString(), "t");
+    	t.Tetlen();
+    	NamesMap.clear();
+    }
+    
+    public static void TelepesMozogTeleport() {
+    	Aszteroida a =  new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Teleportkapu tp = new Teleportkapu();
+    	NamesMap.put(tp.toString(), "tp");
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	tp.SetPar(par);
+    	tp.SetSajatAszteroida(a);
+    	par.SetPar(tp);
+    	par.SetSajatAszteroida(a2);
+    	a.AddSzomszed(tp);
+    	a2.AddSzomszed(par);
+    	t.Mozog(tp);
+    	NamesMap.clear();
+    }
+    public static void RobotMozogTeleport() {
+    	Aszteroida a =  new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Aszteroida a2 = new Aszteroida();
+    	NamesMap.put(a2.toString(), "a2");
+    	Robot r = new Robot(a);
+    	NamesMap.put(r.toString(), "r");
+    	Teleportkapu tp = new Teleportkapu();
+    	NamesMap.put(tp.toString(), "tp");
+    	Teleportkapu par = new Teleportkapu();
+    	NamesMap.put(par.toString(), "par");
+    	tp.SetPar(par);
+    	tp.SetSajatAszteroida(a);
+    	par.SetPar(tp);
+    	par.SetSajatAszteroida(a2);
+    	a.AddSzomszed(tp);
+    	a2.AddSzomszed(par);
+    	r.Mozog(tp);
+    	NamesMap.clear();
+    }
+    public static void TelepesTeleportkaputEpit() {
+    	Telepes t = new Telepes();
+    	NamesMap.put(t.toString(), "t");
+    	TeleportEpito e = new TeleportEpito();
+    	NamesMap.put(e.toString(), "e");
+    	Vas v = new Vas();
+    	NamesMap.put(v.toString(), "v");
+    	t.AddRakter(v);
+    	
+    	t.TeleportEpit(e);
+    	NamesMap.clear();
+    }
+    public static void TelepesRobototEpit() {
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	RobotEpito e = new RobotEpito();
+    	NamesMap.put(e.toString(), "e");
+    	Vas v = new Vas();
+    	NamesMap.put(v.toString(), "v");
+    	t.AddRakter(v);
+    	
+    	t.RobotEpit(e);
+    	NamesMap.clear();
+    }
+
 }
