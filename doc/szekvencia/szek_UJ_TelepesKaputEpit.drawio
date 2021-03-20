@@ -1,0 +1,169 @@
+<mxfile host="app.diagrams.net" modified="2021-03-20T10:49:37.684Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="7egEJ4Hf250kXvc8vqHB" version="14.4.9" type="github">
+  <diagram id="f_B4j9cx-HnKJeUxqofJ" name="Page-1">
+    <mxGraphModel dx="2071" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-1" value="Telepes teleportkaput épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=130;height=40;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="10" width="1050" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="330" width="880" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-3" value="3 : EpithetoE()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-5" target="KqPVDPErh_Tl_M2lxwnU-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="270" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-4" value="t: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="30" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="KqPVDPErh_Tl_M2lxwnU-4">
+          <mxGeometry x="45" y="100" width="10" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-6" value="e: TeleportEpito" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="KqPVDPErh_Tl_M2lxwnU-6">
+          <mxGeometry x="45" y="190" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-8" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="KqPVDPErh_Tl_M2lxwnU-6">
+          <mxGeometry x="45" y="120" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="KqPVDPErh_Tl_M2lxwnU-6">
+          <mxGeometry x="45" y="380" width="10" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-26" value="4 : Reset()" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.9;exitY=0.207;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.06;entryY=0.927;entryDx=0;entryDy=0;entryPerimeter=0;rounded=0;" edge="1" parent="KqPVDPErh_Tl_M2lxwnU-6" source="KqPVDPErh_Tl_M2lxwnU-7" target="KqPVDPErh_Tl_M2lxwnU-7">
+          <mxGeometry x="-0.2818" y="10" relative="1" as="geometry">
+            <mxPoint x="55" y="269.9999999999999" as="sourcePoint" />
+            <mxPoint x="55" y="282.3499999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="196" />
+              <mxPoint x="80" y="218" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-10" value="kell" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-8" target="KqPVDPErh_Tl_M2lxwnU-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="246" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-11" value="2 : KellE(v)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-5" target="KqPVDPErh_Tl_M2lxwnU-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="170" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-12" value="[epitheto &amp;amp;&amp;amp; van hely a raktarban]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="390" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-13" value="epitheto" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-7" target="KqPVDPErh_Tl_M2lxwnU-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="289" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-14" value="1 : TeleportEpit(e: TeleportEpito)" style="verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;shadow=0;strokeWidth=1;startFill=0;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-29">
+          <mxGeometry x="-0.0297" relative="1" as="geometry">
+            <mxPoint x="70" y="130" as="sourcePoint" />
+            <mxPoint x="175" y="130" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-15" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-5" target="KqPVDPErh_Tl_M2lxwnU-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="176" y="769" as="sourcePoint" />
+            <mxPoint x="30" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="650" />
+              <mxPoint x="100" y="650" />
+              <mxPoint x="70" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-16" value="5 : Letrejon(a: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-5" target="KqPVDPErh_Tl_M2lxwnU-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="610" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-17" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-9" target="KqPVDPErh_Tl_M2lxwnU-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="686" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-18" value="(k1,k2): TeleportKapu[2]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KqPVDPErh_Tl_M2lxwnU-17">
+          <mxGeometry x="-0.2" y="-3" relative="1" as="geometry">
+            <mxPoint x="-11" y="-7.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-19" value="k1:Teleportkapu" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="30" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-20" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="KqPVDPErh_Tl_M2lxwnU-19">
+          <mxGeometry x="40" y="440" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-21" value="k2:Teleportkapu" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="30" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="KqPVDPErh_Tl_M2lxwnU-21">
+          <mxGeometry x="45" y="490" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-23" value="" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.079" y="10" width="80" relative="1" as="geometry">
+            <mxPoint x="400" y="470" as="sourcePoint" />
+            <mxPoint x="640" y="470" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-24" value="8. SetPar(k2)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.1;exitY=0.611;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-9" target="KqPVDPErh_Tl_M2lxwnU-21">
+          <mxGeometry x="-0.0426" y="56" width="80" relative="1" as="geometry">
+            <mxPoint x="410" y="450" as="sourcePoint" />
+            <mxPoint x="669.5" y="450" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-25" value="9. SetPar(k1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="537" y="500" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-27" value="" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.2;exitY=0.037;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-9" target="KqPVDPErh_Tl_M2lxwnU-19">
+          <mxGeometry x="0.079" y="10" width="80" relative="1" as="geometry">
+            <mxPoint x="410" y="421" as="sourcePoint" />
+            <mxPoint x="651.02" y="412.01" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-28" value="7. &amp;lt;&amp;lt;create&amp;gt;&amp;gt;&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;Teleportkapu()&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1;exitY=0.195;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-9" target="KqPVDPErh_Tl_M2lxwnU-21">
+          <mxGeometry x="0.1102" y="5" width="80" relative="1" as="geometry">
+            <mxPoint x="411" y="435" as="sourcePoint" />
+            <mxPoint x="776.5" y="439" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-29" value="Player" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="60" width="20" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-30" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.1;exitY=0.933;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-20" target="KqPVDPErh_Tl_M2lxwnU-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="795" y="450" as="sourcePoint" />
+            <mxPoint x="410" y="498" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-31" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;entryX=0.53;entryY=0.825;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.3;exitY=0.967;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KqPVDPErh_Tl_M2lxwnU-22" target="KqPVDPErh_Tl_M2lxwnU-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="550" as="sourcePoint" />
+            <mxPoint x="400" y="551.9300000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-32" value="6. &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Teleportkapu()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="390" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-36" value="v: Vas" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="30" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="KqPVDPErh_Tl_M2lxwnU-42" value="KELL A MEGSEMMISUL A VASHOZ??" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="970" y="280" width="190" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
