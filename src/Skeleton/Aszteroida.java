@@ -57,6 +57,17 @@ public class Aszteroida implements Mezo{
     	if (napkozeli==1 & atfurva==1) mag.Megfurva(this);
     	SkeletonController.FunctionReturn();
     }
+    
+    
+    /*public Nyersanyag Kinyer(){
+        if(kulsoRetegek>0 || mag == null){
+            return null;
+        }
+        else{
+            return mag;
+        }
+
+    }*/
 
     public Nyersanyag Kinyer(){
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
@@ -141,15 +152,7 @@ public class Aszteroida implements Mezo{
     }
 
   
-    public Nyersanyag Kinyer(){
-        if(kulsoRetegek>0 || mag == null){
-            return null;
-        }
-        else{
-            return mag;
-        }
-
-    }
+ 
 
 
     
@@ -165,10 +168,10 @@ public class Aszteroida implements Mezo{
 			return false;
 		case 1:
 			System.out.println("el lehet helyezni a nyersanyagot az aszteroidaban");
-          if(napkozelben){
-                 n.Megfurva();
+	         if(napkozelben){
+                 n.Megfurva(this);
              }
-        return 
+
 			mag = n;
 			return true;
 		case 2:
