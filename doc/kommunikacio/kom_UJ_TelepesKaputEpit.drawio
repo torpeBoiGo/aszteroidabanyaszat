@@ -1,1 +1,71 @@
-<mxfile host="app.diagrams.net" modified="2021-03-20T09:58:31.461Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" version="14.4.9" etag="CQl67ClBU_2urblyWCmW" type="github"><diagram id="X0tOniIHW8CF50TFRcm-">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-20T10:00:52.364Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="cLa4g0G9bfmJHGITbWJ-" version="14.4.9" type="github">
+  <diagram id="X0tOniIHW8CF50TFRcm-" name="Page-1">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-2" value="Telepes teleportkaput épít" style="shape=umlFrame;whiteSpace=wrap;html=1;width=110;height=40;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="510" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-3" value="t: Telepes" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="60" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-4" value="e: TeleportEpito" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="340" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-5" value="SkeletonController" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-6" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="-1r9lV_9wNFuhfm_jg8a-5" target="-1r9lV_9wNFuhfm_jg8a-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="380" y="180" as="sourcePoint" />
+            <mxPoint x="460" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-7" value="" style="html=1;verticalAlign=bottom;endArrow=none;endFill=0;" edge="1" parent="1" source="-1r9lV_9wNFuhfm_jg8a-5" target="-1r9lV_9wNFuhfm_jg8a-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="209.23076923076928" y="270" as="sourcePoint" />
+            <mxPoint x="350.7692307692307" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-8" value="1: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Telepes()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="-1" y="22" width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="190" as="sourcePoint" />
+            <mxPoint x="210" y="160" as="targetPoint" />
+            <mxPoint x="-9" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-9" value="2: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; TeleportEpito()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.3077" y="19" width="80" relative="1" as="geometry">
+            <mxPoint x="190" y="270" as="sourcePoint" />
+            <mxPoint x="270" y="310" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-10" value="v: Vas" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="200" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-11" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="-1r9lV_9wNFuhfm_jg8a-5" target="-1r9lV_9wNFuhfm_jg8a-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="310" as="sourcePoint" />
+            <mxPoint x="450" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-12" value="3: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Vas()" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="0.25" width="80" relative="1" as="geometry">
+            <mxPoint x="190" y="220" as="sourcePoint" />
+            <mxPoint x="270" y="220" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-1r9lV_9wNFuhfm_jg8a-13" value="4: AddRakter(v)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+          <mxGeometry x="-1" y="22" width="80" relative="1" as="geometry">
+            <mxPoint x="230" y="150" as="sourcePoint" />
+            <mxPoint x="300" y="110" as="targetPoint" />
+            <mxPoint x="-9" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
