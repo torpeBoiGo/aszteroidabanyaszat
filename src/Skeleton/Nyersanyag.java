@@ -1,6 +1,6 @@
 package Skeleton;
 
-public class Nyersanyag {
+public class Nyersanyag implements Szallithato{
 	 public void Megsemmisul() {
 		
 	} 
