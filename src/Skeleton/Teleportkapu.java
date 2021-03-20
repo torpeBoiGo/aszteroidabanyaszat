@@ -2,7 +2,7 @@ package Skeleton;
 
 import java.util.ArrayList;
 
-public class Teleportkapu implements Mezo{
+public class Teleportkapu implements Mezo, Szallithato{
 	Teleportkapu par;
 	Aszteroida sajatAszteroida;
 	boolean mukodikE;
@@ -24,6 +24,7 @@ public class Teleportkapu implements Mezo{
 		this.sajatAszteroida = a;
 		SkeletonController.FunctionReturn();
 	}
+	
 	public void HajoTeleportErkezik(Hajo h) {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		if (sajatAszteroida != null) {
@@ -35,7 +36,9 @@ public class Teleportkapu implements Mezo{
 	}
 	
 	public void Elront() {
-		
+		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
+		mukodikE = false;
+		SkeletonController.FunctionReturn();
 	}
 	
 	@Override
@@ -45,7 +48,14 @@ public class Teleportkapu implements Mezo{
 	}
 	@Override
 	public void RemoveSzomszed(Mezo m) {
-		// TODO Auto-generated method stub
+		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
+		if (sajatAszteroida != null) sajatAszteroida.RemoveSzomszed(this);
+		Elront();
+		if (par!=null) {
+			par.SetPar(null);
+			par.RemoveSzomszed(this);
+		}
+		SkeletonController.FunctionReturn();
 		
 	}
 	@Override
@@ -78,11 +88,20 @@ public class Teleportkapu implements Mezo{
 		
 		SkeletonController.FunctionReturn();
 	}
+	
 	@Override
 	public void HajoElhagy(Hajo h) {
 		// TODO Auto-generated method stub
 		
 	}
 	
-	
+	public void Megsemmisul() {
+		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
+		Elront();
+		if (par!=null) {
+			par.SetPar(null);
+			par.RemoveSzomszed(this);
+		}
+		SkeletonController.FunctionReturn();
+	}
 }
