@@ -142,4 +142,6 @@ public class Telepes extends Hajo {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+	
 }

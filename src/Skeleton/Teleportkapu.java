@@ -1,5 +1,7 @@
 package Skeleton;
 
+import java.util.ArrayList;
+
 public class Teleportkapu implements Mezo, Szallithato{
 	Teleportkapu par;
 	Aszteroida sajatAszteroida;

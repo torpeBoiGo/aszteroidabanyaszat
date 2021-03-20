@@ -412,7 +412,8 @@ public class SkeletonController {
     	NamesMap.put(e.toString(), "e");
     	Vas v = new Vas();
     	NamesMap.put(v.toString(), "v");
-    	t.AddRakter(v);
+    	t.nyersanyagRakter.add(v);
+    	//t.AddRakter(v);
     	
     	t.TeleportEpit(e);
     	NamesMap.clear();
@@ -426,7 +427,8 @@ public class SkeletonController {
     	NamesMap.put(e.toString(), "e");
     	Vas v = new Vas();
     	NamesMap.put(v.toString(), "v");
-    	t.AddRakter(v);
+    	t.nyersanyagRakter.add(v);
+    	//t.AddRakter(v);
     	
     	t.RobotEpit(e);
     	NamesMap.clear();
