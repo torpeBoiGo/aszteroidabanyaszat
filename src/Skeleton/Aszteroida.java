@@ -17,7 +17,7 @@ public class Aszteroida implements Mezo{
     
     public void Fur() {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-    	int napkozeli = SkeletonController.AskForInput("Napközelben van az aszteroida?", new ArrayList<String>() {{
+    	int napkozeli = SkeletonController.AskForInput("Napkï¿½zelben van az aszteroida?", new ArrayList<String>() {{
 																    add("igen");
 																    add("nem");}});
     	switch (napkozeli) {
@@ -35,7 +35,7 @@ public class Aszteroida implements Mezo{
             break;
     	}
     	
-    	int atfurva = SkeletonController.AskForInput("Teljesen át van fúrva az aszteroida?", new ArrayList<String>() {{
+    	int atfurva = SkeletonController.AskForInput("Teljesen ï¿½t van fï¿½rva az aszteroida?", new ArrayList<String>() {{
 		    														add("igen");
 		    														add("nem");}});
     	
@@ -44,10 +44,10 @@ public class Aszteroida implements Mezo{
         	System.out.println("kilepes");
         	return;
         case 1:
-        	System.out.println("teljesen át van fúrva az aszteroida");
+        	System.out.println("teljesen ï¿½t van fï¿½rva az aszteroida");
             break;
         case 2:
-        	System.out.println("nincs teljesen átfúrva az aszteroida");
+        	System.out.println("nincs teljesen ï¿½tfï¿½rva az aszteroida");
             break;
         default:
         	System.out.println("Rossz bemenet");
@@ -101,6 +101,7 @@ public class Aszteroida implements Mezo{
     @Override
     public void Robban() {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
+    	//TODO this is shit... mert az
     	for(int i=0; i<hajok.size(); i++) {
     		hajok.get(i).Robbanas();
     	}
@@ -149,7 +150,7 @@ public class Aszteroida implements Mezo{
 			mag = n;
 			return true;
 		case 2:
-			System.out.println("nem lehet elhelyezi a nyersanyagot az aszteroidába");
+			System.out.println("nem lehet elhelyezi a nyersanyagot az aszteroidï¿½ba");
 			break;
 		default:
 			System.out.println("Rossz bemenet");

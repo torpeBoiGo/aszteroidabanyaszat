@@ -97,14 +97,14 @@ public class Telepes extends Hajo {
     	//palya.removeAIVezerli(this);
     	for (int i=0;i<nyersanyagRakter.size();i++) nyersanyagRakter.get(i).Megsemmisul();
     	for (int i=0;i<teleportkapuRakter.size();i++) teleportkapuRakter.get(i).Megsemmisul();
-    	//SkeletonController.FunctionReturn();
+    	SkeletonController.FunctionReturn();
 	}
     
 	@Override
 	public void Robbanas() {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
     	Meghal();
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 
 	@Override

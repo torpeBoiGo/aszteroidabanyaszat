@@ -1,16 +1,16 @@
 package Skeleton;
 
-/**A játékban szereplõ urán nyersanyag*/
+/**A jï¿½tï¿½kban szereplï¿½ urï¿½n nyersanyag*/
 public class Uran extends Nyersanyag{
 	@Override
-	/** függvény akkor hívódik, mikor a vízjégrõl lekerül az utolsó  külsõréteg is,
-	 *  valamint  az  aszteroidája  napközelben  van. Ekkora az urán felrobban.
-	 *  @para a Az aszteroida, amin az urán van.
+	/** fï¿½ggvï¿½ny akkor hï¿½vï¿½dik, mikor a vï¿½zjï¿½grï¿½l lekerï¿½l az utolsï¿½  kï¿½lsï¿½rï¿½teg is,
+	 *  valamint  az  aszteroidï¿½ja  napkï¿½zelben  van. Ekkora az urï¿½n felrobban.
+	 *  @para a Az aszteroida, amin az urï¿½n van.
 	 */
 	public void Megfurva(Aszteroida a) {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		a.Robban();
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 }
 
