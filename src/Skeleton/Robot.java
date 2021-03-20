@@ -14,7 +14,7 @@ public class Robot extends Hajo{
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
     	aszteroida.HajoElhagy(this);
     	//palya.removeAIVezerli(this);
-    	//SkeletonController.FunctionReturn();
+    	SkeletonController.FunctionReturn();
 	}
 
 	@Override
@@ -40,7 +40,7 @@ public class Robot extends Hajo{
         	System.out.println("Rossz bemenet");
             break;
     	}
-    	//SkeletonController.FunctionReturn();
+    	SkeletonController.FunctionReturn();
 	}
 
 	@Override

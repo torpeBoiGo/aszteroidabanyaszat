@@ -1,15 +1,15 @@
 package Skeleton;
 
-/**A játékban szereplõ vizjeg nyersanyag*/
+/**A jatekban szereplo vizjeg nyersanyag*/
 public class Vizjeg extends Nyersanyag{
   	@Override
-  	/** függvény akkor hívódik, mikor a vízjégrõl lekerül az utolsó  külsõréteg is,
-	 *  valamint  az  aszteroidája  napközelben  van. Ekkora a vízjég elszublimál.
-	 *  @para a Az aszteroida, amin a vízjég van.
+  	/** fuggveny akkor hivodik, mikor a vizjegrol lekerul az utolso kulsoreteg is,
+	 *  valamint  az  aszteroidaja  napkozelben  van. Ekkora a vizjeg elszublimal.
+	 *  @para a Az aszteroida, amin a vízjeg van.
 	 */
 	public void Megfurva(Aszteroida a) {
   		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		Nyersanyag kinyert = a.Kinyer();
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 	}
 }

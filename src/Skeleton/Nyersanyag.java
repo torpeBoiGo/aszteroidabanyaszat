@@ -1,7 +1,7 @@
 package Skeleton;
 
-/**A játékban szereplõ nyersanyagok õsosztálya*/
-public class Nyersanyag implements Szallithato{
+/**A jatekban szereplo nyersanyagok ososztalya*/
+public abstract class Nyersanyag implements Szallithato{
 	/**Konstruktor*/
 	public Nyersanyag() {
 		SkeletonController.ObjectCreated(this);
@@ -9,17 +9,17 @@ public class Nyersanyag implements Szallithato{
 	/**A nyersanyag megsemmisulesert felel*/
 	 public void Megsemmisul() {
 		 SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-		 //SkeletonController.FunctionReturn();
+		 SkeletonController.FunctionReturn();
 	 } 
 	
-	 /**A függvény, akkor hívodik meg,  
-	  * mikor a nyersanyagról lekerül az utolsó külsõréteg is,
-	  * valamint az aszteroidája napközelben  van
+	 /**A fuggveny, akkor hivodik meg,  
+	  * mikor a nyersanyagrol lekerul az utolso kulsoreteg is,
+	  * valamint az aszteroidaja napkozelben  van
 	  * @param a Az aszteroida, amin a nyersanyag van
 	  */
 	public void Megfurva(Aszteroida a) {
 		 SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-		 //SkeletonController.FunctionReturn();
+		 SkeletonController.FunctionReturn();
 	}
 	
 	/**A  függvény  megvizsgálja, hogy a paraméterként kapott nyersanyag
@@ -29,7 +29,7 @@ public class Nyersanyag implements Szallithato{
 	 */
 	public boolean KompatibilisE(Nyersanyag ny) {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 		return (ny.getClass() == getClass());
 	}
 }

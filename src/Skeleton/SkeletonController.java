@@ -171,7 +171,7 @@ public class SkeletonController {
     }
 
     
-    /**Telepes f�r vasat*/
+    /**Telepes fur vasat*/
     public static void TelepesFurVasat() {
     	depth=0;
     	//Inicializalas
@@ -188,7 +188,7 @@ public class SkeletonController {
     	t.Fur();
     }
     
-    /**Telepes f�r szenet*/
+    /**Telepes fur szenet*/
     public static void TelepesFurSzenet() {
     	depth=0;
     	//Inicializalas
@@ -205,7 +205,7 @@ public class SkeletonController {
     	t.Fur();
     }
     
-    /**Telepes f�r v�zjeget*/
+    /**Telepes fur vizjeget*/
     public static void TelepesFurVizjeget() {
     	depth=0;
     	//Inicializalas
@@ -222,7 +222,7 @@ public class SkeletonController {
     	t.Fur();
     }
     
-    /**Telepes f�r ur�nt*/
+    /**Telepes fur urant*/
     public static void TelepesFurUrant() {
     	depth=0;
     	//Inicializalas
@@ -259,7 +259,7 @@ public class SkeletonController {
     	t.Fur();
     }
     
-    /**Robot f�r vasat*/
+    /**Robot fur vasat*/
     public static void RobotFurVasat() {
     	depth=0;
     	//Inicializalas
@@ -276,7 +276,7 @@ public class SkeletonController {
     	r.Fur();
     }
     
-    /**Robot f�r szenet*/
+    /**Robot fur szenet*/
     public static void RobotFurSzenet() {
     	depth=0;
     	//Inicializalas
@@ -293,7 +293,7 @@ public class SkeletonController {
     	r.Fur();
     }
     
-    /**Robot f�r v�zjeget*/
+    /**Robot fur vizjeget*/
     public static void RobotFurVizjeget() {
     	depth=0;
     	//Inicializalas
@@ -310,7 +310,7 @@ public class SkeletonController {
     	r.Fur();
     }
     
-    /**Robot f�r ur�nt*/
+    /**Robot fur urant*/
     public static void RobotFurUrant() {
     	depth=0;
     	//Inicializalas
@@ -357,7 +357,7 @@ public class SkeletonController {
     	NamesMap.put(t.toString(), "t");
     	Vas v = new Vas();
     	NamesMap.put(v.toString(), "v");
-    	t.AddNyersanyagRakter(v);
+    	t.nyersanyagRakter.add(v);
     	
     	Teleportkapu tp = new Teleportkapu();
     	NamesMap.put(tp.toString(), "tp");
@@ -365,14 +365,14 @@ public class SkeletonController {
     	NamesMap.put(par.toString(), "par");
     	tp.SetPar(par);
     	par.SetPar(tp);
-    	t.AddTeleportkapuRakter(tp);
-    	t.AddTeleportkapuRakter(par);
+    	t.teleportkapuRakter.add(tp);
+    	t.teleportkapuRakter.add(par);
     	
     	//Kezdo hivas
     	t.Meghal();   	
     }
     
-    /**telepes meghal, csak a kapup�r fele van n�la*/
+    /**telepes meghal, csak a kapupar fele van nala*/
     public static void TelepesMeghalKapuKulon() {
     	depth=0;
     	//inicializalas
@@ -382,7 +382,7 @@ public class SkeletonController {
     	NamesMap.put(t.toString(), "t");
     	Vas v = new Vas();
     	NamesMap.put(v.toString(), "v");
-    	t.AddNyersanyagRakter(v);
+    	t.nyersanyagRakter.add(v);
     	
     	Teleportkapu tp = new Teleportkapu();
     	NamesMap.put(tp.toString(), "tp");
@@ -390,7 +390,7 @@ public class SkeletonController {
     	NamesMap.put(par.toString(), "par");
     	tp.SetPar(par);
     	par.SetPar(tp);
-    	t.AddTeleportkapuRakter(tp);
+    	t.teleportkapuRakter.add(tp);
     	
     	Aszteroida a2 = new Aszteroida();
     	NamesMap.put(a2.toString(), "a2");

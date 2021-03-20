@@ -17,7 +17,7 @@ public class Aszteroida implements Mezo{
     
     public void Fur() {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-    	int napkozeli = SkeletonController.AskForInput("Napk�zelben van az aszteroida?", new ArrayList<String>() {{
+    	int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<String>() {{
 																    add("igen");
 																    add("nem");}});
     	switch (napkozeli) {
@@ -35,7 +35,7 @@ public class Aszteroida implements Mezo{
             break;
     	}
     	
-    	int atfurva = SkeletonController.AskForInput("Teljesen �t van f�rva az aszteroida?", new ArrayList<String>() {{
+    	int atfurva = SkeletonController.AskForInput("Teljesen at van furva az aszteroida?", new ArrayList<String>() {{
 		    														add("igen");
 		    														add("nem");}});
     	
@@ -44,10 +44,10 @@ public class Aszteroida implements Mezo{
         	System.out.println("kilepes");
         	return;
         case 1:
-        	System.out.println("teljesen �t van f�rva az aszteroida");
+        	System.out.println("teljesen at van furva az aszteroida");
             break;
         case 2:
-        	System.out.println("nincs teljesen �tf�rva az aszteroida");
+        	System.out.println("nincs teljesen atfurva az aszteroida");
             break;
         default:
         	System.out.println("Rossz bemenet");
@@ -96,22 +96,26 @@ public class Aszteroida implements Mezo{
     public void AddSzomszed(Mezo m){
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
     	szomszedok.add(m);
+    	SkeletonController.FunctionReturn();
     }
 
     @Override
     public void Robban() {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
-    	//TODO this is shit... mert az
-		for (Hajo hajo : hajok) {
+    	List<Hajo> hajo_temp = new ArrayList<Hajo>(hajok);
+    	for (Hajo hajo : hajo_temp) {
 			hajo.Robbanas();
 		}
-		for (Mezo mezo : szomszedok) mezo.RemoveSzomszed(this);
+		List<Mezo> szomszedok_temp = new ArrayList<Mezo>(szomszedok);
+		for (Mezo mezo : szomszedok_temp) mezo.RemoveSzomszed(this);
+		SkeletonController.FunctionReturn();
     }
     
     @Override
     public void RemoveSzomszed(Mezo m){
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
     	if(m!=null) szomszedok.remove(m);
+    	SkeletonController.FunctionReturn();
     }
 
     @Override
@@ -128,7 +132,7 @@ public class Aszteroida implements Mezo{
     public void HajoElhagy(Hajo h) {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
     	hajok.remove(h);
-    	
+    	SkeletonController.FunctionReturn();
     }
 
     public void Napvihar(){
@@ -157,6 +161,7 @@ public class Aszteroida implements Mezo{
 			break;
 		}
 		
+		SkeletonController.FunctionReturn();
 		return false;
     }
 

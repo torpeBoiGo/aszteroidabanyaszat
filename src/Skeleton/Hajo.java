@@ -9,7 +9,7 @@ abstract class Hajo {
     public void Fur(){
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		aszteroida.Fur();
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
     }
     
     public void Mozog(Mezo uj_mezo){
