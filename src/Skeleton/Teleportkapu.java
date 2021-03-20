@@ -20,7 +20,9 @@ public class Teleportkapu implements Mezo{
 		SkeletonController.FunctionReturn();
 	}
 	public void SetSajatAszteroida(Aszteroida a) {
+		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
 		this.sajatAszteroida = a;
+		SkeletonController.FunctionReturn();
 	}
 	public void HajoTeleportErkezik(Hajo h) {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
