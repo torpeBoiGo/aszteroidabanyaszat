@@ -121,6 +121,158 @@ public class SkeletonController {
     	//Kezd�hiv�s
     	t.Mozog(uj);
     }
+
+	public static void TelepesBanyaszikVasat() {
+
+
+		Aszteroida a =  new Aszteroida();
+		NamesMap.put(a.toString(), "a");
+
+		Vas vas = new Vas();
+		NamesMap.put(vas.toString(), "vas");
+
+		a.AddMag(vas);
+
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+
+		//Kezdohivas
+		t.Banyasz();
+	}
+
+	public static void TelepesBanyaszikSzenet() {
+
+
+		Aszteroida a =  new Aszteroida();
+		NamesMap.put(a.toString(), "a");
+
+		Szen szen = new Szen();
+		NamesMap.put(szen.toString(), "szen");
+
+		a.AddMag(szen);
+
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+		//Kezdohivas
+		t.Banyasz();
+	}
+
+	public static void TelepesBanyaszikUrant() {
+
+
+		Aszteroida a =  new Aszteroida();
+		NamesMap.put(a.toString(), "a");
+
+		Uran uran = new Uran();
+		NamesMap.put(uran.toString(), "uran");
+
+		a.AddMag(uran);
+
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+
+		//Kezdohivas
+		t.Banyasz();
+	}
+
+	public static void TelepesBanyaszikVizjeget() {
+
+
+		Aszteroida a =  new Aszteroida();
+		NamesMap.put(a.toString(), "a");
+
+		Vizjeg vizjeg= new Vizjeg();
+		NamesMap.put(vizjeg.toString(), "vizjeg");
+
+		a.AddMag(vizjeg);
+
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+
+		//Kezdohivas
+		t.Banyasz();
+	}
+
+	public static void TelepesLerakVizjeget() {
+
+
+		Aszteroida a =  new Aszteroida();
+		NamesMap.put(a.toString(), "a");
+
+		Vizjeg vizjeg= new Vizjeg();
+		NamesMap.put(vizjeg.toString(), "vizjeg");
+
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+		t.AddRakter(vizjeg);
+
+
+		//Kezdohivas
+		t.AnyagVisszatesz(vizjeg);
+	}
+
+	public static void TelepesLerakVasat() {
+
+
+		Aszteroida a =  new Aszteroida();
+		NamesMap.put(a.toString(), "a");
+
+		Vas vas= new Vas();
+		NamesMap.put(vas.toString(), "vas");
+
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+		t.AddRakter(vas);
+
+
+		//Kezdohivas
+		t.AnyagVisszatesz(vas);
+	}
+	public static void TelepesLerakSzenet() {
+
+
+		Aszteroida a =  new Aszteroida();
+		NamesMap.put(a.toString(), "a");
+
+		Szen szen= new Szen();
+		NamesMap.put(szen.toString(), "szen");
+
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+		t.AddRakter(szen);
+
+
+		//Kezdohivas
+		t.AnyagVisszatesz(szen);
+	}
+	public static void TelepesLerakUrant() {
+
+
+		Aszteroida a =  new Aszteroida();
+		NamesMap.put(a.toString(), "a");
+
+		Uran uran= new Uran();
+		NamesMap.put(uran.toString(), "uran");
+
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+		t.AddRakter(uran);
+
+
+		//Kezdohivas
+		t.AnyagVisszatesz(uran);
+	}
+
+
+
     
     public static void TelepesTetlen() {
     	Telepes t = new Telepes();
@@ -433,4 +585,5 @@ public class SkeletonController {
     	t.RobotEpit(e);
     	NamesMap.clear();
     }
+
 }

@@ -10,7 +10,7 @@ public class Aszteroida implements Mezo{
     Nyersanyag mag;
     List<Hajo> hajok = new ArrayList<Hajo>();
     boolean napkozelben;
-    
+
     public Aszteroida() {
 		SkeletonController.ObjectCreated(this);
 	}
@@ -57,7 +57,7 @@ public class Aszteroida implements Mezo{
     	if (napkozeli==1 & atfurva==1) mag.Megfurva(this);
     	SkeletonController.FunctionReturn();
     }
-    
+
     public Nyersanyag Kinyer(){
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
     	int kinyerheto = SkeletonController.AskForInput("Kinyerheto az aszteroida magja?", new ArrayList<String>() {{
@@ -84,9 +84,9 @@ public class Aszteroida implements Mezo{
 		SkeletonController.FunctionReturn();
 		return null;
     }
-    
+
     public boolean NapkozelbenE(){
-        return true;
+        return napkozelben;
     }
     
     public List<Mezo> getSzomszedok(){
@@ -137,7 +137,21 @@ public class Aszteroida implements Mezo{
 
     public void Napvihar(){
 
+
     }
+
+  
+    public Nyersanyag Kinyer(){
+        if(kulsoRetegek>0 || mag == null){
+            return null;
+        }
+        else{
+            return mag;
+        }
+
+    }
+
+
     
     public boolean AddMag (Nyersanyag n){
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
@@ -151,6 +165,10 @@ public class Aszteroida implements Mezo{
 			return false;
 		case 1:
 			System.out.println("el lehet helyezni a nyersanyagot az aszteroidaban");
+          if(napkozelben){
+                 n.Megfurva();
+             }
+        return 
 			mag = n;
 			return true;
 		case 2:
@@ -163,6 +181,7 @@ public class Aszteroida implements Mezo{
 		
 		SkeletonController.FunctionReturn();
 		return false;
+
     }
 
 
