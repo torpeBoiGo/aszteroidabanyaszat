@@ -95,8 +95,8 @@ public class Telepes extends Hajo {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
     	aszteroida.HajoElhagy(this);
     	//palya.removeAIVezerli(this);
-    	for (int i=0;i<nyersanyagRakter.size();i++) nyersanyagRakter.get(i).Megsemmisul();
-    	for (int i=0;i<teleportkapuRakter.size();i++) teleportkapuRakter.get(i).Megsemmisul();
+		for (Szallithato szallithato : nyersanyagRakter) szallithato.Megsemmisul();
+		for (Szallithato szallithato : teleportkapuRakter) szallithato.Megsemmisul();
     	SkeletonController.FunctionReturn();
 	}
     
