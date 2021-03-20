@@ -81,7 +81,7 @@ public class Aszteroida implements Mezo{
 			System.out.println("Rossz bemenet");
 			break;
 		}
-		//SkeletonController.FunctionReturn();
+		SkeletonController.FunctionReturn();
 		return null;
     }
     
