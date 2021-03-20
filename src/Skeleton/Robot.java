@@ -10,7 +10,7 @@ public class Robot extends Hajo{
     }
 	
 	@Override 
-	void Meghal() {
+	public void Meghal() {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
     	aszteroida.HajoElhagy(this);
     	//palya.removeAIVezerli(this);
@@ -18,7 +18,7 @@ public class Robot extends Hajo{
 	}
 
 	@Override
-	void Robbanas() {
+	public void Robbanas() {
 		SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
     	int van_szomszed = SkeletonController.AskForInput("Van szomszédja az aszteroidának?", new ArrayList<String>() {{
 			add("igen");
