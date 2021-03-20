@@ -102,10 +102,10 @@ public class Aszteroida implements Mezo{
     public void Robban() {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
     	//TODO this is shit... mert az
-    	for(int i=0; i<hajok.size(); i++) {
-    		hajok.get(i).Robbanas();
-    	}
-    	for(int i=0; i<szomszedok.size();i++) szomszedok.get(i).RemoveSzomszed(this); 
+		for (Hajo hajo : hajok) {
+			hajo.Robbanas();
+		}
+		for (Mezo mezo : szomszedok) mezo.RemoveSzomszed(this);
     }
     
     @Override
