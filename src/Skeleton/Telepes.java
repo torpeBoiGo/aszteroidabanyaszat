@@ -1,7 +1,12 @@
 package Skeleton;
 
 
+import java.util.ArrayList;
+
 public class Telepes extends Hajo{
+
+	ArrayList<Nyersanyag> Rakter = new ArrayList<Nyersanyag>();
+
     public Telepes(Aszteroida a) {
         SkeletonController.ObjectCreated(this);
         a.HajoErkezik(this);
@@ -30,4 +35,18 @@ public class Telepes extends Hajo{
 	    aszteroida.addMag(n);
 
 	}
+
+	void AddRakter(Nyersanyag n){
+		Rakter.add(n);
+	}
+
+	void Banyasz(){
+		Nyersanyag n = aszteroida.Kinyer();
+		if(n != null && Rakter.size()< 9){
+			//Rakter.AddRakter(n);
+		}
+
+	}
+
+
 }

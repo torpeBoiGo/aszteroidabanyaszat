@@ -19,9 +19,6 @@ public class Aszteroida implements Mezo{
     public void Fur() {
 
     }
-    public Nyersanyag Kinyer(){
-        return new Nyersanyag();
-    }
     public boolean NapkozelbenE(){
         return napkozelben;
     }

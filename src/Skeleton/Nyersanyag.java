@@ -5,7 +5,7 @@ public class Nyersanyag {
 		
 	} 
 	
-	public void Megfurva(Aszteroida a) {
+	public void Megfurva() {
 		
 	}
 	
