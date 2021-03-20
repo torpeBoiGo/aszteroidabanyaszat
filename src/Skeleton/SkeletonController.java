@@ -243,8 +243,9 @@ public class SkeletonController {
     	
     	Teleportkapu szomsz2 = new Teleportkapu();
     	NamesMap.put(szomsz2.toString(), "szomsz2");
-    	szomsz2.SetSajatAszteroida(a);
     	a.AddSzomszed(szomsz2);
+    	szomsz2.SetSajatAszteroida(a);
+   
     	Teleportkapu par = new Teleportkapu();
     	NamesMap.put(par.toString(), "par");
     	szomsz2.SetPar(par);
@@ -252,8 +253,9 @@ public class SkeletonController {
     	
     	Aszteroida a2 = new Aszteroida();
     	NamesMap.put(a2.toString(), "a2");
-    	par.SetSajatAszteroida(a2);
     	a2.AddSzomszed(par);
+    	//diagramban elirva
+    	par.SetSajatAszteroida(a2);
     	
     	//Kezdo hivas
     	t.Fur();
@@ -331,8 +333,9 @@ public class SkeletonController {
     	
     	Teleportkapu szomsz2 = new Teleportkapu();
     	NamesMap.put(szomsz2.toString(), "szomsz2");
-    	szomsz2.SetSajatAszteroida(a);
     	a.AddSzomszed(szomsz2);
+    	szomsz2.SetSajatAszteroida(a);
+    	
     	Teleportkapu par = new Teleportkapu();
     	NamesMap.put(par.toString(), "par");
     	szomsz2.SetPar(par);
@@ -340,8 +343,10 @@ public class SkeletonController {
     	
     	Aszteroida a2 = new Aszteroida();
     	NamesMap.put(a2.toString(), "a2");
-    	par.SetSajatAszteroida(a2);
     	a2.AddSzomszed(par);
+    	//diagramban elirva
+    	par.SetSajatAszteroida(a2);
+    	
     	
     	//Kezdo hivas
     	r.Fur();

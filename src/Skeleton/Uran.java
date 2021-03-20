@@ -1,6 +1,6 @@
 package Skeleton;
 
-/**A jatekban szereplo urenn nyersanyag*/
+/**A jatekban szereplo uran nyersanyag*/
 public class Uran extends Nyersanyag{
 	@Override
 	/** fuggveny akkor hivodik, mikor az uranrol lekerul az utolso kulsoreteg is,
