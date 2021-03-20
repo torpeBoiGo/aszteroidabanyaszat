@@ -141,7 +141,7 @@ public class Aszteroida implements Mezo{
     
     public boolean AddMag (Nyersanyag n){
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
-    	int atfurva = SkeletonController.AskForInput("El lehet helyezi a nyersanyagot az aszteroidaban?", new ArrayList<String>() {{
+    	int atfurva = SkeletonController.AskForInput("El lehet helyezni a nyersanyagot az aszteroidaban?", new ArrayList<String>() {{
 			add("igen");
 			add("nem");}});
 
@@ -150,11 +150,11 @@ public class Aszteroida implements Mezo{
 			System.out.println("kilepes");
 			return false;
 		case 1:
-			System.out.println("el lehet helyezi a nyersanyagot az aszteroidaban");
+			System.out.println("el lehet helyezni a nyersanyagot az aszteroidaban");
 			mag = n;
 			return true;
 		case 2:
-			System.out.println("nem lehet elhelyezi a nyersanyagot az aszteroid�ba");
+			System.out.println("nem lehet elhelyezni a nyersanyagot az aszteroid�ba");
 			break;
 		default:
 			System.out.println("Rossz bemenet");
