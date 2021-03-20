@@ -18,7 +18,7 @@ public class Aszteroida implements Mezo{
 
     }
     public Nyersanyag Kinyer(){
-        return new Nyersanyag();
+        return mag;
     }
     public boolean NapkozelbenE(){
         return true;
