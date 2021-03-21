@@ -261,6 +261,7 @@ public class Aszteroida implements Mezo {
                     n.Megfurva(this);
                 }
                 mag = n;
+                SkeletonController.FunctionReturn();
                 return true;
             case 2:
                 System.out.println("nem lehet elhelyezni a nyersanyagot az aszteroidaban");
