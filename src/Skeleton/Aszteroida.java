@@ -134,10 +134,12 @@ public class Aszteroida implements Mezo {
     public List<Mezo> getSzomszedok() {
         return szomszedok;
     }
+
     
     /**
-     * Az aszteroidanak uj szomszedja lesz.
-     * @param m Az aszteroida uj szomszedja.
+     * Egy szomszedot adunk az aszteroidahoz
+     * A szomszedban is beallitja hogy ez az aszteroida szomszedja legyen
+     * @param Mezo m - az uj szomszed
      */
     public void AddSzomszed(Mezo m) {
         SkeletonController.FunctionCall(new Object() {
@@ -225,6 +227,7 @@ public class Aszteroida implements Mezo {
             SkeletonController.FunctionReturn();
         }
     }
+
 
     /**
      * Az aszteroida magjaba egy nyersanyag kerul.

@@ -11,26 +11,34 @@ public class SkeletonController {
 	static int depth = 0;
 	static HashMap<String, String> NamesMap = new HashMap<String, String>();
 	
-    public static void FunctionCall(Object called, String calledFunctionName) {
-    	for(int i = 0; i< depth;i++)
-    		System.out.print("\t");
-
-        System.out.print("-> " + called.toString() + "." + calledFunctionName+ "\n");
-        depth++;
-    }
     
-    public static void FunctionCall(String calledFunctionName, Object callerObject) {
+    /**
+     * Minden fuggvenyhivas elejen hivjuk, a megfelelo behuzassal kiirja a fuggveny nevet
+     * 
+     *@param String calledFunctionName - a meghivott fuggveny neve
+     *@param Object calledObject - az objektum amin a fuggvenyt meghivtuk
+     */
+    public static void FunctionCall(String calledFunctionName, Object calledObject) {
     	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
     	
-    	if(NamesMap.containsKey(callerObject.toString()))
-    		System.out.print("-> " + NamesMap.get(callerObject.toString()));
-    	else System.out.print("-> most letrejott " + callerObject.getClass().getSimpleName());
+    	if(NamesMap.containsKey(calledObject.toString()))
+    		System.out.print("-> " + NamesMap.get(calledObject.toString()));
+    	
+    	//email alapján úgy döntöttünk most nem gond ha az inicializálás alatt nem mindennek tudjuk kiirni a nevét
+    	else System.out.print("-> most letrejott " + calledObject.getClass().getSimpleName());
     	
         System.out.print("." + calledFunctionName+ "()\n");
         depth++;
     }
     
+    
+    /**
+     * Ha a felhasznalotol visszajelzest kerunk, akkor hivjuk meg
+     * 
+     *@param String kerdes - a helhasznalonak feltett kerdes
+     *@param ArrayList<String> choices - a kerdesre adhato valaszok listaja
+     */
     public static int AskForInput(String kerdes, ArrayList<String> choices) {
     	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
@@ -62,26 +70,39 @@ public class SkeletonController {
     	return chosen; 
     }
     
+    
+    /**
+     * Minden fuggvenyhivas vegen hivjuk, a behuzas merteket korrigalja
+     * 
+     */
     public static void FunctionReturn() {
     	depth--;
     }
 
+    /**
+     * Minden konstruktor meghivja, kiirja a kepernyore milyen objektum jott letre
+     * 
+     */
     public static void ObjectCreated(Object obj) {
         System.out.println("Created: " + obj.getClass().getSimpleName());
     }
 
+    
     public static void Kilepes() {
         System.out.println("Bye(t)!");
         System.exit(0);
     }
 
-    
+    /**
+     * Kilep a programbol
+     * 
+     */
     public static void TelepesMozogSzomszedosAszteroidara() {
-    	// A szï¿½mozï¿½s rossz a diagramunkon (5.4.4)
+    	// A szamozas rossz a diagramunkon (5.4.4)
     	
-    	//Inicializï¿½lï¿½s
+    	//Inicializalas
     	
-    	//Nï¿½v regisztrï¿½ciï¿½ ï¿½s inicializï¿½lï¿½s
+    	//Nev regisztracio es inicializalas
     	Aszteroida jelenlegi =  new Aszteroida(); 
     	//Mikor letrehozunk valamit, rogton el is nevezzuk
     	NamesMap.put(jelenlegi.toString(), "jelenlegi");

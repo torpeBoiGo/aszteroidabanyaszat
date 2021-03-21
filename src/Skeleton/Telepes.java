@@ -20,6 +20,7 @@ public class Telepes extends Hajo {
      */
     List<Szallithato> teleportkapuRakter = new ArrayList<>();	
 
+
     /**
      * A telepes konstruktora, amely beallitja a sajat aszteroidajat, es hozzaadja a parameterul kapott aszteroidan tartozkodo hajokhoz a telepest. 
      * @param a Az az aszteroida, ahova a telepes letrejottenek pillanataban kerul.

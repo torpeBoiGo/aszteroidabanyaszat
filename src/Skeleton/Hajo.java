@@ -19,10 +19,12 @@ abstract class Hajo {
         aszteroida.Fur();
         SkeletonController.FunctionReturn();
     }
+
+
     
     /**
-     * A Hajo egy uj mezora mozog a jelenlegirol.
-     * @param uj_mezo A mezo, ahova a Hajo mozog.
+     * A hajo ezzel a fuggvennyel tud masik mezore lepni
+     * @param Mezo uj_mezo - az uj mezo amire atmegy a hajo
      */
     public void Mozog(Mezo uj_mezo) {
         SkeletonController.FunctionCall(new Object() {
