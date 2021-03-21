@@ -2,17 +2,25 @@ package Skeleton;
 
 import java.util.ArrayList;
 
-/**A jatekban szereplo teleportkapu*/
+/**
+ * A jatekban szereplo teleportkapu
+ */
 public class Teleportkapu implements Mezo, Szallithato {
-    /**A kapu par masik tagja*/
-	Teleportkapu par;
-	
-	/**Az aszteroida, ami kurol kering a kapu*/
+    /**
+     * A kapu par masik tagja
+     */
+    Teleportkapu par;
+
+    /**
+     * Az aszteroida, ami kurol kering a kapu
+     */
     Aszteroida sajatAszteroida;
-    
-    /**Azt mutatja meg, hogy uzemkepes-e a kapu*/
+
+    /**
+     * Azt mutatja meg, hogy uzemkepes-e a kapu
+     */
     boolean mukodikE;
-    
+
     /**
      * A teleportkapu konstruktora, a par, sajatAszteroida es mukodikE ertekeket null-ra allitja.
      */
@@ -22,9 +30,10 @@ public class Teleportkapu implements Mezo, Szallithato {
         sajatAszteroida = null;
         mukodikE = true;
     }
-    
+
     /**
      * Beallitja a par erteket a kapott teleportkapura.
+     *
      * @param p A teleortkapu, ami ezutan ennek a kpaunak a parja lesz.
      */
     public void SetPar(Teleportkapu p) {
@@ -33,9 +42,10 @@ public class Teleportkapu implements Mezo, Szallithato {
         par = p;
         SkeletonController.FunctionReturn();
     }
-    
+
     /**
      * Beallitja a sajatAszteroida erteket a kapott aszteroidara.
+     *
      * @param a Az aszteroida, ami korul a teleportkapu kering a jatekban.
      */
     public void SetSajatAszteroida(Aszteroida a) {
@@ -47,6 +57,7 @@ public class Teleportkapu implements Mezo, Szallithato {
 
     /**
      * A teleprotkapuba egy Hajo (telepes vagy robot) erkezik a kapu parjatol, amely ezutan tovabbhalad a kapu aszteriodajara, ha az letezik.
+     *
      * @param h Az erkezo Hajo
      */
     public void HajoTeleportErkezik(Hajo h) {
@@ -60,7 +71,9 @@ public class Teleportkapu implements Mezo, Szallithato {
         SkeletonController.FunctionReturn();
     }
 
-    /**A teleportkapu mukodeskeptelenne valik*/
+    /**
+     * A teleportkapu mukodeskeptelenne valik
+     */
     public void Elront() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -74,8 +87,10 @@ public class Teleportkapu implements Mezo, Szallithato {
 
     }
 
-    /**Ez a fuggveny felel, azert, ha az teleportkapuval szomszedos mezo felrobban
+    /**
+     * Ez a fuggveny felel, azert, ha az teleportkapuval szomszedos mezo felrobban
      * Ekkor a teleportkapu es a parja is felrobban
+     *
      * @param m a felrobbant mezo
      */
     @Override
@@ -94,6 +109,7 @@ public class Teleportkapu implements Mezo, Szallithato {
 
     /**
      * A teleprotkapuba egy Hajo (telepes vagy robot) erkezik, amely ezutan tovabbhalad a kapu parjaba, ha az letezik.
+     *
      * @param h Az erkezo Hajo
      */
     @Override
@@ -135,7 +151,9 @@ public class Teleportkapu implements Mezo, Szallithato {
 
     }
 
-    /**A teleportkapu megsemmisuleseert felel*/
+    /**
+     * A teleportkapu megsemmisuleseert felel
+     */
     public void Megsemmisul() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);

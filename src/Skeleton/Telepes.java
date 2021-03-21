@@ -52,7 +52,7 @@ public class Telepes extends Hajo {
         }
         boolean epitheto = e.EpithetoE();
 
-        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<String>() {{
+        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -88,7 +88,7 @@ public class Telepes extends Hajo {
         }
         boolean epitheto = e.EpithetoE();
 
-        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<String>() {{
+        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -106,7 +106,7 @@ public class Telepes extends Hajo {
                 System.out.println("Rossz bemenet");
                 break;
         }
-        int res2 = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<String>() {{
+        int res2 = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});

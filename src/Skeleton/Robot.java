@@ -3,9 +3,7 @@ package Skeleton;
 import java.util.ArrayList;
 
 /**
- * 
  * A robot mukodeset megvalosito osztaly.
- *
  */
 public class Robot extends Hajo {
     /**
@@ -51,7 +49,7 @@ public class Robot extends Hajo {
     public void Robbanas() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int van_szomszed = SkeletonController.AskForInput("Van szomszedja az aszteroidanak?", new ArrayList<String>() {{
+        int van_szomszed = SkeletonController.AskForInput("Van szomszedja az aszteroidanak?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});

@@ -13,7 +13,7 @@ public class Aszteroida implements Mezo {
     /**
      * Az aszteroidaval szomszedos aszteriodak
      */
-    List<Mezo> szomszedok = new ArrayList<Mezo>();
+    List<Mezo> szomszedok = new ArrayList<>();
     
     /**
      * A mag korul levo sziklaretegek szama
@@ -26,7 +26,7 @@ public class Aszteroida implements Mezo {
     /**
      * Az aszteroidan tartozkodo Hajok
      */
-    List<Hajo> hajok = new ArrayList<Hajo>();	
+    List<Hajo> hajok = new ArrayList<>();
     /**
      * Napkozelben van-e az aszteroida?
      */
@@ -43,7 +43,7 @@ public class Aszteroida implements Mezo {
     public void Fur() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<String>() {{
+        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -62,7 +62,7 @@ public class Aszteroida implements Mezo {
                 break;
         }
 
-        int atfurva = SkeletonController.AskForInput("Teljesen at van furva az aszteroida?", new ArrayList<String>() {{
+        int atfurva = SkeletonController.AskForInput("Teljesen at van furva az aszteroida?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -93,7 +93,7 @@ public class Aszteroida implements Mezo {
     public Nyersanyag Kinyer() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int kinyerheto = SkeletonController.AskForInput("Kinyerheto az aszteroida magja?", new ArrayList<String>() {{
+        int kinyerheto = SkeletonController.AskForInput("Kinyerheto az aszteroida magja?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -148,11 +148,11 @@ public class Aszteroida implements Mezo {
     public void Robban() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        List<Hajo> hajo_temp = new ArrayList<Hajo>(hajok);
+        List<Hajo> hajo_temp = new ArrayList<>(hajok);
         for (Hajo hajo : hajo_temp) {
             hajo.Robbanas();
         }
-        List<Mezo> szomszedok_temp = new ArrayList<Mezo>(szomszedok);
+        List<Mezo> szomszedok_temp = new ArrayList<>(szomszedok);
         for (Mezo mezo : szomszedok_temp) mezo.RemoveSzomszed(this);
         SkeletonController.FunctionReturn();
     }
@@ -170,7 +170,7 @@ public class Aszteroida implements Mezo {
     
     /**
      * Az aszteroidara egy Hajo erkezik.
-     * @param Hajo h - a hajo ami erkezik az aszteroidara
+     * @param h - a hajo ami erkezik az aszteroidara
      */
     @Override
     public void HajoErkezik(Hajo h) {
@@ -201,7 +201,7 @@ public class Aszteroida implements Mezo {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
 
-        int levanfurva = SkeletonController.AskForInput("Az aszteroida le van furva(kulso retegeinek szama 0)? ", new ArrayList<String>() {{
+        int levanfurva = SkeletonController.AskForInput("Az aszteroida le van furva(kulso retegeinek szama 0)? ", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -209,7 +209,7 @@ public class Aszteroida implements Mezo {
         if (levanfurva == 0) {
             System.out.println("kilepes");
         } else {
-            int vanmagja = SkeletonController.AskForInput("Az aszteroidaban talalhato mag? ", new ArrayList<String>() {{
+            int vanmagja = SkeletonController.AskForInput("Az aszteroidaban talalhato mag? ", new ArrayList<>() {{
                 add("igen");
                 add("nem");
             }});
@@ -235,7 +235,7 @@ public class Aszteroida implements Mezo {
     public boolean AddMag(Nyersanyag n) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int atfurva = SkeletonController.AskForInput("El lehet helyezni a nyersanyagot az aszteroidaban?", new ArrayList<String>() {{
+        int atfurva = SkeletonController.AskForInput("El lehet helyezni a nyersanyagot az aszteroidaban?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
