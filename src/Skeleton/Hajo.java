@@ -1,11 +1,17 @@
 package Skeleton;
 
 import java.util.ArrayList;
-
+/**
+ * 
+ * A hajo mukodeset megvalosito osztaly, a Telepes es Robot ososztalya
+ *
+ */
 abstract class Hajo {
 
-    public String name;
-    protected Aszteroida aszteroida;
+    /**
+     * A Hajo ezen az aszteroidan tartozkodik.
+     */
+    protected Aszteroida aszteroida;	
 
     public void Fur() {
         SkeletonController.FunctionCall(new Object() {
@@ -13,6 +19,7 @@ abstract class Hajo {
         aszteroida.Fur();
         SkeletonController.FunctionReturn();
     }
+
 
     
     /**
@@ -59,8 +66,10 @@ abstract class Hajo {
         SkeletonController.FunctionReturn();
     }
 
-    //ToDo
-    //Ezt elbalt�ztuk... Aszteroidabeallit kellett volna hogy legyen
+    /**
+     * Az aszteroida erteket allitja be a kapottra.
+     * @param m Az uj mazo
+     */
     public void MezoBeallit(Mezo m) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);

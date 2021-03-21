@@ -3,24 +3,35 @@ package Skeleton;
 import java.util.ArrayList;
 
 public class Teleportkapu implements Mezo, Szallithato {
-    Teleportkapu par;
-    Aszteroida sajatAszteroida;
-    boolean mukodikE;
-
+    Teleportkapu par;			// a teleportkapu parja (amivel egyutt jott letre)
+    Aszteroida sajatAszteroida;	// az az aszteroida, amelyik korul kering lerakas utan
+    boolean mukodikE;			// True, ha a kapu mukodokepes, False, ha nem
+    
+    /**
+     * A teleportkapu konstruktora, a par, sajatAszteroida es mukodikE ertekeket null-ra allitja.
+     */
     public Teleportkapu() {
         SkeletonController.ObjectCreated(this);
         par = null;
         sajatAszteroida = null;
         mukodikE = true;
     }
-
+    
+    /**
+     * Beallitja a par erteket a kapott teleportkapura.
+     * @param p A teleortkapu, ami ezutan ennek a kpaunak a parja lesz.
+     */
     public void SetPar(Teleportkapu p) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
         par = p;
         SkeletonController.FunctionReturn();
     }
-
+    
+    /**
+     * Beallitja a sajatAszteroida erteket a kapott aszteroidara.
+     * @param a Az aszteroida, ami korul a teleportkapu kering a jatekban.
+     */
     public void SetSajatAszteroida(Aszteroida a) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -28,6 +39,10 @@ public class Teleportkapu implements Mezo, Szallithato {
         SkeletonController.FunctionReturn();
     }
 
+    /**
+     * A teleprotkapuba egy Hajo (telepes vagy robot) erkezik a kapu parjatol, amely ezutan tovabbhalad a kapu aszteriodajara, ha az letezik.
+     * @param h Az erkezo Hajo
+     */
     public void HajoTeleportErkezik(Hajo h) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -66,6 +81,10 @@ public class Teleportkapu implements Mezo, Szallithato {
 
     }
 
+    /**
+     * A teleprotkapuba egy Hajo (telepes vagy robot) erkezik, amely ezutan tovabbhalad a kapu parjaba, ha az letezik.
+     * @param h Az erkezo Hajo
+     */
     @Override
     public void HajoErkezik(Hajo h) {
         SkeletonController.FunctionCall(new Object() {

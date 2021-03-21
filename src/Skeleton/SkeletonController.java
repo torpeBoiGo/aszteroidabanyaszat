@@ -294,7 +294,10 @@ public class SkeletonController {
 
 
 
-    
+    /**
+     * A telepes Tetlen() fuggvenyet hivja meg.
+     * 
+     */
     public static void TelepesTetlen() {
     	Telepes t = new Telepes();
     	NamesMap.put(t.toString(), "t");

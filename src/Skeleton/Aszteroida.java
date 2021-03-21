@@ -3,14 +3,38 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * Az aszteroida mukodeseet megvalosito osztaly.
+ *
+ */
 public class Aszteroida implements Mezo {
-    public String name;
+    	
+    /**
+     * Az aszteroidaval szomszedos aszteriodak
+     */
     List<Mezo> szomszedok = new ArrayList<Mezo>();
+    
+    /**
+     * A mag korul levo sziklaretegek szama
+     */
     int kulsoRetegek;
-    Nyersanyag mag;
-    List<Hajo> hajok = new ArrayList<Hajo>();
+    /**
+     * Az aszteroida magjaban talalhato nyersanyag
+     */
+    Nyersanyag mag;									
+    /**
+     * Az aszteroidan tartozkodo Hajok
+     */
+    List<Hajo> hajok = new ArrayList<Hajo>();	
+    /**
+     * Napkozelben van-e az aszteroida?
+     */
     boolean napkozelben;
 
+    /**
+     * Az aszteroida konstruktora
+     */
     public Aszteroida() {
         SkeletonController.ObjectCreated(this);
     }
@@ -101,10 +125,12 @@ public class Aszteroida implements Mezo {
         return null;
     }
 
+   
     public boolean NapkozelbenE() {
         return napkozelben;
     }
 
+    
     public List<Mezo> getSzomszedok() {
         return szomszedok;
     }
@@ -142,7 +168,11 @@ public class Aszteroida implements Mezo {
         if (m != null) szomszedok.remove(m);
         SkeletonController.FunctionReturn();
     }
-
+    
+    /**
+     * Az aszteroidara egy Hajo erkezik.
+     * @param Hajo h - a hajo ami erkezik az aszteroidara
+     */
     @Override
     public void HajoErkezik(Hajo h) {
         SkeletonController.FunctionCall(new Object() {
@@ -153,7 +183,10 @@ public class Aszteroida implements Mezo {
 
         SkeletonController.FunctionReturn();
     }
-
+    
+    /**
+     * Az aszteroidarol lekerul egy Hajo.
+     */
     @Override
     public void HajoElhagy(Hajo h) {
         SkeletonController.FunctionCall(new Object() {
@@ -195,9 +228,12 @@ public class Aszteroida implements Mezo {
         }
     }
 
-  
- 
 
+    /**
+     * Az aszteroida magjaba egy nyersanyag kerul.
+     * @param n A magba kerulo nyersanyag.
+     * @return True vagy False aszerint, hogy sikeres-e a nyersanyag magba helyezese.
+     */
     public boolean AddMag(Nyersanyag n) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);

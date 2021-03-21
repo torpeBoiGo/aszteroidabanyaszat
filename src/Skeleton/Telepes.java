@@ -3,18 +3,27 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * A telepest megvalosito osztaly.
+ * 
+ *
+ */
 public class Telepes extends Hajo {
 
-
-    List<Szallithato> nyersanyagRakter = new ArrayList<>();
-    List<Szallithato> teleportkapuRakter = new ArrayList<>();
+	/**
+	 * a nyersanyagokat tarolo Rakter
+	 */
+    List<Szallithato> nyersanyagRakter = new ArrayList<>(); 
+    
+    /**
+     *  a teleportkapukat tarolo Rakter
+     */
+    List<Szallithato> teleportkapuRakter = new ArrayList<>();	
 
 
     /**
-     * A telepes konstrukotra, mely rogton egy aszteroidara ra is helyezi
-     * 
-     * @param Aszteroida a - az aszteroida amire rahelyezzuk
+     * A telepes konstruktora, amely beallitja a sajat aszteroidajat, es hozzaadja a parameterul kapott aszteroidan tartozkodo hajokhoz a telepest. 
+     * @param a Az az aszteroida, ahova a telepes letrejottenek pillanataban kerul.
      */
     public Telepes(Aszteroida a) {
 
@@ -23,13 +32,19 @@ public class Telepes extends Hajo {
         aszteroida = a;
 
     }
-
+    
+    /**
+     * A telepes konstruktora, a sajat aszteroida erteket nullra allitja. 
+     */
     public Telepes() {
         SkeletonController.ObjectCreated(this);
         aszteroida = null;
     }
 
-
+    /**
+     * A Robot epiteset vegzo fuggveny.
+     * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a robotot.
+     */
     public void RobotEpit(Epitheto e) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -62,6 +77,10 @@ public class Telepes extends Hajo {
         SkeletonController.FunctionReturn();
     }
 
+    /**
+     * A teleportkapuk epiteset vegzo fuggveny.
+     * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a teleportkapukat.
+     */
     public void TeleportEpit(Epitheto e) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
