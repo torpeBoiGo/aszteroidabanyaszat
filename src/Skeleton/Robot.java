@@ -2,6 +2,7 @@ package Skeleton;
 
 import java.util.ArrayList;
 
+/**A jatekban szereplo robot*/
 public class Robot extends Hajo {
     /**
      * Robot konstruktora, ha a keletkezese pillanatatol aszteroidan tartozkodik
@@ -46,7 +47,7 @@ public class Robot extends Hajo {
     public void Robbanas() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int van_szomszed = SkeletonController.AskForInput("Van szomszedja az aszteroidanak?", new ArrayList<>() {{
+        int van_szomszed = SkeletonController.AskForInput("Van szomszedja az aszteroidanak?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});

@@ -3,18 +3,27 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 
+/**A jatekban szerplo aszteroida*/
 public class Aszteroida implements Mezo {
+	//ez mi?
     public String name;
+    /**Az aszteroida szomszedjai*/
     List<Mezo> szomszedok = new ArrayList<Mezo>();
+    /**Az aszteroida kulso retegeinek a szama*/
     int kulsoRetegek;
+    /**Az aszteroida magjaban levo nyersanyag*/
     Nyersanyag mag;
+    /**Az aszteroidan tartozkodo hajok*/
     List<Hajo> hajok = new ArrayList<Hajo>();
+    /**Megmutatja, hogy az aszteroida napkozelben van-e*/
     boolean napkozelben;
 
+    /**Konstruktor*/
     public Aszteroida() {
         SkeletonController.ObjectCreated(this);
     }
 
+    /**Az aszteroida furasa*/
     public void Fur() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -72,6 +81,9 @@ public class Aszteroida implements Mezo {
 
     }*/
 
+    /**Kiveszi a magban levo nyersanyagot es visszaadja azt
+     * @return a magban levo nyersanyag
+     */
     public Nyersanyag Kinyer() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -101,14 +113,23 @@ public class Aszteroida implements Mezo {
         return null;
     }
 
+    /**Visszater azzal, hogy az aszteroida napokezelben van-e
+     * @return igaz, ha az aszteroida napkozelben van, egyebkent hamis
+     */
     public boolean NapkozelbenE() {
         return napkozelben;
     }
 
+    /**Visszater az aszteroida szomszedjait tartalmazo listaval
+     * @return az aszteroida szomszedjai
+     */
     public List<Mezo> getSzomszedok() {
         return szomszedok;
     }
 
+    /**Hozzaadja az aszteroida szomszedjaihoz a mezot
+     * @param m az aszteroida uj szomszedja
+     */
     public void AddSzomszed(Mezo m) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -116,6 +137,10 @@ public class Aszteroida implements Mezo {
         SkeletonController.FunctionReturn();
     }
 
+    /**Ez a fuggyveny felel az aszteroida felrobbanasaert
+     * A rajta levo hajok felrobbanak,
+     * a szomszedos mezok eltavolitjak a szomszedjaik kozul
+     */
     @Override
     public void Robban() {
         SkeletonController.FunctionCall(new Object() {
@@ -129,6 +154,9 @@ public class Aszteroida implements Mezo {
         SkeletonController.FunctionReturn();
     }
 
+    /**Eltavolitja a parameterkent kapott mezot a szomszedjai kozul
+     * @ param m az eltavolitando mezo
+     */
     @Override
     public void RemoveSzomszed(Mezo m) {
         SkeletonController.FunctionCall(new Object() {
@@ -137,6 +165,9 @@ public class Aszteroida implements Mezo {
         SkeletonController.FunctionReturn();
     }
 
+    /**Hozzadja a parameterkent kapott hajot az aszteroida
+     * @ param h az erkezo hajo
+     */
     @Override
     public void HajoErkezik(Hajo h) {
         SkeletonController.FunctionCall(new Object() {
@@ -148,6 +179,9 @@ public class Aszteroida implements Mezo {
         SkeletonController.FunctionReturn();
     }
 
+    /**Eltavolitja a parameterkent kapott hajot az aszteroidarol
+     * @param h az eltavolitando hajo
+     */
     @Override
     public void HajoElhagy(Hajo h) {
         SkeletonController.FunctionCall(new Object() {
@@ -163,7 +197,7 @@ public class Aszteroida implements Mezo {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
 
-        int levanfurva = SkeletonController.AskForInput("Az aszteroida le van furva(kulso retegeinek szama 0)? ", new ArrayList<>() {{
+        int levanfurva = SkeletonController.AskForInput("Az aszteroida le van furva(kulso retegeinek szama 0)? ", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -171,7 +205,7 @@ public class Aszteroida implements Mezo {
         if (levanfurva == 0) {
             System.out.println("kilepes");
         } else {
-            int vanmagja = SkeletonController.AskForInput("Az aszteroidaban talalhato mag? ", new ArrayList<>() {{
+            int vanmagja = SkeletonController.AskForInput("Az aszteroidaban talalhato mag? ", new ArrayList<String>() {{
                 add("igen");
                 add("nem");
             }});
@@ -190,6 +224,11 @@ public class Aszteroida implements Mezo {
     }
 
 
+    /**Elhelyezi a parameterkent kapott nyersanyagot az aszteroida magjaban.
+     * Ez csak, akkor tortenhet meg ha az aszteroida teljesen at van furva es ureges.
+     * @param n az elhelyezendo nyersanyag
+     * @return igaz, ha sikeres volt a muvelet, egyebkent hamis
+     */
     public boolean AddMag(Nyersanyag n) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -207,11 +246,10 @@ public class Aszteroida implements Mezo {
                 if (napkozelben) {
                     n.Megfurva(this);
                 }
-
                 mag = n;
                 return true;
             case 2:
-                System.out.println("nem lehet elhelyezni a nyersanyagot az aszteroid�ba");
+                System.out.println("nem lehet elhelyezni a nyersanyagot az aszteroidaban");
                 break;
             default:
                 System.out.println("Rossz bemenet");

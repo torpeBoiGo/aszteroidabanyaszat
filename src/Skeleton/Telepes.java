@@ -83,7 +83,7 @@ public class Telepes extends Hajo {
                 System.out.println("Rossz bemenet");
                 break;
         }
-        int res2 = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<>() {{
+        int res2 = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -144,6 +144,7 @@ public class Telepes extends Hajo {
         SkeletonController.FunctionReturn();
     }
 
+    /*A telepes felrobban*/
     @Override
     public void Robbanas() {
         SkeletonController.FunctionCall(new Object() {
