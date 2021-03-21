@@ -103,11 +103,18 @@ public class Aszteroida implements Mezo{
     public List<Mezo> getSzomszedok(){
     	return szomszedok;
     }
+
     
-    public void AddSzomszed(Mezo m){
-    	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(), this);
-    	szomszedok.add(m);
-    	SkeletonController.FunctionReturn();
+    /**
+     * Egy szomszedot adunk az aszteroidahoz
+     * A szomszedban is beallitja hogy ez az aszteroida szomszedja legyen
+     * @param Mezo m - az uj szomszed
+     */
+    public void AddSzomszed(Mezo m) {
+        SkeletonController.FunctionCall(new Object() {
+        }.getClass().getEnclosingMethod().getName(), this);
+        szomszedok.add(m);
+        SkeletonController.FunctionReturn();
     }
 
     @Override

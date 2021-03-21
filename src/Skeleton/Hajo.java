@@ -11,12 +11,18 @@ abstract class Hajo {
 		aszteroida.Fur();
 		SkeletonController.FunctionReturn();
     }
+
     
-    public void Mozog(Mezo uj_mezo){
-    	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-    	uj_mezo.HajoErkezik(this);
-    	
-    	SkeletonController.FunctionReturn();
+    /**
+     * A hajo ezzel a fuggvennyel tud masik mezore lepni
+     * @param Mezo uj_mezo - az �j mezo amire atmegy a hajo
+     */
+    public void Mozog(Mezo uj_mezo) {
+        SkeletonController.FunctionCall(new Object() {
+        }.getClass().getEnclosingMethod().getName(), this);
+        uj_mezo.HajoErkezik(this);
+
+        SkeletonController.FunctionReturn();
     }
     
     public void Napvihar(){
