@@ -148,15 +148,14 @@ public class SkeletonController {
 
 		Aszteroida a =  new Aszteroida();
 		NamesMap.put(a.toString(), "a");
+		
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
 
 		Vas vas = new Vas();
 		NamesMap.put(vas.toString(), "vas");
 
-		a.AddMag(vas);
-
-		Telepes t = new Telepes(a);
-		NamesMap.put(t.toString(), "t");
-
+		a.SetMag(vas);
 
 		//Kezdohivas
 		t.Banyasz();
@@ -167,14 +166,15 @@ public class SkeletonController {
 
 		Aszteroida a =  new Aszteroida();
 		NamesMap.put(a.toString(), "a");
+		
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
 
 		Szen szen = new Szen();
 		NamesMap.put(szen.toString(), "szen");
 
-		a.AddMag(szen);
-
-		Telepes t = new Telepes(a);
-		NamesMap.put(t.toString(), "t");
+		a.SetMag(szen);
 
 		//Kezdohivas
 		t.Banyasz();
@@ -186,14 +186,13 @@ public class SkeletonController {
 		Aszteroida a =  new Aszteroida();
 		NamesMap.put(a.toString(), "a");
 
-		Uran uran = new Uran();
-		NamesMap.put(uran.toString(), "uran");
-
-		a.AddMag(uran);
-
 		Telepes t = new Telepes(a);
 		NamesMap.put(t.toString(), "t");
 
+		Uran uran = new Uran();
+		NamesMap.put(uran.toString(), "uran");
+
+		a.SetMag(uran);
 
 		//Kezdohivas
 		t.Banyasz();
@@ -205,14 +204,13 @@ public class SkeletonController {
 		Aszteroida a =  new Aszteroida();
 		NamesMap.put(a.toString(), "a");
 
-		Vizjeg vizjeg= new Vizjeg();
-		NamesMap.put(vizjeg.toString(), "vizjeg");
-
-		a.AddMag(vizjeg);
-
 		Telepes t = new Telepes(a);
 		NamesMap.put(t.toString(), "t");
 
+		Vizjeg vizjeg= new Vizjeg();
+		NamesMap.put(vizjeg.toString(), "vizjeg");
+
+		a.SetMag(vizjeg);
 
 		//Kezdohivas
 		t.Banyasz();
