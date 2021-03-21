@@ -125,16 +125,18 @@ public class Aszteroida implements Mezo {
         return null;
     }
 
+   
     public boolean NapkozelbenE() {
         return napkozelben;
     }
 
+    
     public List<Mezo> getSzomszedok() {
         return szomszedok;
     }
     
     /**
-     * Az aszteroidanak uj szoomszedja lesz.
+     * Az aszteroidanak uj szomszedja lesz.
      * @param m Az aszteroida uj szomszedja.
      */
     public void AddSzomszed(Mezo m) {
@@ -167,6 +169,7 @@ public class Aszteroida implements Mezo {
     
     /**
      * Az aszteroidara egy Hajo erkezik.
+     * @param Hajo h - a hajo ami erkezik az aszteroidara
      */
     @Override
     public void HajoErkezik(Hajo h) {
