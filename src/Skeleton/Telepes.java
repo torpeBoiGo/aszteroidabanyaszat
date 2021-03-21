@@ -25,13 +25,6 @@ public class Telepes extends Hajo{
         aszteroida = null;
     }
     
-    public void AnyagVisszatesz(Nyersanyag n) {
-    	
-    }
-    
-    public void Banyasz() {
-    	
-    }
     
     public void RobotEpit(Epitheto e) {
     	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
@@ -150,24 +143,21 @@ public class Telepes extends Hajo{
 
 
 	void AnyagVisszatesz(Nyersanyag n){
-	    aszteroida.addMag(n);
+	    aszteroida.AddMag(n);
 
 	}
 
-	void AddRakter(Nyersanyag n){
-		Rakter.add(n);
+	void AddRakter(Nyersanyag n){		
+		//rakter.add(n);
 	}
 
 	void Banyasz(){
 		Nyersanyag n = aszteroida.Kinyer();
-		if(n != null && Rakter.size()< 9){
+		if(n != null && nyersanyagRakter.size()< 9){
 			//Rakter.AddRakter(n);
 		}
 
 	}
 
 
-}
-
-	
 }
