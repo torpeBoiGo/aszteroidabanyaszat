@@ -24,8 +24,8 @@ public class Main {
         menuItems.add(new MenuItem("Telepes banyaszik vizjeget", SkeletonController::TelepesBanyaszikVizjeget));
         menuItems.add(new MenuItem("Telepes lerak szenet", SkeletonController::TelepesLerakSzenet));
         menuItems.add(new MenuItem("Telepes lerak vasat", SkeletonController::TelepesLerakVasat));
-        menuItems.add(new MenuItem("Telepes lerak vizjeges", SkeletonController::TelepesBanyaszikVizjeget));
-        menuItems.add(new MenuItem("Telepes lerak urant", SkeletonController::TelepesBanyaszikUrant));
+        menuItems.add(new MenuItem("Telepes lerak vizjeges", SkeletonController::TelepesLerakVizjeget));
+        menuItems.add(new MenuItem("Telepes lerak urant", SkeletonController::TelepesLerakUrant));
         
         menuItems.add(new MenuItem("Telepes furja a vasat tartalmazo aszteroidat", SkeletonController::TelepesFurVasat));
         menuItems.add(new MenuItem("Telepes furja a szenet tartalmazo aszteroidat", SkeletonController::TelepesFurSzenet));
