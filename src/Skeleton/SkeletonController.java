@@ -15,8 +15,8 @@ public class SkeletonController {
     /**
      * Minden fuggvenyhivas elejen hivjuk, a megfelelo behuzassal kiirja a fuggveny nevet
      * 
-     *@param String calledFunctionName - a meghivott fuggveny neve
-     *@param Object calledObject - az objektum amin a fuggvenyt meghivtuk
+     *@param calledFunctionName - a meghivott fuggveny neve
+     *@param calledObject - az objektum amin a fuggvenyt meghivtuk
      */
     public static void FunctionCall(String calledFunctionName, Object calledObject) {
     	for(int i = 0; i< depth;i++)
@@ -25,7 +25,7 @@ public class SkeletonController {
     	if(NamesMap.containsKey(calledObject.toString()))
     		System.out.print("-> " + NamesMap.get(calledObject.toString()));
     	
-    	//email alapján úgy döntöttünk most nem gond ha az inicializálás alatt nem mindennek tudjuk kiirni a nevét
+    	//email alapjï¿½n ï¿½gy dï¿½ntï¿½ttï¿½nk most nem gond ha az inicializï¿½lï¿½s alatt nem mindennek tudjuk kiirni a nevï¿½t
     	else System.out.print("-> most letrejott " + calledObject.getClass().getSimpleName());
     	
         System.out.print("." + calledFunctionName+ "()\n");
@@ -36,8 +36,8 @@ public class SkeletonController {
     /**
      * Ha a felhasznalotol visszajelzest kerunk, akkor hivjuk meg
      * 
-     *@param String kerdes - a helhasznalonak feltett kerdes
-     *@param ArrayList<String> choices - a kerdesre adhato valaszok listaja
+     *@param kerdes - a helhasznalonak feltett kerdes
+     *@param choices - a kerdesre adhato valaszok listaja
      */
     public static int AskForInput(String kerdes, ArrayList<String> choices) {
     	for(int i = 0; i< depth;i++)
