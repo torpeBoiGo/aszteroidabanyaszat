@@ -347,7 +347,6 @@ public class SkeletonController {
     
     /**Telepes fur vasat*/
     public static void TelepesFurVasat() {
-    	depth=0;
     	//Inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -356,7 +355,7 @@ public class SkeletonController {
     	Vas vas = new Vas();
     	NamesMap.put(vas.toString(), "vas");
     	
-    	a.AddMag(vas);
+    	a.SetMag(vas);
     	
     	//Kezdo hivas
     	t.Fur();
@@ -364,7 +363,6 @@ public class SkeletonController {
     
     /**Telepes fur szenet*/
     public static void TelepesFurSzenet() {
-    	depth=0;
     	//Inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -373,7 +371,7 @@ public class SkeletonController {
     	Szen sz = new Szen();
     	NamesMap.put(sz.toString(), "sz");
     	
-    	a.AddMag(sz);
+    	a.SetMag(sz);
     	
     	//Kezdo hivas
     	t.Fur();
@@ -381,7 +379,6 @@ public class SkeletonController {
     
     /**Telepes fur vizjeget*/
     public static void TelepesFurVizjeget() {
-    	depth=0;
     	//Inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -390,7 +387,7 @@ public class SkeletonController {
     	Vizjeg v= new Vizjeg();
     	NamesMap.put(v.toString(), "v");
     	
-    	a.AddMag(v);
+    	a.SetMag(v);
     	
     	//Kezdo hivas
     	t.Fur();
@@ -398,7 +395,6 @@ public class SkeletonController {
     
     /**Telepes fur urant*/
     public static void TelepesFurUrant() {
-    	depth=0;
     	//Inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -408,7 +404,7 @@ public class SkeletonController {
     	NamesMap.put(r.toString(), "r");
     	Uran u = new Uran();
     	NamesMap.put(u.toString(), "u");
-    	a.AddMag(u);
+    	a.SetMag(u);
     	
     	Aszteroida szomsz1 = new Aszteroida();
     	NamesMap.put(szomsz1.toString(), "szomsz1");
@@ -437,7 +433,6 @@ public class SkeletonController {
     
     /**Robot fur vasat*/
     public static void RobotFurVasat() {
-    	depth=0;
     	//Inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -446,7 +441,7 @@ public class SkeletonController {
     	Vas vas = new Vas();
     	NamesMap.put(vas.toString(), "vas");
     	
-    	a.AddMag(vas);
+    	a.SetMag(vas);
     	
     	//Kezdo hivas
     	r.Fur();
@@ -454,7 +449,6 @@ public class SkeletonController {
     
     /**Robot fur szenet*/
     public static void RobotFurSzenet() {
-    	depth=0;
     	//Inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -463,7 +457,7 @@ public class SkeletonController {
     	Szen sz = new Szen();
     	NamesMap.put(sz.toString(), "sz");
     	
-    	a.AddMag(sz);
+    	a.SetMag(sz);
     	
     	//Kezdo hivas
     	r.Fur();
@@ -471,7 +465,6 @@ public class SkeletonController {
     
     /**Robot fur vizjeget*/
     public static void RobotFurVizjeget() {
-    	depth=0;
     	//Inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -480,7 +473,7 @@ public class SkeletonController {
     	Vizjeg v= new Vizjeg();
     	NamesMap.put(v.toString(), "v");
     	
-    	a.AddMag(v);
+    	a.SetMag(v);
     	
     	//Kezdo hivas
     	r.Fur();
@@ -488,7 +481,6 @@ public class SkeletonController {
     
     /**Robot fur urant*/
     public static void RobotFurUrant() {
-    	depth=0;
     	//Inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -498,7 +490,7 @@ public class SkeletonController {
     	NamesMap.put(r.toString(), "r");
     	Uran u = new Uran();
     	NamesMap.put(u.toString(), "u");
-    	a.AddMag(u);
+    	a.SetMag(u);
     	
     	Aszteroida szomsz1 = new Aszteroida();
     	NamesMap.put(szomsz1.toString(), "szomsz1");
@@ -528,7 +520,6 @@ public class SkeletonController {
     
     /**telepes meghal, egy teleportkapu par van nala*/
     public static void TelepesMeghalKapupar() {
-    	depth=0;
     	//inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
@@ -553,7 +544,6 @@ public class SkeletonController {
     
     /**telepes meghal, csak a kapupar fele van nala*/
     public static void TelepesMeghalKapuKulon() {
-    	depth=0;
     	//inicializalas
     	Aszteroida a = new Aszteroida();
     	NamesMap.put(a.toString(), "a");
