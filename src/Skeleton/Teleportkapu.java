@@ -13,17 +13,19 @@ public class Teleportkapu implements Mezo, Szallithato {
     /**Azt mutatja meg, hogy uzemkepes-e a kapu*/
     boolean mukodikE;
     
-    /**Konstruktor*/
+    /**
+     * A teleportkapu konstruktora, a par, sajatAszteroida es mukodikE ertekeket null-ra allitja.
+     */
     public Teleportkapu() {
         SkeletonController.ObjectCreated(this);
         par = null;
         sajatAszteroida = null;
         mukodikE = true;
     }
-
-    /**Beallitja a teleportkapu parjat a parameterkent kapott teleportkapura
-     * 
-     * @param p a beallitando teleportkapu
+    
+    /**
+     * Beallitja a par erteket a kapott teleportkapura.
+     * @param p A teleortkapu, ami ezutan ennek a kpaunak a parja lesz.
      */
     public void SetPar(Teleportkapu p) {
         SkeletonController.FunctionCall(new Object() {
@@ -32,9 +34,9 @@ public class Teleportkapu implements Mezo, Szallithato {
         SkeletonController.FunctionReturn();
     }
     
-    /**Beallitja a teleportkapu aszteroidajat a parameterkent kapottra
-     * 
-     * @param a a beallitando aszteroida
+    /**
+     * Beallitja a sajatAszteroida erteket a kapott aszteroidara.
+     * @param a Az aszteroida, ami korul a teleportkapu kering a jatekban.
      */
     public void SetSajatAszteroida(Aszteroida a) {
         SkeletonController.FunctionCall(new Object() {
@@ -42,10 +44,10 @@ public class Teleportkapu implements Mezo, Szallithato {
         this.sajatAszteroida = a;
         SkeletonController.FunctionReturn();
     }
-    
-    /**Ez a fuggveny felel, azert, ha a teleportkapuba hajo erkezik a parjabol
-     * Ekkor tovabb kuldi a hajot az aszteroidajara
-     * @param h az erkezo hajo
+
+    /**
+     * A teleprotkapuba egy Hajo (telepes vagy robot) erkezik a kapu parjatol, amely ezutan tovabbhalad a kapu aszteriodajara, ha az letezik.
+     * @param h Az erkezo Hajo
      */
     public void HajoTeleportErkezik(Hajo h) {
         SkeletonController.FunctionCall(new Object() {
@@ -90,9 +92,9 @@ public class Teleportkapu implements Mezo, Szallithato {
 
     }
 
-    /**Ez a fuggveny felel azert, ha a teleportkapuba aszteroidaro hajo erkezik
-     * Ha nem null a parja, akkor tovabb adja neki a hajot
-     * @param h az erkezo hajo
+    /**
+     * A teleprotkapuba egy Hajo (telepes vagy robot) erkezik, amely ezutan tovabbhalad a kapu parjaba, ha az letezik.
+     * @param h Az erkezo Hajo
      */
     @Override
     public void HajoErkezik(Hajo h) {

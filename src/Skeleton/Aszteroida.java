@@ -3,22 +3,38 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 
-/**A jatekban szerplo aszteroida*/
+/**
+ * 
+ * Az aszteroida mukodeseet megvalosito osztaly.
+ *
+ */
 public class Aszteroida implements Mezo {
-	//ez mi?
-    public String name;
-    /**Az aszteroida szomszedjai*/
+    	
+    /**
+     * Az aszteroidaval szomszedos aszteriodak
+     */
     List<Mezo> szomszedok = new ArrayList<Mezo>();
-    /**Az aszteroida kulso retegeinek a szama*/
+    
+    /**
+     * A mag korul levo sziklaretegek szama
+     */
     int kulsoRetegek;
-    /**Az aszteroida magjaban levo nyersanyag*/
-    Nyersanyag mag;
-    /**Az aszteroidan tartozkodo hajok*/
-    List<Hajo> hajok = new ArrayList<Hajo>();
-    /**Megmutatja, hogy az aszteroida napkozelben van-e*/
+    /**
+     * Az aszteroida magjaban talalhato nyersanyag
+     */
+    Nyersanyag mag;									
+    /**
+     * Az aszteroidan tartozkodo Hajok
+     */
+    List<Hajo> hajok = new ArrayList<Hajo>();	
+    /**
+     * Napkozelben van-e az aszteroida?
+     */
     boolean napkozelben;
 
-    /**Konstruktor*/
+    /**
+     * Az aszteroida konstruktora
+     */
     public Aszteroida() {
         SkeletonController.ObjectCreated(this);
     }
@@ -69,17 +85,7 @@ public class Aszteroida implements Mezo {
         if (napkozeli == 1 & atfurva == 1) mag.Megfurva(this);
         SkeletonController.FunctionReturn();
     }
-    
-    
-    /*public Nyersanyag Kinyer(){
-        if(kulsoRetegek>0 || mag == null){
-            return null;
-        }
-        else{
-            return mag;
-        }
 
-    }*/
 
     /**Kiveszi a magban levo nyersanyagot es visszaadja azt
      * @return a magban levo nyersanyag
@@ -113,22 +119,19 @@ public class Aszteroida implements Mezo {
         return null;
     }
 
-    /**Visszater azzal, hogy az aszteroida napokezelben van-e
-     * @return igaz, ha az aszteroida napkozelben van, egyebkent hamis
-     */
+   
     public boolean NapkozelbenE() {
         return napkozelben;
     }
 
-    /**Visszater az aszteroida szomszedjait tartalmazo listaval
-     * @return az aszteroida szomszedjai
-     */
+    
     public List<Mezo> getSzomszedok() {
         return szomszedok;
     }
-
-    /**Hozzaadja az aszteroida szomszedjaihoz a mezot
-     * @param m az aszteroida uj szomszedja
+    
+    /**
+     * Az aszteroidanak uj szomszedja lesz.
+     * @param m Az aszteroida uj szomszedja.
      */
     public void AddSzomszed(Mezo m) {
         SkeletonController.FunctionCall(new Object() {
@@ -164,9 +167,10 @@ public class Aszteroida implements Mezo {
         if (m != null) szomszedok.remove(m);
         SkeletonController.FunctionReturn();
     }
-
-    /**Hozzadja a parameterkent kapott hajot az aszteroida
-     * @ param h az erkezo hajo
+    
+    /**
+     * Az aszteroidara egy Hajo erkezik.
+     * @param Hajo h - a hajo ami erkezik az aszteroidara
      */
     @Override
     public void HajoErkezik(Hajo h) {
@@ -178,9 +182,9 @@ public class Aszteroida implements Mezo {
 
         SkeletonController.FunctionReturn();
     }
-
-    /**Eltavolitja a parameterkent kapott hajot az aszteroidarol
-     * @param h az eltavolitando hajo
+    
+    /**
+     * Az aszteroidarol lekerul egy Hajo.
      */
     @Override
     public void HajoElhagy(Hajo h) {
@@ -223,11 +227,10 @@ public class Aszteroida implements Mezo {
         }
     }
 
-
-    /**Elhelyezi a parameterkent kapott nyersanyagot az aszteroida magjaban.
-     * Ez csak, akkor tortenhet meg ha az aszteroida teljesen at van furva es ureges.
-     * @param n az elhelyezendo nyersanyag
-     * @return igaz, ha sikeres volt a muvelet, egyebkent hamis
+    /**
+     * Az aszteroida magjaba egy nyersanyag kerul.
+     * @param n A magba kerulo nyersanyag.
+     * @return True vagy False aszerint, hogy sikeres-e a nyersanyag magba helyezese.
      */
     public boolean AddMag(Nyersanyag n) {
         SkeletonController.FunctionCall(new Object() {

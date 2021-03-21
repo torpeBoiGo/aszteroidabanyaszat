@@ -2,7 +2,11 @@ package Skeleton;
 
 import java.util.ArrayList;
 
-/**A jatekban szereplo robot*/
+/**
+ * 
+ * A robot mukodeset megvalosito osztaly.
+ *
+ */
 public class Robot extends Hajo {
     /**
      * Robot konstruktora, ha a keletkezese pillanatatol aszteroidan tartozkodik
