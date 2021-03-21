@@ -2,11 +2,24 @@ package Skeleton;
 
 import java.util.Vector;
 
+/**
+ * 
+ * A teleportkapuk epiteset megvalosito osztaly.
+ *
+ */
 public class TeleportEpito extends Epitheto {
-    public TeleportEpito() {
+	/**
+     * Konstruktor.
+     */
+	public TeleportEpito() {
         SkeletonController.ObjectCreated(this);
     }
 
+	/**
+	 * A teleportkapukat letrehozo fuggveny, a visszareteresi erteke a letrejott kapuk.
+	 * @param Aszterodia a - aszteroida ahol epitunk
+	 * @return Vector<Szallithato> - amiket a telepes rakterbe kell tenni- itt ket teleportkapu
+	 */
     @Override
     public Vector<Szallithato> Letrejon(Aszteroida a) {
         SkeletonController.FunctionCall(new Object() {
