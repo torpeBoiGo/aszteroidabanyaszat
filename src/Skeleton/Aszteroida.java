@@ -3,12 +3,33 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * Az aszteroida mukodeseet megvalosito osztaly.
+ *
+ */
 public class Aszteroida implements Mezo {
-    public String name;								
-    List<Mezo> szomszedok = new ArrayList<Mezo>();	// Az aszteroidaval szomszedos aszteriodak
-    int kulsoRetegek;								// A mag korul levo sziklaretegek szama
-    Nyersanyag mag;									// Az aszteroida magjaban talalhato nyersanyag
-    List<Hajo> hajok = new ArrayList<Hajo>();		// Az aszteroidan tartozkodo Hajok
+    	
+    /**
+     * Az aszteroidaval szomszedos aszteriodak
+     */
+    List<Mezo> szomszedok = new ArrayList<Mezo>();
+    
+    /**
+     * A mag korul levo sziklaretegek szama
+     */
+    int kulsoRetegek;
+    /**
+     * Az aszteroida magjaban talalhato nyersanyag
+     */
+    Nyersanyag mag;									
+    /**
+     * Az aszteroidan tartozkodo Hajok
+     */
+    List<Hajo> hajok = new ArrayList<Hajo>();	
+    /**
+     * Napkozelben van-e az aszteroida?
+     */
     boolean napkozelben;
 
     /**

@@ -3,12 +3,22 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * A telepest megvalosito osztaly.
+ * 
+ *
+ */
 public class Telepes extends Hajo {
 
-
-    List<Szallithato> nyersanyagRakter = new ArrayList<>(); 	// a nyersanyagokat tarolo Rakter
-    List<Szallithato> teleportkapuRakter = new ArrayList<>();	// a teleportkapukat tarolo Rakter
+	/**
+	 * a nyersanyagokat tarolo Rakter
+	 */
+    List<Szallithato> nyersanyagRakter = new ArrayList<>(); 
+    
+    /**
+     *  a teleportkapukat tarolo Rakter
+     */
+    List<Szallithato> teleportkapuRakter = new ArrayList<>();	
 
     /**
      * A telepes konstruktora, amely beallitja a sajat aszteroidajat, es hozzaadja a parameterul kapott aszteroidan tartozkodo hajokhoz a telepest. 

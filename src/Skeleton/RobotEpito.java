@@ -2,6 +2,11 @@ package Skeleton;
 
 import java.util.Vector;
 
+/**
+ * 
+ * A robotepitest megvalosito osztaly.
+ *
+ */
 public class RobotEpito extends Epitheto {
     /**
      * Konstruktor.

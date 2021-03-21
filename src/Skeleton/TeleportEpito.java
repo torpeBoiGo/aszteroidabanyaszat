@@ -2,6 +2,11 @@ package Skeleton;
 
 import java.util.Vector;
 
+/**
+ * 
+ * A teleportkapuk epiteset megvalosito osztaly.
+ *
+ */
 public class TeleportEpito extends Epitheto {
 	/**
      * Konstruktor.

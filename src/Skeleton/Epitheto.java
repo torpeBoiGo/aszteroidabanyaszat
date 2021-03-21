@@ -2,6 +2,11 @@ package Skeleton;
 
 import java.util.Vector;
 
+/**
+ * 
+ * A kulonbozo epito osztalyok absztrakt ososztalya.
+ *
+ */
 public abstract class Epitheto {
     public void Hozzaad(Nyersanyag n) {
 

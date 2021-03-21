@@ -1,11 +1,17 @@
 package Skeleton;
 
 import java.util.ArrayList;
-
+/**
+ * 
+ * A hajo mukodeset megvalosito osztaly, a Telepes es Robot ososztalya
+ *
+ */
 abstract class Hajo {
 
-    public String name;
-    protected Aszteroida aszteroida;		// A Hajo ezen az aszteroidan tartozkodik.
+    /**
+     * A Hajo ezen az aszteroidan tartozkodik.
+     */
+    protected Aszteroida aszteroida;	
 
     public void Fur() {
         SkeletonController.FunctionCall(new Object() {
