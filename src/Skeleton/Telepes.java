@@ -11,6 +11,11 @@ public class Telepes extends Hajo {
     List<Szallithato> teleportkapuRakter = new ArrayList<>();
 
 
+    /**
+     * A telepes konstrukotra, mely rogton egy aszteroidara ra is helyezi
+     * 
+     * @param Aszteroida a - az aszteroida amire rahelyezzuk
+     */
     public Telepes(Aszteroida a) {
 
         SkeletonController.ObjectCreated(this);

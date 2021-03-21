@@ -72,12 +72,6 @@ public class Aszteroida implements Mezo {
 
     }*/
 
-    public Nyersanyag Kinyer(){
-    	SkeletonController.FunctionCall(new Object(){}.getClass().getEnclosingMethod().getName(),this);
-    	int kinyerheto = SkeletonController.AskForInput("Kinyerheto az aszteroida magja?", new ArrayList<String>() {{
-			add("igen");
-			add("nem");}});
-
     public Nyersanyag Kinyer() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
