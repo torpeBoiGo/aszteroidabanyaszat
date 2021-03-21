@@ -10,25 +10,39 @@ public class Main {
         int chosen = -1;
         ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
         menuItems.add(new MenuItem("Kilepes", SkeletonController::Kilepes));
-        menuItems.add(new MenuItem("Telepes mozog szomszedos aszteroidara", SkeletonController::TelepesMozogSzomszedosAszteroidara));
-        menuItems.add(new MenuItem("Telepes fur vasat", SkeletonController::TelepesFurVasat));
-        menuItems.add(new MenuItem("Telepes fur szenet", SkeletonController::TelepesFurSzenet));
-        menuItems.add(new MenuItem("Telepes fur vizjeget", SkeletonController::TelepesFurVizjeget));
-        menuItems.add(new MenuItem("Telepes fur urant", SkeletonController::TelepesFurUrant));
-        menuItems.add(new MenuItem("Robot fur vasat", SkeletonController::RobotFurVasat));
-        menuItems.add(new MenuItem("Robot fur szenet", SkeletonController::RobotFurSzenet));
-        menuItems.add(new MenuItem("Robot fur vizjeget", SkeletonController::RobotFurVizjeget));
-        menuItems.add(new MenuItem("Robot fur urant", SkeletonController::RobotFurUrant));
-        menuItems.add(new MenuItem("Telepes meghal, csak a kapupar fele van nala", SkeletonController::TelepesMeghalKapuKulon));
-        menuItems.add(new MenuItem("Telepes meghal, egy teleportkapu par van nala", SkeletonController::TelepesMeghalKapupar));
-        menuItems.add(new MenuItem("Robot mozog szomszedos aszteroidara", SkeletonController::RobotMozogSzomszedosAszteroidara));
         menuItems.add(new MenuItem("Telepes tetlen", SkeletonController::TelepesTetlen));
         menuItems.add(new MenuItem("Telepes mozog teleporton keresztul", SkeletonController::TelepesMozogTeleport));
         menuItems.add(new MenuItem("Robot mozog teleporton keresztul", SkeletonController::RobotMozogTeleport));
-        menuItems.add(new MenuItem("Telepes teleportkaput epit", SkeletonController::TelepesTeleportkaputEpit));
+        menuItems.add(new MenuItem("Telepes mozog szomszedos aszteroidara", SkeletonController::TelepesMozogSzomszedosAszteroidara));
+        menuItems.add(new MenuItem("Robot mozog szomszedos aszteroidara", SkeletonController::RobotMozogSzomszedosAszteroidara));
+        //Telepes lerak teleportkaput
         menuItems.add(new MenuItem("Telepes robotot epit", SkeletonController::TelepesRobototEpit));
+        menuItems.add(new MenuItem("Telepes teleportkaput epit", SkeletonController::TelepesTeleportkaputEpit));
+        menuItems.add(new MenuItem("Telepes banyaszik szenet", SkeletonController::TelepesBanyaszikSzenet));
+        menuItems.add(new MenuItem("Telepes banyaszik vasat", SkeletonController::TelepesBanyaszikVasat));
+        menuItems.add(new MenuItem("Telepes banyaszik urant", SkeletonController::TelepesBanyaszikUrant));
+        menuItems.add(new MenuItem("Telepes banyaszik vizjeget", SkeletonController::TelepesBanyaszikVizjeget));
+        menuItems.add(new MenuItem("Telepes lerak szenet", SkeletonController::TelepesLerakSzenet));
+        menuItems.add(new MenuItem("Telepes lerak vasat", SkeletonController::TelepesLerakVasat));
+        menuItems.add(new MenuItem("Telepes lerak vizjeges", SkeletonController::TelepesBanyaszikVizjeget));
+        menuItems.add(new MenuItem("Telepes lerak urant", SkeletonController::TelepesBanyaszikUrant));
+        
+        menuItems.add(new MenuItem("Telepes furja a vasat tartalmazo aszteroidat", SkeletonController::TelepesFurVasat));
+        menuItems.add(new MenuItem("Telepes furja a szenet tartalmazo aszteroidat", SkeletonController::TelepesFurSzenet));
+        menuItems.add(new MenuItem("Telepes furja a vizjeget tartalmazo aszteroidat", SkeletonController::TelepesFurVizjeget));
+        menuItems.add(new MenuItem("Telepes furja az urant tartalmazo aszteroidat", SkeletonController::TelepesFurUrant));
+        menuItems.add(new MenuItem("Robot furja a vasat tartalmazo aszteroidat", SkeletonController::RobotFurVasat));
+        menuItems.add(new MenuItem("Robot furja a szenet tartalmazo aszteroidat", SkeletonController::RobotFurSzenet));
+        menuItems.add(new MenuItem("Robot furja a vizjeget tartalmazo aszteroidat", SkeletonController::RobotFurVizjeget));
+        menuItems.add(new MenuItem("Robot furja az urant tartalmazo aszteroidat", SkeletonController::RobotFurUrant));
+
+        menuItems.add(new MenuItem("Telepes meghal - tarolojaban a teleportkapu par egyik fele van csak ", SkeletonController::TelepesMeghalKapuKulon));
+        menuItems.add(new MenuItem("Telepes meghal - tárolójában van a teleportkapu pár mindkét fele", SkeletonController::TelepesMeghalKapupar));     
+        
         menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin telepes van", SkeletonController::NapviharAszteroidaraTelepesre));
         menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin robot van", SkeletonController::NapviharAszteroidaraRobotra));
+        
+        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
             System.out.println("Kerlek valassz egy opciot!\n");
