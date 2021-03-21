@@ -2,14 +2,18 @@ package Skeleton;
 
 import java.util.Vector;
 
+
 /**
- * 
- * A kulonbozo epito osztalyok absztrakt ososztalya.
- *
+ * Absztrakt osztaly epitheto objektumok megvalositasara 
  */
 public abstract class Epitheto {
+	
+	/**
+     * Ellenorzi, hogy a parameterul kapott nyersanyag kell-e az adott dolog epitesehez.
+     * @param n - A nyersanyag amit hozzaadunk a szukseges nyersanyagok listajhoz
+     */
     public void Hozzaad(Nyersanyag n) {
-
+    	
     }
     
     /**

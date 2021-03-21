@@ -77,7 +77,7 @@ public class Telepes extends Hajo {
     }
 
     /**
-     * A telpeortkapuk epiteset vegzo fuggveny.
+     * A teleportkapuk epiteset vegzo fuggveny.
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a teleportkapukat.
      */
     public void TeleportEpit(Epitheto e) {
