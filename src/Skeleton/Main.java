@@ -1,4 +1,3 @@
-
 package Skeleton;
 
 import java.io.BufferedReader;
@@ -9,30 +8,32 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         int chosen = -1;
-        ArrayList<MenuItem> menuItems= new ArrayList<MenuItem>();
+        ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
         menuItems.add(new MenuItem("Kilepes", SkeletonController::Kilepes));
         menuItems.add(new MenuItem("Telepes mozog szomszedos aszteroidara", SkeletonController::TelepesMozogSzomszedosAszteroidara));
-        menuItems.add(new MenuItem("Telepes fur vasat",SkeletonController::TelepesFurVasat));
-        menuItems.add(new MenuItem("Telepes fur szenet",SkeletonController::TelepesFurSzenet));
-        menuItems.add(new MenuItem("Telepes fur vizjeget",SkeletonController::TelepesFurVizjeget));
-        menuItems.add(new MenuItem("Telepes fur urant",SkeletonController::TelepesFurUrant));
-        menuItems.add(new MenuItem("Robot fur vasat",SkeletonController::RobotFurVasat));
-        menuItems.add(new MenuItem("Robot fur szenet",SkeletonController::RobotFurSzenet));
-        menuItems.add(new MenuItem("Robot fur vizjeget",SkeletonController::RobotFurVizjeget));
-        menuItems.add(new MenuItem("Robot fur urant",SkeletonController::RobotFurUrant));
-        menuItems.add(new MenuItem("Telepes meghal, csak a kapupar fele van nala",SkeletonController::TelepesMeghalKapuKulon));
-        menuItems.add(new MenuItem("Telepes meghal, egy teleportkapu par van nala",SkeletonController::TelepesMeghalKapupar));
+        menuItems.add(new MenuItem("Telepes fur vasat", SkeletonController::TelepesFurVasat));
+        menuItems.add(new MenuItem("Telepes fur szenet", SkeletonController::TelepesFurSzenet));
+        menuItems.add(new MenuItem("Telepes fur vizjeget", SkeletonController::TelepesFurVizjeget));
+        menuItems.add(new MenuItem("Telepes fur urant", SkeletonController::TelepesFurUrant));
+        menuItems.add(new MenuItem("Robot fur vasat", SkeletonController::RobotFurVasat));
+        menuItems.add(new MenuItem("Robot fur szenet", SkeletonController::RobotFurSzenet));
+        menuItems.add(new MenuItem("Robot fur vizjeget", SkeletonController::RobotFurVizjeget));
+        menuItems.add(new MenuItem("Robot fur urant", SkeletonController::RobotFurUrant));
+        menuItems.add(new MenuItem("Telepes meghal, csak a kapupar fele van nala", SkeletonController::TelepesMeghalKapuKulon));
+        menuItems.add(new MenuItem("Telepes meghal, egy teleportkapu par van nala", SkeletonController::TelepesMeghalKapupar));
         menuItems.add(new MenuItem("Robot mozog szomszedos aszteroidara", SkeletonController::RobotMozogSzomszedosAszteroidara));
         menuItems.add(new MenuItem("Telepes tetlen", SkeletonController::TelepesTetlen));
         menuItems.add(new MenuItem("Telepes mozog teleporton keresztul", SkeletonController::TelepesMozogTeleport));
         menuItems.add(new MenuItem("Robot mozog teleporton keresztul", SkeletonController::RobotMozogTeleport));
         menuItems.add(new MenuItem("Telepes teleportkaput epit", SkeletonController::TelepesTeleportkaputEpit));
         menuItems.add(new MenuItem("Telepes robotot epit", SkeletonController::TelepesRobototEpit));
+        menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin telepes van", SkeletonController::NapviharAszteroidaraTelepesre));
+        menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin robot van", SkeletonController::NapviharAszteroidaraRobotra));
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
             System.out.println("Kerlek valassz egy opciot!\n");
-            for (int i = 0; i< menuItems.size();i++) 
-            	 System.out.println(i + ". " + menuItems.get(i).name);
+            for (int i = 0; i < menuItems.size(); i++)
+                System.out.println(i + ". " + menuItems.get(i).name);
             System.out.print("Valasztas: ");
             try {
                 String line = reader.readLine();
@@ -41,12 +42,14 @@ public class Main {
                 System.out.println(e.getMessage());
                 chosen = 0;
             }
-            
+
             try {
-            	menuItems.get(chosen).toCall.run();
-			} catch (Exception e) {
-				System.out.println(e.getMessage());
-			}
+                menuItems.get(chosen).toCall.run();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                //Igy látjuk ha valamit elbasztunk...
+                System.out.println(e.toString());
+            }
             SkeletonController.NamesMap.clear();
         }
     }

@@ -607,4 +607,25 @@ public class SkeletonController {
     	NamesMap.clear();
     }
 
+	public static void NapviharAszteroidaraTelepesre() {
+    	Aszteroida a = new Aszteroida();
+    	NamesMap.put(a.toString(),"a");
+		Telepes t = new Telepes(a);
+		NamesMap.put(t.toString(), "t");
+
+		a.Napvihar();
+
+
+		NamesMap.clear();
+	}
+	public static void NapviharAszteroidaraRobotra() {
+		Aszteroida a = new Aszteroida();
+		NamesMap.put(a.toString(),"a");
+		Robot r = new Robot(a);
+		NamesMap.put(r.toString(), "r");
+
+		a.Napvihar();
+
+		NamesMap.clear();
+	}
 }
