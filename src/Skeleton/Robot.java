@@ -3,9 +3,7 @@ package Skeleton;
 import java.util.ArrayList;
 
 /**
- * 
  * A robot mukodeset megvalosito osztaly.
- *
  */
 public class Robot extends Hajo {
     /**

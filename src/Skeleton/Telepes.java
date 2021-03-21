@@ -53,7 +53,7 @@ public class Telepes extends Hajo {
         }
         boolean epitheto = e.EpithetoE();
 
-        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<String>() {{
+        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -89,7 +89,7 @@ public class Telepes extends Hajo {
         }
         boolean epitheto = e.EpithetoE();
 
-        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<String>() {{
+        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -168,6 +168,7 @@ public class Telepes extends Hajo {
         SkeletonController.FunctionReturn();
     }
 
+    /*A telepes felrobban*/
     @Override
     public void Robbanas() {
         SkeletonController.FunctionCall(new Object() {

@@ -49,13 +49,7 @@ abstract class Hajo {
     /**
      * Hajo megsemmisul.
      */
-    //ToDo ez így jó?
-    public void Meghal() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-
-        SkeletonController.FunctionReturn();
-    }
+     abstract void Meghal();
 
     /**
      * Hajo tetlen.
