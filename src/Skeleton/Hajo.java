@@ -5,7 +5,7 @@ import java.util.ArrayList;
 abstract class Hajo {
 
     public String name;
-    protected Aszteroida aszteroida;
+    protected Aszteroida aszteroida;		// A Hajo ezen az aszteroidan tartozkodik.
 
     public void Fur() {
         SkeletonController.FunctionCall(new Object() {
@@ -13,7 +13,11 @@ abstract class Hajo {
         aszteroida.Fur();
         SkeletonController.FunctionReturn();
     }
-
+    
+    /**
+     * A Hajo egy uj mezora mozog a jelenlegirol.
+     * @param uj_mezo A mezo, ahova a Hajo mozog.
+     */
     public void Mozog(Mezo uj_mezo) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -54,8 +58,10 @@ abstract class Hajo {
         SkeletonController.FunctionReturn();
     }
 
-    //ToDo
-    //Ezt elbalt�ztuk... Aszteroidabeallit kellett volna hogy legyen
+    /**
+     * Az aszteroida erteket allitja be a kapottra.
+     * @param m Az uj mazo
+     */
     public void MezoBeallit(Mezo m) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);

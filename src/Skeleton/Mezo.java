@@ -5,7 +5,15 @@ public interface Mezo {
 
     void RemoveSzomszed(Mezo m);
 
+    /**
+     * A mezore egy Hajo erkezik.
+     * @param h A megerkezo Hajo.
+     */
     void HajoErkezik(Hajo h);
-
+    
+    /**
+     * A mezot elhagyja a Hajo.
+     * @param h A mezorol lekerulo Hajo.
+     */
     void HajoElhagy(Hajo h);
 }

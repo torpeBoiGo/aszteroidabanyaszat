@@ -7,10 +7,13 @@ import java.util.List;
 public class Telepes extends Hajo {
 
 
-    List<Szallithato> nyersanyagRakter = new ArrayList<>();
-    List<Szallithato> teleportkapuRakter = new ArrayList<>();
+    List<Szallithato> nyersanyagRakter = new ArrayList<>(); 	// a nyersanyagokat tarolo Rakter
+    List<Szallithato> teleportkapuRakter = new ArrayList<>();	// a teleportkapukat tarolo Rakter
 
-
+    /**
+     * A telepes konstruktora, amely beallitja a sajat aszteroidajat, es hozzaadja a parameterul kapott aszteroidan tartozkodo hajokhoz a telepest. 
+     * @param a Az az aszteroida, ahova a telepes letrejottenek pillanataban kerul.
+     */
     public Telepes(Aszteroida a) {
 
         SkeletonController.ObjectCreated(this);
@@ -18,13 +21,19 @@ public class Telepes extends Hajo {
         aszteroida = a;
 
     }
-
+    
+    /**
+     * A telepes konstruktora, a sajat aszteroida erteket nullra allitja. 
+     */
     public Telepes() {
         SkeletonController.ObjectCreated(this);
         aszteroida = null;
     }
 
-
+    /**
+     * A Robot epiteset vegzo fuggveny.
+     * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a robotot.
+     */
     public void RobotEpit(Epitheto e) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
@@ -57,6 +66,10 @@ public class Telepes extends Hajo {
         SkeletonController.FunctionReturn();
     }
 
+    /**
+     * A telpeortkapuk epiteset vegzo fuggveny.
+     * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a teleportkapukat.
+     */
     public void TeleportEpit(Epitheto e) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);

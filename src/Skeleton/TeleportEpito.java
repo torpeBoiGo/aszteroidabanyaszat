@@ -3,10 +3,16 @@ package Skeleton;
 import java.util.Vector;
 
 public class TeleportEpito extends Epitheto {
-    public TeleportEpito() {
+	/**
+     * Konstruktor.
+     */
+	public TeleportEpito() {
         SkeletonController.ObjectCreated(this);
     }
 
+	/**
+	 * A teleportkapukat letrehozo fuggveny, a visszareteresi erteke a letrejott kapuk.
+	 */
     @Override
     public Vector<Szallithato> Letrejon(Aszteroida a) {
         SkeletonController.FunctionCall(new Object() {

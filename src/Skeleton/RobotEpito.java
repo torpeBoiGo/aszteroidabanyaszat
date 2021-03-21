@@ -3,16 +3,21 @@ package Skeleton;
 import java.util.Vector;
 
 public class RobotEpito extends Epitheto {
-    public RobotEpito() {
+    /**
+     * Konstruktor.
+     */
+	public RobotEpito() {
         SkeletonController.ObjectCreated(this);
     }
 
+	/**
+	 * A robotot letrehozo fuggveny, a robotot az adott aszteroidara helyezi, visszareteresi erteke null.
+	 */
     @Override
     public Vector<Szallithato> Letrejon(Aszteroida a) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
 
-        //TODO ez mi a fasz?
         Robot r = new Robot(a);
 
         SkeletonController.FunctionReturn();
