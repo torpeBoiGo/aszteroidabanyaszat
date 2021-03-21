@@ -538,7 +538,7 @@ public class SkeletonController {
     	NamesMap.put(t.toString(), "t");
     	Vas v = new Vas();
     	NamesMap.put(v.toString(), "v");
-    	t.nyersanyagRakter.add(v);
+    	t.SetNyersanyagRakter(v);
     	
     	Teleportkapu tp = new Teleportkapu();
     	NamesMap.put(tp.toString(), "tp");
@@ -546,8 +546,8 @@ public class SkeletonController {
     	NamesMap.put(par.toString(), "par");
     	tp.SetPar(par);
     	par.SetPar(tp);
-    	t.teleportkapuRakter.add(tp);
-    	t.teleportkapuRakter.add(par);
+    	t.SetTeleportkapuRakter(tp);
+    	t.SetTeleportkapuRakter(par);
     	
     	//Kezdo hivas
     	t.Meghal();   	
@@ -563,7 +563,7 @@ public class SkeletonController {
     	NamesMap.put(t.toString(), "t");
     	Vas v = new Vas();
     	NamesMap.put(v.toString(), "v");
-    	t.nyersanyagRakter.add(v);
+    	t.SetNyersanyagRakter(v);
     	
     	Teleportkapu tp = new Teleportkapu();
     	NamesMap.put(tp.toString(), "tp");
@@ -571,7 +571,7 @@ public class SkeletonController {
     	NamesMap.put(par.toString(), "par");
     	tp.SetPar(par);
     	par.SetPar(tp);
-    	t.teleportkapuRakter.add(tp);
+    	t.SetTeleportkapuRakter(tp);
     	
     	Aszteroida a2 = new Aszteroida();
     	NamesMap.put(a2.toString(), "a2");
@@ -588,8 +588,7 @@ public class SkeletonController {
     	NamesMap.put(e.toString(), "e");
     	Vas v = new Vas();
     	NamesMap.put(v.toString(), "v");
-    	t.nyersanyagRakter.add(v);
-    	//t.AddRakter(v);
+    	t.SetNyersanyagRakter(v);
     	
     	t.TeleportEpit(e);
     	NamesMap.clear();
@@ -603,8 +602,7 @@ public class SkeletonController {
     	NamesMap.put(e.toString(), "e");
     	Vas v = new Vas();
     	NamesMap.put(v.toString(), "v");
-    	t.nyersanyagRakter.add(v);
-    	//t.AddRakter(v);
+    	t.SetNyersanyagRakter(v);
     	
     	t.RobotEpit(e);
     	NamesMap.clear();

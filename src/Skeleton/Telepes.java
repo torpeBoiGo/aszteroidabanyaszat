@@ -13,13 +13,35 @@ public class Telepes extends Hajo {
 	/**
 	 * a nyersanyagokat tarolo Rakter
 	 */
-    List<Szallithato> nyersanyagRakter = new ArrayList<>(); 
+    private List<Szallithato> nyersanyagRakter = new ArrayList<>(); 
     
     /**
      *  a teleportkapukat tarolo Rakter
      */
-    List<Szallithato> teleportkapuRakter = new ArrayList<>();	
+    private List<Szallithato> teleportkapuRakter = new ArrayList<>();	
+    
+    /**
+     * A telepes nyersanyagRakter listjehez ad hozza egy uj elemet.
+     * @param n
+     */
+    public void SetNyersanyagRakter(Nyersanyag n) {
+    	SkeletonController.FunctionCall(new Object() {
+        }.getClass().getEnclosingMethod().getName(), this);
+    	nyersanyagRakter.add(n);
+        SkeletonController.FunctionReturn();
 
+    }
+    
+    /**
+     * A telepes teleportkapuRakter listjehez ad hozza egy uj elemet.
+     * @param t
+     */
+    public void SetTeleportkapuRakter(Teleportkapu t) {
+    	SkeletonController.FunctionCall(new Object() {
+        }.getClass().getEnclosingMethod().getName(), this);
+    	teleportkapuRakter.add(t);
+    	SkeletonController.FunctionReturn();
+    }
 
     /**
      * A telepes konstruktora, amely beallitja a sajat aszteroidajat, es hozzaadja a parameterul kapott aszteroidan tartozkodo hajokhoz a telepest. 
