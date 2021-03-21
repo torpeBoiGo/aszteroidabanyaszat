@@ -36,6 +36,14 @@ public class Aszteroida implements Mezo {
     public Aszteroida() {
         SkeletonController.ObjectCreated(this);
     }
+    
+    /**Beallitja az aszteroida magjat a parameterkent kapott nyersanyagra
+     * 
+     * @param n az uj mag
+     */
+    public void SetMag(Nyersanyag n) {
+    	mag = n;
+    }
 
     /**
      * Az aszteroida furasa
@@ -43,7 +51,7 @@ public class Aszteroida implements Mezo {
     public void Fur() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<>() {{
+        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -62,7 +70,7 @@ public class Aszteroida implements Mezo {
                 break;
         }
 
-        int atfurva = SkeletonController.AskForInput("Teljesen at van furva az aszteroida?", new ArrayList<>() {{
+        int atfurva = SkeletonController.AskForInput("Teljesen at van furva az aszteroida?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -95,7 +103,7 @@ public class Aszteroida implements Mezo {
     public Nyersanyag Kinyer() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int kinyerheto = SkeletonController.AskForInput("Kinyerheto az aszteroida magja?", new ArrayList<>() {{
+        int kinyerheto = SkeletonController.AskForInput("Kinyerheto az aszteroida magja?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -111,7 +119,7 @@ public class Aszteroida implements Mezo {
                 SkeletonController.FunctionReturn();
                 return kinyert;
             case 2:
-                System.out.println("a meg nem nyerheto ki");
+                System.out.println("a mag nem nyerheto ki");
                 break;
             default:
                 System.out.println("Rossz bemenet");
@@ -210,7 +218,7 @@ public class Aszteroida implements Mezo {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
 
-        int levanfurva = SkeletonController.AskForInput("Az aszteroida le van furva(kulso retegeinek szama 0)? ", new ArrayList<>() {{
+        int levanfurva = SkeletonController.AskForInput("Az aszteroida le van furva(kulso retegeinek szama 0)? ", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -218,7 +226,7 @@ public class Aszteroida implements Mezo {
         if (levanfurva == 0) {
             System.out.println("kilepes");
         } else {
-            int vanmagja = SkeletonController.AskForInput("Az aszteroidaban talalhato mag? ", new ArrayList<>() {{
+            int vanmagja = SkeletonController.AskForInput("Az aszteroidaban talalhato mag? ", new ArrayList<String>() {{
                 add("igen");
                 add("nem");
             }});
@@ -246,7 +254,7 @@ public class Aszteroida implements Mezo {
     public boolean AddMag(Nyersanyag n) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int atfurva = SkeletonController.AskForInput("El lehet helyezni a nyersanyagot az aszteroidaban?", new ArrayList<>() {{
+        int atfurva = SkeletonController.AskForInput("El lehet helyezni a nyersanyagot az aszteroidaban?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});

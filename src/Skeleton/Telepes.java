@@ -75,7 +75,7 @@ public class Telepes extends Hajo {
         }
         boolean epitheto = e.EpithetoE();
 
-        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<>() {{
+        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -104,14 +104,14 @@ public class Telepes extends Hajo {
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a teleportkapukat.
      */
     public void TeleportEpit(Epitheto e) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
+        SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
         for (int i = 0; i < nyersanyagRakter.size(); i++) {
             e.KellE((Nyersanyag) nyersanyagRakter.get(i));
         }
+        
         boolean epitheto = e.EpithetoE();
 
-        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<>() {{
+        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -129,7 +129,7 @@ public class Telepes extends Hajo {
                 System.out.println("Rossz bemenet");
                 break;
         }
-        int res2 = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<>() {{
+        int res2 = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<String>() {{
             add("igen");
             add("nem");
         }});
@@ -212,21 +212,43 @@ public class Telepes extends Hajo {
 
 
     void AnyagVisszatesz(Nyersanyag n) {
+    	SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
         aszteroida.AddMag(n);
-
+        SkeletonController.FunctionReturn();
     }
 
-    void AddRakter(Nyersanyag n) {
-        //rakter.add(n);
+    void AddRakter(Szallithato n) {
+    	SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
+    	nyersanyagRakter.add(n);
+    	SkeletonController.FunctionReturn();
     }
 
     void Banyasz() {
+    	SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
         Nyersanyag n = aszteroida.Kinyer();
-        if (n != null && nyersanyagRakter.size() < 9) {
-            //Rakter.AddRakter(n);
-        }
-
+        
+        if(n != null) {
+	        int res = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<String>() {{
+	            add("igen");
+	            add("nem");
+	        }});
+	        switch(res) {
+	            case 0:
+	                System.out.println("kilepes");
+	                return;
+	            case 1:
+	                System.out.println("van hely");
+	                AddRakter(n);
+	                break;
+	            case 2:
+	                System.out.println("nincs hely");
+	                break;
+	            default:
+	                System.out.println("Rossz bemenet");
+	                break;
+	        }
+	        SkeletonController.FunctionReturn();
+	    }
     }
-
 
 }
