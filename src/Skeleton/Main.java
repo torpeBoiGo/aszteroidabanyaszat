@@ -15,7 +15,7 @@ public class Main {
         menuItems.add(new MenuItem("Robot mozog teleporton keresztul", SkeletonController::RobotMozogTeleport));
         menuItems.add(new MenuItem("Telepes mozog szomszedos aszteroidara", SkeletonController::TelepesMozogSzomszedosAszteroidara));
         menuItems.add(new MenuItem("Robot mozog szomszedos aszteroidara", SkeletonController::RobotMozogSzomszedosAszteroidara));
-        //Telepes lerak teleportkaput
+        menuItems.add(new MenuItem("Telepes lerak teleportkaput", SkeletonController::TelepesTeleport));
         menuItems.add(new MenuItem("Telepes robotot epit", SkeletonController::TelepesRobototEpit));
         menuItems.add(new MenuItem("Telepes teleportkaput epit", SkeletonController::TelepesTeleportkaputEpit));
         menuItems.add(new MenuItem("Telepes banyaszik szenet", SkeletonController::TelepesBanyaszikSzenet));
