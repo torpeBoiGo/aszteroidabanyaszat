@@ -172,6 +172,9 @@ public class Teleportkapu implements Mezo, Szallithato {
         SkeletonController.FunctionReturn();
     }
 
+    /**
+     * Hajo elhagyja a teleportkaput, nem hivjuk
+     */
     @Override
     public void HajoElhagy(Hajo h) {
         // TODO Auto-generated method stub
