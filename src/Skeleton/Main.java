@@ -63,9 +63,13 @@ public class Main {
             try {
                 menuItems.get(chosen).toCall.run();
             } catch (Exception e) {
-                System.out.println(e.getMessage());
-                //Igy látjuk ha valamit elbasztunk...
-                System.out.println(e.toString());
+            	if(!e.getMessage().equals("Kilepes")) {
+            		System.out.println(e.getMessage());
+	                //Igy latjuk ha error jon
+	                System.out.println(e.toString());
+            	}
+            		
+                
             }
             SkeletonController.NamesMap.clear();
         }
