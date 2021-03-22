@@ -106,8 +106,9 @@ public class SkeletonController {
     	Teleportkapu k = new Teleportkapu();
     	NamesMap.put(k.toString(), "k");
     	
-	t.AddRakter(k);
-    
+    	t.AddRakter(k);
+    	t.KapuLerak(k);
+    	
     }
     
     
@@ -316,8 +317,7 @@ public class SkeletonController {
     		szomsz2.SetSajatAszteroida(a);
     		par.SetPar(szomsz2);
    	 	par.SetSajatAszteroida(a1);
-    		a.AddSzomszed(szomsz2);
-    		a1.AddSzomszed(par);
+    		
 
 
 
@@ -356,8 +356,7 @@ public class SkeletonController {
     	tp.SetSajatAszteroida(a);
     	par.SetPar(tp);
     	par.SetSajatAszteroida(a2);
-    	a.AddSzomszed(tp);
-    	a2.AddSzomszed(par);
+    	
     	t.Mozog(tp);
     	NamesMap.clear();
     }
@@ -376,8 +375,7 @@ public class SkeletonController {
     	tp.SetSajatAszteroida(a);
     	par.SetPar(tp);
     	par.SetSajatAszteroida(a2);
-    	a.AddSzomszed(tp);
-    	a2.AddSzomszed(par);
+    	
     	r.Mozog(tp);
     	NamesMap.clear();
     }
@@ -451,7 +449,7 @@ public class SkeletonController {
     	
     	Teleportkapu szomsz2 = new Teleportkapu();
     	NamesMap.put(szomsz2.toString(), "szomsz2");
-    	a.AddSzomszed(szomsz2);
+    	
     	szomsz2.SetSajatAszteroida(a);
    
     	Teleportkapu par = new Teleportkapu();
@@ -461,7 +459,7 @@ public class SkeletonController {
     	
     	Aszteroida a2 = new Aszteroida();
     	NamesMap.put(a2.toString(), "a2");
-    	a2.AddSzomszed(par);
+    	
     	//diagramban elirva
     	par.SetSajatAszteroida(a2);
     	
@@ -537,7 +535,7 @@ public class SkeletonController {
     	
     	Teleportkapu szomsz2 = new Teleportkapu();
     	NamesMap.put(szomsz2.toString(), "szomsz2");
-    	a.AddSzomszed(szomsz2);
+    	
     	szomsz2.SetSajatAszteroida(a);
     	
     	Teleportkapu par = new Teleportkapu();
@@ -547,7 +545,7 @@ public class SkeletonController {
     	
     	Aszteroida a2 = new Aszteroida();
     	NamesMap.put(a2.toString(), "a2");
-    	a2.AddSzomszed(par);
+    	
     	//diagramban elirva
     	par.SetSajatAszteroida(a2);
     	
@@ -602,7 +600,7 @@ public class SkeletonController {
     	Aszteroida a2 = new Aszteroida();
     	NamesMap.put(a2.toString(), "a2");
     	par.SetSajatAszteroida(a2);
-    	a2.AddSzomszed(par);
+    	
     	
     	//Kezdo hivas
     	t.Meghal();   	

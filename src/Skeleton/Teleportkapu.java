@@ -51,7 +51,34 @@ public class Teleportkapu implements Mezo, Szallithato {
     public void SetSajatAszteroida(Aszteroida a) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        this.sajatAszteroida = a;
+        
+        int res = SkeletonController.AskForInput("Mukodik a teleportkapu?", new ArrayList<String>() {{
+            add("igen");
+            add("nem");
+        }});
+
+        switch (res) {
+            case 0:
+                System.out.println("kilepes");
+                return;
+            case 1:
+                System.out.println("Mukodik");
+                mukodikE = true;
+                break;
+            case 2:
+                System.out.println("Nem mukodik");
+                mukodikE = false;
+                break;
+            default:
+                System.out.println("Rossz bemenet");
+                break;
+        }
+        if (mukodikE) {
+        	 this.sajatAszteroida = a;
+        	 sajatAszteroida.AddSzomszed(this);
+        } else {
+        	Megsemmisul();
+        }
         SkeletonController.FunctionReturn();
     }
 
@@ -65,7 +92,7 @@ public class Teleportkapu implements Mezo, Szallithato {
         }.getClass().getEnclosingMethod().getName(), this);
         if (sajatAszteroida != null) {
             sajatAszteroida.HajoErkezik(h);
-
+            
         }
 
         SkeletonController.FunctionReturn();

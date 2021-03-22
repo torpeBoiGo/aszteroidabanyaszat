@@ -254,6 +254,29 @@ public class Aszteroida implements Mezo {
     public boolean AddMag(Nyersanyag n) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
+        
+        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<String>() {{
+            add("igen");
+            add("nem");
+        }});
+        switch (napkozeli) {
+            case 0:
+                System.out.println("kilepes");
+                return false;
+            case 1:
+                System.out.println("napkozelben van az aszteroida");
+                napkozelben = true;
+                break;
+            case 2:
+                System.out.println("nincs napkozelben az aszteroida");
+                napkozelben = false;
+                break;
+            default:
+                System.out.println("Rossz bemenet");
+                break;
+        }
+        
+        
         int atfurva = SkeletonController.AskForInput("El lehet helyezni a nyersanyagot az aszteroidaban?", new ArrayList<String>() {{
             add("igen");
             add("nem");
