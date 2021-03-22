@@ -87,16 +87,30 @@ public class SkeletonController {
         System.out.println("Created: " + obj.getClass().getSimpleName());
     }
 
-    
+    /**
+     * Kilep a programbol
+     * 
+     */
     public static void Kilepes() {
         System.out.println("Bye(t)!");
         System.exit(0);
     }
 
-    /**
-     * Kilep a programbol
-     * 
-     */
+    
+    public static void TelepesTeleport() {
+    	Aszteroida a =  new Aszteroida();
+    	NamesMap.put(a.toString(), "a");
+    	
+    	Telepes t = new Telepes(a);
+    	NamesMap.put(t.toString(), "t");
+    	Teleportkapu k = new Teleportkapu();
+    	NamesMap.put(k.toString(), "k");
+    	
+	t.AddRakter(k);
+    
+    }
+    
+    
     public static void TelepesMozogSzomszedosAszteroidara() {
     	// A szamozas rossz a diagramunkon (5.4.4)
     	
@@ -276,12 +290,36 @@ public class SkeletonController {
 
 		Aszteroida a =  new Aszteroida();
 		NamesMap.put(a.toString(), "a");
+		Aszteroida a1 =  new Aszteroida();
+		NamesMap.put(a1.toString(), "a1");
+		Aszteroida szomsz1 =  new Aszteroida();
+		NamesMap.put(szomsz1.toString(), "szomsz1");
+
+		a.AddSzomszed(szomsz1);
+    		szomsz1.AddSzomszed(a);
+
+		Robot r = new Robot(a);
+		NamesMap.put(r.toString(), "r");
 
 		Uran uran= new Uran();
 		NamesMap.put(uran.toString(), "uran");
 
 		Telepes t = new Telepes(a);
 		NamesMap.put(t.toString(), "t");
+
+		Teleportkapu szomsz2 = new Teleportkapu();
+    		NamesMap.put(szomsz2.toString(), "szomsz2");
+		Teleportkapu par = new Teleportkapu();
+    		NamesMap.put(par.toString(), "par");
+	
+		szomsz2.SetPar(par);
+    		szomsz2.SetSajatAszteroida(a);
+    		par.SetPar(szomsz2);
+   	 	par.SetSajatAszteroida(a1);
+    		a.AddSzomszed(szomsz2);
+    		a1.AddSzomszed(par);
+
+
 
 		t.AddRakter(uran);
 
