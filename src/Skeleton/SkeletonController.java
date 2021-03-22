@@ -62,7 +62,7 @@ public class SkeletonController {
             chosen = -1;
         }
     	if(chosen > choices.size()+1 || chosen <= 0 )
-    		throw new RuntimeException();
+    		throw new RuntimeException("Kilepes");
     	
     	for(int i = 0; i< depth;i++)
     		System.out.print("\t");
