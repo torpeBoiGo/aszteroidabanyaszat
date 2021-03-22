@@ -1,5 +1,7 @@
 package Skeleton;
 
+import java.util.ArrayList;
+
 /**
  * A jatekban szereplo nyersanyagok ososztalya
  */
@@ -44,6 +46,26 @@ public abstract class Nyersanyag implements Szallithato {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
         SkeletonController.FunctionReturn();
-        return (ny.getClass() == getClass());
+        
+        int res = SkeletonController.AskForInput("Kompatibilis a nyersanyag?", new ArrayList<String>() {{
+            add("igen");
+            add("nem");
+        }});
+        switch(res) {
+            case 0:
+                System.out.println("kilepes");
+                return false;
+            case 1:
+                System.out.println("kompatibilis");
+                return true;
+            case 2:
+                System.out.println("nem kompatibilis");
+                return false;
+            default:
+                System.out.println("Rossz bemenet");
+                break;
+        }
+        
+        return false;
     }
 }

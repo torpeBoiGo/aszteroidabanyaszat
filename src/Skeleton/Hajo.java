@@ -44,6 +44,9 @@ abstract class Hajo {
      */
     abstract void Robbanas();
 
+    /**
+     * A Hajo lep egyet. Absztrakt
+     */
     abstract void Lepes();
 
     /**
@@ -101,5 +104,9 @@ abstract class Hajo {
         SkeletonController.FunctionReturn();
     }
 
+    
+    /**
+     * Ellenorzi a hajo mivel jarulhat hozza a gyozelemhez
+     */
     abstract boolean NyerEllenoriz(Epitheto e);
 }

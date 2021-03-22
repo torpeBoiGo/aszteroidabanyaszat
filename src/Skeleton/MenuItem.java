@@ -1,5 +1,8 @@
 package Skeleton;
 
+/**
+ * A menu egy elemet irja le
+ */
 public class MenuItem {
     public String name;
     public Runnable toCall;

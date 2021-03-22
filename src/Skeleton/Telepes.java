@@ -155,6 +155,9 @@ public class Telepes extends Hajo {
         SkeletonController.FunctionReturn();
     }
 
+    /**
+     * A telepes lerak egy teleportkaput
+     */
     public void KapuLerak(Teleportkapu k) {
 
 
@@ -199,11 +202,19 @@ public class Telepes extends Hajo {
         SkeletonController.FunctionReturn();
     }
 
+    
+    /**
+     * A telepes lep egyet
+     */
     @Override
     void Lepes() {
         // TODO Auto-generated method stub
     }
 
+    /**
+     * Ellenorzi a hajo mivel jarulhat hozza a gyozelemhez
+     * @param e -amit vizsgalunk
+     */
     @Override
     boolean NyerEllenoriz(Epitheto e) {
         // TODO Auto-generated method stub
@@ -211,18 +222,29 @@ public class Telepes extends Hajo {
     }
 
 
+    /**
+     * Ellenorzi a hajo mivel jarulhat hozza a gyozelemhez
+     * @param n - a nyersanyag ami visszateszunk
+     */
     void AnyagVisszatesz(Nyersanyag n) {
     	SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
         aszteroida.AddMag(n);
         SkeletonController.FunctionReturn();
     }
 
+    /**
+     * A nyersanyagrakterhez hozzaadjuk az adott szallithatot
+     * @param n - az elem amit hozzaadunk
+     */
     void AddRakter(Szallithato n) {
     	SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
     	nyersanyagRakter.add(n);
     	SkeletonController.FunctionReturn();
     }
 
+    /**
+     * Banyassszuk az aszteroidat amin a telepes van
+     */
     void Banyasz() {
     	SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
         Nyersanyag n = aszteroida.Kinyer();

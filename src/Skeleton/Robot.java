@@ -73,11 +73,17 @@ public class Robot extends Hajo {
         SkeletonController.FunctionReturn();
     }
 
+    /**
+     * A robot lep egyet, itt lesz mevalositva a viselkedese
+     */
     @Override
     void Lepes() {
         // TODO Auto-generated method stub
     }
 
+    /**
+     * Ellenorzi a robot mivel jarulhat hozza a gyozelemhez
+     */
     @Override
     boolean NyerEllenoriz(Epitheto e) {
         // TODO Auto-generated method stub

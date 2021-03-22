@@ -112,8 +112,7 @@ public class SkeletonController {
     
     
     public static void TelepesMozogSzomszedosAszteroidara() {
-    	// A szamozas rossz a diagramunkon (5.4.4)
-    	
+
     	//Inicializalas
     	
     	//Nev regisztracio es inicializalas
@@ -135,7 +134,6 @@ public class SkeletonController {
     }
     
     public static void RobotMozogSzomszedosAszteroidara() {
-    	// A sz�moz�s rossz a diagramunkon (5.4.4)
     	
     	//Inicializ�l�s
     	

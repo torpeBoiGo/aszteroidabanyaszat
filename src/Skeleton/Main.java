@@ -42,7 +42,10 @@ public class Main {
         menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin telepes van", SkeletonController::NapviharAszteroidaraTelepesre));
         menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin robot van", SkeletonController::NapviharAszteroidaraRobotra));
         
-        
+        /* *
+         *Beolvas egy szamot es lefuttatja a hozza tartozo fuggvenyt
+         * 
+         */
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
             System.out.println("Kerlek valassz egy opciot!\n");
