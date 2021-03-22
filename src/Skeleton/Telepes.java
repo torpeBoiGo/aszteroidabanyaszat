@@ -156,8 +156,13 @@ public class Telepes extends Hajo {
     }
 
     public void KapuLerak(Teleportkapu k) {
+    	SkeletonController.FunctionCall(new Object() {
+        }.getClass().getEnclosingMethod().getName(), this);
 
+        k.SetSajatAszteroida(aszteroida);
 
+        SkeletonController.FunctionReturn();
+    	
     }
 
     /**
