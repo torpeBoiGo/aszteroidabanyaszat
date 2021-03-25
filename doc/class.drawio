@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-16T10:33:56.127Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="nHlZMNI2yPj_-6jo-73a" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-25T16:52:57.103Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="JKAY_oQufLtgAoRtVGPs" version="14.5.1" type="github">
   <diagram id="Uunz18mgdW6OLQOuuJnR" name="Page-1">
-    <mxGraphModel dx="2436" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3137" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,15 +72,6 @@
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-39" value="&lt;i&gt;+ Megfurva(a:Aszteroida)&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ KompatibilisE(n Nyersanyag) : bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="Yu_vnYscOk4ueQ48UthJ-37" vertex="1">
           <mxGeometry y="34" width="210" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-41" value="Uran" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="-1465" y="312" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-41" vertex="1">
-          <mxGeometry y="26" width="160" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-43" value="+ Megfurva(a:Aszteroida)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-41" vertex="1">
-          <mxGeometry y="34" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-44" value="Teleportkapu" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="-1184" y="520" width="180" height="130" as="geometry">
@@ -294,7 +285,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CY1RZqDMAMl4AqE-WYTl-11" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;" parent="1" source="Yu_vnYscOk4ueQ48UthJ-41" target="Yu_vnYscOk4ueQ48UthJ-37" edge="1">
+        <mxCell id="CY1RZqDMAMl4AqE-WYTl-11" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;" parent="1" source="r-VuoYrSIbPWk5hx3w19-2" target="Yu_vnYscOk4ueQ48UthJ-37" edge="1">
           <mxGeometry x="-0.3251" y="-20" width="160" relative="1" as="geometry">
             <mxPoint x="-994" y="400" as="sourcePoint" />
             <mxPoint x="-834" y="400" as="targetPoint" />
@@ -439,6 +430,18 @@
           <mxGeometry x="0.8859" y="-6" relative="1" as="geometry">
             <mxPoint x="-716.6999999999999" y="-23.599999999999994" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="r-VuoYrSIbPWk5hx3w19-2" value="Uran" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-1479" y="300" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="r-VuoYrSIbPWk5hx3w19-3" value="- expozicio: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="r-VuoYrSIbPWk5hx3w19-2">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="r-VuoYrSIbPWk5hx3w19-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="r-VuoYrSIbPWk5hx3w19-2">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="r-VuoYrSIbPWk5hx3w19-5" value="+ Megfurva(a: Aszteroida)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="r-VuoYrSIbPWk5hx3w19-2">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
