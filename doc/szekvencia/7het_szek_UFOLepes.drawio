@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-03-25T17:33:34.826Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="cr-yKZrrFoWWD0pNUrv4" version="14.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-25T17:36:29.791Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="tE_ts3rzFNBev08SnLmq" version="14.5.1" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="CXzAZYz8Gu9tlIhDbCPh-1" value="Robot lépés" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="CXzAZYz8Gu9tlIhDbCPh-1" value="UFO lépés" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=30;" vertex="1" parent="1">
           <mxGeometry x="70" y="50" width="570" height="520" as="geometry" />
         </mxCell>
         <mxCell id="CXzAZYz8Gu9tlIhDbCPh-2" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
