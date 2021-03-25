@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-25T17:44:09.991Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="1J2DBeM3VyVRgG_opdVy" version="14.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-25T18:33:02.964Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="q_4GFNt9pn0lInAYzkoV" version="14.5.1" type="github">
   <diagram id="XYwKMM7jnjSHmwa1re68" name="Page-2">
     <mxGraphModel dx="1865" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="tZIklSv6UKWIALs6BuAf-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="tZIklSv6UKWIALs6BuAf-0" vertex="1">
           <mxGeometry x="55" y="760" width="10" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="tZIklSv6UKWIALs6BuAf-5" value="10. JatekCiklus()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" parent="tZIklSv6UKWIALs6BuAf-0" edge="1" target="tZIklSv6UKWIALs6BuAf-4">
+        <mxCell id="tZIklSv6UKWIALs6BuAf-5" value="12. JatekCiklus()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" parent="tZIklSv6UKWIALs6BuAf-0" edge="1" target="tZIklSv6UKWIALs6BuAf-4">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="720" as="sourcePoint" />
             <Array as="points">
@@ -75,7 +75,7 @@
         <mxCell id="cCvIJezg6q6K9lctGrE9-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="tZIklSv6UKWIALs6BuAf-6" vertex="1">
           <mxGeometry x="45" y="960" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="tZIklSv6UKWIALs6BuAf-8" value="11. Kor()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="tZIklSv6UKWIALs6BuAf-7" edge="1" source="tZIklSv6UKWIALs6BuAf-4">
+        <mxCell id="tZIklSv6UKWIALs6BuAf-8" value="13. Kor()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="tZIklSv6UKWIALs6BuAf-7" edge="1" source="tZIklSv6UKWIALs6BuAf-4">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="235" y="780" as="sourcePoint" />
           </mxGeometry>
@@ -89,7 +89,7 @@
         <mxCell id="tZIklSv6UKWIALs6BuAf-11" value="[while nincs vege a jateknak]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" vertex="1">
           <mxGeometry x="110" y="860" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="vkPs7Pq89A_EhBA1Po77-0" value="12. MegnyerhetoE()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.64;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;rounded=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="cCvIJezg6q6K9lctGrE9-0" edge="1" source="tZIklSv6UKWIALs6BuAf-4">
+        <mxCell id="vkPs7Pq89A_EhBA1Po77-0" value="14. MegnyerhetoE()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.64;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;rounded=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="cCvIJezg6q6K9lctGrE9-0" edge="1" source="tZIklSv6UKWIALs6BuAf-4">
           <mxGeometry x="-0.0977" relative="1" as="geometry">
             <mxPoint x="240" y="850" as="sourcePoint" />
             <mxPoint x="240" y="870" as="targetPoint" />
@@ -99,7 +99,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vkPs7Pq89A_EhBA1Po77-2" value="13. GyozelemE()" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="cCvIJezg6q6K9lctGrE9-1" edge="1" source="tZIklSv6UKWIALs6BuAf-4">
+        <mxCell id="vkPs7Pq89A_EhBA1Po77-2" value="15. GyozelemE()" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" parent="UW_OAQmKXaL1REWa_Gpy-1" target="cCvIJezg6q6K9lctGrE9-1" edge="1" source="tZIklSv6UKWIALs6BuAf-4">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="230.00000000000023" y="910" as="sourcePoint" />
             <mxPoint x="390" y="930" as="targetPoint" />
