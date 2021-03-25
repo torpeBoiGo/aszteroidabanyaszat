@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-25T17:10:03.032Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="BjLnb6JnFsbpdkm6yqZU" version="14.5.1" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-25T17:14:42.208Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="qnZVbAlmEgBTeS2JUvD4" version="14.5.1" type="github" pages="5">
   <diagram id="JArwNnWl9Kpd9FcY6FAO" name="uran lerak">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -106,16 +106,16 @@
         <mxCell id="ru8WIG87Oy9sJBJS_319-0" />
         <mxCell id="ru8WIG87Oy9sJBJS_319-1" parent="ru8WIG87Oy9sJBJS_319-0" />
         <mxCell id="nEWADXyDfn1MdSWF7hcq-0" value="uran megfurva" style="shape=umlFrame;whiteSpace=wrap;html=1;width=70;height=40;" parent="ru8WIG87Oy9sJBJS_319-1" vertex="1">
-          <mxGeometry x="40" y="90" width="1040" height="610" as="geometry" />
+          <mxGeometry x="40" y="90" width="1040" height="630" as="geometry" />
         </mxCell>
         <mxCell id="qn9NRLnG09Hp55_jKFI_-0" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="ru8WIG87Oy9sJBJS_319-1">
           <mxGeometry x="60" y="210" width="1000" height="480" as="geometry" />
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-1" value="u: Uran" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="ru8WIG87Oy9sJBJS_319-1" vertex="1">
-          <mxGeometry x="130" y="115" width="100" height="585" as="geometry" />
+          <mxGeometry x="130" y="115" width="100" height="605" as="geometry" />
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="nEWADXyDfn1MdSWF7hcq-1" vertex="1">
-          <mxGeometry x="45" y="80" width="10" height="480" as="geometry" />
+          <mxGeometry x="45" y="80" width="10" height="510" as="geometry" />
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-3" value="1. Megfurva(a: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="nEWADXyDfn1MdSWF7hcq-1" target="nEWADXyDfn1MdSWF7hcq-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -197,20 +197,20 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-18" value="szomsz2: Teleportkapu" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="ru8WIG87Oy9sJBJS_319-1" vertex="1">
-          <mxGeometry x="919" y="120" width="130" height="570" as="geometry" />
+          <mxGeometry x="919" y="120" width="130" height="600" as="geometry" />
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="nEWADXyDfn1MdSWF7hcq-18" vertex="1">
           <mxGeometry x="60" y="394" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-20" value="szomsz1: Aszteroida" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="ru8WIG87Oy9sJBJS_319-1" vertex="1">
-          <mxGeometry x="759" y="120" width="130" height="580" as="geometry" />
+          <mxGeometry x="759" y="120" width="130" height="610" as="geometry" />
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="nEWADXyDfn1MdSWF7hcq-20" vertex="1">
           <mxGeometry x="60" y="325" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-22" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.329;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;" parent="ru8WIG87Oy9sJBJS_319-1" source="nEWADXyDfn1MdSWF7hcq-2" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="39" y="672" as="targetPoint" />
+            <mxPoint x="39" y="702" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-23" value="6. RemoveSzomszed(a: Aszteroida)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.066;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" parent="ru8WIG87Oy9sJBJS_319-1" target="nEWADXyDfn1MdSWF7hcq-21" edge="1">
@@ -229,7 +229,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-25" value="r: Robot" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="ru8WIG87Oy9sJBJS_319-1" vertex="1">
-          <mxGeometry x="580" y="120" width="100" height="570" as="geometry" />
+          <mxGeometry x="580" y="120" width="100" height="620" as="geometry" />
         </mxCell>
         <mxCell id="nEWADXyDfn1MdSWF7hcq-26" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="nEWADXyDfn1MdSWF7hcq-25" vertex="1">
           <mxGeometry x="45" y="270" width="10" height="30" as="geometry" />
