@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-26T16:40:44.985Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="vpP0KVBNBP06IHqi3JQA" version="14.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-26T19:17:46.302Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="ztSOjt9aFW3e8b15eoJL" version="14.5.1" type="github">
   <diagram id="Uunz18mgdW6OLQOuuJnR" name="Page-1">
     <mxGraphModel dx="3137" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -38,22 +38,22 @@
           <mxGeometry y="88" width="190" height="132" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-27" value="Robot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="-494" y="205" width="210" height="110" as="geometry" />
+          <mxGeometry x="-494" y="205" width="210" height="130" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-27" vertex="1">
           <mxGeometry y="26" width="210" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-30" value="+ Lepes()&#xa;+ Napvihar()&#xa;+ Robbanas()&#xa;+ Meghal()&#xa;+ NyerEllenoriz(e: Epitheto) : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="Yu_vnYscOk4ueQ48UthJ-27" vertex="1">
-          <mxGeometry y="34" width="210" height="76" as="geometry" />
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-30" value="+ Lepes()&#xa;+ Napvihar()&#xa;+ Robbanas()&#xa;+ Meghal()&#xa;+ NyerEllenoriz(e: Epitheto) : bool&#xa;+ Fur()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="Yu_vnYscOk4ueQ48UthJ-27" vertex="1">
+          <mxGeometry y="34" width="210" height="96" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-31" value="Telepes" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="-670" y="600" width="240" height="200" as="geometry" />
+          <mxGeometry x="-670" y="600" width="240" height="220" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-32" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-31" vertex="1">
           <mxGeometry y="26" width="240" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-33" value="+ AnyagVisszatesz(n: Nyersanyag)&#xa;+ Banyasz()&#xa;+ Lepes()&#xa;+ AddRakter(sz: Szallithato)&#xa;+ Napvihar()&#xa;+ Robbanas()&#xa;+ RobotEpit(e: Epitheto)&#xa;+ TeleportEpit(e: Epitheto)&#xa;+ KapuLerak(k: Teleportkapu)&#xa;+ Meghal()&#xa;+ NyerEllenoriz(e: Epitheto) : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="Yu_vnYscOk4ueQ48UthJ-31" vertex="1">
-          <mxGeometry y="34" width="240" height="166" as="geometry" />
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-33" value="+ AnyagVisszatesz(n: Nyersanyag)&#xa;+ Banyasz()&#xa;+ Lepes()&#xa;+ AddRakter(sz: Szallithato)&#xa;+ Napvihar()&#xa;+ Robbanas()&#xa;+ RobotEpit(e: Epitheto)&#xa;+ TeleportEpit(e: Epitheto)&#xa;+ KapuLerak(k: Teleportkapu)&#xa;+ Meghal()&#xa;+ NyerEllenoriz(e: Epitheto) : bool&#xa;+ Fur()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="Yu_vnYscOk4ueQ48UthJ-31" vertex="1">
+          <mxGeometry y="34" width="240" height="186" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-34" value="Hajo" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="-360" y="405" width="190" height="180" as="geometry" />
@@ -61,7 +61,7 @@
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-35" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-34" vertex="1">
           <mxGeometry y="26" width="190" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-36" value="+ Fur()&lt;br&gt;+ Mozog(m: Mezo)&lt;br&gt;+ Napvihar()&lt;br&gt;&lt;i&gt;+ Robbanas()&lt;br&gt;+ Lepes()&lt;br&gt;+ Meghal()&lt;/i&gt;&lt;br&gt;+ Tetlen()&lt;br&gt;+ MezoBeallit(m: Mezo)&lt;br&gt;&lt;i&gt;+ NyerEllenoriz(e: Epitheto) : bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;html=1;" parent="Yu_vnYscOk4ueQ48UthJ-34" vertex="1">
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-36" value="+ Mozog(m: Mezo)&lt;br&gt;+ Napvihar()&lt;br&gt;&lt;i&gt;+ Robbanas()&lt;br&gt;+ Lepes()&lt;br&gt;+ Meghal()&lt;/i&gt;&lt;br&gt;+ Tetlen()&lt;br&gt;+ MezoBeallit(m: Mezo)&lt;br&gt;&lt;i&gt;+ NyerEllenoriz(e: Epitheto) : bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;html=1;" parent="Yu_vnYscOk4ueQ48UthJ-34" vertex="1">
           <mxGeometry y="34" width="190" height="146" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-37" value="Nyersanyag" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -465,7 +465,7 @@
             <mxPoint x="-840.78" y="-111.69" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="u10So7X6xdj0iWSjuyWE-2" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="1" source="Yu_vnYscOk4ueQ48UthJ-44" target="Yu_vnYscOk4ueQ48UthJ-9">
+        <mxCell id="u10So7X6xdj0iWSjuyWE-2" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" parent="1" source="Yu_vnYscOk4ueQ48UthJ-44" target="Yu_vnYscOk4ueQ48UthJ-9" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-875" y="288" as="sourcePoint" />
             <mxPoint x="-852.125" y="239.9999999999999" as="targetPoint" />
@@ -474,12 +474,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u10So7X6xdj0iWSjuyWE-3" value="- teleportkapuk&lt;br&gt;0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="u10So7X6xdj0iWSjuyWE-2">
+        <mxCell id="u10So7X6xdj0iWSjuyWE-3" value="- teleportkapuk&lt;br&gt;0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="u10So7X6xdj0iWSjuyWE-2" vertex="1" connectable="0">
           <mxGeometry x="0.4469" y="1" relative="1" as="geometry">
             <mxPoint x="-70.78" y="293.68" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="u10So7X6xdj0iWSjuyWE-5" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="Yu_vnYscOk4ueQ48UthJ-44" target="Yu_vnYscOk4ueQ48UthJ-22">
+        <mxCell id="u10So7X6xdj0iWSjuyWE-5" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" parent="1" source="Yu_vnYscOk4ueQ48UthJ-44" target="Yu_vnYscOk4ueQ48UthJ-22" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-353.6100000000001" y="450.3140000000001" as="sourcePoint" />
             <mxPoint x="-556.347959851958" y="350" as="targetPoint" />
