@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-27T13:19:50.928Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="LaPJ0o2gWB7F887Jd1Di" version="14.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-27T13:39:18.707Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="3zliv-uC8w768pdhTqQB" version="14.5.3" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
         <mxCell id="fnsknMSwphSBJhslUrFn-2" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="70" y="160" width="490" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="fnsknMSwphSBJhslUrFn-3" value="1: Napvihar()" style="endArrow=classic;html=1;entryX=-0.212;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fnsknMSwphSBJhslUrFn-13" target="fnsknMSwphSBJhslUrFn-6">
+        <mxCell id="fnsknMSwphSBJhslUrFn-3" value="1: Napvihar(kozeppontE)" style="endArrow=classic;html=1;entryX=-0.212;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fnsknMSwphSBJhslUrFn-13" target="fnsknMSwphSBJhslUrFn-6">
           <mxGeometry x="-0.0016" y="16" width="50" height="50" relative="1" as="geometry">
             <mxPoint x="10" y="148" as="sourcePoint" />
             <mxPoint x="181.5999999999999" y="148.10000000000002" as="targetPoint" />
