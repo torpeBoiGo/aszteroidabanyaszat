@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-27T13:54:35.176Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="vqrIesOoea_OKdN3m8oR" version="14.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-27T14:14:35.703Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="EYqZichMnLWzJNRjV3a6" version="14.5.3" type="github">
   <diagram id="Uunz18mgdW6OLQOuuJnR" name="Page-1">
     <mxGraphModel dx="3137" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -34,7 +34,7 @@
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-23" vertex="1">
           <mxGeometry y="60" width="190" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Yu_vnYscOk4ueQ48UthJ-26" value="+ Fur()&#xa;+ Kinyer() : Nyersanyag&#xa;+ NapkozelbenE() : bool&#xa;+ AddSzomszed(m: Mezo)&#xa;+ RemoveSzomszed(m: Mezo)&#xa;+ Napvihar()&#xa;+ AddMag(n: Nyersanyag) : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-23" vertex="1">
+        <mxCell id="Yu_vnYscOk4ueQ48UthJ-26" value="+ Fur()&#xa;+ Kinyer() : Nyersanyag&#xa;+ NapkozelbenE() : bool&#xa;+ AddSzomszed(m: Mezo)&#xa;+ RemoveSzomszed(m: Mezo)&#xa;+ Napvihar()&#xa;+ AddMag(n: Nyersanyag) : bool&#xa;+ Lepes()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yu_vnYscOk4ueQ48UthJ-23" vertex="1">
           <mxGeometry y="68" width="190" height="132" as="geometry" />
         </mxCell>
         <mxCell id="Yu_vnYscOk4ueQ48UthJ-27" value="Robot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -487,6 +487,13 @@
               <mxPoint x="-930" y="490" />
               <mxPoint x="-690" y="490" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HuqRrHyMmc2ex7EgdoBM-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" edge="1" parent="1" source="Yu_vnYscOk4ueQ48UthJ-23" target="Yu_vnYscOk4ueQ48UthJ-22">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-353.6100000000001" y="450.3140000000001" as="sourcePoint" />
+            <mxPoint x="-556.347959851958" y="350" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
       </root>
