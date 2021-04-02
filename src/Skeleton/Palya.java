@@ -1,23 +1,35 @@
 package Skeleton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Palya {
-	void Napvihar() {
+	
+	List<Aszteroida> aszteroidak = new ArrayList<Aszteroida>();
+	List<Leptetheto> aiVezerli = new ArrayList<Leptetheto>();
+	List<Leptetheto> jatekosVezerli = new ArrayList<Leptetheto>();
+	
+	static void Napvihar() {
 		
 	}
 	
-	void Kor() {
+	static void Napvihar(Aszteroida a) {
 		
 	}
 	
-	void RemoveAszteroida(Aszteroida a){
+	static void Kor() {
 		
 	}
 	
-	void RemoveJatekosVezerli(Leptetheto l){
+	static void RemoveAszteroida(Aszteroida a){
 		
 	}
 	
-	void AddAiVezerli(Leptetheto l) {
+	static void RemoveJatekosVezerli(Leptetheto l){
+		
+	}
+	
+	static void AddAiVezerli(Leptetheto l) {
 		
 	}
 	
