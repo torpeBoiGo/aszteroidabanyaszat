@@ -3,11 +3,123 @@ package Skeleton;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class Main {
     public static void main(String[] args) {
-        int chosen = -1;
+    	Scanner sc  = new Scanner(System.in);
+		
+		while(true) {
+			String line=sc.nextLine();
+			String cmd[]=line.split(" ");
+			System.out.println(cmd[0] + " parancs, " + cmd.length + " szo a bemenet");
+			if(cmd[0] == "exit") break;
+			
+			if ("palya".equals(cmd[0])) {
+				if ("load".equals(cmd[1])) {
+					//palya load <fajl>
+					//cmd[2] -ben kell a fajlnev legyen
+				}else if ("do".equals(cmd[1])) {
+					if ("napvihar".equals(cmd[2])) {
+						if (cmd.length < 4) {
+							//palya do napvihar
+							//mindre
+						}else {
+							//palya do napvihar <nev>
+							//konkretra, cmd[3]-ban a neve
+						}
+					}else if ("kor".equals(cmd[2])) {
+						//palya do kor
+						
+					} 
+				} 
+			}else if ("aszteroida".equals(cmd[0])) {
+				if ("create".equals(cmd[1])) {
+					//aszteroida create
+				}else if ("set".equals(cmd[1])) {
+					if ("kulsoRetegek".equals(cmd[2])) {
+						//aszteroida set kulsoRetegek
+						//cmd[3] nev , cmd[4] retegszam
+					}else if ("napkozelben".equals(cmd[2])) {
+						//aszteroida set napkozelben
+						//cmd[3] nev , cmd[4] 0 vagy 1
+					} 
+				}else if ("add".equals(cmd[1])) {
+					if ("mag".equals(cmd[2])) {
+						//aszteroida set kulsoRetegek
+						//cmd[3] nev , cmd[4] nyersanyagnev
+					}else if ("hajo".equals(cmd[2])) {
+						//aszteroida set kulsoRetegek
+						//cmd[3] nev , cmd[4] hajonev
+					}
+				}else if ("connect".equals(cmd[1])) {
+					//aszteroida set kulsoRetegek
+					//cmd[2] szomsz1 , cmd[3] szomsz2
+				} 
+			}else if ("hajo".equals(cmd[0])) {
+				 if ("mozog".equals(cmd[1])) {
+					//aszteroida set kulsoRetegek
+					//cmd[2] nev , cmd[3] hajonev
+				}else  if ("tetlen".equals(cmd[1])) {
+					//aszteroida set kulsoRetegek
+					//cmd[2] nev 
+				} 
+			}else if ("robot".equals(cmd[0])) {
+				 if ("fur".equals(cmd[1])) {
+						//robot fur
+						//cmd[2] nev 
+				 } 
+			}else if ("telepes".equals(cmd[0])) {
+				 if ("create".equals(cmd[1])) {
+						
+				 }else if ("addToRakter".equals(cmd[1])) {
+						
+				 }else if ("robotEpit".equals(cmd[1])) {
+						
+				 }else if ("teleportEpit".equals(cmd[1])) {
+						
+				 }else if ("anyagVisszatesz".equals(cmd[1])) {
+						
+				 }else if ("fur".equals(cmd[1])) {
+						
+				 }else if ("banyasz".equals(cmd[1])) {
+						
+				 }else if ("kapuLerak".equals(cmd[1])) {
+						
+				 }else if ("addToRakter".equals(cmd[1])) {
+						
+				 }
+			}else if ("teleportkapu".equals(cmd[0])) {
+				if ("create".equals(cmd[1])) {
+					
+				}else if ("connect".equals(cmd[1])) {
+						
+				}else if ("set".equals(cmd[1])) {
+					if ("sajatAszteroida".equals(cmd[2])) {
+						
+					}
+				}
+			}else if ("nyersanyag".equals(cmd[0])) {
+				if ("create".equals(cmd[1])) {
+					
+				}
+			}else if ("show".equals(cmd[0])) {
+				
+			}else if ("run".equals(cmd[0])) {
+				
+			}else if ("save".equals(cmd[1])) {
+				if ("output".equals(cmd[1])) {
+					
+				}
+			}			
+		}
+	}
+    
+    
+    
+    void Skeleton() {
+    	int chosen = -1;
         ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
         menuItems.add(new MenuItem("Kilepes", SkeletonController::Kilepes));
         menuItems.add(new MenuItem("Telepes tetlen", SkeletonController::TelepesTetlen));
