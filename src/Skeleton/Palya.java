@@ -10,11 +10,11 @@ public class Palya {
 	List<Leptetheto> jatekosVezerli = new ArrayList<Leptetheto>();
 	
 	static void Napvihar() {
-		System.out.println(" parancs2, ");
+		
 	}
 	
 	static void Napvihar(Aszteroida a) {
-		System.out.println(" parancs, ");
+		
 	}
 	
 	static void Kor() {
