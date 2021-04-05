@@ -4,7 +4,12 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import java.util.Objects;
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class Main {
@@ -38,7 +43,7 @@ public class Main {
 				Aszteroida aszteroida = (Aszteroida)(NamesMap.get(cmd[2]));
 				if ("create".equals(cmd[1])) {
 					Aszteroida aszteroidaNew = new Aszteroida();
-					NamesMap.put(cmd[3], aszteroidaNew);
+					NamesMap.put(cmd[2], aszteroidaNew);
 				}else if ("set".equals(cmd[1])) {
 					if ("kulsoRetegek".equals(cmd[2])) {
 						
@@ -77,7 +82,7 @@ public class Main {
 			}else if ("telepes".equals(cmd[0])) {
 				Telepes telepes = (Telepes)NamesMap.get(cmd[2]);
 				 if ("create".equals(cmd[1])) {
-					 Telepes telepesNew = new Telepes();
+					 Telepes telepesNew = new Telepes((Aszteroida)NamesMap.get(cmd[3]));
 					 NamesMap.put(cmd[2], telepesNew);
 				 }else if ("addToRakter".equals(cmd[1])) {
 						telepes.AddRakter((Szallithato)NamesMap.get(cmd[3]));
@@ -116,19 +121,22 @@ public class Main {
 			}else if ("nyersanyag".equals(cmd[0])) {
 				if ("create".equals(cmd[1])) {
 					Nyersanyag a = null;
-					if("vas".equals(cmd[2])) {
+					if("vas".equals(cmd[3])) {
 						a = new Vas();
-					}else if("vizjeg".equals(cmd[2])) {
+					}else if("vizjeg".equals(cmd[3])) {
 						a = new Vizjeg();
-					}else if("szen".equals(cmd[2])) {
+					}else if("szen".equals(cmd[3])) {
 						a = new Szen();
-					}else if("uran".equals(cmd[2])) {
+					}else if("uran".equals(cmd[3])) {
 						a = new Uran();
 					}
-					NamesMap.put(cmd[3], a);
+					NamesMap.put(cmd[2], a);
 				}
 			}else if ("show".equals(cmd[0])) {
-				
+				Showable showable = (Showable)NamesMap.get(cmd[1]);
+		    	System.out.println(cmd[1]+ ": " + showable.getClass().getSimpleName());
+				showable.Show();
+				System.out.println();
 			}else if ("run".equals(cmd[0])) {
 				
 			}else if ("save".equals(cmd[0])) {
@@ -209,5 +217,14 @@ public class Main {
             }
             SkeletonController.NamesMap.clear();
         }
+    }
+    
+    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
+        for (Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
     }
 }

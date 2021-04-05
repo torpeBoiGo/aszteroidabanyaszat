@@ -89,4 +89,8 @@ public class Robot extends Hajo {
         // TODO Auto-generated method stub
         return false;
     }
+    
+    public  void Show() {
+    	System.out.println(Main.NamesMap.get(aszteroida) + ": Aszteroida");
+	}
 }

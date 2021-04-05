@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * A jatekban szereplo nyersanyagok ososztalya
  */
-public abstract class Nyersanyag implements Szallithato {
+public abstract class Nyersanyag implements Szallithato , Showable{
     /**
      * Konstruktor
      */
@@ -68,4 +68,8 @@ public abstract class Nyersanyag implements Szallithato {
         
         return false;
     }
+    
+    public void Show() {
+		
+	}
 }

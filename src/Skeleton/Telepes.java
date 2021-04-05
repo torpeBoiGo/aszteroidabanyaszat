@@ -2,6 +2,9 @@ package Skeleton;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringJoiner;
+
+import javax.sound.midi.SysexMessage;
 
 /**
  * A telepest megvalosito osztaly.
@@ -276,6 +279,23 @@ public class Telepes extends Hajo {
 	        }
 	        SkeletonController.FunctionReturn();
 	    }
+    }
+    
+    
+    public void Show() {
+    	System.out.println(Main.NamesMap.get(aszteroida) + ": Aszteroida");
+    	System.out.print("NyersanyagRakter: ");
+    	StringJoiner lineJoiner = new StringJoiner(",");
+    	for (Szallithato szallithato : nyersanyagRakter) {
+    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato)+": " + szallithato.getClass().getSimpleName());
+		}
+    	System.out.println(lineJoiner.toString() + ": Nyersanyag[0..10]");
+    	lineJoiner = new StringJoiner(",");
+    	System.out.print("NyersanyagRakter: ");
+    	for (Szallithato tpkapu : teleportkapuRakter) {
+    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu)+": " + tpkapu.getClass().getSimpleName());
+		}
+    	System.out.println(lineJoiner.toString() + ": Teleportkapu[0..3]");
     }
 
 }
