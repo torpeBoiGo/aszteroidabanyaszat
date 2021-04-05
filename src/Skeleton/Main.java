@@ -1,6 +1,8 @@
 package Skeleton;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -210,4 +212,86 @@ public class Main {
             SkeletonController.NamesMap.clear();
         }
     }
+
+
+void IOstream(String fileName){
+	try {
+		File myFile = new File(fileName);
+		Scanner myReader = new Scanner(myFile);
+		String line  = myReader.nextLine();
+		if(line.equals("ASZTEROIDAK")){
+			readAszteroidak(myReader);
+			readTeleportkapuk(myReader);
+			readSzomszedok(myReader);
+			readTelepesek(myReader);
+			readRobotok(myReader);
+			readUfok(myReader);
+			readRakter(myReader);
+		}
+		myReader.close();
+	} catch (FileNotFoundException e) {
+		System.out.println("File not found");
+		e.printStackTrace();
+	}
+
+}
+void readAszteroidak(Scanner reader){
+	String line  = reader.nextLine();
+    	while (!line.equals("TELEPORTKAPUK")){
+
+
+		}
+
+}
+
+	void readTeleportkapuk(Scanner reader){
+		String line  = reader.nextLine();
+		while (!line.equals("SZOMSZEDOK")){
+
+
+		}
+
+	}
+	void readSzomszedok(Scanner reader){
+		String line  = reader.nextLine();
+		while (!line.equals("TELEPESEK")){
+
+
+		}
+
+	}
+	void readTelepesek(Scanner reader){
+		String line  = reader.nextLine();
+		while (!line.equals("ROBOTOK")){
+
+
+		}
+
+	}
+	void readRobotok(Scanner reader){
+		String line  = reader.nextLine();
+		while (!line.equals("UFOK")){
+
+
+		}
+
+	}
+	void readUfok(Scanner reader){
+		String line  = reader.nextLine();
+		while (!line.equals("RAKTER")){
+
+
+		}
+
+	}
+	void readRakter(Scanner reader){
+		String line  = reader.nextLine();
+		while (reader.hasNextLine()){
+
+
+		}
+
+	}
+
+
 }
