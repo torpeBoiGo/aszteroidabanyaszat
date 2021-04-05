@@ -31,6 +31,14 @@ public class Teleportkapu implements Mezo, Szallithato {
         mukodikE = true;
     }
 
+
+    public Teleportkapu(Aszteroida a, boolean mukodik) {
+        SkeletonController.ObjectCreated(this);
+
+        sajatAszteroida = a;
+        mukodikE = mukodik;
+    }
+
     /**
      * Beallitja a par erteket a kapott teleportkapura.
      *

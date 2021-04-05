@@ -49,14 +49,19 @@ public class Aszteroida implements Mezo {
     }
 
 
-    // String nev
-    String nev;
+
 
     //uj konstruktor
-    public Aszteroida(String nev, int kulsoRetegek, boolean napkozelben) {
-        this.nev = nev;
+    public Aszteroida( int kulsoRetegek, boolean napkozelben) {
+
         this.kulsoRetegek = kulsoRetegek;
         this.napkozelben = napkozelben;
+    }
+
+    //addSzomszed
+
+    public void addSzomszed(Mezo m){
+        szomszedok.add(m);
     }
 
 
