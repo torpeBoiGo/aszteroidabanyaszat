@@ -2,11 +2,12 @@ package Skeleton;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringJoiner;
 
 /**
  * Az aszteroida mukodeseet megvalosito osztaly.
  */
-public class Aszteroida implements Mezo {
+public class Aszteroida implements Mezo, Showable{
 
     /**
      * Az aszteroidaval szomszedos aszteriodak
@@ -307,5 +308,22 @@ public class Aszteroida implements Mezo {
 
     }
 
+    public void Show() {
+    	System.out.println("Kulso retegek: " + kulsoRetegek);
+    	System.out.println("Naplkozelben: " + napkozelben);
 
+    	System.out.print("Hajok: ");
+    	StringJoiner lineJoiner = new StringJoiner(",");
+    	for (Hajo hajo : hajok) {
+    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, hajo)+": " + hajo.getClass().getSimpleName());
+		}
+    	System.out.println(lineJoiner.toString() + ": hajo[0..*]");
+    	lineJoiner = new StringJoiner(",");
+    	System.out.print("NyersanyagRakter: ");
+    	for (Mezo szomszed : szomszedok) {
+    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szomszed)+": " + szomszed.getClass().getSimpleName());
+		}
+    	System.out.println(lineJoiner.toString() + ": mezo[0..*]");
+
+	}
 }

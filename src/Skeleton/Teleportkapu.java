@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * A jatekban szereplo teleportkapu
  */
-public class Teleportkapu implements Mezo, Szallithato {
+public class Teleportkapu implements Mezo, Szallithato, Showable{
     /**
      * A kapu par masik tagja
      */
@@ -20,6 +20,9 @@ public class Teleportkapu implements Mezo, Szallithato {
      * Azt mutatja meg, hogy uzemkepes-e a kapu
      */
     boolean mukodikE;
+    
+    //TODO 
+    boolean megkergulE;
 
     /**
      * A teleportkapu konstruktora, a par, sajatAszteroida es mukodikE ertekeket null-ra allitja.
@@ -29,6 +32,7 @@ public class Teleportkapu implements Mezo, Szallithato {
         par = null;
         sajatAszteroida = null;
         mukodikE = true;
+        megkergulE = false;
     }
 
     /**
@@ -194,4 +198,11 @@ public class Teleportkapu implements Mezo, Szallithato {
         }
         SkeletonController.FunctionReturn();
     }
+    
+    public void Show() {
+    	System.out.println("MukodikE: " + mukodikE);
+    	System.out.println("MegkergulE: " + megkergulE);
+    	System.out.println("Par: " + Main.getKeyByValue(Main.NamesMap, par) +": " + par.getClass().getSimpleName());
+    	System.out.println("SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida)+": " + sajatAszteroida.getClass().getSimpleName());
+	}
 }

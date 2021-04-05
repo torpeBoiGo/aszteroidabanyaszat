@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * A hajo mukodeset megvalosito osztaly, a Telepes es Robot ososztalya
  *
  */
-abstract class Hajo {
+abstract class Hajo implements Showable{
 
     /**
      * A Hajo ezen az aszteroidan tartozkodik.
