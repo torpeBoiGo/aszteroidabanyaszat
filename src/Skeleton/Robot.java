@@ -91,6 +91,6 @@ public class Robot extends Hajo {
     }
     
     public  void Show() {
-    	System.out.println(Main.NamesMap.get(aszteroida) + ": Aszteroida");
+    	System.out.println("Aszteroida: "+ Main.getKeyByValue(Main.NamesMap, aszteroida)+ ": Aszteroida");
 	}
 }

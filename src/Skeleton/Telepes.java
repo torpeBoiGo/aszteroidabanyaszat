@@ -283,7 +283,7 @@ public class Telepes extends Hajo {
     
     
     public void Show() {
-    	System.out.println(Main.NamesMap.get(aszteroida) + ": Aszteroida");
+    	System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
     	System.out.print("NyersanyagRakter: ");
     	StringJoiner lineJoiner = new StringJoiner(",");
     	for (Szallithato szallithato : nyersanyagRakter) {
