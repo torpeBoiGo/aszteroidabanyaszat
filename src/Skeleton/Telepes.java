@@ -47,6 +47,18 @@ public class Telepes extends Hajo {
     }
 
     /**
+     * az aszteroidan valo furast hajtja vegre
+     */
+    public void Fur() {
+        SkeletonController.FunctionCall(new Object() {
+        }.getClass().getEnclosingMethod().getName(), this);
+        
+        aszteroida.Fur();
+        
+        SkeletonController.FunctionReturn();
+    }
+    
+    /**
      * A telepes konstruktora, amely beallitja a sajat aszteroidajat, es hozzaadja a parameterul kapott aszteroidan tartozkodo hajokhoz a telepest. 
      * @param a Az az aszteroida, ahova a telepes letrejottenek pillanataban kerul.
      */

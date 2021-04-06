@@ -1,6 +1,8 @@
 package Skeleton;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * A robot mukodeset megvalosito osztaly.
@@ -17,6 +19,18 @@ public class Robot extends Hajo {
         aszteroida = a;
     }
 
+    /**
+     * Az aszteroidan valo furast hajtja vegre
+     */
+    public void Fur() {
+        SkeletonController.FunctionCall(new Object() {
+        }.getClass().getEnclosingMethod().getName(), this);
+        
+        aszteroida.Fur();
+        
+        SkeletonController.FunctionReturn();
+    }
+    
     /**
      * Robotot napvihar eri.
      */
@@ -78,7 +92,19 @@ public class Robot extends Hajo {
      */
     @Override
     void Lepes() {
-        // TODO Auto-generated method stub
+    	List<Mezo> szomszedok = aszteroida.getSzomszedok();
+    	
+    	if (aszteroida.GetKulsoRetegek() > 0) { //nincs atfurva
+    		Fur();
+    	}
+    	if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() > 0)) { //at van furva, VAN szomszedos mezo
+    		Random rand = new Random();
+    		int rand_aszt = rand.nextInt(szomszedok.size());
+    		Mozog(szomszedok.get(rand_aszt));
+    	} 
+    	if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() == 0)) { //at van furva, de NINCS szomszedos mezo
+    		Tetlen();
+    	}
     }
 
     /**

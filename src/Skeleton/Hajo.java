@@ -13,12 +13,7 @@ abstract class Hajo implements Showable{
      */
     protected Aszteroida aszteroida;	
 
-    public void Fur() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        aszteroida.Fur();
-        SkeletonController.FunctionReturn();
-    }
+    
 
 
     
