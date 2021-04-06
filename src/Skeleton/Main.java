@@ -25,7 +25,7 @@ public class Main {
 
             if ("palya".equals(cmd[0])) {
                 if ("load".equals(cmd[1])) {
-                    //palya load <fajl>
+                    loadPalyaFromFile(cmd[2]);
                     //cmd[2] -ben kell a fajlnev legyen
                 } else if ("do".equals(cmd[1])) {
                     if ("napvihar".equals(cmd[2])) {
@@ -215,7 +215,7 @@ public class Main {
     }
 
 
-    void IOstream(String fileName) {
+    static void loadPalyaFromFile(String fileName) {
         try {
             File myFile = new File(fileName);
             Scanner myReader = new Scanner(myFile);
@@ -238,7 +238,7 @@ public class Main {
 
     }
 
-    void readNyersanyagok(Scanner reader) { //Uran expozicio szamat kell meg lekezelni
+    static void readNyersanyagok(Scanner reader) { //Uran expozicio szamat kell meg lekezelni
         String line = reader.nextLine();
         while (!line.equals("ASZTEROIDAK")) {
             String[] temp = line.split(" ");
@@ -268,7 +268,7 @@ public class Main {
 
     }
 
-    void readAszteroidak(Scanner reader) { //itt egy aszteroidákbl álló arraylistet kéne visszaadni
+    static void readAszteroidak(Scanner reader) { //itt egy aszteroidákbl álló arraylistet kéne visszaadni
         ArrayList<Aszteroida> aszteroidak = new ArrayList<Aszteroida>(); //HASHMAP
         String line = reader.nextLine();
         while (!line.equals("TELEPORTKAPUK")) {
@@ -282,7 +282,7 @@ public class Main {
 
     }
 
-    void readTeleportkapuk(Scanner reader) {
+   static void readTeleportkapuk(Scanner reader) {
         ArrayList<Teleportkapu> teleportkapuk = new ArrayList<Teleportkapu>();
         String line = reader.nextLine();
         while (!line.equals("SZOMSZEDOK")) {
@@ -314,7 +314,7 @@ public class Main {
 
     }
 
-    void readSzomszedok(Scanner reader) {
+   static void readSzomszedok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("TELEPESEK")) {
 			String[] temp = line.split(" ");
@@ -326,7 +326,7 @@ public class Main {
 
     }
 
-    void readTelepesek(Scanner reader) {
+    static void readTelepesek(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("ROBOTOK")) {
 			String[] temp = line.split(" ");
@@ -337,7 +337,7 @@ public class Main {
 
     }
 
-    void readRobotok(Scanner reader) {
+   static void readRobotok(Scanner reader) {
 		String line = reader.nextLine();
 		while (!line.equals("UFOK")) {
 			String[] temp = line.split(" ");
@@ -348,7 +348,7 @@ public class Main {
 
     }
 
-    void readUfok(Scanner reader) {
+    static void readUfok(Scanner reader) {
 		String line = reader.nextLine();
 		while (!line.equals("RAKTER")) {
 			String[] temp = line.split(" ");
@@ -359,7 +359,7 @@ public class Main {
 
     }
 
-    void readRakter(Scanner reader) { //problemas lehet itt
+   static void readRakter(Scanner reader) { //problemas lehet itt
 
         while (reader.hasNextLine()) {
 			String line = reader.nextLine();
