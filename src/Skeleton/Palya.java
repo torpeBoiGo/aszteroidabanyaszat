@@ -2,13 +2,14 @@ package Skeleton;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringJoiner;
 
-public class Palya {
+public class Palya implements Showable {
 	
 	List<Aszteroida> aszteroidak = new ArrayList<Aszteroida>();
 	List<Leptetheto> aiVezerli = new ArrayList<Leptetheto>();
 	List<Leptetheto> jatekosVezerli = new ArrayList<Leptetheto>();
-	
+	List<Teleportkapu> teleportKapuk = new ArrayList<Teleportkapu>(); //Ez tenyleg letezik?
 	static void Napvihar() {
 		
 	}
@@ -39,5 +40,35 @@ public class Palya {
 	
 	boolean GyozelemE(){
 		return false;
+	}
+	
+	public void Show() {
+		StringJoiner lineJoiner = new StringJoiner(",");
+		System.out.print("JatekosVezerelt: ");
+    	for (Leptetheto obj : jatekosVezerli) {
+    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, obj)+": " + obj.getClass().getSimpleName());
+		}
+    	System.out.println(lineJoiner.toString() + ": JatekosVezerelt[0..*]");
+    	
+    	System.out.print("AiVezerelt: ");
+    	for (Leptetheto obj : aiVezerli) {
+    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, obj)+": " + obj.getClass().getSimpleName());
+		}
+    	System.out.println(lineJoiner.toString() + ": AiVezerelt[0..*]");
+    	
+    	System.out.print("Aszteroidak: ");
+    	for (Aszteroida obj : aszteroidak) {
+    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, obj)+": " + obj.getClass().getSimpleName());
+		}
+    	System.out.println(lineJoiner.toString() + ": Aszteroidak[0..*]");
+    	
+    	System.out.print("Teleportkapuk: ");
+    	for (Teleportkapu obj : teleportKapuk) {
+    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, obj)+": " + obj.getClass().getSimpleName());
+		}
+    	System.out.println(lineJoiner.toString() + ": Teleportkapuk[0..*]");
+    	
+    	
+		
 	}
 }

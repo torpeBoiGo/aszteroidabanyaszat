@@ -7,13 +7,19 @@ import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import java.util.Objects;
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class Main {
     static HashMap<String, Object> NamesMap = new HashMap<String, Object>();
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
 
@@ -143,6 +149,7 @@ public class Main {
         }
         sc.close();
     }
+
 
 
     void Skeleton() {
@@ -369,5 +376,16 @@ public class Main {
 
     }
 
+
+
+    
+    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
+        for (Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
+    }
 
 }
