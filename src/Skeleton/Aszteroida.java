@@ -50,6 +50,17 @@ public class Aszteroida implements Mezo, Showable{
     }
     
     /**
+     * megmondja, hogy az aszeroida ureges-e
+     * @return true, ha ureges, false, ha van benne mag
+     */
+    public boolean UregesE() {
+    	if (mag == null) {
+    		return true;
+    	}
+    	return false;
+    }
+    
+    /**
      * A sziklaretegek szamat adja vissza
      * @return a retegek szama
      */

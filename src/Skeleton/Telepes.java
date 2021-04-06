@@ -303,7 +303,7 @@ public class Telepes extends Hajo {
 		}
     	System.out.println(lineJoiner.toString() + ": Nyersanyag[0..10]");
     	lineJoiner = new StringJoiner(",");
-    	System.out.print("NyersanyagRakter: ");
+    	System.out.print("TeleportkapuRakter: ");
     	for (Szallithato tpkapu : teleportkapuRakter) {
     		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu)+": " + tpkapu.getClass().getSimpleName());
 		}
