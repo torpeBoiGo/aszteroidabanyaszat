@@ -8,6 +8,7 @@ import java.util.Map.Entry;
 
 public class Main {
     static HashMap<String, Object> NamesMap = new HashMap<>();
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -32,7 +33,7 @@ public class Main {
                         }
                     } else if ("kor".equals(cmd[2])) {
                         Palya.Kor();
-                    }else if ("korvege".equals(cmd[2])) {
+                    } else if ("korvege".equals(cmd[2])) {
                         Palya.KorVege();
                     }
                 }
@@ -67,7 +68,7 @@ public class Main {
                     hajo.Mozog(mezo);
                 } else if ("tetlen".equals(cmd[1])) {
                     hajo.Tetlen();
-                }else if("meghal".equals(cmd[1])){
+                } else if ("meghal".equals(cmd[1])) {
                     hajo.Meghal();
                     NamesMap.remove(cmd[2]);
                 }
@@ -128,9 +129,17 @@ public class Main {
                     NamesMap.put(cmd[3], a);
                 }
             } else if ("show".equals(cmd[0])) {
-                //ToString magic
-            	System.out.println(cmd[1]+ ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
-                System.out.println(NamesMap.get(cmd[1]));
+                if ("all".equals(cmd[1])) {
+                    for (String key : NamesMap.keySet()) {
+                        System.out.println(key + ": " + NamesMap.get(key).getClass().getSimpleName());
+                        System.out.println(NamesMap.get(key));
+                    }
+                } else {
+                    //ToString magic
+                    System.out.println(cmd[1] + ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
+                    System.out.println(NamesMap.get(cmd[1]));
+                }
+
             } else if ("run".equals(cmd[0])) {
 
             } else if ("save".equals(cmd[0])) {
@@ -156,7 +165,7 @@ public class Main {
                 readRobotok(myReader);
                 readUfok(myReader);
                 readRakter(myReader);
-            }else{
+            } else {
                 throw new RuntimeException("Bad file format");
             }
             myReader.close();
@@ -202,9 +211,9 @@ public class Main {
         String line = reader.nextLine();
         while (!line.equals("TELEPORTKAPUK")) {
             String[] temp = line.split(" ");
-            
-            
-            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]),("napkozel".equals(temp[3])));
+
+
+            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), ("napkozel".equals(temp[3])));
             a.SetMag((Nyersanyag) NamesMap.get(temp[2]));
             NamesMap.put(temp[0], a);
 
@@ -244,6 +253,7 @@ public class Main {
         }
 
     }
+
     //TODO
     static void readSzomszedok(Scanner reader) {
         String line = reader.nextLine();

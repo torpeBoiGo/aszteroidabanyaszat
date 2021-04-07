@@ -185,22 +185,26 @@ public class Aszteroida implements Mezo, Leptetheto{
     @Override
     public String toString() {
     	StringBuilder sb = new StringBuilder();
-        sb.append("Kulso retegek: " + kulsoRetegek + "\n");
-        sb.append("Nyersanyag: " + Main.getKeyByValue(Main.NamesMap, mag)+ ": " + mag.getClass().getSimpleName() + "\n");
-        sb.append("Naplkozelben: " + napkozelben + "\n");
+        sb.append("Kulso retegek: ").append(kulsoRetegek).append("\n");
+        if(mag ==null){
+            sb.append("Nyersanyag: null");
+        }else{
+            sb.append("Nyersanyag: ").append(Main.getKeyByValue(Main.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
+        }
+        sb.append("Naplkozelben: ").append(napkozelben).append("\n");
 
         sb.append("Hajok: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Hajo hajo : hajok) {
             lineJoiner.add(Main.getKeyByValue(Main.NamesMap, hajo) + ": " + hajo.getClass().getSimpleName());
         }
-        sb.append(lineJoiner + ": hajo[0..*]" + "\n");
+        sb.append(lineJoiner).append(": hajo[0..*]").append("\n");
         lineJoiner = new StringJoiner(",");
         sb.append("NyersanyagRakter: ");
         for (Mezo szomszed : szomszedok) {
             lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szomszed) + ": " + szomszed.getClass().getSimpleName());
         }
-        sb.append(lineJoiner + ": mezo[0..*]" + "\n");
+        sb.append(lineJoiner).append(": mezo[0..*]").append("\n");
         return sb.toString();
     }
 }
