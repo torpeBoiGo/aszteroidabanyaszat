@@ -17,7 +17,7 @@ public class RobotEpito extends Epitheto {
 
 	/**
 	 * A robotot letrehozo fuggveny, a robotot az adott aszteroidara helyezi, visszareteresi erteke null.
-	 *  @param Aszterodia a - aszteroida ahol epitunk
+	 *  @param a - aszteroida ahol epitunk
 	 *  @return Vector<Szallithato> - amiket a telepes rakterbe kell tenni- itt null  
 	 */
     @Override

@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class SkeletonController {
 
 	static int depth = 0;
-	static HashMap<String, String> NamesMap = new HashMap<String, String>();
+	static HashMap<String, String> NamesMap = new HashMap<>();
 	
     
     /**
@@ -59,8 +59,7 @@ public class SkeletonController {
             chosen = Integer.parseInt(String.valueOf(line));
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            chosen = -1;
-        }
+		}
     	if(chosen > choices.size()+1 || chosen <= 0 )
     		throw new RuntimeException("Kilepes");
     	
