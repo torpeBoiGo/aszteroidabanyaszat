@@ -55,6 +55,31 @@ public class Aszteroida implements Mezo{
         mag = n;
     }
 
+    
+    /**
+     * megmondja, hogy az aszeroida ureges-e
+     * @return true, ha ureges, false, ha van benne mag
+     */
+    public boolean UregesE() {
+    	return (mag == null);
+    }
+    
+    /**
+     * A sziklaretegek szamat adja vissza
+     * @return a retegek szama
+     */
+    public int GetKulsoRetegek() {
+    	return kulsoRetegek;
+    }
+
+
+    //uj konstruktor
+    public Aszteroida( int kulsoRetegek, boolean napkozelben) {
+
+        this.kulsoRetegek = kulsoRetegek;
+        this.napkozelben = napkozelben;
+    }
+
     //addSzomszed
 
     public void addSzomszed(Mezo m) {
@@ -67,6 +92,7 @@ public class Aszteroida implements Mezo{
      */
 
     public void Fur() {
+    
     }
 
 

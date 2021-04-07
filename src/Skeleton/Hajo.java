@@ -12,9 +12,11 @@ abstract class Hajo{
      */
     protected Aszteroida aszteroida;	
 
+
     public void Fur() {
         aszteroida.Fur();
     }
+
 
 
     

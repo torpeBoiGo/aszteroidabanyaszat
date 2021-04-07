@@ -35,6 +35,17 @@ public class Telepes extends Hajo {
     public Telepes() {
         aszteroida = null;
     }
+    /**
+    * az aszteroidan valo furast hajtja vegre
+    */
+    public void Fur() {
+        SkeletonController.FunctionCall(new Object() {
+        }.getClass().getEnclosingMethod().getName(), this);
+        
+        aszteroida.Fur();
+        
+        SkeletonController.FunctionReturn();
+    }
 
     /**
      * A telepes nyersanyagRakter listjehez ad hozza egy uj elemet.
@@ -162,19 +173,20 @@ public class Telepes extends Hajo {
 
 
     public void Show() {
-        System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
-        System.out.print("NyersanyagRakter: ");
-        StringJoiner lineJoiner = new StringJoiner(",");
-        for (Szallithato szallithato : nyersanyagRakter) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
-        }
-        System.out.println(lineJoiner + ": Nyersanyag[0..10]");
-        lineJoiner = new StringJoiner(",");
-        System.out.print("NyersanyagRakter: ");
-        for (Szallithato tpkapu : teleportkapuRakter) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
-        }
-        System.out.println(lineJoiner + ": Teleportkapu[0..3]");
+    	  System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
+    	  System.out.print("NyersanyagRakter: ");
+    	  StringJoiner lineJoiner = new StringJoiner(",");
+    	  for (Szallithato szallithato : nyersanyagRakter) {
+    		  lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato)+": " + szallithato.getClass().getSimpleName());
+		    }
+    	  System.out.println(lineJoiner + ": Nyersanyag[0..10]");
+    	  lineJoiner = new StringJoiner(",");
+    	  System.out.print("TeleportkapuRakter: ");
+    	  for (Szallithato tpkapu : teleportkapuRakter) {
+    		  lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu)+": " + tpkapu.getClass().getSimpleName());
+		    }
+    	  System.out.println(lineJoiner + ": Teleportkapu[0..3]");
+
     }
 
 }
