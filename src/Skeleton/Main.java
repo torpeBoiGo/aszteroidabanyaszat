@@ -8,6 +8,8 @@ import java.util.Map.Entry;
 
 public class Main {
     static HashMap<String, Object> NamesMap = new HashMap<>();
+    //Store names so we can check if sg is null.
+    static ArrayList<String> ObjectNames = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -229,18 +231,19 @@ public class Main {
             String[] temp = line.split(" ");
             //0 aszteroida hibakezeles
             Aszteroida a1, a2;
+            Teleportkapu k1, k2;
             if (temp[1].equals("0")) {
-                a1 = null;
+                k1 = new Teleportkapu(Boolean.parseBoolean(temp[2]));
             } else {
                 a1 = (Aszteroida) NamesMap.get(temp[1]);
+                k1 = new Teleportkapu(a1, Boolean.parseBoolean(temp[2]));
             }
             if (temp[4].equals("0")) {
-                a2 = null;
+                k2 = new Teleportkapu(Boolean.parseBoolean(temp[2]));
             } else {
                 a2 = (Aszteroida) NamesMap.get(temp[4]);
+                k2 = new Teleportkapu(a2, Boolean.parseBoolean(temp[5]));
             }
-            Teleportkapu k1 = new Teleportkapu(a1, Boolean.parseBoolean(temp[2]));
-            Teleportkapu k2 = new Teleportkapu(a2, Boolean.parseBoolean(temp[5]));
 
             k1.SetPar(k2);
             k2.SetPar(k1);
@@ -293,8 +296,8 @@ public class Main {
         String line = reader.nextLine();
         while (!line.equals("RAKTER")) {
             String[] temp = line.split(" ");
-            //Ufo u = new Ufo((Aszteroida)NamesMap.get(temp[1]));
-            //NamesMap.put(temp[0], u);
+            Ufo u = new Ufo((Aszteroida) NamesMap.get(temp[1]));
+            NamesMap.put(temp[0], u);
             line = reader.nextLine();
         }
 

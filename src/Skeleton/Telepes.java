@@ -7,7 +7,7 @@ import java.util.StringJoiner;
 /**
  * A telepest megvalosito osztaly.
  */
-public class Telepes extends Hajo {
+public class Telepes extends Hajo implements Leptetheto {
 
     /**
      * a nyersanyagokat tarolo Rakter
@@ -35,9 +35,10 @@ public class Telepes extends Hajo {
     public Telepes() {
         aszteroida = null;
     }
+
     /**
-    * az aszteroidan valo furast hajtja vegre
-    */
+     * az aszteroidan valo furast hajtja vegre
+     */
     public void Fur() {
         aszteroida.Fur();
     }
@@ -106,15 +107,25 @@ public class Telepes extends Hajo {
     @Override
     public void Meghal() {
         aszteroida.HajoElhagy(this);
-        //palya.removeAIVezerli(this);
+        Palya.removeAIVezerli(this);
         List<Szallithato> temp_nyersanyagRakter = new ArrayList<>(nyersanyagRakter);
         List<Szallithato> temp_teleportkapuRakter = new ArrayList<>(teleportkapuRakter);
 
-        for (Szallithato szallithato : temp_nyersanyagRakter) szallithato.Megsemmisul();
-        for (Szallithato szallithato : temp_teleportkapuRakter) szallithato.Megsemmisul();
+        for (Szallithato szallithato : temp_nyersanyagRakter) {
+            szallithato.Megsemmisul();
+            Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, szallithato));
+        }
+        for (Szallithato szallithato : temp_teleportkapuRakter) {
+            szallithato.Megsemmisul();
+            Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, szallithato));
+        }
+        nyersanyagRakter = null;
+        teleportkapuRakter = null;
     }
 
-    /*A telepes felrobban*/
+    /**
+     * A telepes felrobban.
+     */
     @Override
     public void Robbanas() {
         Meghal();
@@ -125,7 +136,7 @@ public class Telepes extends Hajo {
      * A telepes lep egyet
      */
     @Override
-    void Lepes() {
+    public void Lepes() {
         // TODO Auto-generated method stub
     }
 
@@ -166,21 +177,21 @@ public class Telepes extends Hajo {
         Nyersanyag n = aszteroida.Kinyer();
     }
 
-
+    //TODO
     public String toString() {
-    	  System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
-    	  System.out.print("NyersanyagRakter: ");
-    	  StringJoiner lineJoiner = new StringJoiner(",");
-    	  for (Szallithato szallithato : nyersanyagRakter) {
-    		  lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato)+": " + szallithato.getClass().getSimpleName());
-		    }
-    	  System.out.println(lineJoiner + ": Nyersanyag[0..10]");
-    	  lineJoiner = new StringJoiner(",");
-    	  System.out.print("TeleportkapuRakter: ");
-    	  for (Szallithato tpkapu : teleportkapuRakter) {
-    		  lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu)+": " + tpkapu.getClass().getSimpleName());
-		    }
-    	  return lineJoiner + ": Teleportkapu[0..3]";
+        System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
+        System.out.print("NyersanyagRakter: ");
+        StringJoiner lineJoiner = new StringJoiner(",");
+        for (Szallithato szallithato : nyersanyagRakter) {
+            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
+        }
+        System.out.println(lineJoiner + ": Nyersanyag[0..10]");
+        lineJoiner = new StringJoiner(",");
+        System.out.print("TeleportkapuRakter: ");
+        for (Szallithato tpkapu : teleportkapuRakter) {
+            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
+        }
+        return lineJoiner + ": Teleportkapu[0..3]\n";
     }
 
 }

@@ -3,7 +3,7 @@ package Skeleton;
 /**
  * A jatekban szereplo teleportkapu
  */
-public class Teleportkapu implements Mezo, Szallithato{
+public class Teleportkapu implements Mezo, Szallithato {
     /**
      * A kapu par masik tagja
      */
@@ -18,7 +18,7 @@ public class Teleportkapu implements Mezo, Szallithato{
      * Azt mutatja meg, hogy uzemkepes-e a kapu
      */
     boolean mukodikE;
-    
+
     //TODO 
     boolean megkergulE;
 
@@ -33,9 +33,25 @@ public class Teleportkapu implements Mezo, Szallithato{
     }
 
 
+    /**
+     * Teleport kapu konstruktora, meglevo aszteroidara, es mukodes beallitasaval.
+     *
+     * @param a       A meglevo aszteroida, amihez a kapu tartozik
+     * @param mukodik A mukodes beallitasa igen/nem.
+     */
     public Teleportkapu(Aszteroida a, boolean mukodik) {
         sajatAszteroida = a;
         a.AddSzomszed(this);
+        mukodikE = mukodik;
+    }
+
+    /**
+     * Teleport kapu konstruktora, a kapuhoz tartozo aszteroida null, es mukodes beallitasaval.
+     *
+     * @param mukodik A mukodes beallitasa igen/nem.
+     */
+    public Teleportkapu(boolean mukodik) {
+        sajatAszteroida = null;
         mukodikE = mukodik;
     }
 
@@ -55,10 +71,10 @@ public class Teleportkapu implements Mezo, Szallithato{
      */
     public void SetSajatAszteroida(Aszteroida a) {
         if (mukodikE) {
-        	 this.sajatAszteroida = a;
-        	 sajatAszteroida.AddSzomszed(this);
+            this.sajatAszteroida = a;
+            sajatAszteroida.AddSzomszed(this);
         } else {
-        	Megsemmisul();
+            Megsemmisul();
         }
     }
 
@@ -70,7 +86,7 @@ public class Teleportkapu implements Mezo, Szallithato{
     public void HajoTeleportErkezik(Hajo h) {
         if (sajatAszteroida != null) {
             sajatAszteroida.HajoErkezik(h);
-            
+
         }
     }
 
@@ -137,11 +153,22 @@ public class Teleportkapu implements Mezo, Szallithato{
 
     @Override
     public String toString() {
-    	String out = "";
-    	out += "MukodikE: " + mukodikE + "\n";
-    	out += "MegkergulE: " + megkergulE + "\n";
-    	out += "Par: " + Main.getKeyByValue(Main.NamesMap, par) +": " + par.getClass().getSimpleName() + "\n";
-    	out += "SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida)+": " + sajatAszteroida.getClass().getSimpleName() + "\n";
+        String out = "";
+        out += "MukodikE: " + mukodikE + "\n";
+        out += "MegkergulE: " + megkergulE + "\n";
+        if(par==null){
+            //TODO ez így jó?
+            //TODO a lent lévő kapu megdöglik-e?
+            out += "Par: " + null +"\n";
+        }else{
+            out += "Par: " + Main.getKeyByValue(Main.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
+        }
+        if(sajatAszteroida==null){
+            //TODO ez így jó?
+            out += "SajatAszteroida: " + null +"\n";
+        }else{
+            out += "SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
+        }
         return out;
     }
 }
