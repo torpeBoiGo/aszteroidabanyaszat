@@ -1,6 +1,5 @@
-package Skeleton;
+package Proto;
 
-import java.util.ArrayList;
 /**
  * 
  * A hajo mukodeset megvalosito osztaly, a Telepes es Robot ososztalya

@@ -1,16 +1,13 @@
-package Skeleton;
+package Proto;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.InputStreamReader;
 import java.util.*;
 import java.util.Map.Entry;
 
 
 public class Main {
     static HashMap<String, Object> NamesMap = new HashMap<>();
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -70,6 +67,7 @@ public class Main {
                     hajo.Tetlen();
                 }else if("meghal".equals(cmd[1])){
                     hajo.Meghal();
+                    NamesMap.remove(cmd[2]);
                 }
             } else if ("robot".equals(cmd[0])) {
                 if ("fur".equals(cmd[1])) {
@@ -128,6 +126,7 @@ public class Main {
                     NamesMap.put(cmd[3], a);
                 }
             } else if ("show".equals(cmd[0])) {
+                //ToString magic
                 System.out.println(NamesMap.get(cmd[1]));
             } else if ("run".equals(cmd[0])) {
 

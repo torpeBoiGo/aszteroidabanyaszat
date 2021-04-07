@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 /**A jatekban szereplo vas nyersanyag*/
 public class Vas extends Nyersanyag{	

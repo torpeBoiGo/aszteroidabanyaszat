@@ -1,6 +1,4 @@
-package Skeleton;
-
-import java.util.ArrayList;
+package Proto;
 
 /**
  * A jatekban szereplo teleportkapu

@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

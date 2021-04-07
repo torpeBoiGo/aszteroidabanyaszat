@@ -1,9 +1,9 @@
-package Skeleton;
+package Proto;
 
 /**
  * A robot mukodeset megvalosito osztaly.
  */
-public class Robot extends Hajo {
+public class Robot extends Hajo implements Leptetheto {
     /**
      * Robot konstruktora, ha a keletkezese pillanatatol aszteroidan tartozkodik
      *
@@ -28,7 +28,7 @@ public class Robot extends Hajo {
     @Override
     public void Meghal() {
         aszteroida.HajoElhagy(this);
-        //palya.removeAIVezerli(this);
+        Palya.removeAIVezerli(this);
     }
 
     /**
@@ -42,7 +42,7 @@ public class Robot extends Hajo {
      * A robot lep egyet, itt lesz mevalositva a viselkedese
      */
     @Override
-    void Lepes() {
+    public void Lepes() {
         // TODO Auto-generated method stub
     }
 
@@ -57,7 +57,7 @@ public class Robot extends Hajo {
 
     @Override
     public String toString() {
-        //System.out.println("Aszteroida: "+ Main.getKeyByValue(Main.NamesMap, aszteroida)+ ": Aszteroida");
-        return super.toString();
+        return this.hashCode() + " :Robot\n" +
+                "Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida\n";
     }
 }
