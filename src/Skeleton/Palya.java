@@ -23,7 +23,23 @@ public class Palya {
     static void Kor() {
 
     }
+    
+    static void KorVege() {
+    	for (Leptetheto leptetheto : jatekosVezerli) {
+			leptetheto.Lepes();
+		}
+    	for (Leptetheto leptetheto : aiVezerli) {
+			leptetheto.Lepes();
+		}
+    	for (Leptetheto leptetheto : aszteroidak) {
+			leptetheto.Lepes();
+		}
+    }
 
+    static void AddAszteroida(Aszteroida a) {
+    	aszteroidak.add(a);
+    }
+    
     static void RemoveAszteroida(Aszteroida a) {
         aszteroidak.remove(a);
     }

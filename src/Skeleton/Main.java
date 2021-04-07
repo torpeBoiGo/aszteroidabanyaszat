@@ -32,6 +32,8 @@ public class Main {
                         }
                     } else if ("kor".equals(cmd[2])) {
                         Palya.Kor();
+                    }else if ("korvege".equals(cmd[2])) {
+                        Palya.KorVege();
                     }
                 }
             } else if ("aszteroida".equals(cmd[0])) {
@@ -127,6 +129,7 @@ public class Main {
                 }
             } else if ("show".equals(cmd[0])) {
                 //ToString magic
+            	System.out.println(cmd[1]+ ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
                 System.out.println(NamesMap.get(cmd[1]));
             } else if ("run".equals(cmd[0])) {
 
@@ -141,7 +144,7 @@ public class Main {
 
     static void loadPalyaFromFile(String fileName) {
         try {
-            File myFile = new File(fileName);
+            File myFile = new File("inputs" + File.separator + fileName);
             Scanner myReader = new Scanner(myFile);
             String line = myReader.nextLine();
             if (line.equals("NYERSANYAGOK")) {
@@ -184,7 +187,7 @@ public class Main {
 
                     break;
                 case "uran":
-                    Uran u = new Uran();
+                    Uran u = new Uran(Integer.parseInt(temp[2]));
                     NamesMap.put(temp[1], u);
                     //temp[2]
                     break;
@@ -199,7 +202,9 @@ public class Main {
         String line = reader.nextLine();
         while (!line.equals("TELEPORTKAPUK")) {
             String[] temp = line.split(" ");
-            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), Boolean.parseBoolean(temp[3]));
+            
+            
+            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]),("napkozel".equals(temp[3])));
             a.SetMag((Nyersanyag) NamesMap.get(temp[2]));
             NamesMap.put(temp[0], a);
 
@@ -244,8 +249,8 @@ public class Main {
         String line = reader.nextLine();
         while (!line.equals("TELEPESEK")) {
             String[] temp = line.split(" ");
-            ((Aszteroida) NamesMap.get(temp[0])).addSzomszed((Mezo) NamesMap.get(temp[1]));
-            ((Aszteroida) NamesMap.get(temp[1])).addSzomszed((Mezo) NamesMap.get(temp[0])); //ez rossz a masodik nem biztos h aszteroida tc
+            ((Aszteroida) NamesMap.get(temp[0])).AddSzomszed((Mezo) NamesMap.get(temp[1]));
+            ((Aszteroida) NamesMap.get(temp[1])).AddSzomszed((Mezo) NamesMap.get(temp[0])); //ez rossz a masodik nem biztos h aszteroida tc
 
             line = reader.nextLine();
         }

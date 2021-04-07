@@ -24,12 +24,7 @@ public class Robot extends Hajo implements Leptetheto {
      * Az aszteroidan valo furast hajtja vegre
      */
     public void Fur() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        
         aszteroida.Fur();
-        
-        SkeletonController.FunctionReturn();
     }
     
     /**
@@ -60,10 +55,7 @@ public class Robot extends Hajo implements Leptetheto {
      * A robot lep egyet, itt lesz mevalositva a viselkedese
      */
     @Override
-
-    public void Lepes() {
-        // TODO Auto-generated method stub
-    void Lepes() {
+	public void Lepes() {
     	List<Mezo> szomszedok = aszteroida.getSzomszedok();
     	
     	if (aszteroida.GetKulsoRetegek() > 0) { //nincs atfurva
