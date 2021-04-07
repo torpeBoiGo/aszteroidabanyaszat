@@ -47,7 +47,7 @@ public abstract class Nyersanyag implements Szallithato , Showable{
         }.getClass().getEnclosingMethod().getName(), this);
         SkeletonController.FunctionReturn();
         
-        int res = SkeletonController.AskForInput("Kompatibilis a nyersanyag?", new ArrayList<String>() {{
+        int res = SkeletonController.AskForInput("Kompatibilis a nyersanyag?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});

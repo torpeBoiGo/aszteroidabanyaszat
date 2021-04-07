@@ -24,7 +24,7 @@ abstract class Hajo implements Showable{
     
     /**
      * A hajo ezzel a fuggvennyel tud masik mezore lepni
-     * @param Mezo uj_mezo - az uj mezo amire atmegy a hajo
+     * @param uj_mezo - az uj mezo amire atmegy a hajo
      */
     public void Mozog(Mezo uj_mezo) {
         SkeletonController.FunctionCall(new Object() {
@@ -74,7 +74,7 @@ abstract class Hajo implements Showable{
 
         //ToDo
         //Ez ide nem kell, csak mint bemutat� k�dot tettem bele
-        int res = SkeletonController.AskForInput("null az aszteroida?", new ArrayList<String>() {{
+        int res = SkeletonController.AskForInput("null az aszteroida?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});

@@ -1,22 +1,15 @@
 package Skeleton;
 
-import javax.naming.Name;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-
-import java.util.Objects;
-import java.util.Scanner;
-import java.util.Set;
 
 
 public class Main {
-    static HashMap<String, Object> NamesMap = new HashMap<String, Object>();
+    static HashMap<String, Object> NamesMap = new HashMap<>();
 
     public static void main(String[] args) {
 
@@ -25,9 +18,9 @@ public class Main {
 
         while (true) {
             String line = sc.nextLine();
-            String cmd[] = line.split(" ");
+            String[] cmd = line.split(" ");
             //System.out.println(cmd[0] + " parancs, " + cmd.length + " szo a bemenet");
-            if (cmd[0] == "exit") break;
+            if ("exit".equals(cmd[0])) break;
 
             if ("palya".equals(cmd[0])) {
                 if ("load".equals(cmd[1])) {
@@ -54,9 +47,7 @@ public class Main {
 
                         aszteroida.kulsoRetegek = Integer.parseInt(cmd[3]);
                     } else if ("napkozelben".equals(cmd[2])) {
-                        if (Integer.parseInt(cmd[3]) == 1)
-                            aszteroida.napkozelben = true;
-                        else aszteroida.napkozelben = false;
+                        aszteroida.napkozelben = Integer.parseInt(cmd[3]) == 1;
                     }
                 } else if ("add".equals(cmd[1])) {
                     if ("mag".equals(cmd[2])) {
@@ -104,8 +95,6 @@ public class Main {
                     telepes.Banyasz();
                 } else if ("kapuLerak".equals(cmd[1])) {
                     telepes.KapuLerak((Teleportkapu) NamesMap.get(cmd[3]));
-                } else if ("addToRakter".equals(cmd[1])) {
-                    telepes.AddRakter((Szallithato) NamesMap.get(cmd[3]));
                 }
             } else if ("teleportkapu".equals(cmd[0])) {
                 if ("create".equals(cmd[1])) {
@@ -150,11 +139,172 @@ public class Main {
         sc.close();
     }
 
+    static void loadPalyaFromFile(String fileName) {
+        try {
+            File myFile = new File(fileName);
+            Scanner myReader = new Scanner(myFile);
+            String line = myReader.nextLine();
+            if (line.equals("NYERSANYAGOK")) {
+                readNyersanyagok(myReader);
+                readAszteroidak(myReader);
+                readTeleportkapuk(myReader);
+                readSzomszedok(myReader);
+                readTelepesek(myReader);
+                readRobotok(myReader);
+                readUfok(myReader);
+                readRakter(myReader);
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+            e.printStackTrace();
+        }
 
+    }
+
+    static void readNyersanyagok(Scanner reader) { //Uran expozicio szamat kell meg lekezelni
+        String line = reader.nextLine();
+        while (!line.equals("ASZTEROIDAK")) {
+            String[] temp = line.split(" ");
+            switch (temp[0]) {
+                case "vas":
+                    Vas v = new Vas();
+                    NamesMap.put(temp[1], v);
+                    break;
+                case "szen":
+                    Szen s = new Szen();
+                    NamesMap.put(temp[1], s);
+
+                    break;
+                case "vizjeg":
+                    Vizjeg vj = new Vizjeg();
+                    NamesMap.put(temp[1], vj);
+
+                    break;
+                case "uran":
+                    Uran u = new Uran();
+                    NamesMap.put(temp[1], u);
+                    //temp[2]
+                    break;
+            }
+            line = reader.nextLine();
+        }
+
+    }
+
+    static void readAszteroidak(Scanner reader) { //itt egy aszteroidákbl álló arraylistet kéne visszaadni
+        ArrayList<Aszteroida> aszteroidak = new ArrayList<>(); //HASHMAP
+        String line = reader.nextLine();
+        while (!line.equals("TELEPORTKAPUK")) {
+            String[] temp = line.split(" ");
+            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), Boolean.parseBoolean(temp[3]));
+            a.SetMag((Nyersanyag) NamesMap.get(temp[2]));
+            NamesMap.put(temp[0], a);
+
+            line = reader.nextLine();
+        }
+
+    }
+
+    static void readTeleportkapuk(Scanner reader) {
+        ArrayList<Teleportkapu> teleportkapuk = new ArrayList<>();
+        String line = reader.nextLine();
+        while (!line.equals("SZOMSZEDOK")) {
+            String[] temp = line.split(" ");
+            //0 aszteroida hibakezeles
+            Aszteroida a1, a2;
+            if (temp[1].equals("0")) {
+                a1 = null;
+            } else {
+                a1 = (Aszteroida) NamesMap.get(temp[1]);
+            }
+            if (temp[4].equals("0")) {
+                a2 = null;
+            } else {
+                a2 = (Aszteroida) NamesMap.get(temp[4]);
+            }
+            Teleportkapu k1 = new Teleportkapu(a1, Boolean.parseBoolean(temp[2]));
+            Teleportkapu k2 = new Teleportkapu(a2, Boolean.parseBoolean(temp[5]));
+
+            k1.SetPar(k2);
+            k2.SetPar(k1);
+
+            NamesMap.put(temp[0], k1);
+            NamesMap.put(temp[3], k2);
+
+            line = reader.nextLine();
+
+        }
+
+    }
+
+    static void readSzomszedok(Scanner reader) {
+        String line = reader.nextLine();
+        while (!line.equals("TELEPESEK")) {
+            String[] temp = line.split(" ");
+            ((Aszteroida) NamesMap.get(temp[0])).addSzomszed((Mezo) NamesMap.get(temp[1]));
+            ((Aszteroida) NamesMap.get(temp[1])).addSzomszed((Mezo) NamesMap.get(temp[0])); //ez rossz a masodik nem biztos h aszteroida tc
+
+            line = reader.nextLine();
+        }
+
+    }
+
+    static void readTelepesek(Scanner reader) {
+        String line = reader.nextLine();
+        while (!line.equals("ROBOTOK")) {
+            String[] temp = line.split(" ");
+            Telepes t = new Telepes((Aszteroida) NamesMap.get(temp[1]));
+            NamesMap.put(temp[0], t);
+            line = reader.nextLine();
+        }
+
+    }
+
+    static void readRobotok(Scanner reader) {
+        String line = reader.nextLine();
+        while (!line.equals("UFOK")) {
+            String[] temp = line.split(" ");
+            Robot r = new Robot((Aszteroida) NamesMap.get(temp[1]));
+            NamesMap.put(temp[0], r);
+            line = reader.nextLine();
+        }
+
+    }
+
+    static void readUfok(Scanner reader) {
+        String line = reader.nextLine();
+        while (!line.equals("RAKTER")) {
+            String[] temp = line.split(" ");
+            //Ufo u = new Ufo((Aszteroida)NamesMap.get(temp[1]));
+            //NamesMap.put(temp[0], u);
+            line = reader.nextLine();
+        }
+
+    }
+
+    static void readRakter(Scanner reader) { //problemas lehet itt
+
+        while (reader.hasNextLine()) {
+            String line = reader.nextLine();
+            String[] temp = line.split(" ");
+            ((Telepes) NamesMap.get(temp[0])).AddRakter((Szallithato) NamesMap.get(temp[1]));
+        }
+
+    }
+
+    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
+        for (Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
+    }
 
     void Skeleton() {
         int chosen = -1;
-        ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
+        ArrayList<MenuItem> menuItems = new ArrayList<>();
         menuItems.add(new MenuItem("Kilepes", SkeletonController::Kilepes));
         menuItems.add(new MenuItem("Telepes tetlen", SkeletonController::TelepesTetlen));
         menuItems.add(new MenuItem("Telepes mozog teleporton keresztul", SkeletonController::TelepesMozogTeleport));
@@ -219,173 +369,6 @@ public class Main {
             }
             SkeletonController.NamesMap.clear();
         }
-    }
-
-
-    static void loadPalyaFromFile(String fileName) {
-        try {
-            File myFile = new File(fileName);
-            Scanner myReader = new Scanner(myFile);
-            String line = myReader.nextLine();
-            if (line.equals("NYERSANYAGOK")) {
-                readNyersanyagok(myReader);
-                readAszteroidak(myReader);
-                readTeleportkapuk(myReader);
-                readSzomszedok(myReader);
-                readTelepesek(myReader);
-                readRobotok(myReader);
-                readUfok(myReader);
-                readRakter(myReader);
-            }
-            myReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-            e.printStackTrace();
-        }
-
-    }
-
-    static void readNyersanyagok(Scanner reader) { //Uran expozicio szamat kell meg lekezelni
-        String line = reader.nextLine();
-        while (!line.equals("ASZTEROIDAK")) {
-            String[] temp = line.split(" ");
-            switch (temp[0]) {
-                case "vas":
-                    Vas v = new Vas();
-                    NamesMap.put(temp[1], v);
-                    break;
-                case "szen":
-                    Szen s = new Szen();
-                    NamesMap.put(temp[1], s);
-
-                    break;
-                case "vizjeg":
-                    Vizjeg vj = new Vizjeg();
-                    NamesMap.put(temp[1], vj);
-
-                    break;
-                case "uran":
-                    Uran u = new Uran();
-                    NamesMap.put(temp[1], u);
-                    //temp[2]
-                    break;
-            }
-            line = reader.nextLine();
-        }
-
-    }
-
-    static void readAszteroidak(Scanner reader) { //itt egy aszteroidákbl álló arraylistet kéne visszaadni
-        ArrayList<Aszteroida> aszteroidak = new ArrayList<Aszteroida>(); //HASHMAP
-        String line = reader.nextLine();
-        while (!line.equals("TELEPORTKAPUK")) {
-            String[] temp = line.split(" ");
-            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), Boolean.parseBoolean(temp[3]));
-            a.SetMag((Nyersanyag) NamesMap.get(temp[2]));
-            NamesMap.put(temp[0], a);
-
-            line = reader.nextLine();
-        }
-
-    }
-
-   static void readTeleportkapuk(Scanner reader) {
-        ArrayList<Teleportkapu> teleportkapuk = new ArrayList<Teleportkapu>();
-        String line = reader.nextLine();
-        while (!line.equals("SZOMSZEDOK")) {
-            String[] temp = line.split(" ");
-            //0 aszteroida hibakezeles
-            Aszteroida a1, a2;
-            if (temp[1].equals("0")) {
-                a1 = null;
-            } else {
-                a1 = (Aszteroida) NamesMap.get(temp[1]);
-            }
-            if (temp[4].equals("0")) {
-                a2 = null;
-            } else {
-                a2 = (Aszteroida) NamesMap.get(temp[4]);
-            }
-            Teleportkapu k1 = new Teleportkapu(a1, Boolean.parseBoolean(temp[2]));
-            Teleportkapu k2 = new Teleportkapu(a2, Boolean.parseBoolean(temp[5]));
-
-            k1.SetPar(k2);
-            k2.SetPar(k1);
-
-            NamesMap.put(temp[0], k1);
-            NamesMap.put(temp[3], k2);
-
-            line = reader.nextLine();
-
-        }
-
-    }
-
-   static void readSzomszedok(Scanner reader) {
-        String line = reader.nextLine();
-        while (!line.equals("TELEPESEK")) {
-			String[] temp = line.split(" ");
-			((Aszteroida) NamesMap.get(temp[0])).addSzomszed((Mezo)NamesMap.get(temp[1]));
-			((Aszteroida) NamesMap.get(temp[1])).addSzomszed((Mezo)NamesMap.get(temp[0])); //ez rossz a masodik nem biztos h aszteroida tc
-
-            line = reader.nextLine();
-        }
-
-    }
-
-    static void readTelepesek(Scanner reader) {
-        String line = reader.nextLine();
-        while (!line.equals("ROBOTOK")) {
-			String[] temp = line.split(" ");
-			Telepes t = new Telepes((Aszteroida)NamesMap.get(temp[1]));
-			NamesMap.put(temp[0], t);
-            line = reader.nextLine();
-        }
-
-    }
-
-   static void readRobotok(Scanner reader) {
-		String line = reader.nextLine();
-		while (!line.equals("UFOK")) {
-			String[] temp = line.split(" ");
-			Robot r = new Robot((Aszteroida)NamesMap.get(temp[1]));
-			NamesMap.put(temp[0], r);
-			line = reader.nextLine();
-		}
-
-    }
-
-    static void readUfok(Scanner reader) {
-		String line = reader.nextLine();
-		while (!line.equals("RAKTER")) {
-			String[] temp = line.split(" ");
-			//Ufo u = new Ufo((Aszteroida)NamesMap.get(temp[1]));
-			//NamesMap.put(temp[0], u);
-			line = reader.nextLine();
-		}
-
-    }
-
-   static void readRakter(Scanner reader) { //problemas lehet itt
-
-        while (reader.hasNextLine()) {
-			String line = reader.nextLine();
-			String[] temp = line.split(" ");
-			((Telepes)NamesMap.get(temp[0])).AddRakter((Szallithato)NamesMap.get(temp[1]));
-        }
-
-    }
-
-
-
-    
-    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
-        for (Entry<T, E> entry : map.entrySet()) {
-            if (Objects.equals(value, entry.getValue())) {
-                return entry.getKey();
-            }
-        }
-        return null;
     }
 
 }

@@ -6,10 +6,10 @@ import java.util.StringJoiner;
 
 public class Palya implements Showable {
 	
-	List<Aszteroida> aszteroidak = new ArrayList<Aszteroida>();
-	List<Leptetheto> aiVezerli = new ArrayList<Leptetheto>();
-	List<Leptetheto> jatekosVezerli = new ArrayList<Leptetheto>();
-	List<Teleportkapu> teleportKapuk = new ArrayList<Teleportkapu>(); //Ez tenyleg letezik?
+	List<Aszteroida> aszteroidak = new ArrayList<>();
+	List<Leptetheto> aiVezerli = new ArrayList<>();
+	List<Leptetheto> jatekosVezerli = new ArrayList<>();
+	List<Teleportkapu> teleportKapuk = new ArrayList<>(); //Ez tenyleg letezik?
 	static void Napvihar() {
 		
 	}
