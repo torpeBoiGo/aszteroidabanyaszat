@@ -7,7 +7,7 @@ import java.util.StringJoiner;
 /**
  * Az aszteroida mukodeseet megvalosito osztaly.
  */
-public class Aszteroida implements Mezo, Showable{
+public class Aszteroida implements Mezo, Showable {
 
 
     /**
@@ -40,6 +40,13 @@ public class Aszteroida implements Mezo, Showable{
         SkeletonController.ObjectCreated(this);
     }
 
+    //uj konstruktor
+    public Aszteroida(int kulsoRetegek, boolean napkozelben) {
+
+        this.kulsoRetegek = kulsoRetegek;
+        this.napkozelben = napkozelben;
+    }
+
     /**
      * Beallitja az aszteroida magjat a parameterkent kapott nyersanyagra
      *
@@ -49,19 +56,9 @@ public class Aszteroida implements Mezo, Showable{
         mag = n;
     }
 
-
-
-
-    //uj konstruktor
-    public Aszteroida( int kulsoRetegek, boolean napkozelben) {
-
-        this.kulsoRetegek = kulsoRetegek;
-        this.napkozelben = napkozelben;
-    }
-
     //addSzomszed
 
-    public void addSzomszed(Mezo m){
+    public void addSzomszed(Mezo m) {
         szomszedok.add(m);
     }
 
@@ -213,13 +210,8 @@ public class Aszteroida implements Mezo, Showable{
      */
     @Override
     public void HajoErkezik(Hajo h) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-
         hajok.add(h);
         h.MezoBeallit(this);
-
-        SkeletonController.FunctionReturn();
     }
 
     /**
@@ -330,21 +322,21 @@ public class Aszteroida implements Mezo, Showable{
     }
 
     public void Show() {
-    	System.out.println("Kulso retegek: " + kulsoRetegek);
-    	System.out.println("Naplkozelben: " + napkozelben);
+        System.out.println("Kulso retegek: " + kulsoRetegek);
+        System.out.println("Naplkozelben: " + napkozelben);
 
-    	System.out.print("Hajok: ");
-    	StringJoiner lineJoiner = new StringJoiner(",");
-    	for (Hajo hajo : hajok) {
-    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, hajo)+": " + hajo.getClass().getSimpleName());
-		}
-    	System.out.println(lineJoiner + ": hajo[0..*]");
-    	lineJoiner = new StringJoiner(",");
-    	System.out.print("NyersanyagRakter: ");
-    	for (Mezo szomszed : szomszedok) {
-    		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szomszed)+": " + szomszed.getClass().getSimpleName());
-		}
-    	System.out.println(lineJoiner + ": mezo[0..*]");
+        System.out.print("Hajok: ");
+        StringJoiner lineJoiner = new StringJoiner(",");
+        for (Hajo hajo : hajok) {
+            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, hajo) + ": " + hajo.getClass().getSimpleName());
+        }
+        System.out.println(lineJoiner + ": hajo[0..*]");
+        lineJoiner = new StringJoiner(",");
+        System.out.print("NyersanyagRakter: ");
+        for (Mezo szomszed : szomszedok) {
+            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szomszed) + ": " + szomszed.getClass().getSimpleName());
+        }
+        System.out.println(lineJoiner + ": mezo[0..*]");
 
-	}
+    }
 }

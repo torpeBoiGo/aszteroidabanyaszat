@@ -12,7 +12,6 @@ public class Robot extends Hajo {
      * @param a Aszteroida, amin tartozkodik
      */
     public Robot(Aszteroida a) {
-        SkeletonController.ObjectCreated(this);
         a.HajoErkezik(this);
         aszteroida = a;
     }

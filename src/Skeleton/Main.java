@@ -44,7 +44,6 @@ public class Main {
                     NamesMap.put(cmd[3], aszteroidaNew);
                 } else if ("set".equals(cmd[1])) {
                     if ("kulsoRetegek".equals(cmd[2])) {
-
                         aszteroida.kulsoRetegek = Integer.parseInt(cmd[3]);
                     } else if ("napkozelben".equals(cmd[2])) {
                         aszteroida.napkozelben = Integer.parseInt(cmd[3]) == 1;
@@ -128,6 +127,7 @@ public class Main {
                 }
             } else if ("show".equals(cmd[0])) {
 
+
             } else if ("run".equals(cmd[0])) {
 
             } else if ("save".equals(cmd[0])) {
@@ -153,6 +153,8 @@ public class Main {
                 readRobotok(myReader);
                 readUfok(myReader);
                 readRakter(myReader);
+            }else{
+                throw new RuntimeException("Bad file format");
             }
             myReader.close();
         } catch (FileNotFoundException e) {
@@ -237,7 +239,7 @@ public class Main {
         }
 
     }
-
+    //TODO
     static void readSzomszedok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("TELEPESEK")) {
@@ -283,6 +285,7 @@ public class Main {
 
     }
 
+    //TODO
     static void readRakter(Scanner reader) { //problemas lehet itt
 
         while (reader.hasNextLine()) {
@@ -338,10 +341,7 @@ public class Main {
         menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin telepes van", SkeletonController::NapviharAszteroidaraTelepesre));
         menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin robot van", SkeletonController::NapviharAszteroidaraRobotra));
 
-        /* *
-         *Beolvas egy szamot es lefuttatja a hozza tartozo fuggvenyt
-         *
-         */
+        //Beolvas egy szamot es lefuttatja a hozza tartozo fuggvenyt
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
             System.out.println("Kerlek valassz egy opciot!\n");
@@ -364,8 +364,6 @@ public class Main {
                     //Igy latjuk ha error jon
                     System.out.println(e.toString());
                 }
-
-
             }
             SkeletonController.NamesMap.clear();
         }
