@@ -1,4 +1,4 @@
-package Proto;
+package Skeleton;
 
 import java.util.ArrayList;
 import java.util.List;

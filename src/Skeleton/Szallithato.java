@@ -1,4 +1,4 @@
-package Proto;
+package Skeleton;
 
 /**
  * Szallithato objektumok interfesze 

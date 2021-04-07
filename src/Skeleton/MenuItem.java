@@ -1,4 +1,4 @@
-package Proto;
+package Skeleton;
 
 /**
  * A menu egy elemet irja le

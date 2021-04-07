@@ -1,4 +1,4 @@
-package Proto;
+package Skeleton;
 
 /**
  * A jatekban szereplo szen nyersanyag

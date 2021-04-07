@@ -1,4 +1,4 @@
-package Proto;
+package Skeleton;
 
 /**
  * Egy mezot ir le aminek szomszedai lehetnek es erkezhetnek ra hajok

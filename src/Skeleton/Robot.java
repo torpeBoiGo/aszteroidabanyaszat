@@ -1,4 +1,4 @@
-package Proto;
+package Skeleton;
 
 /**
  * A robot mukodeset megvalosito osztaly.

@@ -1,4 +1,4 @@
-package Proto;
+package Skeleton;
 
 import java.io.File;
 import java.io.FileNotFoundException;
