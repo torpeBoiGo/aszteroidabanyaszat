@@ -37,11 +37,13 @@ public class Aszteroida implements Mezo, Leptetheto{
      * Az aszteroida konstruktora
      */
     public Aszteroida() {
+    	Palya.AddAszteroida(this);
     }
 
     //uj konstruktor
     public Aszteroida(int kulsoRetegek, boolean napkozelben) {
-
+    	Palya.AddAszteroida(this);
+    	
         this.kulsoRetegek = kulsoRetegek;
         this.napkozelben = napkozelben;
     }
@@ -71,14 +73,6 @@ public class Aszteroida implements Mezo, Leptetheto{
     public int GetKulsoRetegek() {
     	return kulsoRetegek;
     }
-
-
-    //addSzomszed
-
-    public void addSzomszed(Mezo m) {
-        szomszedok.add(m);
-    }
-
 
     /**
      * Az aszteroida furasa
@@ -191,21 +185,22 @@ public class Aszteroida implements Mezo, Leptetheto{
     @Override
     public String toString() {
     	StringBuilder sb = new StringBuilder();
-        sb.append("Kulso retegek: " + kulsoRetegek);
-        sb.append("Naplkozelben: " + napkozelben);
+        sb.append("Kulso retegek: " + kulsoRetegek + "\n");
+        sb.append("Nyersanyag: " + Main.getKeyByValue(Main.NamesMap, mag)+ ": " + mag.getClass().getSimpleName() + "\n");
+        sb.append("Naplkozelben: " + napkozelben + "\n");
 
         sb.append("Hajok: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Hajo hajo : hajok) {
             lineJoiner.add(Main.getKeyByValue(Main.NamesMap, hajo) + ": " + hajo.getClass().getSimpleName());
         }
-        sb.append(lineJoiner + ": hajo[0..*]");
+        sb.append(lineJoiner + ": hajo[0..*]" + "\n");
         lineJoiner = new StringJoiner(",");
         sb.append("NyersanyagRakter: ");
         for (Mezo szomszed : szomszedok) {
             lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szomszed) + ": " + szomszed.getClass().getSimpleName());
         }
-        sb.append(lineJoiner + ": mezo[0..*]");
+        sb.append(lineJoiner + ": mezo[0..*]" + "\n");
         return sb.toString();
     }
 }

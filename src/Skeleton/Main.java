@@ -187,7 +187,7 @@ public class Main {
 
                     break;
                 case "uran":
-                    Uran u = new Uran();
+                    Uran u = new Uran(Integer.parseInt(temp[2]));
                     NamesMap.put(temp[1], u);
                     //temp[2]
                     break;
@@ -202,7 +202,9 @@ public class Main {
         String line = reader.nextLine();
         while (!line.equals("TELEPORTKAPUK")) {
             String[] temp = line.split(" ");
-            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), Boolean.parseBoolean(temp[3]));
+            
+            
+            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]),("napkozel".equals(temp[3])));
             a.SetMag((Nyersanyag) NamesMap.get(temp[2]));
             NamesMap.put(temp[0], a);
 
@@ -247,8 +249,8 @@ public class Main {
         String line = reader.nextLine();
         while (!line.equals("TELEPESEK")) {
             String[] temp = line.split(" ");
-            ((Aszteroida) NamesMap.get(temp[0])).addSzomszed((Mezo) NamesMap.get(temp[1]));
-            ((Aszteroida) NamesMap.get(temp[1])).addSzomszed((Mezo) NamesMap.get(temp[0])); //ez rossz a masodik nem biztos h aszteroida tc
+            ((Aszteroida) NamesMap.get(temp[0])).AddSzomszed((Mezo) NamesMap.get(temp[1]));
+            ((Aszteroida) NamesMap.get(temp[1])).AddSzomszed((Mezo) NamesMap.get(temp[0])); //ez rossz a masodik nem biztos h aszteroida tc
 
             line = reader.nextLine();
         }

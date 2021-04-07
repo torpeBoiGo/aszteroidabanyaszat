@@ -35,6 +35,7 @@ public class Teleportkapu implements Mezo, Szallithato{
 
     public Teleportkapu(Aszteroida a, boolean mukodik) {
         sajatAszteroida = a;
+        a.AddSzomszed(this);
         mukodikE = mukodik;
     }
 

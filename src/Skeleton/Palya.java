@@ -36,6 +36,10 @@ public class Palya {
 		}
     }
 
+    static void AddAszteroida(Aszteroida a) {
+    	aszteroidak.add(a);
+    }
+    
     static void RemoveAszteroida(Aszteroida a) {
         aszteroidak.remove(a);
     }
