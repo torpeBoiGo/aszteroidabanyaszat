@@ -39,12 +39,7 @@ public class Telepes extends Hajo {
     * az aszteroidan valo furast hajtja vegre
     */
     public void Fur() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        
         aszteroida.Fur();
-        
-        SkeletonController.FunctionReturn();
     }
 
     /**
@@ -172,7 +167,7 @@ public class Telepes extends Hajo {
     }
 
 
-    public void Show() {
+    public String toString() {
     	  System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
     	  System.out.print("NyersanyagRakter: ");
     	  StringJoiner lineJoiner = new StringJoiner(",");
@@ -185,8 +180,7 @@ public class Telepes extends Hajo {
     	  for (Szallithato tpkapu : teleportkapuRakter) {
     		  lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu)+": " + tpkapu.getClass().getSimpleName());
 		    }
-    	  System.out.println(lineJoiner + ": Teleportkapu[0..3]");
-
+    	  return lineJoiner + ": Teleportkapu[0..3]";
     }
 
 }

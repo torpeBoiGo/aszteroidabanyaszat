@@ -18,7 +18,6 @@ public class Ufo extends Hajo{
      * @param a Aszteroida, amin tartozkodik
      */
     public Ufo(Aszteroida a) {
-        SkeletonController.ObjectCreated(this);
         a.HajoErkezik(this);
         aszteroida = a;
     }
@@ -27,7 +26,6 @@ public class Ufo extends Hajo{
      * A telepes konstruktora, a sajat aszteroida erteket nullra allitja. 
      */
     public Ufo() {
-        SkeletonController.ObjectCreated(this);
         aszteroida = null;
     }
     
@@ -36,27 +34,22 @@ public class Ufo extends Hajo{
      * @param n
      */
     public void AddNyersanyagRakter(Nyersanyag n) {
-    	SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
     	nyersanyagRakter.add(n);
-        SkeletonController.FunctionReturn();
     }
     
     /**
      * Banyassszuk az aszteroidat amin az UFO van
      */
     void Banyasz() {
-    	SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
         Nyersanyag n = aszteroida.Kinyer();
         
         if(n != null) {
 	        AddNyersanyagRakter(n);
 	    }
-        SkeletonController.FunctionReturn();
     }
     
 	@Override
-	public void Show() {
+	public String toString() {
 		System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
     	System.out.print("NyersanyagRakter: ");
     	StringJoiner lineJoiner = new StringJoiner(",");
@@ -64,6 +57,7 @@ public class Ufo extends Hajo{
     		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato)+": " + szallithato.getClass().getSimpleName());
 		}
     	System.out.println(lineJoiner.toString() + ": Nyersanyag[0..*]");		
+    	return "TODO";
 	}
 
 	@Override
