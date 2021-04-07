@@ -54,10 +54,7 @@ public class Aszteroida implements Mezo, Showable{
      * @return true, ha ureges, false, ha van benne mag
      */
     public boolean UregesE() {
-    	if (mag == null) {
-    		return true;
-    	}
-    	return false;
+    	return (mag == null);
     }
     
     /**
