@@ -25,7 +25,7 @@ public class Telepes extends Hajo {
     
     /**
      * A telepes nyersanyagRakter listjehez ad hozza egy uj elemet.
-     * @param n
+     * @param n a nyersanyag
      */
     public void SetNyersanyagRakter(Nyersanyag n) {
     	SkeletonController.FunctionCall(new Object() {
@@ -37,7 +37,7 @@ public class Telepes extends Hajo {
     
     /**
      * A telepes teleportkapuRakter listjehez ad hozza egy uj elemet.
-     * @param t
+     * @param t a teleportkapu
      */
     public void SetTeleportkapuRakter(Teleportkapu t) {
     	SkeletonController.FunctionCall(new Object() {
@@ -85,8 +85,8 @@ public class Telepes extends Hajo {
     public void RobotEpit(Epitheto e) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        for (int i = 0; i < nyersanyagRakter.size(); i++) {
-            e.KellE((Nyersanyag) nyersanyagRakter.get(i));
+        for (Szallithato szallithato : nyersanyagRakter) {
+            e.KellE((Nyersanyag) szallithato);
         }
         boolean epitheto = e.EpithetoE();
 
@@ -120,13 +120,13 @@ public class Telepes extends Hajo {
      */
     public void TeleportEpit(Epitheto e) {
         SkeletonController.FunctionCall(new Object() {}.getClass().getEnclosingMethod().getName(), this);
-        for (int i = 0; i < nyersanyagRakter.size(); i++) {
-            e.KellE((Nyersanyag) nyersanyagRakter.get(i));
+        for (Szallithato szallithato : nyersanyagRakter) {
+            e.KellE((Nyersanyag) szallithato);
         }
         
         boolean epitheto = e.EpithetoE();
 
-        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<String>() {{
+        int res1 = SkeletonController.AskForInput("epitheto?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -144,7 +144,7 @@ public class Telepes extends Hajo {
                 System.out.println("Rossz bemenet");
                 break;
         }
-        int res2 = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<String>() {{
+        int res2 = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -270,7 +270,7 @@ public class Telepes extends Hajo {
         Nyersanyag n = aszteroida.Kinyer();
         
         if(n != null) {
-	        int res = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<String>() {{
+	        int res = SkeletonController.AskForInput("Van hely a rakterben?", new ArrayList<>() {{
 	            add("igen");
 	            add("nem");
 	        }});
@@ -301,13 +301,13 @@ public class Telepes extends Hajo {
     	for (Szallithato szallithato : nyersanyagRakter) {
     		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato)+": " + szallithato.getClass().getSimpleName());
 		}
-    	System.out.println(lineJoiner.toString() + ": Nyersanyag[0..10]");
+    	System.out.println(lineJoiner + ": Nyersanyag[0..10]");
     	lineJoiner = new StringJoiner(",");
     	System.out.print("TeleportkapuRakter: ");
     	for (Szallithato tpkapu : teleportkapuRakter) {
     		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu)+": " + tpkapu.getClass().getSimpleName());
 		}
-    	System.out.println(lineJoiner.toString() + ": Teleportkapu[0..3]");
+    	System.out.println(lineJoiner + ": Teleportkapu[0..3]");
     }
 
 }

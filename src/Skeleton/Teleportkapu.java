@@ -64,7 +64,7 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
         
-        int res = SkeletonController.AskForInput("Mukodik a teleportkapu?", new ArrayList<String>() {{
+        int res = SkeletonController.AskForInput("Mukodik a teleportkapu?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -155,7 +155,7 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
     public void HajoErkezik(Hajo h) {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int res = SkeletonController.AskForInput("null a par?", new ArrayList<String>() {{
+        int res = SkeletonController.AskForInput("null a par?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});

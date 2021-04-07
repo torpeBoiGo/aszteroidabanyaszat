@@ -87,9 +87,11 @@ public class Aszteroida implements Mezo, Showable{
     public void Fur() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
+
         this.kulsoRetegek--;
         
-        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<String>() {{
+        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<>() {{
+
             add("igen");
             add("nem");
         }});
@@ -108,7 +110,7 @@ public class Aszteroida implements Mezo, Showable{
                 break;
         }
 
-        int atfurva = SkeletonController.AskForInput("Teljesen at van furva az aszteroida?", new ArrayList<String>() {{
+        int atfurva = SkeletonController.AskForInput("Teljesen at van furva az aszteroida?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -141,7 +143,7 @@ public class Aszteroida implements Mezo, Showable{
     public Nyersanyag Kinyer() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
-        int kinyerheto = SkeletonController.AskForInput("Kinyerheto az aszteroida magja?", new ArrayList<String>() {{
+        int kinyerheto = SkeletonController.AskForInput("Kinyerheto az aszteroida magja?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -256,7 +258,7 @@ public class Aszteroida implements Mezo, Showable{
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
 
-        int levanfurva = SkeletonController.AskForInput("Az aszteroida le van furva(kulso retegeinek szama 0)? ", new ArrayList<String>() {{
+        int levanfurva = SkeletonController.AskForInput("Az aszteroida le van furva(kulso retegeinek szama 0)? ", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -264,7 +266,7 @@ public class Aszteroida implements Mezo, Showable{
         if (levanfurva == 0) {
             System.out.println("kilepes");
         } else {
-            int vanmagja = SkeletonController.AskForInput("Az aszteroidaban talalhato mag? ", new ArrayList<String>() {{
+            int vanmagja = SkeletonController.AskForInput("Az aszteroidaban talalhato mag? ", new ArrayList<>() {{
                 add("igen");
                 add("nem");
             }});
@@ -272,7 +274,7 @@ public class Aszteroida implements Mezo, Showable{
                 System.out.println("kilepes");
             } else {
                 if (levanfurva == 2 || vanmagja == 1) {
-                    List<Hajo> hajo_temp = new ArrayList<Hajo>(hajok);
+                    List<Hajo> hajo_temp = new ArrayList<>(hajok);
                     for (Hajo h : hajo_temp) {
                         h.Napvihar();
                     }
@@ -293,7 +295,7 @@ public class Aszteroida implements Mezo, Showable{
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
 
-        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<String>() {{
+        int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -315,7 +317,7 @@ public class Aszteroida implements Mezo, Showable{
         }
 
 
-        int atfurva = SkeletonController.AskForInput("El lehet helyezni a nyersanyagot az aszteroidaban?", new ArrayList<String>() {{
+        int atfurva = SkeletonController.AskForInput("El lehet helyezni a nyersanyagot az aszteroidaban?", new ArrayList<>() {{
             add("igen");
             add("nem");
         }});
@@ -354,13 +356,13 @@ public class Aszteroida implements Mezo, Showable{
     	for (Hajo hajo : hajok) {
     		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, hajo)+": " + hajo.getClass().getSimpleName());
 		}
-    	System.out.println(lineJoiner.toString() + ": hajo[0..*]");
+    	System.out.println(lineJoiner + ": hajo[0..*]");
     	lineJoiner = new StringJoiner(",");
     	System.out.print("NyersanyagRakter: ");
     	for (Mezo szomszed : szomszedok) {
     		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szomszed)+": " + szomszed.getClass().getSimpleName());
 		}
-    	System.out.println(lineJoiner.toString() + ": mezo[0..*]");
+    	System.out.println(lineJoiner + ": mezo[0..*]");
 
 	}
 }
