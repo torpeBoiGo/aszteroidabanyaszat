@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * A hajo mukodeset megvalosito osztaly, a Telepes es Robot ososztalya
  *
  */
-abstract class Hajo implements Showable{
+abstract class Hajo{
 
     /**
      * A Hajo ezen az aszteroidan tartozkodik.
@@ -14,10 +14,7 @@ abstract class Hajo implements Showable{
     protected Aszteroida aszteroida;	
 
     public void Fur() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         aszteroida.Fur();
-        SkeletonController.FunctionReturn();
     }
 
 
@@ -27,11 +24,7 @@ abstract class Hajo implements Showable{
      * @param uj_mezo - az uj mezo amire atmegy a hajo
      */
     public void Mozog(Mezo uj_mezo) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         uj_mezo.HajoErkezik(this);
-
-        SkeletonController.FunctionReturn();
     }
 
     /**
@@ -58,9 +51,6 @@ abstract class Hajo implements Showable{
      * Hajo tetlen.
      */
     public void Tetlen() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        SkeletonController.FunctionReturn();
     }
 
     /**

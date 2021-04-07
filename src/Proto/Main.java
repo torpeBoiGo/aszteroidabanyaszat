@@ -68,6 +68,8 @@ public class Main {
                     hajo.Mozog(mezo);
                 } else if ("tetlen".equals(cmd[1])) {
                     hajo.Tetlen();
+                }else if("meghal".equals(cmd[1])){
+                    hajo.Meghal();
                 }
             } else if ("robot".equals(cmd[0])) {
                 if ("fur".equals(cmd[1])) {
@@ -126,8 +128,7 @@ public class Main {
                     NamesMap.put(cmd[3], a);
                 }
             } else if ("show".equals(cmd[0])) {
-
-
+                System.out.println(NamesMap.get(cmd[1]));
             } else if ("run".equals(cmd[0])) {
 
             } else if ("save".equals(cmd[0])) {
@@ -305,6 +306,7 @@ public class Main {
         return null;
     }
 
+/*
     void Skeleton() {
         int chosen = -1;
         ArrayList<MenuItem> menuItems = new ArrayList<>();
@@ -368,5 +370,7 @@ public class Main {
             SkeletonController.NamesMap.clear();
         }
     }
+
+ */
 
 }

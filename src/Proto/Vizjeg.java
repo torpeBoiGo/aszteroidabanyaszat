@@ -12,9 +12,6 @@ public class Vizjeg extends Nyersanyag {
      */
     @Override
     public void Megfurva(Aszteroida a) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         Nyersanyag kinyert = a.Kinyer();
-        SkeletonController.FunctionReturn();
     }
 }

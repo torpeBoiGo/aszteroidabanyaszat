@@ -1,4 +1,3 @@
-
 package Skeleton;
 
 import java.io.BufferedReader;
