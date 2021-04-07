@@ -48,8 +48,22 @@ public class Aszteroida implements Mezo, Showable{
     public void SetMag(Nyersanyag n) {
         mag = n;
     }
-
-
+    
+    /**
+     * megmondja, hogy az aszeroida ureges-e
+     * @return true, ha ureges, false, ha van benne mag
+     */
+    public boolean UregesE() {
+    	return (mag == null);
+    }
+    
+    /**
+     * A sziklaretegek szamat adja vissza
+     * @return a retegek szama
+     */
+    public int GetKulsoRetegek() {
+    	return kulsoRetegek;
+    }
 
 
     //uj konstruktor
@@ -73,7 +87,11 @@ public class Aszteroida implements Mezo, Showable{
     public void Fur() {
         SkeletonController.FunctionCall(new Object() {
         }.getClass().getEnclosingMethod().getName(), this);
+
+        this.kulsoRetegek--;
+        
         int napkozeli = SkeletonController.AskForInput("Napkozelben van az aszteroida?", new ArrayList<>() {{
+
             add("igen");
             add("nem");
         }});
