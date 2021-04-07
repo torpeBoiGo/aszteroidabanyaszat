@@ -1,5 +1,7 @@
 package Skeleton;
 
+
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -7,14 +9,13 @@ import java.util.Random;
 /**
  * A robot mukodeset megvalosito osztaly.
  */
-public class Robot extends Hajo {
+public class Robot extends Hajo implements Leptetheto {
     /**
      * Robot konstruktora, ha a keletkezese pillanatatol aszteroidan tartozkodik
      *
      * @param a Aszteroida, amin tartozkodik
      */
     public Robot(Aszteroida a) {
-        SkeletonController.ObjectCreated(this);
         a.HajoErkezik(this);
         aszteroida = a;
     }
@@ -36,12 +37,7 @@ public class Robot extends Hajo {
      */
     @Override
     public void Napvihar() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-
         this.Meghal();
-
-        SkeletonController.FunctionReturn();
     }
 
     /**
@@ -49,11 +45,8 @@ public class Robot extends Hajo {
      */
     @Override
     public void Meghal() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         aszteroida.HajoElhagy(this);
-        //palya.removeAIVezerli(this);
-        SkeletonController.FunctionReturn();
+        Palya.removeAIVezerli(this);
     }
 
     /**
@@ -61,36 +54,15 @@ public class Robot extends Hajo {
      */
     @Override
     public void Robbanas() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        int van_szomszed = SkeletonController.AskForInput("Van szomszedja az aszteroidanak?", new ArrayList<>() {{
-            add("igen");
-            add("nem");
-        }});
-
-        switch (van_szomszed) {
-            case 0:
-                System.out.println("kilepes");
-                return;
-            case 1:
-                System.out.println("van szomszedja az aszteroidanak");
-                Mozog(aszteroida.getSzomszedok().get(0));
-                break;
-            case 2:
-                System.out.println("nincs szomszedja az aszteroidanak");
-                Meghal();
-                break;
-            default:
-                System.out.println("Rossz bemenet");
-                break;
-        }
-        SkeletonController.FunctionReturn();
     }
 
     /**
      * A robot lep egyet, itt lesz mevalositva a viselkedese
      */
     @Override
+
+    public void Lepes() {
+        // TODO Auto-generated method stub
     void Lepes() {
     	List<Mezo> szomszedok = aszteroida.getSzomszedok();
     	
@@ -115,8 +87,10 @@ public class Robot extends Hajo {
         // TODO Auto-generated method stub
         return false;
     }
-    
-    public  void Show() {
-    	System.out.println("Aszteroida: "+ Main.getKeyByValue(Main.NamesMap, aszteroida)+ ": Aszteroida");
-	}
+
+    @Override
+    public String toString() {
+        return this.hashCode() + " :Robot\n" +
+                "Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida\n";
+    }
 }

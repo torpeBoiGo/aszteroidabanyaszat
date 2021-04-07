@@ -22,9 +22,6 @@ public abstract class Epitheto {
      * @return True vagy False aszerint, hogy az adott nyersanyag kell-e az epiteshez, vagy nem.
      */
     public boolean KellE(Nyersanyag n) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        SkeletonController.FunctionReturn();
         return false;
     }
     
@@ -33,10 +30,7 @@ public abstract class Epitheto {
      * @return True vagy False aszerint, hogy az adott dolog megepitheto-e, vagy sem.
      */
     public boolean EpithetoE() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         Reset();
-        SkeletonController.FunctionReturn();
         return false;
     }
     
@@ -44,10 +38,6 @@ public abstract class Epitheto {
      * Reset-eli az epitheto objektum tartalmat, ami a KellE fuggveny meghivasai miatt nem lenne hasznalhato egy ujabb epiteshez.
      */
     public void Reset() {
-    	SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-    	
-        SkeletonController.FunctionReturn();
     }
     
     /**

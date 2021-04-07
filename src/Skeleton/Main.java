@@ -1,16 +1,13 @@
 package Skeleton;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.InputStreamReader;
 import java.util.*;
 import java.util.Map.Entry;
 
 
 public class Main {
     static HashMap<String, Object> NamesMap = new HashMap<>();
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -44,7 +41,6 @@ public class Main {
                     NamesMap.put(cmd[3], aszteroidaNew);
                 } else if ("set".equals(cmd[1])) {
                     if ("kulsoRetegek".equals(cmd[2])) {
-
                         aszteroida.kulsoRetegek = Integer.parseInt(cmd[3]);
                     } else if ("napkozelben".equals(cmd[2])) {
                         aszteroida.napkozelben = Integer.parseInt(cmd[3]) == 1;
@@ -69,6 +65,9 @@ public class Main {
                     hajo.Mozog(mezo);
                 } else if ("tetlen".equals(cmd[1])) {
                     hajo.Tetlen();
+                }else if("meghal".equals(cmd[1])){
+                    hajo.Meghal();
+                    NamesMap.remove(cmd[2]);
                 }
             } else if ("robot".equals(cmd[0])) {
                 if ("fur".equals(cmd[1])) {
@@ -127,7 +126,8 @@ public class Main {
                     NamesMap.put(cmd[3], a);
                 }
             } else if ("show".equals(cmd[0])) {
-
+                //ToString magic
+                System.out.println(NamesMap.get(cmd[1]));
             } else if ("run".equals(cmd[0])) {
 
             } else if ("save".equals(cmd[0])) {
@@ -153,6 +153,8 @@ public class Main {
                 readRobotok(myReader);
                 readUfok(myReader);
                 readRakter(myReader);
+            }else{
+                throw new RuntimeException("Bad file format");
             }
             myReader.close();
         } catch (FileNotFoundException e) {
@@ -237,7 +239,7 @@ public class Main {
         }
 
     }
-
+    //TODO
     static void readSzomszedok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("TELEPESEK")) {
@@ -283,6 +285,7 @@ public class Main {
 
     }
 
+    //TODO
     static void readRakter(Scanner reader) { //problemas lehet itt
 
         while (reader.hasNextLine()) {
@@ -302,6 +305,7 @@ public class Main {
         return null;
     }
 
+/*
     void Skeleton() {
         int chosen = -1;
         ArrayList<MenuItem> menuItems = new ArrayList<>();
@@ -338,10 +342,7 @@ public class Main {
         menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin telepes van", SkeletonController::NapviharAszteroidaraTelepesre));
         menuItems.add(new MenuItem("Napvihar olyan aszteroidat er, amin robot van", SkeletonController::NapviharAszteroidaraRobotra));
 
-        /* *
-         *Beolvas egy szamot es lefuttatja a hozza tartozo fuggvenyt
-         *
-         */
+        //Beolvas egy szamot es lefuttatja a hozza tartozo fuggvenyt
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (chosen != 0) {
             System.out.println("Kerlek valassz egy opciot!\n");
@@ -364,11 +365,11 @@ public class Main {
                     //Igy latjuk ha error jon
                     System.out.println(e.toString());
                 }
-
-
             }
             SkeletonController.NamesMap.clear();
         }
     }
+
+ */
 
 }

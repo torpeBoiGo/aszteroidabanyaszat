@@ -15,10 +15,7 @@ public class Uran extends Nyersanyag {
      */
     @Override
     public void Megfurva(Aszteroida a) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         a.Robban();
-        SkeletonController.FunctionReturn();
     }
     
     public void Show() {
