@@ -136,10 +136,11 @@ public class Teleportkapu implements Mezo, Szallithato{
 
     @Override
     public String toString() {
-        System.out.println("MukodikE: " + mukodikE);
-        System.out.println("MegkergulE: " + megkergulE);
-        System.out.println("Par: " + Main.getKeyByValue(Main.NamesMap, par) +": " + par.getClass().getSimpleName());
-        System.out.println("SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida)+": " + sajatAszteroida.getClass().getSimpleName());
-        return super.toString();
+    	String out = "";
+    	out += "MukodikE: " + mukodikE + "\n";
+    	out += "MegkergulE: " + megkergulE + "\n";
+    	out += "Par: " + Main.getKeyByValue(Main.NamesMap, par) +": " + par.getClass().getSimpleName() + "\n";
+    	out += "SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida)+": " + sajatAszteroida.getClass().getSimpleName() + "\n";
+        return out;
     }
 }

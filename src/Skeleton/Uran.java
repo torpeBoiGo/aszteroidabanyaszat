@@ -15,7 +15,9 @@ public class Uran extends Nyersanyag {
      */
     @Override
     public void Megfurva(Aszteroida a) {
-        a.Robban();
+    	expozicio++;
+    	if(expozicio == 0)
+    		a.Robban();
     }
     
     public void Show() {

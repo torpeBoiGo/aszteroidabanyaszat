@@ -32,6 +32,8 @@ public class Main {
                         }
                     } else if ("kor".equals(cmd[2])) {
                         Palya.Kor();
+                    }else if ("korvege".equals(cmd[2])) {
+                        Palya.KorVege();
                     }
                 }
             } else if ("aszteroida".equals(cmd[0])) {
@@ -127,6 +129,7 @@ public class Main {
                 }
             } else if ("show".equals(cmd[0])) {
                 //ToString magic
+            	System.out.println(cmd[1]+ ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
                 System.out.println(NamesMap.get(cmd[1]));
             } else if ("run".equals(cmd[0])) {
 
@@ -141,7 +144,7 @@ public class Main {
 
     static void loadPalyaFromFile(String fileName) {
         try {
-            File myFile = new File(fileName);
+            File myFile = new File("inputs" + File.separator + fileName);
             Scanner myReader = new Scanner(myFile);
             String line = myReader.nextLine();
             if (line.equals("NYERSANYAGOK")) {
