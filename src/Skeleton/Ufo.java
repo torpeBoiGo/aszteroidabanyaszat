@@ -20,6 +20,7 @@ public class Ufo extends Hajo implements Leptetheto{
     public Ufo(Aszteroida a) {
         a.HajoErkezik(this);
         aszteroida = a;
+        Palya.AddAiVezerli(this);
     }
 
     /**
@@ -27,6 +28,7 @@ public class Ufo extends Hajo implements Leptetheto{
      */
     public Ufo() {
         aszteroida = null;
+        Palya.AddAiVezerli(this);
     }
 
     /**

@@ -161,7 +161,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     public String toString() {
         String out = "";
         out += "MukodikE: " + mukodikE + "\n";
-        out += "MegkergultE: " + megkergultE + "\n";
+        out += "MegkergulE: " + megkergultE + "\n";
         if(par==null){
             //TODO ez így jó?
             //TODO a lent lévő kapu megdöglik-e?
@@ -194,5 +194,6 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
 	    		this.SetSajatAszteroida((Aszteroida)szomsz_aszt.get(rand.nextInt(szomsz_aszt.size())));
 	    	}
 		}
+		
 	}
 }
