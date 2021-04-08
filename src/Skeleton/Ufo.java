@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.StringJoiner;
 
-public class Ufo extends Hajo{
+public class Ufo extends Hajo implements Leptetheto{
 
 	/**
 	 * a nyersanyagokat tarolo Rakter
@@ -56,8 +56,8 @@ public class Ufo extends Hajo{
     	for (Szallithato szallithato : nyersanyagRakter) {
     		lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato)+": " + szallithato.getClass().getSimpleName());
 		}
-    	System.out.println(lineJoiner.toString() + ": Nyersanyag[0..*]");		
-    	return "TODO";
+    	//System.out.println(lineJoiner.toString() + ": Nyersanyag[0..*]");		
+    	return lineJoiner.toString() + ": Nyersanyag[0..*]";
 	}
 
 	@Override
@@ -67,13 +67,12 @@ public class Ufo extends Hajo{
 	}
 
 	@Override
-	void Robbanas() {
-		// TODO Auto-generated method stub
-		
+	public void Robbanas() {
+		Meghal();
 	}
 
 	@Override
-	void Lepes() {
+	public void Lepes() {
 		List<Mezo> szomszedok = aszteroida.getSzomszedok();
     	
     	if ((aszteroida.GetKulsoRetegek() > 0) && (szomszedok.size() > 0)) { //nincs atfurva, van szonszed
@@ -99,8 +98,8 @@ public class Ufo extends Hajo{
 
 	@Override
 	void Meghal() {
-		// TODO Auto-generated method stub
-		
+		aszteroida.HajoElhagy(this);
+        Palya.removeAIVezerli(this);		
 	}
 
 	@Override

@@ -283,8 +283,8 @@ public class Main {
         String line = reader.nextLine();
         while (!line.equals("RAKTER")) {
             String[] temp = line.split(" ");
-            //Ufo u = new Ufo((Aszteroida)NamesMap.get(temp[1]));
-            //NamesMap.put(temp[0], u);
+            Ufo u = new Ufo((Aszteroida) NamesMap.get(temp[1]));
+            NamesMap.put(temp[0], u);
             line = reader.nextLine();
         }
 
