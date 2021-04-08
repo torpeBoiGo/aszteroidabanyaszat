@@ -24,6 +24,7 @@ public class Uran extends Nyersanyag {
     	
     	if(expozicio > 2) {
     		a.Robban();
+    		Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
     	}
     		
     }
