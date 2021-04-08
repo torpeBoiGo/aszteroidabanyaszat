@@ -128,6 +128,7 @@ public class Aszteroida implements Mezo, Leptetheto{
         }
         List<Mezo> szomszedok_temp = new ArrayList<>(szomszedok);
         for (Mezo mezo : szomszedok_temp) mezo.RemoveSzomszed(this);
+        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
     }
 
     /**
@@ -193,7 +194,7 @@ public class Aszteroida implements Mezo, Leptetheto{
     	StringBuilder sb = new StringBuilder();
         sb.append("Kulso retegek: ").append(kulsoRetegek).append("\n");
         if(mag ==null){
-            sb.append("Nyersanyag: null");
+            sb.append("Nyersanyag: null\n");
         }else{
             sb.append("Nyersanyag: ").append(Main.getKeyByValue(Main.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
         }

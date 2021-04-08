@@ -75,7 +75,8 @@ public class Ufo extends Hajo implements Leptetheto{
 	@Override
 	void Meghal() {
 		aszteroida.HajoElhagy(this);
-        Palya.removeAIVezerli(this);		
+        Palya.removeAIVezerli(this);
+        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
 	}
 
     

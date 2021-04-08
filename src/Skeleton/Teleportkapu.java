@@ -119,6 +119,7 @@ public class Teleportkapu implements Mezo, Szallithato {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
+        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
     }
 
     /**
@@ -151,6 +152,7 @@ public class Teleportkapu implements Mezo, Szallithato {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
+        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
     }
 
     @Override

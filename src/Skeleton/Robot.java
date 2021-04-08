@@ -42,6 +42,7 @@ public class Robot extends Hajo implements Leptetheto {
     public void Meghal() {
         aszteroida.HajoElhagy(this);
         Palya.removeAIVezerli(this);
+        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
     }
 
     /**
