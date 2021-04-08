@@ -121,6 +121,7 @@ public class Telepes extends Hajo implements Leptetheto {
         }
         nyersanyagRakter = null;
         teleportkapuRakter = null;
+        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
     }
 
     /**
