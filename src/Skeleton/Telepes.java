@@ -142,12 +142,13 @@ public class Telepes extends Hajo {
 
 
     /**
-     * Ellenorzi a hajo mivel jarulhat hozza a gyozelemhez
+     * Elhelyezi az aszteroida magjában a paraméterként kapott nyersanyagot, ha az aszteroida teljesen át van fúrva és üreges
      *
      * @param n - a nyersanyag ami visszateszunk
      */
     void AnyagVisszatesz(Nyersanyag n) {
-        aszteroida.AddMag(n);
+    	boolean sikerult = aszteroida.AddMag(n);
+    	if (sikerult) nyersanyagRakter.remove(n);
     }
 
     /**
@@ -180,7 +181,7 @@ public class Telepes extends Hajo {
     	  for (Szallithato tpkapu : teleportkapuRakter) {
     		  lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu)+": " + tpkapu.getClass().getSimpleName());
 		    }
-    	  return lineJoiner + ": Teleportkapu[0..3]";
+    	  return lineJoiner + ": Teleportkapu[0..3]\n";
     }
 
 }
