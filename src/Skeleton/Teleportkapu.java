@@ -42,6 +42,7 @@ public class Teleportkapu implements Mezo, Szallithato {
     public Teleportkapu(Aszteroida a, boolean mukodik) {
         sajatAszteroida = a;
         a.AddSzomszed(this);
+        //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
         mukodikE = mukodik;
     }
 
@@ -52,6 +53,7 @@ public class Teleportkapu implements Mezo, Szallithato {
      */
     public Teleportkapu(boolean mukodik) {
         sajatAszteroida = null;
+      //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
         mukodikE = mukodik;
     }
 

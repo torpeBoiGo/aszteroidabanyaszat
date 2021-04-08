@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 public class Main {
     static HashMap<String, Object> NamesMap = new HashMap<>();
     //Store names so we can check if sg is null.
+    //TODO nem biztos hogy kell!!!
     static ArrayList<String> ObjectNames = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -236,13 +237,19 @@ public class Main {
                 k1 = new Teleportkapu(Boolean.parseBoolean(temp[2]));
             } else {
                 a1 = (Aszteroida) NamesMap.get(temp[1]);
-                k1 = new Teleportkapu(a1, Boolean.parseBoolean(temp[2]));
+                if("megkergult".equals(temp[2]))
+                	k1 = new Teleportkapu(a1, true);
+                else k1 = new Teleportkapu(a1, false); // akarmire ami nem megkergul, azt mondja hogy nem kergul meg
             }
             if (temp[4].equals("0")) {
-                k2 = new Teleportkapu(Boolean.parseBoolean(temp[2]));
+                k2 = new Teleportkapu(Boolean.parseBoolean(temp[4]));
             } else {
                 a2 = (Aszteroida) NamesMap.get(temp[4]);
-                k2 = new Teleportkapu(a2, Boolean.parseBoolean(temp[5]));
+                
+                if("megkergult".equals(temp[5]))
+                	k2 = new Teleportkapu(a2, true);
+                else k2 = new Teleportkapu(a2, false); // akarmire ami nem megkergul, azt mondja hogy nem kergul meg
+                //k2 = new Teleportkapu(a2, Boolean.parseBoolean(temp[5]));
             }
 
             k1.SetPar(k2);
