@@ -43,11 +43,11 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
      * @param a       A meglevo aszteroida, amihez a kapu tartozik
      * @param mukodik A mukodes beallitasa igen/nem.
      */
-    public Teleportkapu(Aszteroida a, boolean megkergultE) {
+    public Teleportkapu(Aszteroida a, boolean SetMegkergultE) {
         sajatAszteroida = a;
         a.AddSzomszed(this);
         //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
-        megkergulE = megkergultE;
+        megkergultE = SetMegkergultE;
     }
 
     /**
@@ -55,10 +55,10 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
      *
      * @param mukodik A mukodes beallitasa igen/nem.
      */
-    public Teleportkapu(boolean megkergultE) {
+    public Teleportkapu(boolean SetMegkergultE) {
         sajatAszteroida = null;
       //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
-        megkergulE = megkergultE;
+        megkergultE = SetMegkergultE;
     }
 
     /**
