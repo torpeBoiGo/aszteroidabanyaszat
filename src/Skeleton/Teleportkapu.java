@@ -1,9 +1,13 @@
 package Skeleton;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 /**
  * A jatekban szereplo teleportkapu
  */
-public class Teleportkapu implements Mezo, Szallithato {
+public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     /**
      * A kapu par masik tagja
      */
@@ -20,7 +24,7 @@ public class Teleportkapu implements Mezo, Szallithato {
     boolean mukodikE;
 
     //TODO 
-    boolean megkergulE;
+    boolean megkergultE;
 
     /**
      * A teleportkapu konstruktora, a par, sajatAszteroida es mukodikE ertekeket null-ra allitja.
@@ -29,7 +33,7 @@ public class Teleportkapu implements Mezo, Szallithato {
         par = null;
         sajatAszteroida = null;
         mukodikE = true;
-        megkergulE = false;
+        megkergultE = false;
     }
 
 
@@ -157,7 +161,7 @@ public class Teleportkapu implements Mezo, Szallithato {
     public String toString() {
         String out = "";
         out += "MukodikE: " + mukodikE + "\n";
-        out += "MegkergulE: " + megkergulE + "\n";
+        out += "MegkergultE: " + megkergultE + "\n";
         if(par==null){
             //TODO ez így jó?
             //TODO a lent lévő kapu megdöglik-e?
@@ -173,4 +177,22 @@ public class Teleportkapu implements Mezo, Szallithato {
         }
         return out;
     }
+
+
+	@Override
+	public void Lepes() {
+		if (megkergultE == true) {
+			List<Mezo> szomsz = sajatAszteroida.getSzomszedok();
+			List<Mezo> szomsz_aszt = new ArrayList<>();
+			for (int i = 0; i < szomsz.size(); i++) {
+				if (Palya.aszteroidak.contains(szomsz.get(i))) {
+	    			szomsz_aszt.add(szomsz.get(i));
+	    		}
+			}
+	    	if(szomsz_aszt.isEmpty() == false) {
+	    		Random rand = new Random();
+	    		this.SetSajatAszteroida((Aszteroida)szomsz_aszt.get(rand.nextInt(szomsz_aszt.size())));
+	    	}
+		}
+	}
 }
