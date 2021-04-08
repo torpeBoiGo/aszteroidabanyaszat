@@ -18,6 +18,7 @@ public class Robot extends Hajo implements Leptetheto {
     public Robot(Aszteroida a) {
         a.HajoErkezik(this);
         aszteroida = a;
+        Palya.AddAiVezerli(this);
     }
 
     /**

@@ -20,6 +20,7 @@ public class Ufo extends Hajo implements Leptetheto{
     public Ufo(Aszteroida a) {
         a.HajoErkezik(this);
         aszteroida = a;
+        Palya.AddAiVezerli(this);
     }
 
     /**
@@ -27,6 +28,7 @@ public class Ufo extends Hajo implements Leptetheto{
      */
     public Ufo() {
         aszteroida = null;
+        Palya.AddAiVezerli(this);
     }
 
     /**
@@ -54,7 +56,7 @@ public class Ufo extends Hajo implements Leptetheto{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Aszteroida: ").append(Main.getKeyByValue(Main.NamesMap, aszteroida)).append(": Aszteroida\n");
-        sb.append("NyersanyagRakter: \n");
+        sb.append("NyersanyagRakter:");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Szallithato szallithato : nyersanyagRakter) {
             lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
