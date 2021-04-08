@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.StringJoiner;
 
-public class Ufo extends Hajo {
+public class Ufo extends Hajo implements Leptetheto{
 
     /**
      * a nyersanyagokat tarolo Rakter
@@ -49,6 +49,7 @@ public class Ufo extends Hajo {
         }
     }
 
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -65,12 +66,16 @@ public class Ufo extends Hajo {
     @Override
     public void Napvihar() {
         // TODO Auto-generated method stub
+	@Override
+	public void Robbanas() {
+		Meghal();
+	}
 
-    }
-
-    @Override
-    void Robbanas() {
-        // TODO Auto-generated method stub
+	@Override
+	void Meghal() {
+		aszteroida.HajoElhagy(this);
+        Palya.removeAIVezerli(this);		
+	}
 
     }
 

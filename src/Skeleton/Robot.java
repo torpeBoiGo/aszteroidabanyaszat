@@ -49,6 +49,12 @@ public class Robot extends Hajo implements Leptetheto {
      */
     @Override
     public void Robbanas() {
+    	List<Mezo> szomsz = aszteroida.getSzomszedok();
+    	if(szomsz.isEmpty()) Meghal();
+    	else {
+    		Random rand = new Random();
+    		Mozog(szomsz.get(rand.nextInt(szomsz.size())));
+    	}
     }
 
     /**
@@ -82,7 +88,6 @@ public class Robot extends Hajo implements Leptetheto {
 
     @Override
     public String toString() {
-        return this.hashCode() + " :Robot\n" +
-                "Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida\n";
+        return "Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida\n";
     }
 }

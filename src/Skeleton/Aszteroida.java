@@ -79,7 +79,7 @@ public class Aszteroida implements Mezo, Leptetheto{
      */
 
     public void Fur() {
-    
+    	if(kulsoRetegek>0) kulsoRetegek--;
     }
 
 
@@ -89,7 +89,9 @@ public class Aszteroida implements Mezo, Leptetheto{
      * @return a magban levo nyersanyag
      */
     public Nyersanyag Kinyer() {
-        return null;
+        Nyersanyag kinyert = mag;
+        mag = null;
+        return kinyert;
     }
 
 
@@ -171,7 +173,11 @@ public class Aszteroida implements Mezo, Leptetheto{
      * @return True vagy False aszerint, hogy sikeres-e a nyersanyag magba helyezese.
      */
     public boolean AddMag(Nyersanyag n) {
-        return false;
+       if(kulsoRetegek != 0 || mag!=null) return false;
+       else {
+    	   mag = n;
+    	   return true;
+       }
     }
     
     @Override
@@ -200,7 +206,7 @@ public class Aszteroida implements Mezo, Leptetheto{
         }
         sb.append(lineJoiner).append(": hajo[0..*]").append("\n");
         lineJoiner = new StringJoiner(",");
-        sb.append("NyersanyagRakter: ");
+        sb.append("Szomszedok: ");
         for (Mezo szomszed : szomszedok) {
             lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szomszed) + ": " + szomszed.getClass().getSimpleName());
         }

@@ -154,12 +154,13 @@ public class Telepes extends Hajo implements Leptetheto {
 
 
     /**
-     * Ellenorzi a hajo mivel jarulhat hozza a gyozelemhez
+     * Elhelyezi az aszteroida magj�ban a param�terk�nt kapott nyersanyagot, ha az aszteroida teljesen �t van f�rva �s �reges
      *
      * @param n - a nyersanyag ami visszateszunk
      */
     void AnyagVisszatesz(Nyersanyag n) {
-        aszteroida.AddMag(n);
+    	boolean sikerult = aszteroida.AddMag(n);
+    	if (sikerult) nyersanyagRakter.remove(n);
     }
 
     /**
