@@ -6,6 +6,11 @@ package Skeleton;
 public class Uran extends Nyersanyag {
 	
 	int expozicio = 0;
+	public Uran() {
+	}
+	public Uran(int expoz) {
+		expozicio = expoz;
+	}
 	
     /**
      * fuggveny akkor hivodik, mikor az uranrol lekerul az utolso kulsoreteg is,
@@ -15,14 +20,17 @@ public class Uran extends Nyersanyag {
      */
     @Override
     public void Megfurva(Aszteroida a) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        a.Robban();
-        SkeletonController.FunctionReturn();
+    	expozicio++;
+    	
+    	if(expozicio > 2) {
+    		a.Robban();
+    	}
+    		
     }
     
-    public void Show() {
-    	System.out.println("Expozicio: " + expozicio);
-	}
+    @Override
+    public String toString() {
+    	return "Expozicio: " + expozicio + "\n";
+    }
 }
 

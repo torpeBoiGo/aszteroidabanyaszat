@@ -1,11 +1,13 @@
 package Skeleton;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * A jatekban szereplo teleportkapu
  */
-public class Teleportkapu implements Mezo, Szallithato, Showable{
+public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     /**
      * A kapu par masik tagja
      */
@@ -20,27 +22,43 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
      * Azt mutatja meg, hogy uzemkepes-e a kapu
      */
     boolean mukodikE;
-    
+
     //TODO 
-    boolean megkergulE;
+    boolean megkergultE;
 
     /**
      * A teleportkapu konstruktora, a par, sajatAszteroida es mukodikE ertekeket null-ra allitja.
      */
     public Teleportkapu() {
-        SkeletonController.ObjectCreated(this);
         par = null;
         sajatAszteroida = null;
         mukodikE = true;
-        megkergulE = false;
+        megkergultE = false;
     }
 
 
-    public Teleportkapu(Aszteroida a, boolean mukodik) {
-        SkeletonController.ObjectCreated(this);
-
+    /**
+     * Teleport kapu konstruktora, meglevo aszteroidara, es mukodes beallitasaval.
+     *
+     * @param a       A meglevo aszteroida, amihez a kapu tartozik
+     * @param mukodik A mukodes beallitasa igen/nem.
+     */
+    public Teleportkapu(Aszteroida a, boolean megkergultE) {
         sajatAszteroida = a;
-        mukodikE = mukodik;
+        a.AddSzomszed(this);
+        //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
+        megkergulE = megkergultE;
+    }
+
+    /**
+     * Teleport kapu konstruktora, a kapuhoz tartozo aszteroida null, es mukodes beallitasaval.
+     *
+     * @param mukodik A mukodes beallitasa igen/nem.
+     */
+    public Teleportkapu(boolean megkergultE) {
+        sajatAszteroida = null;
+      //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
+        megkergulE = megkergultE;
     }
 
     /**
@@ -49,10 +67,7 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
      * @param p A teleortkapu, ami ezutan ennek a kpaunak a parja lesz.
      */
     public void SetPar(Teleportkapu p) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         par = p;
-        SkeletonController.FunctionReturn();
     }
 
     /**
@@ -61,37 +76,12 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
      * @param a Az aszteroida, ami korul a teleportkapu kering a jatekban.
      */
     public void SetSajatAszteroida(Aszteroida a) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        
-        int res = SkeletonController.AskForInput("Mukodik a teleportkapu?", new ArrayList<String>() {{
-            add("igen");
-            add("nem");
-        }});
-
-        switch (res) {
-            case 0:
-                System.out.println("kilepes");
-                return;
-            case 1:
-                System.out.println("Mukodik");
-                mukodikE = true;
-                break;
-            case 2:
-                System.out.println("Nem mukodik");
-                mukodikE = false;
-                break;
-            default:
-                System.out.println("Rossz bemenet");
-                break;
-        }
         if (mukodikE) {
-        	 this.sajatAszteroida = a;
-        	 sajatAszteroida.AddSzomszed(this);
+            this.sajatAszteroida = a;
+            sajatAszteroida.AddSzomszed(this);
         } else {
-        	Megsemmisul();
+            Megsemmisul();
         }
-        SkeletonController.FunctionReturn();
     }
 
     /**
@@ -100,24 +90,17 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
      * @param h Az erkezo Hajo
      */
     public void HajoTeleportErkezik(Hajo h) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         if (sajatAszteroida != null) {
             sajatAszteroida.HajoErkezik(h);
-            
-        }
 
-        SkeletonController.FunctionReturn();
+        }
     }
 
     /**
      * A teleportkapu mukodeskeptelenne valik
      */
     public void Elront() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         mukodikE = false;
-        SkeletonController.FunctionReturn();
     }
 
     @Override
@@ -134,16 +117,12 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
      */
     @Override
     public void RemoveSzomszed(Mezo m) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         if (sajatAszteroida != null) sajatAszteroida.RemoveSzomszed(this);
         Elront();
         if (par != null) {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
-        SkeletonController.FunctionReturn();
-
     }
 
     /**
@@ -153,35 +132,9 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
      */
     @Override
     public void HajoErkezik(Hajo h) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
-        int res = SkeletonController.AskForInput("null a par?", new ArrayList<String>() {{
-            add("igen");
-            add("nem");
-        }});
-
-        switch (res) {
-            case 0:
-                System.out.println("kilepes");
-                return;
-            case 1:
-                System.out.println("null a par");
-                par = null;
-                break;
-            case 2:
-                System.out.println("nem null a par");
-                //itt elvileg az inicializalas soran mar beallitottunk part, szoval nincs teendo
-                break;
-            default:
-                System.out.println("Rossz bemenet");
-                break;
-        }
-
         if (par != null) {
             par.HajoTeleportErkezik(h);
         }
-
-        SkeletonController.FunctionReturn();
     }
 
     /**
@@ -197,20 +150,50 @@ public class Teleportkapu implements Mezo, Szallithato, Showable{
      * A teleportkapu megsemmisuleseert felel
      */
     public void Megsemmisul() {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         Elront();
         if (par != null) {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
-        SkeletonController.FunctionReturn();
     }
-    
-    public void Show() {
-    	System.out.println("MukodikE: " + mukodikE);
-    	System.out.println("MegkergulE: " + megkergulE);
-    	System.out.println("Par: " + Main.getKeyByValue(Main.NamesMap, par) +": " + par.getClass().getSimpleName());
-    	System.out.println("SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida)+": " + sajatAszteroida.getClass().getSimpleName());
+
+    @Override
+    public String toString() {
+        String out = "";
+        out += "MukodikE: " + mukodikE + "\n";
+        out += "MegkergulE: " + megkergultE + "\n";
+        if(par==null){
+            //TODO ez így jó?
+            //TODO a lent lévő kapu megdöglik-e?
+            out += "Par: " + null +"\n";
+        }else{
+            out += "Par: " + Main.getKeyByValue(Main.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
+        }
+        if(sajatAszteroida==null){
+            //TODO ez így jó?
+            out += "SajatAszteroida: " + null +"\n";
+        }else{
+            out += "SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
+        }
+        return out;
+    }
+
+
+	@Override
+	public void Lepes() {
+		if (megkergultE == true) {
+			List<Mezo> szomsz = sajatAszteroida.getSzomszedok();
+			List<Mezo> szomsz_aszt = new ArrayList<>();
+			for (int i = 0; i < szomsz.size(); i++) {
+				if (Palya.aszteroidak.contains(szomsz.get(i))) {
+	    			szomsz_aszt.add(szomsz.get(i));
+	    		}
+			}
+	    	if(szomsz_aszt.isEmpty() == false) {
+	    		Random rand = new Random();
+	    		this.SetSajatAszteroida((Aszteroida)szomsz_aszt.get(rand.nextInt(szomsz_aszt.size())));
+	    	}
+		}
+		
 	}
 }

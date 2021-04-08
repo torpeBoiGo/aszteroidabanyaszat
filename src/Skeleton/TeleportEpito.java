@@ -10,7 +10,6 @@ public class TeleportEpito extends Epitheto {
      * Konstruktor.
      */
     public TeleportEpito() {
-        SkeletonController.ObjectCreated(this);
     }
 
     /**
@@ -21,8 +20,6 @@ public class TeleportEpito extends Epitheto {
      */
     @Override
     public Vector<Szallithato> Letrejon(Aszteroida a) {
-        SkeletonController.FunctionCall(new Object() {
-        }.getClass().getEnclosingMethod().getName(), this);
         Teleportkapu k1 = new Teleportkapu();
         Teleportkapu k2 = new Teleportkapu();
         k1.SetPar(k2);
@@ -30,8 +27,6 @@ public class TeleportEpito extends Epitheto {
         Vector<Szallithato> kapuk = new Vector<>();
         kapuk.add(k1);
         kapuk.add(k2);
-
-        SkeletonController.FunctionReturn();
 
         return kapuk;
     }
