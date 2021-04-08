@@ -66,6 +66,7 @@ public class Ufo extends Hajo implements Leptetheto{
     @Override
     public void Napvihar() {
         // TODO Auto-generated method stub
+    }
 	@Override
 	public void Robbanas() {
 		Meghal();
@@ -77,10 +78,10 @@ public class Ufo extends Hajo implements Leptetheto{
         Palya.removeAIVezerli(this);		
 	}
 
-    }
+    
 
     @Override
-    void Lepes() {
+	public void Lepes() {
         List<Mezo> szomszedok = aszteroida.getSzomszedok();
 
         if ((aszteroida.GetKulsoRetegek() > 0) && (szomszedok.size() > 0)) { //nincs atfurva, van szonszed
@@ -104,12 +105,7 @@ public class Ufo extends Hajo implements Leptetheto{
         }
     }
 
-    @Override
-    void Meghal() {
-        // TODO Auto-generated method stub
-
-    }
-
+   
     @Override
     boolean NyerEllenoriz(Epitheto e) {
         // TODO Auto-generated method stub
