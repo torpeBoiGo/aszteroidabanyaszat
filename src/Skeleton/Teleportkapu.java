@@ -21,7 +21,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     /**
      * Azt mutatja meg, hogy uzemkepes-e a kapu
      */
-    boolean mukodikE;
+    boolean mukodikE = true;
 
     //TODO 
     boolean megkergultE;
@@ -32,7 +32,6 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     public Teleportkapu() {
         par = null;
         sajatAszteroida = null;
-        mukodikE = true;
         megkergultE = false;
     }
 

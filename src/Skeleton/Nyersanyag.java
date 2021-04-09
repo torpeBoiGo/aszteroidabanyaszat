@@ -14,6 +14,8 @@ public abstract class Nyersanyag implements Szallithato{
      * A nyersanyag megsemmisulesert felel
      */
     public void Megsemmisul() {
+    	
+    	Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
     }
 
     /**
@@ -34,6 +36,7 @@ public abstract class Nyersanyag implements Szallithato{
      * @return igaz, ha a ket nyersanyag azonos tipusu, egyebkent hamis
      */
     public boolean KompatibilisE(Nyersanyag ny) {
-                return false;
+    	//TODO nem biztos hogy igy kell
+        return ny.getClass().getSimpleName().equals(this.getClass().getSimpleName());
     }
 }

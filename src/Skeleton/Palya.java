@@ -17,7 +17,7 @@ public class Palya {
     }
 
     static void Napvihar(Aszteroida a) {
-
+    	a.Napvihar();
     }
 
     static void Kor() {

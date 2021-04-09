@@ -8,10 +8,17 @@ import java.util.Vector;
  *
  */
 public class RobotEpito extends Epitheto {
+	
+
+	static int builtNum= 1;
+	
     /**
      * Konstruktor.
      */
 	public RobotEpito() {
+		Hozzaad(new Vas());
+    	Hozzaad(new Szen());
+    	Hozzaad(new Uran());
     }
 
 	/**
@@ -23,8 +30,7 @@ public class RobotEpito extends Epitheto {
     public Vector<Szallithato> Letrejon(Aszteroida a) {
 
         Robot r = new Robot(a);
-
-
+        Main.NamesMap.put("builtRobot" + builtNum++, r);
         return null;
     }
 }
