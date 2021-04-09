@@ -34,6 +34,9 @@ public class Palya {
     	for (Leptetheto leptetheto : aszteroidak) {
 			leptetheto.Lepes();
 		}
+    	for (Leptetheto leptetheto : teleportKapuk) {
+    		leptetheto.Lepes();
+    	}
     }
 
     static void AddAszteroida(Aszteroida a) {
