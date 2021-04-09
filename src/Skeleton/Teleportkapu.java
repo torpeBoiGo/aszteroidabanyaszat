@@ -33,6 +33,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         par = null;
         sajatAszteroida = null;
         megkergultE = false;
+        Palya.AddTeleportkapu(this);
     }
 
 
@@ -122,6 +123,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
+        Palya.RemoveTeleportkapu(this);
         Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
     }
 

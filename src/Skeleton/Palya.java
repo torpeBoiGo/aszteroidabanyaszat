@@ -34,8 +34,18 @@ public class Palya {
     	for (Leptetheto leptetheto : aszteroidak) {
 			leptetheto.Lepes();
 		}
+    	for (Leptetheto leptetheto : teleportKapuk) {
+    		leptetheto.Lepes();
+    	}
     }
 
+    static void AddTeleportkapu(Teleportkapu t) {
+    	teleportKapuk.add(t);
+    }
+    
+    static void RemoveTeleportkapu(Teleportkapu t) {
+    	teleportKapuk.remove(t);
+    }
     static void AddAszteroida(Aszteroida a) {
     	aszteroidak.add(a);
     }
