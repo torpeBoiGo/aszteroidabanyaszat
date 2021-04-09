@@ -13,7 +13,9 @@ public class Palya {
     static List<Teleportkapu> teleportKapuk = new ArrayList<>(); //Ez tenyleg letezik?
 
     static void Napvihar() {
-
+        for (Aszteroida a: aszteroidak) {
+            a.Napvihar();
+        }
     }
 
     static void Napvihar(Aszteroida a) {

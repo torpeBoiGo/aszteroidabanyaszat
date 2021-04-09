@@ -26,6 +26,7 @@ public class Main {
             if ("palya".equals(cmd[0])) {
                 if ("load".equals(cmd[1])) {
                     loadPalyaFromFile(cmd[2]);
+                    //itt kell friss
                     //cmd[2] -ben kell a fajlnev legyen
                 } else if ("do".equals(cmd[1])) {
                     if ("napvihar".equals(cmd[2])) {
