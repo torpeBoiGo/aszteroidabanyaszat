@@ -164,6 +164,11 @@ public class Aszteroida implements Mezo, Leptetheto{
      * Az aszteroidat napvihar eri.
      */
     public void Napvihar() {
+    	if(mag != null && kulsoRetegek != 0) {
+    		for (Hajo hajo : hajok) {
+				hajo.Napvihar();
+			}
+    	}
     }
 
 

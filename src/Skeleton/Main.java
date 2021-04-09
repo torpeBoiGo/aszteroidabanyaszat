@@ -139,7 +139,8 @@ public class Main {
                     }
                 } else {
                     //ToString magic
-                    System.out.println(cmd[1] + ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
+                	if(NamesMap.get(cmd[1]) != null)
+                		System.out.println(cmd[1] + ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
                     System.out.println(NamesMap.get(cmd[1]));
                 }
 
@@ -316,7 +317,11 @@ public class Main {
         while (reader.hasNextLine()) {
             String line = reader.nextLine();
             String[] temp = line.split(" ");
-            ((Telepes) NamesMap.get(temp[0])).AddRakter((Szallithato) NamesMap.get(temp[1]));
+            
+            //TODO ez igy eleg megkerdojelezheto....
+            if(NamesMap.get(temp[1]).getClass().getSimpleName().equals("Teleportkapu"))    
+            	((Telepes) NamesMap.get(temp[0])).SetTeleportkapuRakter((Teleportkapu) NamesMap.get(temp[1]));
+            else ((Telepes) NamesMap.get(temp[0])).SetNyersanyagRakter((Nyersanyag) NamesMap.get(temp[1]));
         }
 
     }

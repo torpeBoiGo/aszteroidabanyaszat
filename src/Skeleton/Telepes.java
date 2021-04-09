@@ -3,6 +3,7 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringJoiner;
+import java.util.Vector;
 
 /**
  * A telepest megvalosito osztaly.
@@ -67,10 +68,25 @@ public class Telepes extends Hajo implements Leptetheto {
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a robotot.
      */
     public void RobotEpit(Epitheto e) {
+    	List<Szallithato> consumed = new ArrayList<Szallithato>(nyersanyagRakter);
         for (Szallithato szallithato : nyersanyagRakter) {
-            e.KellE((Nyersanyag) szallithato);
+        	if(e.KellE((Nyersanyag) szallithato)) { 
+        		consumed.add(szallithato); 
+        	}
         }
+
         boolean epitheto = e.EpithetoE();
+        
+        if(epitheto) {
+        	e.Letrejon(aszteroida);
+        	
+        	for (Szallithato szallithato : consumed) {
+				szallithato.Megsemmisul();
+			}
+        	nyersanyagRakter.removeAll(consumed);
+        }
+        
+        
     }
 
     /**
@@ -79,17 +95,34 @@ public class Telepes extends Hajo implements Leptetheto {
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a teleportkapukat.
      */
     public void TeleportEpit(Epitheto e) {
+    	List<Szallithato> consumed = new ArrayList<Szallithato>(nyersanyagRakter);
         for (Szallithato szallithato : nyersanyagRakter) {
-            e.KellE((Nyersanyag) szallithato);
+        	if(e.KellE((Nyersanyag) szallithato)) { 
+        		consumed.add(szallithato); 
+        	}
         }
 
         boolean epitheto = e.EpithetoE();
+        
+        if(epitheto && teleportkapuRakter.size() < 2) {
+        	Vector<Szallithato> epitett;
+        	epitett = e.Letrejon(aszteroida);
+        	for (Szallithato szallithato : epitett) {
+        		teleportkapuRakter.add(szallithato);
+			}
+        	
+        	for (Szallithato szallithato : consumed) {
+				szallithato.Megsemmisul();
+			}
+        	nyersanyagRakter.removeAll(consumed);
+        }
     }
 
     /**
      * A telepes lerak egy teleportkaput
      */
     public void KapuLerak(Teleportkapu k) {
+    	teleportkapuRakter.remove(k);
         k.SetSajatAszteroida(aszteroida);
     }
 

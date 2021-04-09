@@ -6,10 +6,18 @@ import java.util.Vector;
  * A teleportkapuk epiteset megvalosito osztaly.
  */
 public class TeleportEpito extends Epitheto {
+	
+	static int builtNum= 1;
+	
     /**
      * Konstruktor.
      */
     public TeleportEpito() {
+    	Hozzaad(new Vas());
+    	Hozzaad(new Vas());
+    	Hozzaad(new Vizjeg());
+    	Hozzaad(new Uran());
+    	
     }
 
     /**
@@ -28,6 +36,8 @@ public class TeleportEpito extends Epitheto {
         kapuk.add(k1);
         kapuk.add(k2);
 
+        Main.NamesMap.put("builtTP" + builtNum++, k1);
+        Main.NamesMap.put("builtTP" + builtNum++, k2);
         return kapuk;
     }
 }

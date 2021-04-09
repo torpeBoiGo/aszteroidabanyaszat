@@ -3,7 +3,7 @@ package Skeleton;
 /**
  * A jatekban szereplo uran nyersanyag
  */
-public class Uran extends Nyersanyag {
+public class Uran extends Nyersanyag implements Szallithato{
 	
 	int expozicio = 0;
 	public Uran() {
