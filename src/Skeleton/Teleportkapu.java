@@ -48,6 +48,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         a.AddSzomszed(this);
         //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
         megkergultE = SetMegkergultE;
+        Palya.AddTeleportkapu(this);
     }
 
     /**
@@ -59,6 +60,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         sajatAszteroida = null;
       //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
         megkergultE = SetMegkergultE;
+        Palya.AddTeleportkapu(this);
     }
 
     /**
@@ -157,6 +159,8 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
+        
+        Palya.RemoveTeleportkapu(this);
         Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 

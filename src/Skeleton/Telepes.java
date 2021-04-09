@@ -28,6 +28,7 @@ public class Telepes extends Hajo implements Leptetheto {
     public Telepes(Aszteroida a) {
         a.HajoErkezik(this);
         aszteroida = a;
+        Palya.AddJatekosVezerli(this);
     }
 
     /**
@@ -35,6 +36,7 @@ public class Telepes extends Hajo implements Leptetheto {
      */
     public Telepes() {
         aszteroida = null;
+        Palya.AddJatekosVezerli(this);
     }
 
     /**
@@ -154,6 +156,8 @@ public class Telepes extends Hajo implements Leptetheto {
         }
         nyersanyagRakter = null;
         teleportkapuRakter = null;
+        
+        Palya.RemoveJatekosVezerli(this);
         Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 

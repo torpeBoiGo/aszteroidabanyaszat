@@ -13,7 +13,7 @@ public class Jatek {
     static ArrayList<String> ObjectNames = new ArrayList<>();
     Palya palya = new Palya();
     
-    public Jatek() {
+    public void Indit() {
     	Scanner sc = new Scanner(System.in);
 		while (true) {
 			String line = sc.nextLine();
@@ -24,7 +24,7 @@ public class Jatek {
         sc.close();
 	}
 
-    public void DoCommand(String[] cmd) {
+    private void DoCommand(String[] cmd) {
             //System.out.println(cmd[0] + " parancs, " + cmd.length + " szo a bemenet");
 
             if ("palya".equals(cmd[0])) {
@@ -160,7 +160,8 @@ public class Jatek {
        
     }
 
-    static void loadPalyaFromFile(String fileName) {
+    void loadPalyaFromFile(String fileName) {
+    	palya.Reset();
         try {
             File myFile = new File("inputs" + File.separator + fileName);
             Scanner myReader = new Scanner(myFile);
@@ -185,7 +186,7 @@ public class Jatek {
 
     }
 
-    static void readNyersanyagok(Scanner reader) { //Uran expozicio szamat kell meg lekezelni
+    void readNyersanyagok(Scanner reader) { //Uran expozicio szamat kell meg lekezelni
         String line = reader.nextLine();
         while (!line.equals("ASZTEROIDAK")) {
             String[] temp = line.split(" ");
@@ -215,7 +216,7 @@ public class Jatek {
 
     }
 
-    static void readAszteroidak(Scanner reader) { //itt egy aszteroidákbl álló arraylistet kéne visszaadni
+    void readAszteroidak(Scanner reader) { //itt egy aszteroidákbl álló arraylistet kéne visszaadni
         ArrayList<Aszteroida> aszteroidak = new ArrayList<>(); //HASHMAP
         String line = reader.nextLine();
         while (!line.equals("TELEPORTKAPUK")) {
@@ -231,7 +232,7 @@ public class Jatek {
 
     }
 
-    static void readTeleportkapuk(Scanner reader) {
+    void readTeleportkapuk(Scanner reader) {
         ArrayList<Teleportkapu> teleportkapuk = new ArrayList<>();
         String line = reader.nextLine();
         while (!line.equals("SZOMSZEDOK")) {
@@ -271,7 +272,7 @@ public class Jatek {
     }
 
     //TODO
-    static void readSzomszedok(Scanner reader) {
+    void readSzomszedok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("TELEPESEK")) {
             String[] temp = line.split(" ");
@@ -283,7 +284,7 @@ public class Jatek {
 
     }
 
-    static void readTelepesek(Scanner reader) {
+    void readTelepesek(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("ROBOTOK")) {
             String[] temp = line.split(" ");
@@ -294,7 +295,7 @@ public class Jatek {
 
     }
 
-    static void readRobotok(Scanner reader) {
+    void readRobotok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("UFOK")) {
             String[] temp = line.split(" ");
@@ -305,7 +306,7 @@ public class Jatek {
 
     }
 
-    static void readUfok(Scanner reader) {
+    void readUfok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("RAKTER")) {
             String[] temp = line.split(" ");
@@ -317,7 +318,7 @@ public class Jatek {
     }
 
     //TODO
-    static void readRakter(Scanner reader) { //problemas lehet itt
+    void readRakter(Scanner reader) { //problemas lehet itt
 
         while (reader.hasNextLine()) {
             String line = reader.nextLine();

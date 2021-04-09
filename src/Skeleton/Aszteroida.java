@@ -134,6 +134,8 @@ public class Aszteroida implements Mezo, Leptetheto {
         }
         List<Mezo> szomszedok_temp = new ArrayList<>(szomszedok);
         for (Mezo mezo : szomszedok_temp) mezo.RemoveSzomszed(this);
+        
+        Palya.RemoveAszteroida(this);
         Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 

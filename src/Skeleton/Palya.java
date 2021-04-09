@@ -2,7 +2,9 @@ package Skeleton;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.StringJoiner;
+
 
 public class Palya {
 
@@ -13,7 +15,8 @@ public class Palya {
     static List<Teleportkapu> teleportKapuk = new ArrayList<>(); //Ez tenyleg letezik?
 
     static void Napvihar() {
-
+    	Random random = new Random();
+    	aszteroidak.get(random.nextInt(aszteroidak.size())).Napvihar();
     }
 
     static void Napvihar(Aszteroida a) {
@@ -21,7 +24,15 @@ public class Palya {
     }
 
     static void Kor() {
+    	for (Leptetheto leptetheto : jatekosVezerli) {
+			leptetheto.Lepes();
+		}
     	
+    	KorVege();
+    	
+    	Napvihar();
+    	//gyozelenm
+    	//nyerheto
     }
     
     static void KorVege() {
@@ -53,6 +64,11 @@ public class Palya {
     static void RemoveAszteroida(Aszteroida a) {
         aszteroidak.remove(a);
     }
+    
+    //TODO dokumentalni
+    static void AddJatekosVezerli(Leptetheto l) {
+        jatekosVezerli.add(l);
+    }
 
     static void RemoveJatekosVezerli(Leptetheto l) {
         jatekosVezerli.remove(l);
@@ -73,6 +89,15 @@ public class Palya {
 
     boolean GyozelemE() {
         return false;
+    }
+    
+    //TODO dokumentalni
+    public void Reset() {
+    	jatekosVezerli.clear();
+    	aiVezerli.clear();
+    	aszteroidak.clear();
+    	teleportKapuk.clear();
+    	
     }
 
     @Override
