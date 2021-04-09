@@ -86,7 +86,7 @@ public class Main {
                     Telepes telepesNew = new Telepes();
                     NamesMap.put(cmd[2], telepesNew);
                 } else if ("addToRakter".equals(cmd[1])) {
-                    telepes.AddRakter((Szallithato) NamesMap.get(cmd[3]));
+                    telepes.addNyersanyagRakter((Szallithato) NamesMap.get(cmd[3]));
                 } else if ("robotEpit".equals(cmd[1])) {
                     telepes.RobotEpit(new RobotEpito());
                 } else if ("teleportEpit".equals(cmd[1])) {
@@ -316,7 +316,7 @@ public class Main {
         while (reader.hasNextLine()) {
             String line = reader.nextLine();
             String[] temp = line.split(" ");
-            ((Telepes) NamesMap.get(temp[0])).AddRakter((Szallithato) NamesMap.get(temp[1]));
+            ((Telepes) NamesMap.get(temp[0])).addNyersanyagRakter((Szallithato) NamesMap.get(temp[1]));
         }
 
     }

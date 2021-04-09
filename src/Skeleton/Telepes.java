@@ -168,7 +168,7 @@ public class Telepes extends Hajo implements Leptetheto {
      *
      * @param n - az elem amit hozzaadunk
      */
-    void AddRakter(Szallithato n) {
+    void addNyersanyagRakter(Szallithato n) {
         nyersanyagRakter.add(n);
     }
 
@@ -177,6 +177,10 @@ public class Telepes extends Hajo implements Leptetheto {
      */
     void Banyasz() {
         Nyersanyag n = aszteroida.Kinyer();
+        if(nyersanyagRakter.size()>9)
+            return;
+        if(n!=null)
+        addNyersanyagRakter(n);
     }
 
     //TODO
