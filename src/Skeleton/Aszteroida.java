@@ -22,7 +22,7 @@ public class Aszteroida implements Mezo, Leptetheto {
     /**
      * Az aszteroida magjaban talalhato nyersanyag
      */
-    Nyersanyag mag;
+    private Nyersanyag mag;
     /**
      * Az aszteroidan tartozkodo Hajok
      */
@@ -226,5 +226,9 @@ public class Aszteroida implements Mezo, Leptetheto {
         }
         sb.append(lineJoiner).append(": mezo[0..*]").append("\n");
         return sb.toString();
+    }
+
+    public Nyersanyag getMag() {
+        return mag;
     }
 }

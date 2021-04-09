@@ -70,7 +70,7 @@ public class Telepes extends Hajo implements Leptetheto {
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a robotot.
      */
     public void RobotEpit(Epitheto e) {
-    	List<Szallithato> consumed = new ArrayList<Szallithato>(nyersanyagRakter);
+    	List<Szallithato> consumed = new ArrayList<>();
         for (Szallithato szallithato : nyersanyagRakter) {
         	if(e.KellE((Nyersanyag) szallithato)) { 
         		consumed.add(szallithato); 
@@ -87,8 +87,8 @@ public class Telepes extends Hajo implements Leptetheto {
 			}
         	nyersanyagRakter.removeAll(consumed);
         }
-        
-        
+        //TODO ez kell?
+        e.Reset();
     }
 
     /**
@@ -97,7 +97,7 @@ public class Telepes extends Hajo implements Leptetheto {
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a teleportkapukat.
      */
     public void TeleportEpit(Epitheto e) {
-    	List<Szallithato> consumed = new ArrayList<Szallithato>(nyersanyagRakter);
+    	List<Szallithato> consumed = new ArrayList<>();
         for (Szallithato szallithato : nyersanyagRakter) {
         	if(e.KellE((Nyersanyag) szallithato)) { 
         		consumed.add(szallithato); 
@@ -109,15 +109,15 @@ public class Telepes extends Hajo implements Leptetheto {
         if(epitheto && teleportkapuRakter.size() < 2) {
         	Vector<Szallithato> epitett;
         	epitett = e.Letrejon(aszteroida);
-        	for (Szallithato szallithato : epitett) {
-        		teleportkapuRakter.add(szallithato);
-			}
+            teleportkapuRakter.addAll(epitett);
         	
         	for (Szallithato szallithato : consumed) {
 				szallithato.Megsemmisul();
 			}
         	nyersanyagRakter.removeAll(consumed);
         }
+        //TODO ez kell?
+        e.Reset();
     }
 
     /**
@@ -184,9 +184,10 @@ public class Telepes extends Hajo implements Leptetheto {
      * @param e -amit vizsgalunk
      */
     @Override
-    boolean NyerEllenoriz(Epitheto e) {
-        // TODO Auto-generated method stub
-        return false;
+    void NyerEllenoriz(Epitheto e) {
+        for (Szallithato ny :nyersanyagRakter){
+            e.KellE((Nyersanyag) ny);
+        }
     }
 
 

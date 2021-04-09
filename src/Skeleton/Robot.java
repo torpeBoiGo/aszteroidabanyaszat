@@ -2,7 +2,6 @@ package Skeleton;
 
 
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -83,7 +82,7 @@ public class Robot extends Hajo implements Leptetheto {
      * Ellenorzi a robot mivel jarulhat hozza a gyozelemhez
      */
     @Override
-    boolean NyerEllenoriz(Epitheto e) {
+    void NyerEllenoriz(Epitheto e) {
         // TODO Auto-generated method stub
         return false;
     }

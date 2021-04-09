@@ -8,63 +8,64 @@ import java.util.StringJoiner;
 
 public class Palya {
 
-	//TODO ezzel mi legyen? muszáj a static....
+    //TODO ezzel mi legyen? muszáj a static....
     static List<Aszteroida> aszteroidak = new ArrayList<>();
     static List<Leptetheto> aiVezerli = new ArrayList<>();
     static List<Leptetheto> jatekosVezerli = new ArrayList<>();
     static List<Teleportkapu> teleportKapuk = new ArrayList<>(); //Ez tenyleg letezik?
 
     static void Napvihar() {
-    	Random random = new Random();
-    	aszteroidak.get(random.nextInt(aszteroidak.size())).Napvihar();
+        Random random = new Random();
+        aszteroidak.get(random.nextInt(aszteroidak.size())).Napvihar();
     }
 
     static void Napvihar(Aszteroida a) {
-    	a.Napvihar();
+        a.Napvihar();
     }
 
     static void Kor() {
-    	for (Leptetheto leptetheto : jatekosVezerli) {
-			leptetheto.Lepes();
-		}
-    	
-    	KorVege();
-    	
-    	Napvihar();
-    	//gyozelenm
-    	//nyerheto
+        for (Leptetheto leptetheto : jatekosVezerli) {
+            leptetheto.Lepes();
+        }
+
+        KorVege();
+
+        Napvihar();
+        //gyozelenm
+        //nyerheto
     }
-    
+
     static void KorVege() {
-    	for (Leptetheto leptetheto : jatekosVezerli) {
-			leptetheto.Lepes();
-		}
-    	for (Leptetheto leptetheto : aiVezerli) {
-			leptetheto.Lepes();
-		}
-    	for (Leptetheto leptetheto : aszteroidak) {
-			leptetheto.Lepes();
-		}
-    	for (Leptetheto leptetheto : teleportKapuk) {
-    		leptetheto.Lepes();
-    	}
+        for (Leptetheto leptetheto : jatekosVezerli) {
+            leptetheto.Lepes();
+        }
+        for (Leptetheto leptetheto : aiVezerli) {
+            leptetheto.Lepes();
+        }
+        for (Leptetheto leptetheto : aszteroidak) {
+            leptetheto.Lepes();
+        }
+        for (Leptetheto leptetheto : teleportKapuk) {
+            leptetheto.Lepes();
+        }
     }
 
     static void AddTeleportkapu(Teleportkapu t) {
-    	teleportKapuk.add(t);
+        teleportKapuk.add(t);
     }
-    
+
     static void RemoveTeleportkapu(Teleportkapu t) {
-    	teleportKapuk.remove(t);
+        teleportKapuk.remove(t);
     }
+
     static void AddAszteroida(Aszteroida a) {
-    	aszteroidak.add(a);
+        aszteroidak.add(a);
     }
-    
+
     static void RemoveAszteroida(Aszteroida a) {
         aszteroidak.remove(a);
     }
-    
+
     //TODO dokumentalni
     static void AddJatekosVezerli(Leptetheto l) {
         jatekosVezerli.add(l);
@@ -79,25 +80,46 @@ public class Palya {
     }
 
     //TODO class diagramm?
-	static void removeAIVezerli(Leptetheto l) {
-    	aiVezerli.remove(l);
-	}
-
-	boolean MegnyerhetoE() {
-        return false;
+    static void removeAIVezerli(Leptetheto l) {
+        aiVezerli.remove(l);
     }
 
+    //TODO ez még nincs tesztelve
+    boolean MegnyerhetoE() {
+        Nyerheto nyerhetoseg = new Nyerheto();
+        for (Aszteroida a : aszteroidak) {
+            for (Hajo h : a.hajok) {
+                h.NyerEllenoriz(nyerhetoseg);
+            }
+            nyerhetoseg.KellE(a.getMag());
+        }
+
+        return nyerhetoseg.EpithetoE() && (jatekosVezerli.size() > 0);
+    }
+
+    //TODO ez még nincs tesztelve
+    //TODO doksiban update it
     boolean GyozelemE() {
+        Gyozelem gyozelemTortenik = new Gyozelem();
+        for (Aszteroida a : aszteroidak) {
+            for (Hajo h : a.hajok) {
+                h.NyerEllenoriz(gyozelemTortenik);
+            }
+            if (gyozelemTortenik.EpithetoE()) return true;
+
+            //TODO ez kell?
+            gyozelemTortenik.Reset();
+        }
         return false;
     }
-    
+
     //TODO dokumentalni
     public void Reset() {
-    	jatekosVezerli.clear();
-    	aiVezerli.clear();
-    	aszteroidak.clear();
-    	teleportKapuk.clear();
-    	
+        jatekosVezerli.clear();
+        aiVezerli.clear();
+        aszteroidak.clear();
+        teleportKapuk.clear();
+
     }
 
     @Override

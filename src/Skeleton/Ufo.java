@@ -110,9 +110,8 @@ public class Ufo extends Hajo implements Leptetheto{
 
    
     @Override
-    boolean NyerEllenoriz(Epitheto e) {
+    void NyerEllenoriz(Epitheto e) {
         // TODO Auto-generated method stub
-        return false;
     }
 
 }
