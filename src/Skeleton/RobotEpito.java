@@ -30,7 +30,7 @@ public class RobotEpito extends Epitheto {
     public Vector<Szallithato> Letrejon(Aszteroida a) {
 
         Robot r = new Robot(a);
-        Main.NamesMap.put("builtRobot" + builtNum++, r);
+        Jatek.NamesMap.put("builtRobot" + builtNum++, r);
         return null;
     }
 }

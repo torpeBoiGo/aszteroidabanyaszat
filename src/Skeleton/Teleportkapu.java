@@ -124,7 +124,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             par.RemoveSzomszed(this);
         }
         Palya.RemoveTeleportkapu(this);
-        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 
     /**
@@ -157,7 +157,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
-        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 
     @Override
@@ -170,13 +170,13 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             //TODO a lent lévő kapu megdöglik-e?
             out += "Par: " + null +"\n";
         }else{
-            out += "Par: " + Main.getKeyByValue(Main.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
+            out += "Par: " + Jatek.getKeyByValue(Jatek.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
         }
         if(sajatAszteroida==null){
             //TODO ez így jó?
             out += "SajatAszteroida: " + null +"\n";
         }else{
-            out += "SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
+            out += "SajatAszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
         }
         return out;
     }

@@ -146,15 +146,15 @@ public class Telepes extends Hajo implements Leptetheto {
 
         for (Szallithato szallithato : temp_nyersanyagRakter) {
             szallithato.Megsemmisul();
-            Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, szallithato));
+            Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, szallithato));
         }
         for (Szallithato szallithato : temp_teleportkapuRakter) {
             szallithato.Megsemmisul();
-            Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, szallithato));
+            Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, szallithato));
         }
         nyersanyagRakter = null;
         teleportkapuRakter = null;
-        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 
     /**
@@ -218,17 +218,17 @@ public class Telepes extends Hajo implements Leptetheto {
 
     //TODO
     public String toString() {
-        System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
+        System.out.println("Aszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, aszteroida) + ": Aszteroida");
         System.out.print("NyersanyagRakter: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Szallithato szallithato : nyersanyagRakter) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
         }
         System.out.println(lineJoiner + ": Nyersanyag[0..10]");
         lineJoiner = new StringJoiner(",");
         System.out.print("TeleportkapuRakter: ");
         for (Szallithato tpkapu : teleportkapuRakter) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
         }
         return lineJoiner + ": Teleportkapu[0..3]\n";
     }

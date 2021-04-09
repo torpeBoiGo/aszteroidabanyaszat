@@ -21,7 +21,7 @@ public class Palya {
     }
 
     static void Kor() {
-
+    	
     }
     
     static void KorVege() {
@@ -81,25 +81,25 @@ public class Palya {
         StringJoiner lineJoiner = new StringJoiner(",");
         sb.append("JatekosVezerelt: \n");
         for (Leptetheto obj : jatekosVezerli) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": JatekosVezerelt[0..*]\n");
 
         sb.append("AiVezerelt: \n");
         for (Leptetheto obj : aiVezerli) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": AiVezerelt[0..*]\n");
 
         sb.append("Aszteroidak: \n");
         for (Aszteroida obj : aszteroidak) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": Aszteroidak[0..*]\n");
 
         sb.append("Teleportkapuk: \n");
         for (Teleportkapu obj : teleportKapuk) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": Teleportkapuk[0..*]\n");
 
