@@ -41,24 +41,26 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
      * Teleport kapu konstruktora, meglevo aszteroidara, es mukodes beallitasaval.
      *
      * @param a       A meglevo aszteroida, amihez a kapu tartozik
-     * @param mukodik A mukodes beallitasa igen/nem.
+     * @param SetMegkergultE A megkergultseg beallitasa igen/nem.
      */
     public Teleportkapu(Aszteroida a, boolean SetMegkergultE) {
         sajatAszteroida = a;
         a.AddSzomszed(this);
         //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
         megkergultE = SetMegkergultE;
+        Palya.AddTeleportkapu(this);
     }
 
     /**
      * Teleport kapu konstruktora, a kapuhoz tartozo aszteroida null, es mukodes beallitasaval.
      *
-     * @param mukodik A mukodes beallitasa igen/nem.
+     * @param SetMegkergultE A megkergultseg beallitasa igen/nem.
      */
     public Teleportkapu(boolean SetMegkergultE) {
         sajatAszteroida = null;
       //TODO eldoneni hogy igy van-e, a spec-ben nem ezt allitjuk
         megkergultE = SetMegkergultE;
+        Palya.AddTeleportkapu(this);
     }
 
     /**
@@ -124,7 +126,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             par.RemoveSzomszed(this);
         }
         Palya.RemoveTeleportkapu(this);
-        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 
     /**
@@ -157,7 +159,9 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
-        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
+        
+        Palya.RemoveTeleportkapu(this);
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 
     @Override
@@ -170,13 +174,13 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             //TODO a lent lévő kapu megdöglik-e?
             out += "Par: " + null +"\n";
         }else{
-            out += "Par: " + Main.getKeyByValue(Main.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
+            out += "Par: " + Jatek.getKeyByValue(Jatek.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
         }
         if(sajatAszteroida==null){
             //TODO ez így jó?
             out += "SajatAszteroida: " + null +"\n";
         }else{
-            out += "SajatAszteroida: " + Main.getKeyByValue(Main.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
+            out += "SajatAszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
         }
         return out;
     }
@@ -184,15 +188,16 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
 
 	@Override
 	public void Lepes() {
-		if (megkergultE == true) {
+		if (megkergultE) {
 			List<Mezo> szomsz = sajatAszteroida.getSzomszedok();
 			List<Mezo> szomsz_aszt = new ArrayList<>();
-			for (int i = 0; i < szomsz.size(); i++) {
-				if (Palya.aszteroidak.contains(szomsz.get(i))) {
-	    			szomsz_aszt.add(szomsz.get(i));
-	    		}
-			}
-	    	if(szomsz_aszt.isEmpty() == false) {
+			//TODO itt nem csak az szteroidákat kéne kiszedni? mezo-re sír az IDEA
+            for (Mezo mezo : szomsz) {
+                if (Palya.aszteroidak.contains(mezo)) {
+                    szomsz_aszt.add(mezo);
+                }
+            }
+	    	if(!szomsz_aszt.isEmpty()) {
 	    		Random rand = new Random();
 	    		this.SetSajatAszteroida((Aszteroida)szomsz_aszt.get(rand.nextInt(szomsz_aszt.size())));
 	    	}

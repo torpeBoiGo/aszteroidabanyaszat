@@ -26,15 +26,14 @@ public abstract class Epitheto {
      * @return True vagy False aszerint, hogy az adott nyersanyag kell-e az epiteshez, vagy nem.
      */
     public boolean KellE(Nyersanyag n) {
-    	
-    	
-    	for (Iterator<Nyersanyag> iterator = alapanyagok.iterator(); iterator.hasNext();) {
-    	    Nyersanyag ny = iterator.next();
-    	    if(n.KompatibilisE(ny)) {
+
+
+		for (Nyersanyag ny : alapanyagok) {
+			if (n.KompatibilisE(ny)) {
 				alapanyagok.remove(ny);
 				return true;
 			}
-    	}
+		}
 
     	return false;
     }
