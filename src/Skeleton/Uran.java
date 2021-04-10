@@ -3,7 +3,7 @@ package Skeleton;
 /**
  * A jatekban szereplo uran nyersanyag
  */
-public class Uran extends Nyersanyag {
+public class Uran extends Nyersanyag implements Szallithato{
 	
 	int expozicio = 0;
 	public Uran() {
@@ -24,7 +24,7 @@ public class Uran extends Nyersanyag {
     	
     	if(expozicio > 2) {
     		a.Robban();
-    		Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
+    		Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     	}
     		
     }

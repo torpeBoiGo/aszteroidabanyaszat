@@ -3,6 +3,7 @@ package Skeleton;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringJoiner;
+import java.util.Vector;
 
 /**
  * A telepest megvalosito osztaly.
@@ -27,6 +28,7 @@ public class Telepes extends Hajo implements Leptetheto {
     public Telepes(Aszteroida a) {
         a.HajoErkezik(this);
         aszteroida = a;
+        Palya.AddJatekosVezerli(this);
     }
 
     /**
@@ -34,6 +36,7 @@ public class Telepes extends Hajo implements Leptetheto {
      */
     public Telepes() {
         aszteroida = null;
+        Palya.AddJatekosVezerli(this);
     }
 
     /**
@@ -67,10 +70,25 @@ public class Telepes extends Hajo implements Leptetheto {
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a robotot.
      */
     public void RobotEpit(Epitheto e) {
+    	List<Szallithato> consumed = new ArrayList<>();
         for (Szallithato szallithato : nyersanyagRakter) {
-            e.KellE((Nyersanyag) szallithato);
+        	if(e.KellE((Nyersanyag) szallithato)) { 
+        		consumed.add(szallithato); 
+        	}
         }
+
         boolean epitheto = e.EpithetoE();
+        
+        if(epitheto) {
+        	e.Letrejon(aszteroida);
+        	
+        	for (Szallithato szallithato : consumed) {
+				szallithato.Megsemmisul();
+			}
+        	nyersanyagRakter.removeAll(consumed);
+        }
+        //TODO ez kell?
+        e.Reset();
     }
 
     /**
@@ -79,17 +97,34 @@ public class Telepes extends Hajo implements Leptetheto {
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a teleportkapukat.
      */
     public void TeleportEpit(Epitheto e) {
+    	List<Szallithato> consumed = new ArrayList<>();
         for (Szallithato szallithato : nyersanyagRakter) {
-            e.KellE((Nyersanyag) szallithato);
+        	if(e.KellE((Nyersanyag) szallithato)) { 
+        		consumed.add(szallithato); 
+        	}
         }
 
         boolean epitheto = e.EpithetoE();
+        
+        if(epitheto && teleportkapuRakter.size() < 2) {
+        	Vector<Szallithato> epitett;
+        	epitett = e.Letrejon(aszteroida);
+            teleportkapuRakter.addAll(epitett);
+        	
+        	for (Szallithato szallithato : consumed) {
+				szallithato.Megsemmisul();
+			}
+        	nyersanyagRakter.removeAll(consumed);
+        }
+        //TODO ez kell?
+        e.Reset();
     }
 
     /**
      * A telepes lerak egy teleportkaput
      */
     public void KapuLerak(Teleportkapu k) {
+    	teleportkapuRakter.remove(k);
         k.SetSajatAszteroida(aszteroida);
     }
 
@@ -113,15 +148,17 @@ public class Telepes extends Hajo implements Leptetheto {
 
         for (Szallithato szallithato : temp_nyersanyagRakter) {
             szallithato.Megsemmisul();
-            Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, szallithato));
+            Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, szallithato));
         }
         for (Szallithato szallithato : temp_teleportkapuRakter) {
             szallithato.Megsemmisul();
-            Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, szallithato));
+            Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, szallithato));
         }
         nyersanyagRakter = null;
         teleportkapuRakter = null;
-        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
+        
+        Palya.RemoveJatekosVezerli(this);
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 
     /**
@@ -147,9 +184,10 @@ public class Telepes extends Hajo implements Leptetheto {
      * @param e -amit vizsgalunk
      */
     @Override
-    boolean NyerEllenoriz(Epitheto e) {
-        // TODO Auto-generated method stub
-        return false;
+    void NyerEllenoriz(Epitheto e) {
+        for (Szallithato ny :nyersanyagRakter){
+            e.KellE((Nyersanyag) ny);
+        }
     }
 
 
@@ -185,17 +223,17 @@ public class Telepes extends Hajo implements Leptetheto {
 
     //TODO
     public String toString() {
-        System.out.println("Aszteroida: " + Main.getKeyByValue(Main.NamesMap, aszteroida) + ": Aszteroida");
+        System.out.println("Aszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, aszteroida) + ": Aszteroida");
         System.out.print("NyersanyagRakter: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Szallithato szallithato : nyersanyagRakter) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
         }
         System.out.println(lineJoiner + ": Nyersanyag[0..10]");
         lineJoiner = new StringJoiner(",");
         System.out.print("TeleportkapuRakter: ");
         for (Szallithato tpkapu : teleportkapuRakter) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
         }
         return lineJoiner + ": Teleportkapu[0..3]\n";
     }

@@ -13,7 +13,7 @@ public class Vizjeg extends Nyersanyag {
     @Override
     public void Megfurva(Aszteroida a) {
         Nyersanyag kinyert = a.Kinyer();
-        Main.NamesMap.remove(Main.getKeyByValue(Main.NamesMap, this));
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
     
     @Override 

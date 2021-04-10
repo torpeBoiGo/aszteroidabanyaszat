@@ -1,5 +1,7 @@
 package Skeleton;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Vector;
 
 
@@ -8,12 +10,14 @@ import java.util.Vector;
  */
 public abstract class Epitheto {
 	
+	ArrayList<Nyersanyag> alapanyagok = new ArrayList<>();
+	
 	/**
      * Ellenorzi, hogy a parameterul kapott nyersanyag kell-e az adott dolog epitesehez.
      * @param n - A nyersanyag amit hozzaadunk a szukseges nyersanyagok listajhoz
      */
     public void Hozzaad(Nyersanyag n) {
-    	
+    	alapanyagok.add(n);
     }
     
     /**
@@ -22,7 +26,16 @@ public abstract class Epitheto {
      * @return True vagy False aszerint, hogy az adott nyersanyag kell-e az epiteshez, vagy nem.
      */
     public boolean KellE(Nyersanyag n) {
-        return false;
+
+
+		for (Nyersanyag ny : alapanyagok) {
+			if (n.KompatibilisE(ny)) {
+				alapanyagok.remove(ny);
+				return true;
+			}
+		}
+
+    	return false;
     }
     
     /**
@@ -30,14 +43,17 @@ public abstract class Epitheto {
      * @return True vagy False aszerint, hogy az adott dolog megepitheto-e, vagy sem.
      */
     public boolean EpithetoE() {
-        Reset();
-        return false;
+    	if(!alapanyagok.isEmpty()) {
+    		Reset();
+    		return false;
+    	}return true;
     }
     
     /**
      * Reset-eli az epitheto objektum tartalmat, ami a KellE fuggveny meghivasai miatt nem lenne hasznalhato egy ujabb epiteshez.
      */
     public void Reset() {
+    	alapanyagok.clear();
     }
     
     /**
