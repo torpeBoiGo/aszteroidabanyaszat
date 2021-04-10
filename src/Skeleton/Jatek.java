@@ -1,5 +1,6 @@
 package Skeleton;
 
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -347,5 +348,6 @@ public class Jatek {
 			Palya.Kor();
 		}
     }
+
 
 }

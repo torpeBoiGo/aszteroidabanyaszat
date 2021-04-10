@@ -1,3 +1,4 @@
+
 package Skeleton;
 
 public class Main {
@@ -6,3 +7,4 @@ public class Main {
         jatek.Indit();
 	}
 }
+

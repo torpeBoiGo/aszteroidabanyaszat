@@ -17,6 +17,7 @@ public class Palya {
     static void Napvihar() {
         Random random = new Random();
         aszteroidak.get(random.nextInt(aszteroidak.size())).Napvihar();
+
     }
 
     static void Napvihar(Aszteroida a) {
