@@ -84,7 +84,6 @@ public class Robot extends Hajo implements Leptetheto {
     @Override
     void NyerEllenoriz(Epitheto e) {
         // TODO Auto-generated method stub
-        return false;
     }
 
     @Override
