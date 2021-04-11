@@ -55,11 +55,11 @@ public class Ufo extends Hajo implements Leptetheto{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Aszteroida: ").append(Main.getKeyByValue(Main.NamesMap, aszteroida)).append(": Aszteroida\n");
+        sb.append("Aszteroida: ").append(Jatek.getKeyByValue(Jatek.NamesMap, aszteroida)).append(": Aszteroida\n");
         sb.append("NyersanyagRakter:");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Szallithato szallithato : nyersanyagRakter) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": Nyersanyag[0..*]\n");
         return sb.toString();
@@ -77,7 +77,8 @@ public class Ufo extends Hajo implements Leptetheto{
 	@Override
 	void Meghal() {
 		aszteroida.HajoElhagy(this);
-        Palya.removeAIVezerli(this);		
+        Palya.removeAIVezerli(this);
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
 	}
 
     
@@ -109,9 +110,8 @@ public class Ufo extends Hajo implements Leptetheto{
 
    
     @Override
-    boolean NyerEllenoriz(Epitheto e) {
+    void NyerEllenoriz(Epitheto e) {
         // TODO Auto-generated method stub
-        return false;
     }
 
 }

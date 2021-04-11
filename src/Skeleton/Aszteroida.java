@@ -7,7 +7,7 @@ import java.util.StringJoiner;
 /**
  * Az aszteroida mukodeseet megvalosito osztaly.
  */
-public class Aszteroida implements Mezo, Leptetheto{
+public class Aszteroida implements Mezo, Leptetheto {
 
 
     /**
@@ -22,7 +22,7 @@ public class Aszteroida implements Mezo, Leptetheto{
     /**
      * Az aszteroida magjaban talalhato nyersanyag
      */
-    Nyersanyag mag;
+    private Nyersanyag mag;
     /**
      * Az aszteroidan tartozkodo Hajok
      */
@@ -37,13 +37,13 @@ public class Aszteroida implements Mezo, Leptetheto{
      * Az aszteroida konstruktora
      */
     public Aszteroida() {
-    	Palya.AddAszteroida(this);
+        Palya.AddAszteroida(this);
     }
 
     //uj konstruktor
     public Aszteroida(int kulsoRetegek, boolean napkozelben) {
-    	Palya.AddAszteroida(this);
-    	
+        Palya.AddAszteroida(this);
+
         this.kulsoRetegek = kulsoRetegek;
         this.napkozelben = napkozelben;
     }
@@ -57,21 +57,23 @@ public class Aszteroida implements Mezo, Leptetheto{
         mag = n;
     }
 
-    
+
     /**
      * megmondja, hogy az aszeroida ureges-e
+     *
      * @return true, ha ureges, false, ha van benne mag
      */
     public boolean UregesE() {
-    	return (mag == null);
+        return (mag == null);
     }
-    
+
     /**
      * A sziklaretegek szamat adja vissza
+     *
      * @return a retegek szama
      */
     public int GetKulsoRetegek() {
-    	return kulsoRetegek;
+        return kulsoRetegek;
     }
 
     /**
@@ -79,7 +81,7 @@ public class Aszteroida implements Mezo, Leptetheto{
      */
 
     public void Fur() {
-    	if(kulsoRetegek>0) kulsoRetegek--;
+        if (kulsoRetegek > 0) kulsoRetegek--;
     }
 
 
@@ -89,9 +91,13 @@ public class Aszteroida implements Mezo, Leptetheto{
      * @return a magban levo nyersanyag
      */
     public Nyersanyag Kinyer() {
-        Nyersanyag kinyert = mag;
-        mag = null;
-        return kinyert;
+        if (kulsoRetegek == 0) {
+            Nyersanyag kinyert = mag;
+            mag = null;
+            return kinyert;
+        } else {
+            return null;
+        }
     }
 
 
@@ -128,6 +134,9 @@ public class Aszteroida implements Mezo, Leptetheto{
         }
         List<Mezo> szomszedok_temp = new ArrayList<>(szomszedok);
         for (Mezo mezo : szomszedok_temp) mezo.RemoveSzomszed(this);
+        
+        Palya.RemoveAszteroida(this);
+        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
 
     /**
@@ -163,6 +172,11 @@ public class Aszteroida implements Mezo, Leptetheto{
      * Az aszteroidat napvihar eri.
      */
     public void Napvihar() {
+    	if(mag != null && kulsoRetegek != 0) {
+    		for (Hajo hajo : hajok) {
+				hajo.Napvihar();
+			}
+    	}
     }
 
 
@@ -173,44 +187,48 @@ public class Aszteroida implements Mezo, Leptetheto{
      * @return True vagy False aszerint, hogy sikeres-e a nyersanyag magba helyezese.
      */
     public boolean AddMag(Nyersanyag n) {
-       if(kulsoRetegek != 0 || mag!=null) return false;
-       else {
-    	   mag = n;
-    	   return true;
-       }
+        if (kulsoRetegek != 0 || mag != null) return false;
+        else {
+            mag = n;
+            return true;
+        }
     }
-    
+
     @Override
-	public void Lepes() {
-		if(napkozelben && kulsoRetegek == 0) {
-			mag.Megfurva(this);
-		}
-		
-	}
+    public void Lepes() {
+        if (napkozelben && kulsoRetegek == 0) {
+            mag.Megfurva(this);
+        }
+
+    }
 
     @Override
     public String toString() {
-    	StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         sb.append("Kulso retegek: ").append(kulsoRetegek).append("\n");
-        if(mag ==null){
-            sb.append("Nyersanyag: null");
-        }else{
-            sb.append("Nyersanyag: ").append(Main.getKeyByValue(Main.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
+        if (mag == null) {
+            sb.append("Nyersanyag: null\n");
+        } else {
+            sb.append("Nyersanyag: ").append(Jatek.getKeyByValue(Jatek.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
         }
         sb.append("Naplkozelben: ").append(napkozelben).append("\n");
 
         sb.append("Hajok: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Hajo hajo : hajok) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, hajo) + ": " + hajo.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, hajo) + ": " + hajo.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": hajo[0..*]").append("\n");
         lineJoiner = new StringJoiner(",");
         sb.append("Szomszedok: ");
         for (Mezo szomszed : szomszedok) {
-            lineJoiner.add(Main.getKeyByValue(Main.NamesMap, szomszed) + ": " + szomszed.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szomszed) + ": " + szomszed.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": mezo[0..*]").append("\n");
         return sb.toString();
+    }
+
+    public Nyersanyag getMag() {
+        return mag;
     }
 }
