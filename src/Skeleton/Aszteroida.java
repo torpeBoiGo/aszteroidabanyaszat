@@ -199,7 +199,7 @@ public class Aszteroida implements Mezo, Leptetheto {
     @Override
     public void Lepes() {
         if (napkozelben && kulsoRetegek == 0) {
-            mag.Megfurva(this);
+            if (mag != null) mag.Megfurva(this);
         }
 
     }

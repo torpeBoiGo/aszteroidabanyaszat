@@ -25,7 +25,7 @@ abstract class Hajo{
      * @param uj_mezo - az uj mezo amire atmegy a hajo
      */
     public void Mozog(Mezo uj_mezo) {
-        uj_mezo.HajoErkezik(this);
+        if(uj_mezo!=null) uj_mezo.HajoErkezik(this);
     }
 
     /**
