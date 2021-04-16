@@ -4,7 +4,7 @@ package Skeleton;
  * A jatekban szereplo nyersanyagok ososztalya
  */
 public abstract class Nyersanyag implements Szallithato{
-    /**
+       /**
      * Konstruktor
      */
     public Nyersanyag() {

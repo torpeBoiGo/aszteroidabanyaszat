@@ -1,6 +1,7 @@
 package Skeleton;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.StringJoiner;
 
@@ -134,7 +135,7 @@ public class Aszteroida implements Mezo, Leptetheto {
         }
         List<Mezo> szomszedok_temp = new ArrayList<>(szomszedok);
         for (Mezo mezo : szomszedok_temp) mezo.RemoveSzomszed(this);
-        
+
         Palya.RemoveAszteroida(this);
         Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
@@ -172,11 +173,12 @@ public class Aszteroida implements Mezo, Leptetheto {
      * Az aszteroidat napvihar eri.
      */
     public void Napvihar() {
-    	if(mag != null && kulsoRetegek != 0) {
-    		for (Hajo hajo : hajok) {
-				hajo.Napvihar();
-			}
-    	}
+       if (mag != null || kulsoRetegek != 0) {
+        for (int i = hajok.size() - 1; i >= 0; i--)
+        {
+            hajok.get(i).Napvihar();
+        }
+    }
     }
 
 

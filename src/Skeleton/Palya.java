@@ -149,7 +149,7 @@ public class Palya {
         for (Teleportkapu obj : teleportKapuk) {
             lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
-        sb.append(lineJoiner).append(": Teleportkapuk[0..*]\n");
+      sb.append(lineJoiner).append(": Teleportkapuk[0..*]\n");
 
 
         return sb.toString();
