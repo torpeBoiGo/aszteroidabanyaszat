@@ -1,0 +1,17 @@
+NYERSANYAGOK
+uran U 2
+ASZTEROIDAK
+A1 0 0 naptavol
+A2 0 U napkozel
+A3 0 0 naptavol
+TELEPORTKAPUK
+TP1 A1 nemkergultmeg TP2 A2 nemkergultmeg
+SZOMSZEDOK
+A1 A3
+TELEPESEK
+T1 A1
+ROBOTOK
+R1 A2
+UFOK
+U1 A3
+RAKTER
