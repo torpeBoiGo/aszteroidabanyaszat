@@ -68,6 +68,7 @@ public class Ufo extends Hajo implements Leptetheto{
     @Override
     public void Napvihar() {
         // TODO Auto-generated method stub
+        Meghal();
     }
 	@Override
 	public void Robbanas() {
