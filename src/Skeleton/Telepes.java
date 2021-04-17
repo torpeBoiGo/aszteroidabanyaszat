@@ -229,13 +229,13 @@ public class Telepes extends Hajo implements Leptetheto {
         for (Szallithato szallithato : nyersanyagRakter) {
             lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
         }
-        System.out.println(lineJoiner + ": Nyersanyag[0..10]");
+        System.out.println(lineJoiner + ":Nyersanyag[0..10]");
         lineJoiner = new StringJoiner(",");
         System.out.print("TeleportkapuRakter: ");
         for (Szallithato tpkapu : teleportkapuRakter) {
             lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
         }
-        return lineJoiner + ": Teleportkapu[0..3]\n";
+        return lineJoiner + ":Teleportkapu[0..3]\n";
     }
 
 }

@@ -199,6 +199,7 @@ public class Aszteroida implements Mezo, Leptetheto {
     @Override
     public void Lepes() {
         if (napkozelben && kulsoRetegek == 0) {
+        	
             if (mag != null) mag.Megfurva(this);
         }
 
@@ -207,26 +208,26 @@ public class Aszteroida implements Mezo, Leptetheto {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Kulso retegek: ").append(kulsoRetegek).append("\n");
+        sb.append("Kulso retegek: ").append(kulsoRetegek).append(": int\n");
         if (mag == null) {
             sb.append("Nyersanyag: null\n");
         } else {
             sb.append("Nyersanyag: ").append(Jatek.getKeyByValue(Jatek.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
         }
-        sb.append("Naplkozelben: ").append(napkozelben).append("\n");
+        sb.append("Naplkozelben: ").append(napkozelben).append(" :bool\n");
 
         sb.append("Hajok: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Hajo hajo : hajok) {
             lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, hajo) + ": " + hajo.getClass().getSimpleName());
         }
-        sb.append(lineJoiner).append(": hajo[0..*]").append("\n");
+        sb.append(lineJoiner).append(" :hajok[0..*]").append("\n");
         lineJoiner = new StringJoiner(",");
         sb.append("Szomszedok: ");
         for (Mezo szomszed : szomszedok) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szomszed) + ": " + szomszed.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szomszed) + ":" + szomszed.getClass().getSimpleName());
         }
-        sb.append(lineJoiner).append(": mezo[0..*]").append("\n");
+        sb.append(lineJoiner).append(":mezo[0..*]").append("\n");
         return sb.toString();
     }
 
