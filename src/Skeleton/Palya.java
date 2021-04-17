@@ -46,6 +46,7 @@ public class Palya {
         for (Leptetheto leptetheto : tempAszteroidak) {
             leptetheto.Lepes();
         }
+
         for (Leptetheto leptetheto : aiVezerli) {
             leptetheto.Lepes();
         }
