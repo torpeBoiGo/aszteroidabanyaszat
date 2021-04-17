@@ -174,11 +174,14 @@ public class Aszteroida implements Mezo, Leptetheto {
      */
     public void Napvihar() {
        if (mag != null || kulsoRetegek != 0) {
-        for (int i = hajok.size() - 1; i >= 0; i--)
-        {
-            hajok.get(i).Napvihar();
-        }
-    }
+    	   for (int i = hajok.size() - 1; i >= 0; i--)
+    	   {
+    		   hajok.get(i).Napvihar();
+    	   }
+       }
+       
+       
+       //TODO: a szomszedos teleportkapukra meghivni a napvihart.
     }
 
 
@@ -207,13 +210,13 @@ public class Aszteroida implements Mezo, Leptetheto {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Kulso retegek: ").append(kulsoRetegek).append("\n");
+        sb.append("Kulso retegek: ").append(kulsoRetegek).append(": int\n");
         if (mag == null) {
             sb.append("Nyersanyag: null\n");
         } else {
             sb.append("Nyersanyag: ").append(Jatek.getKeyByValue(Jatek.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
         }
-        sb.append("Naplkozelben: ").append(napkozelben).append("\n");
+        sb.append("Naplkozelben: ").append(napkozelben).append(": bool\n");
 
         sb.append("Hajok: ");
         StringJoiner lineJoiner = new StringJoiner(",");

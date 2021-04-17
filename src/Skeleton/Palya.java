@@ -43,7 +43,11 @@ public class Palya {
         for (Leptetheto leptetheto : aiVezerli) {
             leptetheto.Lepes();
         }
-        for (Leptetheto leptetheto : aszteroidak) {
+        List<Aszteroida> temp_aszteroidak = new ArrayList<>();
+        for (int i = 0; i < aszteroidak.size(); i++) {
+        	temp_aszteroidak.add(aszteroidak.get(i));
+        }
+        for (Leptetheto leptetheto : temp_aszteroidak) {	// azert kell a temp, mert az aszteroidak merete valtozik, ha egy felrobban
             leptetheto.Lepes();
         }
         for (Leptetheto leptetheto : teleportKapuk) {
