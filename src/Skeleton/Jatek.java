@@ -139,6 +139,19 @@ public class Jatek {
                     Aszteroida aszteroida = (Aszteroida) NamesMap.get(cmd[2]);
                     teleportkapu.SetSajatAszteroida(aszteroida);
                 }
+            }
+        } else if ("nyersanyag".equals(cmd[0])) {
+            if ("create".equals(cmd[1])) {
+                Nyersanyag a = null;
+                if ("vas".equals(cmd[2])) {
+                    a = new Vas();
+                } else if ("vizjeg".equals(cmd[2])) {
+                    a = new Vizjeg();
+                } else if ("szen".equals(cmd[2])) {
+                    a = new Szen();
+                } else if ("uran".equals(cmd[2])) {
+                    a = new Uran();
+                }
                 NamesMap.put(cmd[3], a);
             }
         } else if ("show".equals(cmd[0])) {
