@@ -54,9 +54,11 @@ public class Jatek {
                     NamesMap.put(cmd[2], aszteroidaNew);
                 } else if ("set".equals(cmd[1])) {
                     if ("kulsoRetegek".equals(cmd[2])) {
-                        aszteroida.kulsoRetegek = Integer.parseInt(cmd[3]);
+                    	aszteroida = (Aszteroida) (NamesMap.get(cmd[3]));	// azert kell, mert mas a parancs hossza, a 3. szo az aszterioda neve
+                        aszteroida.kulsoRetegek = Integer.parseInt(cmd[4]);
                     } else if ("napkozelben".equals(cmd[2])) {
-                        aszteroida.napkozelben = Integer.parseInt(cmd[3]) == 1;
+                    	aszteroida = (Aszteroida) (NamesMap.get(cmd[3]));	// azert kell, mert mas a parancs hossza, a 3. szo az aszterioda neve
+                        aszteroida.napkozelben = Integer.parseInt(cmd[4]) == 1;
                     }
                 } else if ("add".equals(cmd[1])) {
                     if ("mag".equals(cmd[2])) {

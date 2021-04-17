@@ -171,8 +171,8 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     @Override
     public String toString() {
         String out = "";
-        out += "MukodikE: " + mukodikE + "\n";
-        out += "MegkergulE: " + megkergultE + "\n";
+        out += "MukodikE: " + mukodikE + ": bool\n";
+        out += "MegkergulE: " + megkergultE + ": bool\n";
         if(par==null){
             //TODO ez így jó?
             //TODO a lent lévő kapu megdöglik-e?
@@ -207,5 +207,11 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
 	    	}
 		}
 		
+	}
+
+
+	@Override
+	public void Napvihar() {
+		this.megkergultE = false;
 	}
 }
