@@ -64,16 +64,16 @@ public class Robot extends Hajo implements Leptetheto {
     @Override
 	public void Lepes() {
     	List<Mezo> szomszedok = aszteroida.getSzomszedok();
-    	
+
     	if (aszteroida.GetKulsoRetegek() > 0) { //nincs atfurva
     		Fur();
     	}
-    	if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() > 0)) { //at van furva, VAN szomszedos mezo
+    	else if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() > 0)) { //at van furva, VAN szomszedos mezo
     		Random rand = new Random();
     		int rand_aszt = rand.nextInt(szomszedok.size());
     		Mozog(szomszedok.get(rand_aszt));
     	} 
-    	if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() == 0)) { //at van furva, de NINCS szomszedos mezo
+    	else if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() == 0)) { //at van furva, de NINCS szomszedos mezo
     		Tetlen();
     	}
     }
