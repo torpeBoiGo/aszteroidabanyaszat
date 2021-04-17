@@ -125,8 +125,11 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             par.SetPar(null);
             par.RemoveSzomszed(this);
         }
-        Palya.RemoveTeleportkapu(this);
-        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+        if (sajatAszteroida != null) {
+        	Palya.RemoveTeleportkapu(this);
+            Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+        }
+        
     }
 
     /**
@@ -160,8 +163,9 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             par.RemoveSzomszed(this);
         }
         
-        Palya.RemoveTeleportkapu(this);
+    	Palya.RemoveTeleportkapu(this);
         Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+        	
     }
 
     @Override

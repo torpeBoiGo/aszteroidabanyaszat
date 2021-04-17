@@ -1,6 +1,7 @@
 package Skeleton;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.StringJoiner;
@@ -40,16 +41,16 @@ public class Palya {
         for (Leptetheto leptetheto : jatekosVezerli) {
             leptetheto.Lepes();
         }
+        
+        List<Aszteroida> tempAszteroidak = new ArrayList<>(aszteroidak);
+        for (Leptetheto leptetheto : tempAszteroidak) {
+            leptetheto.Lepes();
+        }
+
         for (Leptetheto leptetheto : aiVezerli) {
             leptetheto.Lepes();
         }
-        List<Aszteroida> temp_aszteroidak = new ArrayList<>();
-        for (int i = 0; i < aszteroidak.size(); i++) {
-        	temp_aszteroidak.add(aszteroidak.get(i));
-        }
-        for (Leptetheto leptetheto : temp_aszteroidak) {	// azert kell a temp, mert az aszteroidak merete valtozik, ha egy felrobban
-            leptetheto.Lepes();
-        }
+        
         for (Leptetheto leptetheto : teleportKapuk) {
             leptetheto.Lepes();
         }

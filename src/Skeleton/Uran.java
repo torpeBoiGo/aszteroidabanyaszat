@@ -31,7 +31,7 @@ public class Uran extends Nyersanyag implements Szallithato{
     
     @Override
     public String toString() {
-    	return "Expozicio: " + expozicio + "\n";
+    	return "Expozicio: " + expozicio + ":int\n";
     }
 }
 
