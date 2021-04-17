@@ -29,10 +29,12 @@ public abstract class Epitheto {
 
 
 		for (Nyersanyag ny : alapanyagok) {
+		    if(n!= null){
 			if (n.KompatibilisE(ny)) {
 				alapanyagok.remove(ny);
 				return true;
 			}
+		    }
 		}
 
     	return false;

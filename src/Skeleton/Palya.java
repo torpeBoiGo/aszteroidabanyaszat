@@ -24,7 +24,7 @@ public class Palya {
         a.Napvihar();
     }
 
-    static void Kor() {
+    static boolean Kor() {
         for (Leptetheto leptetheto : jatekosVezerli) {
             leptetheto.Lepes();
         }
@@ -32,8 +32,15 @@ public class Palya {
         KorVege();
 
         Napvihar();
-        //gyozelenm
-        //nyerheto
+        if(GyozelemE()){
+            System.out.println("Jatek vége - győzelem");
+            return false;
+        }
+        if(!MegnyerhetoE()){
+            System.out.println("Jatek vége - vereség");//TODO meg lehet valahogy csinalni toStringgel bent?
+            return false;
+        }
+return true;
     }
 
     static void KorVege() {
@@ -86,7 +93,7 @@ public class Palya {
     }
 
     //TODO ez még nincs tesztelve
-    boolean MegnyerhetoE() {
+  static boolean MegnyerhetoE() {
         Nyerheto nyerhetoseg = new Nyerheto();
         for (Aszteroida a : aszteroidak) {
             for (Hajo h : a.hajok) {
@@ -100,7 +107,7 @@ public class Palya {
 
     //TODO ez még nincs tesztelve
     //TODO doksiban update it
-    boolean GyozelemE() {
+   static boolean GyozelemE() {
         Gyozelem gyozelemTortenik = new Gyozelem();
         for (Aszteroida a : aszteroidak) {
             for (Hajo h : a.hajok) {

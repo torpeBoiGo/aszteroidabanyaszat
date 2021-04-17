@@ -1,0 +1,22 @@
+NYERSANYAGOK
+uran U 0
+vas VA
+vizjeg VI
+ASZTEROIDAK
+A1 0 VA naptavol
+A2 1 VI napkozel
+A3 0 U napkozel
+A4 0 0 napkozel
+TELEPORTKAPUK
+TP1 A4 nemmegkergult TP2 A2 megkergult
+SZOMSZEDOK
+A1 A3
+A2 A3
+A3 A4
+TELEPESEK
+T1 A1
+ROBOTOK
+R1 A2
+UFOK
+UF1 A1
+RAKTER
