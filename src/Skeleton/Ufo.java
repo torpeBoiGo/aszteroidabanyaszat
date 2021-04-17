@@ -93,18 +93,18 @@ public class Ufo extends Hajo implements Leptetheto{
             int rand_aszt = rand.nextInt(szomszedok.size());
             Mozog(szomszedok.get(rand_aszt));
         }
-        if ((aszteroida.GetKulsoRetegek() == 0) && (aszteroida.UregesE()) && (szomszedok.size() > 0)) { //at van furva, ureges, van szomszed
+        else if ((aszteroida.GetKulsoRetegek() == 0) && (aszteroida.UregesE()) && (szomszedok.size() > 0)) { //at van furva, ureges, van szomszed
             Random rand = new Random();
             int rand_aszt = rand.nextInt(szomszedok.size());
             Mozog(szomszedok.get(rand_aszt));
         }
-        if ((aszteroida.GetKulsoRetegek() > 0) && (szomszedok.size() == 0)) { //nincs atfurva, NINCS szomszed
+        else if ((aszteroida.GetKulsoRetegek() > 0) && (szomszedok.size() == 0)) { //nincs atfurva, NINCS szomszed
             Tetlen();
         }
-        if ((aszteroida.GetKulsoRetegek() == 0) && (aszteroida.UregesE()) && (szomszedok.size() == 0)) { //atfurva, ureges, NINCS szomszed
+        else if ((aszteroida.GetKulsoRetegek() == 0) && (aszteroida.UregesE()) && (szomszedok.size() == 0)) { //atfurva, ureges, NINCS szomszed
             Tetlen();
         }
-        if ((aszteroida.GetKulsoRetegek() == 0) && (!aszteroida.UregesE())) { //atfurva, nem ureges
+        else if ((aszteroida.GetKulsoRetegek() == 0) && (!aszteroida.UregesE())) { //atfurva, nem ureges
             Banyasz();
         }
     }

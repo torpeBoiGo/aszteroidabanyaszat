@@ -98,6 +98,11 @@ public class Jatek {
                 Robot robot = (Robot) NamesMap.get(cmd[2]);
                 robot.Fur();
             }
+        } else if ("ufo".equals(cmd[0])) {
+            if ("banyasz".equals(cmd[1])) {
+                Ufo ufo = (Ufo) NamesMap.get(cmd[2]);
+                ufo.Banyasz();;
+            }
         } else if ("telepes".equals(cmd[0])) {
             Telepes telepes = (Telepes) NamesMap.get(cmd[2]);
             if ("create".equals(cmd[1])) {
@@ -133,19 +138,6 @@ public class Jatek {
                     Teleportkapu teleportkapu = (Teleportkapu) NamesMap.get(cmd[3]);
                     Aszteroida aszteroida = (Aszteroida) NamesMap.get(cmd[2]);
                     teleportkapu.SetSajatAszteroida(aszteroida);
-                }
-            }
-        } else if ("nyersanyag".equals(cmd[0])) {
-            if ("create".equals(cmd[1])) {
-                Nyersanyag a = null;
-                if ("vas".equals(cmd[2])) {
-                    a = new Vas();
-                } else if ("vizjeg".equals(cmd[2])) {
-                    a = new Vizjeg();
-                } else if ("szen".equals(cmd[2])) {
-                    a = new Szen();
-                } else if ("uran".equals(cmd[2])) {
-                    a = new Uran();
                 }
                 NamesMap.put(cmd[3], a);
             }
