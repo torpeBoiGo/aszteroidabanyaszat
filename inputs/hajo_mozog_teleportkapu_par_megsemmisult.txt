@@ -1,7 +1,7 @@
 NYERSANYAGOK
 uran U 2
 ASZTEROIDAK
-A1 0 0 naptavol
+A1 1 0 naptavol
 A2 0 U napkozel
 A3 0 0 naptavol
 TELEPORTKAPUK

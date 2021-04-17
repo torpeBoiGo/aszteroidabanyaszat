@@ -89,6 +89,11 @@ public class Jatek {
                     Robot robot = (Robot) NamesMap.get(cmd[2]);
                     robot.Fur();
                 }
+            } else if ("ufo".equals(cmd[0])) {
+                if ("banyasz".equals(cmd[1])) {
+                    Ufo ufo = (Ufo) NamesMap.get(cmd[2]);
+                    ufo.Banyasz();;
+                }
             } else if ("telepes".equals(cmd[0])) {
                 Telepes telepes = (Telepes) NamesMap.get(cmd[2]);
                 if ("create".equals(cmd[1])) {
