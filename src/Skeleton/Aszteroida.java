@@ -217,7 +217,7 @@ public class Aszteroida implements Mezo, Leptetheto {
         } else {
             sb.append("Nyersanyag: ").append(Jatek.getKeyByValue(Jatek.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
         }
-        sb.append("Naplkozelben: ").append(napkozelben).append(" :bool\n");
+        sb.append("Napkozelben: ").append(napkozelben).append(" :bool\n");
 
         sb.append("Hajok: ");
         StringJoiner lineJoiner = new StringJoiner(",");
