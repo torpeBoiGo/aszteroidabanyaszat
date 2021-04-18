@@ -25,28 +25,29 @@ public class Palya {
     }
 
     static boolean Kor() {
+
+        if (!MegnyerhetoE() || jatekosVezerli.size()<1) {
+            System.out.println("Jatek vége - vereség");
+            return false;
+        }
+
         for (Leptetheto leptetheto : jatekosVezerli) {
+
             leptetheto.Lepes();
         }
 
         KorVege();
 
         Napvihar();
-        if(GyozelemE()){
+        if (GyozelemE()) {
             System.out.println("Jatek vége - győzelem");
             return false;
         }
-        if(!MegnyerhetoE()){
-            System.out.println("Jatek vége - vereség");//TODO meg lehet valahogy csinalni toStringgel bent?
-            return false;
-        }
-return true;
+
+        return true;
     }
 
     static void KorVege() {
-        for (Leptetheto leptetheto : jatekosVezerli) {
-            leptetheto.Lepes();
-        }
         for (Leptetheto leptetheto : aiVezerli) {
             leptetheto.Lepes();
         }
@@ -93,8 +94,8 @@ return true;
     }
 
     //TODO ez még nincs tesztelve
-  static boolean MegnyerhetoE() {
-        Nyerheto nyerhetoseg = new Nyerheto();
+    static boolean MegnyerhetoE() {
+        Nyerheto nyerhetoseg = new Nyerheto();//
         for (Aszteroida a : aszteroidak) {
             for (Hajo h : a.hajok) {
                 h.NyerEllenoriz(nyerhetoseg);
@@ -107,9 +108,10 @@ return true;
 
     //TODO ez még nincs tesztelve
     //TODO doksiban update it
-   static boolean GyozelemE() {
-        Gyozelem gyozelemTortenik = new Gyozelem();
+    static boolean GyozelemE() {
+
         for (Aszteroida a : aszteroidak) {
+            Gyozelem gyozelemTortenik = new Gyozelem();
             for (Hajo h : a.hajok) {
                 h.NyerEllenoriz(gyozelemTortenik);
             }
@@ -156,7 +158,7 @@ return true;
         for (Teleportkapu obj : teleportKapuk) {
             lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
-      sb.append(lineJoiner).append(": Teleportkapuk[0..*]\n");
+        sb.append(lineJoiner).append(": Teleportkapuk[0..*]\n");
 
 
         return sb.toString();

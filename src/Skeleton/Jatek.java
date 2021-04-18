@@ -14,7 +14,7 @@ public class Jatek {
     static ArrayList<String> ObjectNames = new ArrayList<>();
     Palya palya = new Palya();
 
-    static int korokSzama;
+
     
     public void Indit() {
     	Scanner sc = new Scanner(System.in);
@@ -346,11 +346,11 @@ public class Jatek {
     
     
     void gameCycle() {  //TODO ez lehet hogy nem fog tetszeni egyeseknek, mélységes elnézést, hogy számra vettem bool nevét
-        korokSzama=1;
+       int  korokSzama=1;
         System.out.println(korokSzama +". Kör");
         boolean fut = Palya.Kor();
         while (fut){
-            System.out.println(korokSzama++ +". Kör");
+            System.out.println(++korokSzama +". Kör");
 			fut = Palya.Kor();
 		}
     }
