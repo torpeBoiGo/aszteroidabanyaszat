@@ -16,6 +16,9 @@ public class Vizjeg extends Nyersanyag {
         Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
     }
     
+    /**
+     * Kiirja a vizjeg adatait a kimeneti nyelvnek megfeleloen,jelen esetben ures Stringgel ter vissza.
+     */
     @Override 
     public String toString() {
     	return "";

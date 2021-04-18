@@ -6,11 +6,13 @@ import java.util.Vector;
  * A teleportkapuk epiteset megvalosito osztaly.
  */
 public class TeleportEpito extends Epitheto {
-	
+	/**
+	 * Segitsegevel teszunk kulonbseget az egyes letrejovo teleportkapuk kozott.
+	 */
 	static int builtNum= 1;
 	
     /**
-     * Konstruktor.
+     * Konstruktor, felveszi a teleportkapu par epitesehez szukseges anyagokat
      */
     public TeleportEpito() {
     	Hozzaad(new Vas());
@@ -22,7 +24,6 @@ public class TeleportEpito extends Epitheto {
 
     /**
      * A teleportkapukat letrehozo fuggveny, a visszareteresi erteke a letrejott kapuk.
-     *
      * @param a - aszteroida ahol epitunk
      * @return Vector<Szallithato> - amiket a telepes rakterbe kell tenni- itt ket teleportkapu
      */
