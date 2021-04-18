@@ -24,6 +24,9 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     boolean mukodikE = true;
 
     //TODO 
+    /**
+     * Igaz, ha a teleportkapu megkergult egy napvihar kovetkezteben, egyebkent hamis
+     */
     boolean megkergultE;
 
     /**
@@ -99,12 +102,15 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     }
 
     /**
-     * A teleportkapu mukodeskeptelenne valik
+     * A teleportkapu mukodeskeptelenne valik, a mukodikE parameter erteke hamis lesz.
      */
     public void Elront() {
         mukodikE = false;
     }
 
+    /**
+     * a kapu felrobban
+     */
     @Override
     public void Robban() {
         // TODO Auto-generated method stub
@@ -114,7 +120,8 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     /**
      * Ez a fuggveny felel, azert, ha az teleportkapuval szomszedos mezo felrobban
      * Ekkor a teleportkapu es a parja is felrobban
-     *
+     * Eltavolitja magat a szomszedos aszteroida szomszedjai kozul, meghivodik sajat magara az Elront() fuggveny, 
+     * valamint meghivja a RemoveSzomszded(Mezo m) fuggvenyt a par teleportkapura is. Vegul torli a teleportkaput a palyabol.
      * @param m a felrobbant mezo
      */
     @Override
@@ -154,7 +161,8 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
     }
 
     /**
-     * A teleportkapu megsemmisuleseert felel
+     * A teleportkapu megsemmisuleseert felel, meghivja az Elront() fuggvenyt, valamint a par kapun meghivja a RemoveSzomszded(Mezo m) fuggvenyt.
+     * Vegul torli a teleportkaput a palyabol.
      */
     public void Megsemmisul() {
         Elront();
@@ -168,6 +176,9 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         	
     }
 
+    /**
+     * A teleportkapu kiiratasahoz szukseges, visszater a teleportkapu tulajdonsagait tartalmazo Stringgel, a kimeneti nyelvnek megfeleloen
+     */
     @Override
     public String toString() {
         String out = "";
@@ -189,7 +200,9 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         return out;
     }
 
-
+    /**
+     * A teleportkapu koronkenti lepeset valositja meg, ami abbol all, hogy ha megkergult, akkor egy szomszedos aszteroidara mozog, ha van ilyen
+     */
 	@Override
 	public void Lepes() {
 		if (megkergultE) {
@@ -209,7 +222,9 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
 		
 	}
 
-
+	/**
+	 * Ha a teleportkaput napvihar eri, a kapu megkergul, a parameteretol fuggetlenul.
+	 */
 	@Override
 	public void Napvihar(boolean center) {
 		this.megkergultE = true;

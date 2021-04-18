@@ -11,14 +11,6 @@ abstract class Hajo{
      * A Hajo ezen az aszteroidan tartozkodik.
      */
     protected Aszteroida aszteroida;	
-
-
-    public void Fur() {
-        aszteroida.Fur();
-    }
-
-
-
     
     /**
      * A hajo ezzel a fuggvennyel tud masik mezore lepni
