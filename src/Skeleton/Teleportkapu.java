@@ -211,7 +211,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
 
 
 	@Override
-	public void Napvihar() {
-		this.megkergultE = false;
+	public void Napvihar(boolean center) {
+		this.megkergultE = true;
 	}
 }

@@ -5,7 +5,7 @@ package Skeleton;
  */
 public interface Mezo {
     void Robban();
-    void Napvihar();
+    void Napvihar(boolean center);
     void RemoveSzomszed(Mezo m);
 
     /**

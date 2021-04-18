@@ -172,16 +172,19 @@ public class Aszteroida implements Mezo, Leptetheto {
     /**
      * Az aszteroidat napvihar eri.
      */
-    public void Napvihar() {
+    public void Napvihar(boolean center) {
        if (mag != null || kulsoRetegek != 0) {
     	   for (int i = hajok.size() - 1; i >= 0; i--)
     	   {
     		   hajok.get(i).Napvihar();
     	   }
        }
+       if (center) {
+    	   for (int i = 0; i < szomszedok.size(); i++) {
+    		   szomszedok.get(i).Napvihar(false);
+    	   }
+       }
        
-       
-       //TODO: a szomszedos teleportkapukra meghivni a napvihart.
     }
 
 

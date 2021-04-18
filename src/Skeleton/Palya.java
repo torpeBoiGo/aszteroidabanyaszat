@@ -17,12 +17,12 @@ public class Palya {
 
     static void Napvihar() {
         Random random = new Random();
-        aszteroidak.get(random.nextInt(aszteroidak.size())).Napvihar();
+        aszteroidak.get(random.nextInt(aszteroidak.size())).Napvihar(true);
 
     }
 
     static void Napvihar(Aszteroida a) {
-        a.Napvihar();
+        a.Napvihar(true);
     }
 
     static void Kor() {
