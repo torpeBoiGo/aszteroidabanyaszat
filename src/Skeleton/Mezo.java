@@ -4,8 +4,21 @@ package Skeleton;
  * Egy mezot ir le aminek szomszedai lehetnek es erkezhetnek ra hajok
  */
 public interface Mezo {
+	/**
+	 * A mezo felrobban
+	 */
     void Robban();
-    void Napvihar();
+    
+    /**
+     * A mezo viselkedeset irja le, ha napvihar eri.
+     * @param center Megadja, hogy a mezo a napvihar kozeppontjaban van-e.
+     */
+    void Napvihar(boolean center);
+    
+    /**
+     * A mezo szomszedjai kozul egyet eltavolit.
+     * @param m az eltavolitando szomszed
+     */
     void RemoveSzomszed(Mezo m);
 
     /**

@@ -21,7 +21,8 @@ public class Telepes extends Hajo implements Leptetheto {
     private List<Szallithato> teleportkapuRakter = new ArrayList<>();
 
     /**
-     * A telepes konstruktora, amely beallitja a sajat aszteroidajat, es hozzaadja a parameterul kapott aszteroidan tartozkodo hajokhoz a telepest.
+     * A telepes konstruktora, amely beallitja a sajat aszteroidajat, es hozzaadja a parameterul kapott aszteroidan tartozkodo hajokhoz a telepest,
+     * valamint hozzaadja a palyan tarolt jatekosVezerli objektumokhoz.
      *
      * @param a Az az aszteroida, ahova a telepes letrejottenek pillanataban kerul.
      */
@@ -32,7 +33,7 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     /**
-     * A telepes konstruktora, a sajat aszteroida erteket nullra allitja.
+     * A telepes konstruktora, a sajat aszteroida erteket nullra allitja, valamint  hozzaadja  a palyan tarolt Jatekos vezerelt objektumokhoz.
      */
     public Telepes() {
         aszteroida = null;
@@ -40,7 +41,7 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     /**
-     * az aszteroidan valo furast hajtja vegre
+     * A telepesfurast  vegez  az  aszteroidan,  amin  tartozkodik. Ha a muvelet sikertelen a telepes tetlen marad.
      */
     public void Fur() {
         aszteroida.Fur();
@@ -65,7 +66,10 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     /**
-     * A Robot epiteset vegzo fuggveny.
+     *   Telepes  robotepites  hivas  eseten  torteno viselkedeset  valositja  meg.  
+     *   Ezutan  ez  a  fuggveny  kezeli  az  es  felugyeli  a  robot epitesenek  teljes  folyamatat.
+     *   Parameterkent  egy  RobotEpito  objektumot  kap,  ami tartalmazza,  hogy  milyen  nyersanyagok  szuksegesek  a  robot  epiteshez,  
+     *   valamint  a robot epitesere metodust.A robotot a telepes az aszteroidajan helyezi el. Ha a muvelet sikertelen a telepes tetlen marad
      *
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a robotot.
      */
@@ -92,7 +96,11 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     /**
-     * A teleportkapuk epiteset vegzo fuggveny.
+     * A  Telepes  teleportkapu  epites  hivas  eseten torteno  viselkedeset  valositja  meg.  
+     * Ezutan  ez  a  fuggveny  kezeli  az  es  felugyeli  a teleportkapu    epitesenek    teljes    folyamatat.    
+     * Parameterkent    egy    TeleportEpito objektumot  kap,  ami  tartalmazza,  hogy  milyen  nyersanyagok  szuksegesek  a kapupar epiteshez,  
+     * valamint  a kapupar epitesere  metodust.A  teleportkapu  part  csak,  akkor lehet megepiteni,
+     * ha van eleg hely a telepes raktereben, mindket kapunak. epites utan a kapupar a telepes rakterebe kerul. Ha a muvelet sikertelen a telepes tetlen marad
      *
      * @param e A megfelelo epitheto objektum, amely a nyersanyagokat ellenorzi es tenylegesen letrehozza majd a teleportkapukat.
      */
@@ -121,7 +129,7 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     /**
-     * A telepes lerak egy teleportkaput
+     * A   lehelyezi   a   jelenlegi   Aszteroidara   a parameterkent kapott kaput, valamint eltavolitja azt a telepes rakterebol
      */
     public void KapuLerak(Teleportkapu k) {
     	teleportkapuRakter.remove(k);
@@ -137,7 +145,8 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     /**
-     * Telepes meghal.
+     * A telepesviselkedeset  irja  le,  ha  meghal.  Eltavolitja  a telepestaz aszteroidajarol,a palyan  tarolt Jatekosvezerelelt objektumok kozul,  
+     * valamint  a kiirashoz  hasznalt hasmaprol. Emellett  a  telepes  raktereben  levo  osszes szallithato objektum (nyersanyag, teleportkapu) megsemmisul.
      */
     @Override
     public void Meghal() {
@@ -179,7 +188,8 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     /**
-     * Ellenorzi a hajo mivel jarulhat hozza a gyozelemhez
+     * Ellenorzi,hogy  a  telepes  mivel  jarulhat  hozza  a gyozelemhez,  vagy  a  megnyerhetoseghez  a  parameter  szerint. 
+     * Parameterkent  vagy Gyozelem vagy Nyerheto objektumot kap.
      *
      * @param e -amit vizsgalunk
      */
@@ -192,7 +202,9 @@ public class Telepes extends Hajo implements Leptetheto {
 
 
     /**
-     * Elhelyezi az aszteroida magj�ban a param�terk�nt kapott nyersanyagot, ha az aszteroida teljesen �t van f�rva �s �reges
+     * A   telepes   nyersanyag   lerakas   lepeset valositja meg. 
+     * Ha el lehet helyezni a parameterkent kapott nyersanyagot az aszteroida magjaban(sikeres  az  addMag()  muvelet), 
+     * akkor a  nyersanyag  eltunik  a  telepes rakterebol,  az  aszteroida  magjaba  kerul.  Ha  a  muvelet  sikertelen  a  telepes  tetlen marad.
      *
      * @param n - a nyersanyag ami visszateszunk
      */
@@ -211,7 +223,8 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     /**
-     * Banyassszuk az aszteroidat amin a telepes van
+     * A  telepes  banyaszas  lepeset  valositja  meg.  Ha  van  hely  a  telepes raktereben,  valamint  az  aszteroida  magjanak  kinyerese  sikeres,  
+     * akkor  a nyersanyagot hozzaadja a telepes rakterehez es eltavolitja az aszteroida magjabol. Ha a muvelet sikertelen a telepes tetlen marad.
      */
     void Banyasz() {
         Nyersanyag n = aszteroida.Kinyer();
@@ -222,6 +235,9 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     //TODO
+    /**
+     * Visszater  a telepestulajdonsagait(az  aszteroidaja,  rakterei) tartalmazo stringgel a kimeneti nyelvnek megfelelo formatumban.
+     */
     public String toString() {
         System.out.println("Aszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, aszteroida) + ": Aszteroida");
         System.out.print("NyersanyagRakter: ");
