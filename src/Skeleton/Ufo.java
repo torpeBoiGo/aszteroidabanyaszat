@@ -97,6 +97,9 @@ public class Ufo extends Hajo implements Leptetheto{
 	void Meghal() {
 		aszteroida.HajoElhagy(this);
         Palya.removeAIVezerli(this);
+        for (Szallithato szallithato : nyersanyagRakter) {
+			szallithato.Megsemmisul();
+		}
         Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
 	}
     
