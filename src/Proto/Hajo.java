@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 /**
  * 

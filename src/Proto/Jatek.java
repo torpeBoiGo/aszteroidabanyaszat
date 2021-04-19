@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 
 import java.io.File;
@@ -202,7 +202,9 @@ public class Jatek {
                 System.out.println(NamesMap.get(cmd[1]));
             }
 
-        } else System.out.println("Helytelen bemenet!");
+        } else if(cmd[0].equals("semmi")){
+        	
+        }else System.out.println("Helytelen bemenet!");
 
     }
 
@@ -424,6 +426,7 @@ public class Jatek {
 
 
             String line = sc.nextLine();
+            
             String[] cmd = line.split(" ");
 
             DoCommand(cmd);

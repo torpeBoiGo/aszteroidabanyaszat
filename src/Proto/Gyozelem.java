@@ -1,13 +1,14 @@
-package Skeleton;
+package Proto;
 
 import java.util.Vector;
 
+
 /**
- * A nyerhetoseg epithetove valasa utan fut le
+ * A gyozelem ellenorzesere szolgalo osztaly
  */
-public class Nyerheto extends Epitheto {
+public class Gyozelem extends Epitheto {
 
-    public Nyerheto(){
+    public Gyozelem(){
         Hozzaad(new Vas());
         Hozzaad(new Vas());
         Hozzaad(new Vas());
@@ -20,8 +21,12 @@ public class Nyerheto extends Epitheto {
         Hozzaad(new Szen());
         Hozzaad(new Szen());
         Hozzaad(new Szen());
+
     }
-
+	
+	/**
+     * A gyozelem epithetove valasa utan fut le
+     */
     @Override
     public Vector<Szallithato> Letrejon(Aszteroida a) {
         return new Vector<>();
