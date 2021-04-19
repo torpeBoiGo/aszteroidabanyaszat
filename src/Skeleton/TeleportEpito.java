@@ -17,7 +17,6 @@ public class TeleportEpito extends Epitheto {
     	Hozzaad(new Vas());
     	Hozzaad(new Vizjeg());
     	Hozzaad(new Uran());
-    	
     }
 
     /**

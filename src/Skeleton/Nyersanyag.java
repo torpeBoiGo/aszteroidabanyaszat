@@ -36,7 +36,6 @@ public abstract class Nyersanyag implements Szallithato{
      * @return igaz, ha a ket nyersanyag azonos tipusu, egyebkent hamis
      */
     public boolean KompatibilisE(Nyersanyag ny) {
-    	//TODO nem biztos hogy igy kell
         return ny.getClass().getSimpleName().equals(this.getClass().getSimpleName());
     }
 }

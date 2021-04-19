@@ -88,7 +88,6 @@ public class Telepes extends Hajo implements Leptetheto {
 			}
         	nyersanyagRakter.removeAll(consumed);
         }
-        //TODO ez kell?
         e.Reset();
     }
 
@@ -121,7 +120,6 @@ public class Telepes extends Hajo implements Leptetheto {
 			}
         	nyersanyagRakter.removeAll(consumed);
         }
-        //TODO ez kell?
         e.Reset();
     }
 
@@ -216,7 +214,6 @@ public class Telepes extends Hajo implements Leptetheto {
     }else{
             System.out.println("Helytelen bemenet - "+telepes+" tetelen");
         }
-       //sc.close();
     }
 
     /**
@@ -266,7 +263,6 @@ public class Telepes extends Hajo implements Leptetheto {
         addNyersanyagRakter(n);
     }
 
-    //TODO
     /**
      * Visszater  a telepestulajdonsagait(az  aszteroidaja,  rakterei) tartalmazo stringgel a kimeneti nyelvnek megfelelo formatumban.
      */

@@ -73,11 +73,10 @@ public class Ufo extends Hajo implements Leptetheto{
     }
 
     /**
-     * Az  ufo viselkedését  írja  le,  ha  a  telepest  napvihar  éri.  Ekkor  az ufo meghal.
+     * Az  ufo viselkedï¿½sï¿½t  ï¿½rja  le,  ha  a  telepest  napvihar  ï¿½ri.  Ekkor  az ufo meghal.
      */
     @Override
     public void Napvihar() {
-        // TODO Auto-generated method stub
         Meghal();
     }
     
@@ -91,7 +90,7 @@ public class Ufo extends Hajo implements Leptetheto{
 
 	/**
 	 * Az  ufo viselkedeset  erja  le,  ha  meghal. 
-	 * Eltevolítja  az  ufot az aszteroidajarol,  a  palyan  tarolt Ai vezerelelt  objektumok  kozul,  valamint  a  kiirashoz hasznalt hasmaprol.
+	 * Eltevolï¿½tja  az  ufot az aszteroidajarol,  a  palyan  tarolt Ai vezerelelt  objektumok  kozul,  valamint  a  kiirashoz hasznalt hasmaprol.
 	 */
 	@Override
 	void Meghal() {
@@ -106,7 +105,7 @@ public class Ufo extends Hajo implements Leptetheto{
 	/**
 	 * Az   ufo lepeset   irja   le. Ha   az   aszteroida,   amin   tartozkodik banynaszhato (teljesen  at  van  furva,  nem ureges),  
 	 * akkor  az  ufo  a  korben  banyaszik, egyebkent,  ha  van  szomszedos  mezoje  az  aszteroidanak,  
-	 * akkor  egy  random szomszedos  mezore mozog.  Ha  nincs  szomszedja  az  aszteroidanak  és  nem  tud banyaszni se, akkor az ufo tetlen marad.
+	 * akkor  egy  random szomszedos  mezore mozog.  Ha  nincs  szomszedja  az  aszteroidanak  ï¿½s  nem  tud banyaszni se, akkor az ufo tetlen marad.
 	 */
     @Override
 	public void Lepes() {

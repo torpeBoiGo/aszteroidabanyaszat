@@ -193,9 +193,9 @@ public class Aszteroida implements Mezo, Leptetheto {
     	   }
        }
        if (center) {
-    	   for (int i = 0; i < szomszedok.size(); i++) {
-    		   szomszedok.get(i).Napvihar(false);
-    	   }
+           for (Mezo mezo : szomszedok) {
+               mezo.Napvihar(false);
+           }
        }
        
     }

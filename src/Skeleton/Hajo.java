@@ -60,6 +60,5 @@ abstract class Hajo{
     /**
      * Ellenorzi a hajo mivel jarulhat hozza a gyozelemhez
      */
-    //TODO ezt updateolni class diagrammon
     abstract void NyerEllenoriz(Epitheto e);
 }
