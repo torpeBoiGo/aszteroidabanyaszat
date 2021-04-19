@@ -185,14 +185,11 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         out += "MukodikE: " + mukodikE + ": bool\n";
         out += "MegkergulE: " + megkergultE + ": bool\n";
         if(par==null){
-            //TODO ez így jó?
-            //TODO a lent lévő kapu megdöglik-e?
             out += "Par: " + null +"\n";
         }else{
             out += "Par: " + Jatek.getKeyByValue(Jatek.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
         }
         if(sajatAszteroida==null){
-            //TODO ez így jó?
             out += "SajatAszteroida: " + null +"\n";
         }else{
             out += "SajatAszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
@@ -208,7 +205,6 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
 		if (megkergultE) {
 			List<Mezo> szomsz = sajatAszteroida.getSzomszedok();
 			List<Mezo> szomsz_aszt = new ArrayList<>();
-			//TODO itt nem csak az szteroidákat kéne kiszedni? mezo-re sír az IDEA
             for (Mezo mezo : szomsz) {
                 if (Palya.aszteroidak.contains(mezo)) {
                     szomsz_aszt.add(mezo);
