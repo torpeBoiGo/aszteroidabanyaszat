@@ -4,9 +4,9 @@ vas VA
 vizjeg VI
 ASZTEROIDAK
 A1 0 VA naptavol
-A2 1 VI napkozel
-A3 0 U napkozel
-A4 0 0 napkozel
+A2 1 VI napkozelben
+A3 0 U napkozelben
+A4 0 0 napkozelben
 TELEPORTKAPUK
 TP1 A4 nemmegkergult TP2 A2 megkergult
 SZOMSZEDOK

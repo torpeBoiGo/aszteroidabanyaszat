@@ -1,7 +1,7 @@
 NYERSANYAGOK
 uran U 2
 ASZTEROIDAK
-A1 0 U napkozel
+A1 0 U napkozelben
 A2 1 0 naptavol
 TELEPORTKAPUK
 TP1 A1 nemmegkergult TP2 A2 nemmegkergult
