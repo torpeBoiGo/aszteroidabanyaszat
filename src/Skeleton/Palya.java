@@ -25,12 +25,6 @@ public class Palya {
     }
 
     static boolean Kor() {
-
-        if (!MegnyerhetoE() || jatekosVezerli.size()<1) {
-            System.out.println("Jatek vége - vereség");
-            return false;
-        }
-
         for (Leptetheto leptetheto : jatekosVezerli) {
 
             leptetheto.Lepes();
@@ -38,9 +32,13 @@ public class Palya {
 
         KorVege();
 
-        Napvihar();
+       // Napvihar();
         if (GyozelemE()) {
             System.out.println("Jatek vége - győzelem");
+            return false;
+        }
+        if (!MegnyerhetoE()) {
+            System.out.println("Jatek vége - vereség");
             return false;
         }
 

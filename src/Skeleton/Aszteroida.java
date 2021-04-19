@@ -83,6 +83,7 @@ public class Aszteroida implements Mezo, Leptetheto {
 
     public void Fur() {
         if (kulsoRetegek > 0) kulsoRetegek--;
+
     }
 
 

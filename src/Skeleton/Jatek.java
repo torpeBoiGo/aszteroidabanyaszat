@@ -13,158 +13,164 @@ public class Jatek {
     //TODO nem biztos hogy kell!!!
     static ArrayList<String> ObjectNames = new ArrayList<>();
     Palya palya = new Palya();
+    static Scanner sc = new Scanner(System.in);
 
 
-    
     public void Indit() {
-    	Scanner sc = new Scanner(System.in);
-		while (true) {
-			String line = sc.nextLine();
-	    	String[] cmd = line.split(" ");
-	        if ("exit".equals(cmd[0])) break;
-	        DoCommand(cmd);
+
+        while (true) {
+
+            String line = sc.nextLine();
+            String[] cmd = line.split(" ");
+            if ("exit".equals(cmd[0])) {
+                sc.close();
+                break;
+            }
+
+
+            DoCommand(cmd);
         }
-        sc.close();
-	}
+
+    }
 
     private void DoCommand(String[] cmd) {
-            //System.out.println(cmd[0] + " parancs, " + cmd.length + " szo a bemenet");
+        //System.out.println(cmd[0] + " parancs, " + cmd.length + " szo a bemenet");
 
-            if ("palya".equals(cmd[0])) {
-                if ("load".equals(cmd[1])) {
-                    loadPalyaFromFile(cmd[2]);
-                    //cmd[2] -ben kell a fajlnev legyen
-                } else if ("do".equals(cmd[1])) {
-                    if ("napvihar".equals(cmd[2])) {
-                        if (cmd.length < 4) {
-                            Palya.Napvihar();
-                        } else {
-                            Palya.Napvihar((Aszteroida) NamesMap.get(cmd[3]));
-                        }
-                    } else if ("kor".equals(cmd[2])) {
-                        Palya.Kor();
-                    } else if ("korvege".equals(cmd[2])) {
-                        Palya.KorVege();
+        if ("palya".equals(cmd[0])) {
+            if ("load".equals(cmd[1])) {
+                loadPalyaFromFile(cmd[2]);
+                //cmd[2] -ben kell a fajlnev legyen
+            } else if ("do".equals(cmd[1])) {
+                if ("napvihar".equals(cmd[2])) {
+                    if (cmd.length < 4) {
+                        Palya.Napvihar();
+                    } else {
+                        Palya.Napvihar((Aszteroida) NamesMap.get(cmd[3]));
                     }
-                }else if ("startGame".equals(cmd[1])) {
-                	gameCycle();
+                } else if ("kor".equals(cmd[2])) {
+                    Palya.Kor();
+                } else if ("korvege".equals(cmd[2])) {
+                    Palya.KorVege();
                 }
-            } else if ("aszteroida".equals(cmd[0])) {
-                Aszteroida aszteroida = (Aszteroida) (NamesMap.get(cmd[2]));
-                if ("create".equals(cmd[1])) {
-                    Aszteroida aszteroidaNew = new Aszteroida();
-                    NamesMap.put(cmd[2], aszteroidaNew);
-                } else if ("set".equals(cmd[1])) {
-                    if ("kulsoRetegek".equals(cmd[2])) {
-                        aszteroida.kulsoRetegek = Integer.parseInt(cmd[3]);
-                    } else if ("napkozelben".equals(cmd[2])) {
-                        aszteroida.napkozelben = Integer.parseInt(cmd[3]) == 1;
-                    }
-                } else if ("add".equals(cmd[1])) {
-                    if ("mag".equals(cmd[2])) {
-                        Nyersanyag ny = (Nyersanyag) NamesMap.get(cmd[3]);
-                        aszteroida.AddMag(ny);
-                    } else if ("hajo".equals(cmd[2])) {
-                        Hajo h = (Hajo) NamesMap.get(cmd[3]);
-                        aszteroida.HajoErkezik(h);
-                    }
-                } else if ("connect".equals(cmd[1])) {
-                    Aszteroida aszteroida2 = (Aszteroida) NamesMap.get(cmd[3]);
-                    aszteroida.AddSzomszed(aszteroida2);
-                    aszteroida2.AddSzomszed(aszteroida);
+            } else if ("startGame".equals(cmd[1])) {
+                gameCycle();
+            }
+        } else if ("aszteroida".equals(cmd[0])) {
+            Aszteroida aszteroida = (Aszteroida) (NamesMap.get(cmd[2]));
+            if ("create".equals(cmd[1])) {
+                Aszteroida aszteroidaNew = new Aszteroida();
+                NamesMap.put(cmd[2], aszteroidaNew);
+            } else if ("set".equals(cmd[1])) {
+                if ("kulsoRetegek".equals(cmd[2])) {
+                    aszteroida.kulsoRetegek = Integer.parseInt(cmd[3]);
+                } else if ("napkozelben".equals(cmd[2])) {
+                    aszteroida.napkozelben = Integer.parseInt(cmd[3]) == 1;
                 }
-            } else if ("hajo".equals(cmd[0])) {
-                Hajo hajo = (Hajo) NamesMap.get(cmd[2]);
-                if ("mozog".equals(cmd[1])) {
-                    Mezo mezo = (Mezo) NamesMap.get(cmd[3]);
-                    hajo.Mozog(mezo);
-                } else if ("tetlen".equals(cmd[1])) {
-                    hajo.Tetlen();
-                } else if ("meghal".equals(cmd[1])) {
-                    hajo.Meghal();
-                    NamesMap.remove(cmd[2]);
+            } else if ("add".equals(cmd[1])) {
+                if ("mag".equals(cmd[2])) {
+                    Nyersanyag ny = (Nyersanyag) NamesMap.get(cmd[3]);
+                    aszteroida.AddMag(ny);
+                } else if ("hajo".equals(cmd[2])) {
+                    Hajo h = (Hajo) NamesMap.get(cmd[3]);
+                    aszteroida.HajoErkezik(h);
                 }
-            } else if ("robot".equals(cmd[0])) {
-                if ("fur".equals(cmd[1])) {
-                    Robot robot = (Robot) NamesMap.get(cmd[2]);
-                    robot.Fur();
+            } else if ("connect".equals(cmd[1])) {
+                Aszteroida aszteroida2 = (Aszteroida) NamesMap.get(cmd[3]);
+                aszteroida.AddSzomszed(aszteroida2);
+                aszteroida2.AddSzomszed(aszteroida);
+            }
+        } else if ("hajo".equals(cmd[0])) {
+            Hajo hajo = (Hajo) NamesMap.get(cmd[2]);
+            if ("mozog".equals(cmd[1])) {
+                Mezo mezo = (Mezo) NamesMap.get(cmd[3]);
+                hajo.Mozog(mezo);
+            } else if ("tetlen".equals(cmd[1])) {
+                hajo.Tetlen();
+            } else if ("meghal".equals(cmd[1])) {
+                hajo.Meghal();
+                NamesMap.remove(cmd[2]);
+            }
+        } else if ("robot".equals(cmd[0])) {
+            if ("fur".equals(cmd[1])) {
+                Robot robot = (Robot) NamesMap.get(cmd[2]);
+                robot.Fur();
+            }
+        } else if ("telepes".equals(cmd[0])) {
+            Telepes telepes = (Telepes) NamesMap.get(cmd[2]);
+            if ("create".equals(cmd[1])) {
+                Telepes telepesNew = new Telepes();
+                NamesMap.put(cmd[2], telepesNew);
+            } else if ("addToRakter".equals(cmd[1])) {
+                telepes.addNyersanyagRakter((Szallithato) NamesMap.get(cmd[3]));
+            } else if ("robotEpit".equals(cmd[1])) {
+                telepes.RobotEpit(new RobotEpito());
+            } else if ("teleportEpit".equals(cmd[1])) {
+                telepes.TeleportEpit(new TeleportEpito());
+            } else if ("anyagVisszatesz".equals(cmd[1])) {
+                Nyersanyag nyersanyag = (Nyersanyag) NamesMap.get(cmd[3]);
+                telepes.AnyagVisszatesz(nyersanyag);
+            } else if ("fur".equals(cmd[1])) {
+                telepes.Fur();
+            } else if ("banyasz".equals(cmd[1])) {
+                telepes.Banyasz();
+            } else if ("kapuLerak".equals(cmd[1])) {
+                telepes.KapuLerak((Teleportkapu) NamesMap.get(cmd[3]));
+            }
+        } else if ("teleportkapu".equals(cmd[0])) {
+            if ("create".equals(cmd[1])) {
+                Teleportkapu teleportkapuNew = new Teleportkapu();
+                NamesMap.put(cmd[2], teleportkapuNew);
+            } else if ("connect".equals(cmd[1])) {
+                Teleportkapu teleportkapu = (Teleportkapu) NamesMap.get(cmd[2]);
+                Teleportkapu tp2 = (Teleportkapu) NamesMap.get(cmd[3]);
+                teleportkapu.SetPar(tp2);
+                tp2.SetPar(teleportkapu);
+            } else if ("set".equals(cmd[1])) {
+                if ("sajatAszteroida".equals(cmd[2])) {
+                    Teleportkapu teleportkapu = (Teleportkapu) NamesMap.get(cmd[3]);
+                    Aszteroida aszteroida = (Aszteroida) NamesMap.get(cmd[2]);
+                    teleportkapu.SetSajatAszteroida(aszteroida);
                 }
-            } else if ("telepes".equals(cmd[0])) {
-                Telepes telepes = (Telepes) NamesMap.get(cmd[2]);
-                if ("create".equals(cmd[1])) {
-                    Telepes telepesNew = new Telepes();
-                    NamesMap.put(cmd[2], telepesNew);
-                } else if ("addToRakter".equals(cmd[1])) {
-                    telepes.addNyersanyagRakter((Szallithato) NamesMap.get(cmd[3]));
-                } else if ("robotEpit".equals(cmd[1])) {
-                    telepes.RobotEpit(new RobotEpito());
-                } else if ("teleportEpit".equals(cmd[1])) {
-                    telepes.TeleportEpit(new TeleportEpito());
-                } else if ("anyagVisszatesz".equals(cmd[1])) {
-                    Nyersanyag nyersanyag = (Nyersanyag) NamesMap.get(cmd[3]);
-                    telepes.AnyagVisszatesz(nyersanyag);
-                } else if ("fur".equals(cmd[1])) {
-                    telepes.Fur();
-                } else if ("banyasz".equals(cmd[1])) {
-                    telepes.Banyasz();
-                } else if ("kapuLerak".equals(cmd[1])) {
-                    telepes.KapuLerak((Teleportkapu) NamesMap.get(cmd[3]));
+            }
+        } else if ("nyersanyag".equals(cmd[0])) {
+            if ("create".equals(cmd[1])) {
+                Nyersanyag a = null;
+                if ("vas".equals(cmd[2])) {
+                    a = new Vas();
+                } else if ("vizjeg".equals(cmd[2])) {
+                    a = new Vizjeg();
+                } else if ("szen".equals(cmd[2])) {
+                    a = new Szen();
+                } else if ("uran".equals(cmd[2])) {
+                    a = new Uran();
                 }
-            } else if ("teleportkapu".equals(cmd[0])) {
-                if ("create".equals(cmd[1])) {
-                    Teleportkapu teleportkapuNew = new Teleportkapu();
-                    NamesMap.put(cmd[2], teleportkapuNew);
-                } else if ("connect".equals(cmd[1])) {
-                    Teleportkapu teleportkapu = (Teleportkapu) NamesMap.get(cmd[2]);
-                    Teleportkapu tp2 = (Teleportkapu) NamesMap.get(cmd[3]);
-                    teleportkapu.SetPar(tp2);
-                    tp2.SetPar(teleportkapu);
-                } else if ("set".equals(cmd[1])) {
-                    if ("sajatAszteroida".equals(cmd[2])) {
-                        Teleportkapu teleportkapu = (Teleportkapu) NamesMap.get(cmd[3]);
-                        Aszteroida aszteroida = (Aszteroida) NamesMap.get(cmd[2]);
-                        teleportkapu.SetSajatAszteroida(aszteroida);
-                    }
+                NamesMap.put(cmd[3], a);
+            }
+        } else if ("show".equals(cmd[0])) {
+            if ("all".equals(cmd[1])) {
+                for (String key : NamesMap.keySet()) {
+                    System.out.println(key + ": " + NamesMap.get(key).getClass().getSimpleName());
+                    System.out.println(NamesMap.get(key));
                 }
-            } else if ("nyersanyag".equals(cmd[0])) {
-                if ("create".equals(cmd[1])) {
-                    Nyersanyag a = null;
-                    if ("vas".equals(cmd[2])) {
-                        a = new Vas();
-                    } else if ("vizjeg".equals(cmd[2])) {
-                        a = new Vizjeg();
-                    } else if ("szen".equals(cmd[2])) {
-                        a = new Szen();
-                    } else if ("uran".equals(cmd[2])) {
-                        a = new Uran();
-                    }
-                    NamesMap.put(cmd[3], a);
-                }
-            } else if ("show".equals(cmd[0])) {
-                if ("all".equals(cmd[1])) {
-                    for (String key : NamesMap.keySet()) {
-                        System.out.println(key + ": " + NamesMap.get(key).getClass().getSimpleName());
-                        System.out.println(NamesMap.get(key));
-                    }
-                } else {
-                    //ToString magic
-                	if(NamesMap.get(cmd[1]) != null)
-                		System.out.println(cmd[1] + ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
-                    System.out.println(NamesMap.get(cmd[1]));
-                }
+            } else {
+                //ToString magic
+                if (NamesMap.get(cmd[1]) != null)
+                    System.out.println(cmd[1] + ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
+                System.out.println(NamesMap.get(cmd[1]));
+            }
 
-            } else if ("run".equals(cmd[0])) {
+        } else if ("run".equals(cmd[0])) {
 
-            } else if ("save".equals(cmd[0])) {
-                if ("output".equals(cmd[1])) {
+        } else if ("save".equals(cmd[0])) {
+            if ("output".equals(cmd[1])) {
 
-                }
-            } else System.out.println("Helytelen bemenet!");
-       
+            }
+        } else System.out.println("Helytelen bemenet!");
+
     }
 
     void loadPalyaFromFile(String fileName) {
-    	palya.Reset();
+        palya.Reset();
         try {
             File myFile = new File("inputs" + File.separator + fileName);
             Scanner myReader = new Scanner(myFile);
@@ -226,7 +232,7 @@ public class Jatek {
             String[] temp = line.split(" ");
 
 
-            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), ("napkozel".equals(temp[3])));
+            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), ("napkozelben".equals(temp[3])));
             a.SetMag((Nyersanyag) NamesMap.get(temp[2]));
             NamesMap.put(temp[0], a);
 
@@ -247,17 +253,17 @@ public class Jatek {
                 k1 = new Teleportkapu(Boolean.parseBoolean(temp[2]));
             } else {
                 a1 = (Aszteroida) NamesMap.get(temp[1]);
-                if("megkergult".equals(temp[2]))
-                	k1 = new Teleportkapu(a1, true);
+                if ("megkergult".equals(temp[2]))
+                    k1 = new Teleportkapu(a1, true);
                 else k1 = new Teleportkapu(a1, false); // akarmire ami nem megkergul, azt mondja hogy nem kergul meg
             }
             if (temp[4].equals("0")) {
                 k2 = new Teleportkapu(Boolean.parseBoolean(temp[4]));
             } else {
                 a2 = (Aszteroida) NamesMap.get(temp[4]);
-                
-                if("megkergult".equals(temp[5]))
-                	k2 = new Teleportkapu(a2, true);
+
+                if ("megkergult".equals(temp[5]))
+                    k2 = new Teleportkapu(a2, true);
                 else k2 = new Teleportkapu(a2, false); // akarmire ami nem megkergul, azt mondja hogy nem kergul meg
                 //k2 = new Teleportkapu(a2, Boolean.parseBoolean(temp[5]));
             }
@@ -326,10 +332,10 @@ public class Jatek {
         while (reader.hasNextLine()) {
             String line = reader.nextLine();
             String[] temp = line.split(" ");
-            
+
             //TODO ez igy eleg megkerdojelezheto....
-            if(NamesMap.get(temp[1]).getClass().getSimpleName().equals("Teleportkapu"))    
-            	((Telepes) NamesMap.get(temp[0])).SetTeleportkapuRakter((Teleportkapu) NamesMap.get(temp[1]));
+            if (NamesMap.get(temp[1]).getClass().getSimpleName().equals("Teleportkapu"))
+                ((Telepes) NamesMap.get(temp[0])).SetTeleportkapuRakter((Teleportkapu) NamesMap.get(temp[1]));
             else ((Telepes) NamesMap.get(temp[0])).SetNyersanyagRakter((Nyersanyag) NamesMap.get(temp[1]));
         }
 
@@ -343,23 +349,27 @@ public class Jatek {
         }
         return null;
     }
-    
-    
-    void gameCycle() {  //TODO ez lehet hogy nem fog tetszeni egyeseknek, mélységes elnézést, hogy számra vettem bool nevét
-       int  korokSzama=1;
-        System.out.println(korokSzama +". Kor");
-        boolean fut = Palya.Kor();
-        while (fut){
-            System.out.println(++korokSzama +". Kor");
-			fut = Palya.Kor();
 
-			System.out.println("Szeretne valamit tenni a korvegen? (show)");//TODO ez teljesen most dokumentálatlan
-			Scanner sc = new Scanner(System.in);
+
+    void gameCycle() {  //TODO ez lehet hogy nem fog tetszeni egyeseknek, mélységes elnézést, hogy számra vettem bool nevét
+        int korokSzama = 1;
+        System.out.println(korokSzama + ". Kor");
+        boolean fut = Palya.Kor();
+
+        while (fut) {
+
+            System.out.println("Szeretne valamit tenni a korben? (show)");//TODO ez teljesen most dokumentálatlan
+
             String line = sc.nextLine();
-            String[] cmd = line.split(" ") ;
+            String[] cmd = line.split(" ");
+
             DoCommand(cmd);
-            sc.close();
-		}
+
+            System.out.println(++korokSzama + ". Kor");
+            fut = Palya.Kor();
+
+        }
+
     }
 
 
