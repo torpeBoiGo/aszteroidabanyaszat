@@ -5,15 +5,20 @@ import java.util.List;
 import java.util.Random;
 import java.util.StringJoiner;
 
+/**
+ * Az ufo mukodeset megvalosito osztaly
+ *
+ */
 public class Ufo extends Hajo implements Leptetheto{
 
     /**
-     * a nyersanyagokat tarolo Rakter
+     * Az Ufo nyersanyagok tarolasara szolgalo raktere. Akarmennyi nyersanyagot tartalmazhat.
      */
     private List<Szallithato> nyersanyagRakter = new ArrayList<>();
 
     /**
-     * UFO konstruktora, ha a keletkezese pillanatatol aszteroidan tartozkodik
+     * Konstruktor, az Ufo keletekezesekor hivodik. Elhelyezi az ufot a  parameterkent  kapott  aszteroidan,  
+     * beallitja az ufo aszteroidajat a parameterkent kapottra, valamint hozzaadja a palyan tarolt Aivezerelelt objektumokhoz
      *
      * @param a Aszteroida, amin tartozkodik
      */
@@ -24,7 +29,7 @@ public class Ufo extends Hajo implements Leptetheto{
     }
 
     /**
-     * A telepes konstruktora, a sajat aszteroida erteket nullra allitja.
+     * Konstruktor,  az  ufo aszteroidajat  nullra  allitja,  valamint  hozzaadja  a  palyan tarolt Ai vezerelelt objektumokhoz
      */
     public Ufo() {
         aszteroida = null;
@@ -41,7 +46,7 @@ public class Ufo extends Hajo implements Leptetheto{
     }
 
     /**
-     * Banyassszuk az aszteroidat amin az UFO van
+     * Kinyeri az aszteroida magjaat es elhelyezi a raktereben.
      */
     void Banyasz() {
         Nyersanyag n = aszteroida.Kinyer();
@@ -51,7 +56,9 @@ public class Ufo extends Hajo implements Leptetheto{
         }
     }
 
-
+    /**
+     * Visszater   az   ufo tulajdonsagait (az   aszteroidaja, raktere) tartalmaza stringgel a kimeneti nyelvnek megfelelo formatumban.
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -65,25 +72,39 @@ public class Ufo extends Hajo implements Leptetheto{
         return sb.toString();
     }
 
+    /**
+     * Az  ufo viselkedését  írja  le,  ha  a  telepest  napvihar  éri.  Ekkor  az ufo meghal.
+     */
     @Override
     public void Napvihar() {
         // TODO Auto-generated method stub
         Meghal();
     }
+    
+    /**
+     * Az ufo viselkedeset irja le, ha felrobban. Ekkor az ufo meghal.
+     */
 	@Override
 	public void Robbanas() {
 		Meghal();
 	}
 
+	/**
+	 * Az  ufo viselkedeset  erja  le,  ha  meghal. 
+	 * Eltevolítja  az  ufot az aszteroidajarol,  a  palyan  tarolt Ai vezerelelt  objektumok  kozul,  valamint  a  kiirashoz hasznalt hasmaprol.
+	 */
 	@Override
 	void Meghal() {
 		aszteroida.HajoElhagy(this);
         Palya.removeAIVezerli(this);
         Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
 	}
-
     
-
+	/**
+	 * Az   ufo lepeset   irja   le. Ha   az   aszteroida,   amin   tartozkodik banynaszhato (teljesen  at  van  furva,  nem ureges),  
+	 * akkor  az  ufo  a  korben  banyaszik, egyebkent,  ha  van  szomszedos  mezoje  az  aszteroidanak,  
+	 * akkor  egy  random szomszedos  mezore mozog.  Ha  nincs  szomszedja  az  aszteroidanak  és  nem  tud banyaszni se, akkor az ufo tetlen marad.
+	 */
     @Override
 	public void Lepes() {
         List<Mezo> szomszedok = aszteroida.getSzomszedok();
@@ -93,23 +114,25 @@ public class Ufo extends Hajo implements Leptetheto{
             int rand_aszt = rand.nextInt(szomszedok.size());
             Mozog(szomszedok.get(rand_aszt));
         }
-        if ((aszteroida.GetKulsoRetegek() == 0) && (aszteroida.UregesE()) && (szomszedok.size() > 0)) { //at van furva, ureges, van szomszed
+        else if ((aszteroida.GetKulsoRetegek() == 0) && (aszteroida.UregesE()) && (szomszedok.size() > 0)) { //at van furva, ureges, van szomszed
             Random rand = new Random();
             int rand_aszt = rand.nextInt(szomszedok.size());
             Mozog(szomszedok.get(rand_aszt));
         }
-        if ((aszteroida.GetKulsoRetegek() > 0) && (szomszedok.size() == 0)) { //nincs atfurva, NINCS szomszed
+        else if ((aszteroida.GetKulsoRetegek() > 0) && (szomszedok.size() == 0)) { //nincs atfurva, NINCS szomszed
             Tetlen();
         }
-        if ((aszteroida.GetKulsoRetegek() == 0) && (aszteroida.UregesE()) && (szomszedok.size() == 0)) { //atfurva, ureges, NINCS szomszed
+        else if ((aszteroida.GetKulsoRetegek() == 0) && (aszteroida.UregesE()) && (szomszedok.size() == 0)) { //atfurva, ureges, NINCS szomszed
             Tetlen();
         }
-        if ((aszteroida.GetKulsoRetegek() == 0) && (!aszteroida.UregesE())) { //atfurva, nem ureges
+        else if ((aszteroida.GetKulsoRetegek() == 0) && (!aszteroida.UregesE())) { //atfurva, nem ureges
             Banyasz();
         }
     }
 
-   
+   /**
+    * Ellenorzi az ufo mivel jarulhat hozza a gyozelemhez
+    */
     @Override
     void NyerEllenoriz(Epitheto e) {
         // TODO Auto-generated method stub
