@@ -65,8 +65,8 @@ public class Palya {
             return false;
         }
 
-        if (!MegnyerhetoE()) {
-            System.out.println("Jatek vége - vereség");
+        if (!MegnyerhetoE() || jatekosVezerli.size() <= 1) {
+            System.out.println("Jatek vege - vereseg");
             return false;
         }
 
