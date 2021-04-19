@@ -174,7 +174,21 @@ public class Jatek {
             }
         } else if ("show".equals(cmd[0])) {
             if ("all".equals(cmd[1])) {
-                for (String key : NamesMap.keySet()) {
+            	List<String> abcsorrendben = new ArrayList<>();
+            	for (String key : NamesMap.keySet()) {
+                    abcsorrendben.add(NamesMap.get(key).getClass().getSimpleName());
+                }
+            	for (int i = 0; i < abcsorrendben.size(); i++) {
+            		for (int j = i; j < abcsorrendben.size(); j++) {
+                		if (abcsorrendben.get(i).compareTo(abcsorrendben.get(j)) > 0/*abcsorrendben.get(i) > abcsorrendben.get(j)*/) {
+                			String temp = abcsorrendben.get(i);
+                			abcsorrendben.set(i, abcsorrendben.get(j));
+                			abcsorrendben.set(j, temp);
+                		}
+                	}
+            	}
+            	System.out.println(abcsorrendben);
+                for (String key : abcsorrendben/*NamesMap.keySet()*/) {
                     System.out.println(key + ": " + NamesMap.get(key).getClass().getSimpleName());
                     System.out.println(NamesMap.get(key));
                 }
