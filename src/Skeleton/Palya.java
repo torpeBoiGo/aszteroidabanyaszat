@@ -57,7 +57,6 @@ public class Palya {
         }
 
         for (Leptetheto leptetheto : jatekosVezerli) {
-
             leptetheto.Lepes();
         }
 
@@ -68,12 +67,11 @@ public class Palya {
             System.out.println("Jatek vege - gyozelem");
             return false;
         }
-
         return true;
     }
 
     /**
-     * Sorban lepteti az aiVezerli, aszteroidak és teleportKapuk elemeit.
+     * Sorban lepteti az aiVezerli, aszteroidak ï¿½s teleportKapuk elemeit.
      */
     static void KorVege() {
 
@@ -169,8 +167,8 @@ public class Palya {
     }
 
     /**
-     * Megvizsgálja, az összes aszteroidán, hogy van-e gyõzelem, azaz 
-     * építhetõ-e gyõzelem objektum.
+     * Megvizsgï¿½lja, az ï¿½sszes aszteroidï¿½n, hogy van-e gyï¿½zelem, azaz 
+     * ï¿½pï¿½thetï¿½-e gyï¿½zelem objektum.
      * @return a jatekosok gyoztek-e
      */
     static boolean GyozelemE() {
@@ -187,7 +185,7 @@ public class Palya {
     }
 
     /**
-     * Torli a palyan tarolt összes objektumot.
+     * Torli a palyan tarolt ï¿½sszes objektumot.
      */
     public void Reset() {
         jatekosVezerli.clear();
