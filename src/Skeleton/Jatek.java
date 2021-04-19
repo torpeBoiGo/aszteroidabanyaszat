@@ -175,20 +175,26 @@ public class Jatek {
         } else if ("show".equals(cmd[0])) {
             if ("all".equals(cmd[1])) {
             	List<String> abcsorrendben = new ArrayList<>();
+            	List<String> abcsorrendbenkeys = new ArrayList<>();
             	for (String key : NamesMap.keySet()) {
                     abcsorrendben.add(NamesMap.get(key).getClass().getSimpleName());
                 }
+            	for (String key : NamesMap.keySet()) {
+                    abcsorrendbenkeys.add(key);
+                }
             	for (int i = 0; i < abcsorrendben.size(); i++) {
             		for (int j = i; j < abcsorrendben.size(); j++) {
-                		if (abcsorrendben.get(i).compareTo(abcsorrendben.get(j)) > 0/*abcsorrendben.get(i) > abcsorrendben.get(j)*/) {
+                		if (abcsorrendben.get(i).compareTo(abcsorrendben.get(j)) > 0) {
                 			String temp = abcsorrendben.get(i);
                 			abcsorrendben.set(i, abcsorrendben.get(j));
                 			abcsorrendben.set(j, temp);
+                			String temp2 = abcsorrendbenkeys.get(i);
+                			abcsorrendbenkeys.set(i, abcsorrendbenkeys.get(j));
+                			abcsorrendbenkeys.set(j, temp2);
                 		}
                 	}
             	}
-            	System.out.println(abcsorrendben);
-                for (String key : abcsorrendben/*NamesMap.keySet()*/) {
+                for (String key : abcsorrendbenkeys) {
                     System.out.println(key + ": " + NamesMap.get(key).getClass().getSimpleName());
                     System.out.println(NamesMap.get(key));
                 }
