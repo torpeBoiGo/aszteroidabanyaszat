@@ -3,10 +3,12 @@ package Skeleton;
 import java.util.Vector;
 
 /**
- * A nyerhetoseg epithetove valasa utan fut le
+ * A nyerhetoseget vizsgalo epitheto osztaly
  */
 public class Nyerheto extends Epitheto {
-
+	/**
+	 * A Nyerheto osztaly parameter nelkuli konstruktora, mely hozzaadja az alapanyagokhoz a jatek megnyeresehez szukseges anyagokat.
+	 */
     public Nyerheto(){
         Hozzaad(new Vas());
         Hozzaad(new Vas());
@@ -19,6 +21,11 @@ public class Nyerheto extends Epitheto {
         Hozzaad(new Uran());
     }
 
+    /**
+     * A nyerhetoseg vizsgalatahoz szukseges
+     * @param a Az aszteroida, amin letrejon az objektum
+     * @return amiket a telepes rakterbe kell tenni- itt null 
+     */
     @Override
     public Vector<Szallithato> Letrejon(Aszteroida a) {
         return new Vector<>();

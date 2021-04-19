@@ -4,16 +4,17 @@ import java.util.Vector;
 
 /**
  * 
- * A robotepitest megvalosito osztaly.
+ * A robot epitest megvalosito osztaly.
  *
  */
 public class RobotEpito extends Epitheto {
-	
-
+	/**
+	 * Segitsegevel teszunk kulonbseget az egyes letrejove robotok kozott.
+	 */
 	static int builtNum= 1;
 	
     /**
-     * Konstruktor.
+     * Konstruktor, felveszi a robot epitesehez szukseges nyersanyagokat
      */
 	public RobotEpito() {
 		Hozzaad(new Vas());
