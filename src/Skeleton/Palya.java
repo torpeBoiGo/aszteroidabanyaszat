@@ -1,6 +1,7 @@
 package Skeleton;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.StringJoiner;
@@ -16,12 +17,12 @@ public class Palya {
 
     static void Napvihar() {
         Random random = new Random();
-        aszteroidak.get(random.nextInt(aszteroidak.size())).Napvihar();
+        aszteroidak.get(random.nextInt(aszteroidak.size())).Napvihar(true);
 
     }
 
     static void Napvihar(Aszteroida a) {
-        a.Napvihar();
+        a.Napvihar(true);
     }
 
     static boolean Kor() {
@@ -32,7 +33,7 @@ public class Palya {
 
         KorVege();
 
-       // Napvihar();
+        // Napvihar();
         if (GyozelemE()) {
             System.out.println("Jatek vége - győzelem");
             return false;
@@ -46,12 +47,23 @@ public class Palya {
     }
 
     static void KorVege() {
+
         for (Leptetheto leptetheto : aiVezerli) {
             leptetheto.Lepes();
         }
-        for (Leptetheto leptetheto : aszteroidak) {
+
+
+        List<Aszteroida> tempAszteroidak = new ArrayList<>(aszteroidak);
+        for (Leptetheto leptetheto : tempAszteroidak) {
+            leptetheto.Lepes();
+
+        }
+
+
+        for (Leptetheto leptetheto : aiVezerli) {
             leptetheto.Lepes();
         }
+
         for (Leptetheto leptetheto : teleportKapuk) {
             leptetheto.Lepes();
         }

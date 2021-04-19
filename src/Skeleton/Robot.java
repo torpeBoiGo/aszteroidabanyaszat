@@ -11,7 +11,8 @@ import java.util.Random;
 public class Robot extends Hajo implements Leptetheto {
     /**
      * Robot konstruktora, ha a keletkezese pillanatatol aszteroidan tartozkodik
-     *
+     * Elhelyezi a robotot a parameterkent kapott aszteroidan, beallitja a robot aszteroidajat a parameterkent kapottra,    
+     * valamint hozzaadja a palyan tarolt  aiVezerli objektumokhoz.
      * @param a Aszteroida, amin tartozkodik
      */
     public Robot(Aszteroida a) {
@@ -28,7 +29,7 @@ public class Robot extends Hajo implements Leptetheto {
     }
     
     /**
-     * Robotot napvihar eri.
+     * A robot viselkedeset irja le, ha a robotot napvihar eri Ekkor a robot meghal.
      */
     @Override
     public void Napvihar() {
@@ -36,7 +37,8 @@ public class Robot extends Hajo implements Leptetheto {
     }
 
     /**
-     * Robot meghal.
+     * A robot viselkedeset irja le, ha meghal. Eltavolitja a robotot az aszteroidajarol,
+     * a palyan tarolt aiVezerli objektumok kozul, valamint a kiirashoz hasznalt hashmaprol.
      */
     @Override
     public void Meghal() {
@@ -46,7 +48,8 @@ public class Robot extends Hajo implements Leptetheto {
     }
 
     /**
-     * Robot felrobban.
+     * A  robot  viselkedeset irja le, ha felrobban. Ekkor a robot egy random szomszedos mezore mozog,  
+     * vagy, ha az aszteroidanak nincs szomszedja, akkor meghal
      */
     @Override
     public void Robbanas() {
@@ -59,21 +62,23 @@ public class Robot extends Hajo implements Leptetheto {
     }
 
     /**
-     * A robot lep egyet, itt lesz mevalositva a viselkedese
+     *A robot lepeset irja le. Ha az aszteroida,  amin  tartozkodik  nincs teljesen afurva, akkor a robot a korben fur, egyebkent, 
+     *ha van szomszedos mezoje az aszteroidanak, akkor egy random szomszedos mezore mozog. 
+     *Ha nincs szomszedja az aszteroidanak es nem tud furni se, akkor a robot tetlen marad
      */
     @Override
 	public void Lepes() {
     	List<Mezo> szomszedok = aszteroida.getSzomszedok();
-    	
+
     	if (aszteroida.GetKulsoRetegek() > 0) { //nincs atfurva
     		Fur();
     	}
-    	if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() > 0)) { //at van furva, VAN szomszedos mezo
+    	else if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() > 0)) { //at van furva, VAN szomszedos mezo
     		Random rand = new Random();
     		int rand_aszt = rand.nextInt(szomszedok.size());
     		Mozog(szomszedok.get(rand_aszt));
     	} 
-    	if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() == 0)) { //at van furva, de NINCS szomszedos mezo
+    	else if ((aszteroida.GetKulsoRetegek() == 0) && (szomszedok.size() == 0)) { //at van furva, de NINCS szomszedos mezo
     		Tetlen();
     	}
     }
@@ -86,7 +91,10 @@ public class Robot extends Hajo implements Leptetheto {
         // TODO Auto-generated method stub
 
     }
-
+    
+    /**
+     * Visszater a robot tulajdonsagait (az aszteroidaja) tartalmazo stringgel a kimeneti nyelvnek megfelelo formatumban.
+     */
     @Override
     public String toString() {
         return "Aszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, aszteroida) + ": Aszteroida\n";

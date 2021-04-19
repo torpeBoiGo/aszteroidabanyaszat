@@ -1,8 +1,8 @@
 NYERSANYAGOK
-uran U1 0
+uran U1 2
 ASZTEROIDAK
 A1 1 0 naptavol
-A2 0 U1 naptavol
+A2 0 U1 napkozel
 TELEPORTKAPUK
 G1 0 0 G2 A2 nemkergultmeg
 SZOMSZEDOK
