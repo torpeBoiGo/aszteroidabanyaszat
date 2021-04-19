@@ -24,6 +24,7 @@ public class Jatek {
      * Egy Map-bol ertek alapjan visszakeresi a kulcsot
      * @param map - a map amiben keresunk
      * @param value - az ertek aminek a kulcsat keressuk
+     * @return a kulcs amit megtalaltunk, vagy null
      */
     public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
         for (Entry<T, E> entry : map.entrySet()) {
