@@ -347,11 +347,18 @@ public class Jatek {
     
     void gameCycle() {  //TODO ez lehet hogy nem fog tetszeni egyeseknek, mélységes elnézést, hogy számra vettem bool nevét
        int  korokSzama=1;
-        System.out.println(korokSzama +". Kör");
+        System.out.println(korokSzama +". Kor");
         boolean fut = Palya.Kor();
         while (fut){
-            System.out.println(++korokSzama +". Kör");
+            System.out.println(++korokSzama +". Kor");
 			fut = Palya.Kor();
+
+			System.out.println("Szeretne valamit tenni a korvegen? (show)");//TODO ez teljesen most dokumentálatlan
+			Scanner sc = new Scanner(System.in);
+            String line = sc.nextLine();
+            String[] cmd = line.split(" ") ;
+            DoCommand(cmd);
+            sc.close();
 		}
     }
 

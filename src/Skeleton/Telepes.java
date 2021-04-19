@@ -204,6 +204,7 @@ public class Telepes extends Hajo implements Leptetheto {
     }else{
             System.out.println("Helytelen bemenet - "+telepes+" tetelen");
         }
+        sc.close();
     }
 
     /**
