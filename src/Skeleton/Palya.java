@@ -1,6 +1,7 @@
 package Skeleton;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.StringJoiner;
@@ -51,10 +52,6 @@ public class Palya {
      * @return a kor utan folytatodik-e a jatek
      */
     static boolean Kor() {
-        if (!MegnyerhetoE() || jatekosVezerli.size()<1) {
-            System.out.println("Jatek vege - vereseg");
-            return false;
-        }
 
         for (Leptetheto leptetheto : jatekosVezerli) {
             leptetheto.Lepes();
@@ -62,11 +59,17 @@ public class Palya {
 
         KorVege();
 
-        Napvihar();
+        // Napvihar();
         if (GyozelemE()) {
             System.out.println("Jatek vege - gyozelem");
             return false;
         }
+
+        if (!MegnyerhetoE()) {
+            System.out.println("Jatek vége - vereség");
+            return false;
+        }
+
         return true;
     }
 
@@ -78,13 +81,16 @@ public class Palya {
         for (Leptetheto leptetheto : aiVezerli) {
           leptetheto.Lepes();
         }
-        
-        List<Aszteroida> tempAszteroidak = new ArrayList<>(aszteroidak);
-        for (Leptetheto leptetheto : tempAszteroidak) {
 
+
+
+        List<Aszteroida> tempAszteroidak = new ArrayList<>(aszteroidak);
+        for (Leptetheto leptetheto : tempAszteroidak) {     
             leptetheto.Lepes();
+
         }
-        
+
+
         for (Leptetheto leptetheto : teleportKapuk) {
             leptetheto.Lepes();
         }

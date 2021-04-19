@@ -182,10 +182,13 @@ public class Telepes extends Hajo implements Leptetheto {
     @Override
     public void Lepes() {
 
-        Scanner sc = new Scanner(System.in);
+
         String telepes= Jatek.getKeyByValue(Jatek.NamesMap,this);
         System.out.println("Mit szeretne tenni a "+ telepes+" telepessel?");
-        String line = sc.nextLine();
+
+
+
+           String  line = Jatek.sc.nextLine();
         String[] cmd = line.split(" ");
         if ("telepes".equals(cmd[0]) ||"hajo".equals(cmd[0])) {
             if ("robotEpit".equals(cmd[1])) {
@@ -213,7 +216,7 @@ public class Telepes extends Hajo implements Leptetheto {
     }else{
             System.out.println("Helytelen bemenet - "+telepes+" tetelen");
         }
-        sc.close();
+       //sc.close();
     }
 
     /**

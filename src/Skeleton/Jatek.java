@@ -19,36 +19,27 @@ public class Jatek {
      */
     Palya palya = new Palya();
 
-    
-    /**
-     * Egy Map-bol ertek alapjan visszakeresi a kulcsot
-     * @param map - a map amiben keresunk
-     * @param value - az ertek aminek a kulcsat keressuk
-     * @return a kulcs amit megtalaltunk, vagy null
-     */
-    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
-        for (Entry<T, E> entry : map.entrySet()) {
-            if (Objects.equals(value, entry.getValue())) {
-                return entry.getKey();
-            }
-        }
-        return null;
-    }
-  
 
-    /**
-     * A jatek program inditasa, innentol kezve varja a bemenetet
-     */
+    static Scanner sc = new Scanner(System.in);
+
+
     public void Indit() {
-        Scanner sc = new Scanner(System.in);
+
         while (true) {
+
             String line = sc.nextLine();
             String[] cmd = line.split(" ");
-            if ("exit".equals(cmd[0])) break;
+            if ("exit".equals(cmd[0])) {
+                sc.close();
+                break;
+            }
+
+
             DoCommand(cmd);
         }
-        sc.close();
     }
+
+
 
     
     /**
@@ -56,9 +47,11 @@ public class Jatek {
      * @param cmd - a parancs amit feldolgozunk 
      */
     private void DoCommand(String[] cmd) {
+
         if ("palya".equals(cmd[0])) {
             if ("load".equals(cmd[1])) {
                 loadPalyaFromFile(cmd[2]);
+
             } else if ("do".equals(cmd[1])) {
                 if ("napvihar".equals(cmd[2])) {
                     if (cmd.length < 4) {
@@ -70,6 +63,7 @@ public class Jatek {
                     Palya.Kor();
                 } else if ("korvege".equals(cmd[2])) {
                     Palya.KorVege();
+
                 }
             } else if ("startGame".equals(cmd[1])) {
                 gameCycle();
@@ -199,6 +193,7 @@ public class Jatek {
                     System.out.println(NamesMap.get(key));
                 }
             } else {
+
                 if (NamesMap.get(cmd[1]) != null)
                     System.out.println(cmd[1] + ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
                 System.out.println(NamesMap.get(cmd[1]));
@@ -277,6 +272,7 @@ public class Jatek {
 
     }
 
+
     /**
      * Az aszteroidak beolvasasa
      */
@@ -285,7 +281,8 @@ public class Jatek {
         while (!line.equals("TELEPORTKAPUK")) {
             String[] temp = line.split(" ");
 
-            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), ("napkozel".equals(temp[3]) || "napkozelben".equals(temp[3])));
+            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), ("napkozelben".equals(temp[3])));
+
             a.SetMag((Nyersanyag) NamesMap.get(temp[2]));
             NamesMap.put(temp[0], a);
 
@@ -310,6 +307,7 @@ public class Jatek {
                 if ("megkergult".equals(temp[2]))
                     k1 = new Teleportkapu(a1, true);
                 else k1 = new Teleportkapu(a1, false);
+
             }
             if (temp[4].equals("0")) {
                 k2 = new Teleportkapu(Boolean.parseBoolean(temp[4]));
@@ -318,7 +316,9 @@ public class Jatek {
 
                 if ("megkergult".equals(temp[5]))
                     k2 = new Teleportkapu(a2, true);
+
                 else k2 = new Teleportkapu(a2, false);
+
             }
 
             k1.SetPar(k2);
@@ -399,6 +399,7 @@ public class Jatek {
         while (reader.hasNextLine()) {
             String line = reader.nextLine();
             String[] temp = line.split(" ");
+
             
             if("Telepes".equals(NamesMap.get(temp[0]).getClass().getSimpleName())) {
             	if (NamesMap.get(temp[1]).getClass().getSimpleName().equals("Teleportkapu"))
@@ -407,9 +408,22 @@ public class Jatek {
             }else {
                 ((Ufo) NamesMap.get(temp[0])).AddNyersanyagRakter((Nyersanyag) NamesMap.get(temp[1]));
             }
+
         }
 
     }
+
+
+
+    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
+        for (Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
+    }
+
 
 
    
@@ -419,18 +433,25 @@ public class Jatek {
     void gameCycle() {
        int  korokSzama=1;
         System.out.println(korokSzama +". Kor");
-        boolean fut = Palya.Kor();
-        while (fut){
-            System.out.println(++korokSzama +". Kor");
-			fut = Palya.Kor();
 
-			System.out.println("Szeretne valamit tenni a korvegen? (show)");
-			Scanner sc = new Scanner(System.in);
+        boolean fut = Palya.Kor();
+
+
+        while (fut) {
+
+            System.out.println("Szeretne valamit tenni a korben? (show)");
+
+
             String line = sc.nextLine();
-            String[] cmd = line.split(" ") ;
+            String[] cmd = line.split(" ");
+
             DoCommand(cmd);
-            sc.close();
-		}
+
+            System.out.println(++korokSzama + ". Kor");
+            fut = Palya.Kor();
+
+        }
+
     }
 
 
