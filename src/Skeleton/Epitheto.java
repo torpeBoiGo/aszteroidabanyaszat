@@ -9,7 +9,9 @@ import java.util.Vector;
  * Absztrakt osztaly epitheto objektumok megvalositasara 
  */
 public abstract class Epitheto {
-	
+	/**
+	 *  Tarolja, hogy az egyes epitheto objektumokhoz milyen nyersanyagok kellenek.
+	 */
 	ArrayList<Nyersanyag> alapanyagok = new ArrayList<>();
 	
 	/**

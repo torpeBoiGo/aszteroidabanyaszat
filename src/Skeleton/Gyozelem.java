@@ -8,6 +8,9 @@ import java.util.Vector;
  */
 public class Gyozelem extends Epitheto {
 
+	/**
+	 *  A Gyozelem osztaly parameter nelkuli konstruktora, mely hozzaadja az alapanyagokhoz a jatek megnyeresehez szukseges anyagokat.
+	 */
     public Gyozelem(){
         Hozzaad(new Vas());
         Hozzaad(new Vas());
@@ -25,7 +28,9 @@ public class Gyozelem extends Epitheto {
     }
 	
 	/**
-     * A gyozelem epithetove valasa utan fut le
+     * A gyozelem vizsgalatahoz szukseges
+     * @param a Az aszteroida, amin letrejon az objektum
+     * @return amiket a telepes rakterbe kell tenni- itt null 
      */
     @Override
     public Vector<Szallithato> Letrejon(Aszteroida a) {
