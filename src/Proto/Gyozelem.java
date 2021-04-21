@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 import java.util.Vector;
 
@@ -21,6 +21,10 @@ public class Gyozelem extends Epitheto {
         Hozzaad(new Uran());
         Hozzaad(new Uran());
         Hozzaad(new Uran());
+        Hozzaad(new Szen());
+        Hozzaad(new Szen());
+        Hozzaad(new Szen());
+
     }
 	
 	/**

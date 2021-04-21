@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 import java.util.Vector;
 
@@ -19,6 +19,9 @@ public class Nyerheto extends Epitheto {
         Hozzaad(new Uran());
         Hozzaad(new Uran());
         Hozzaad(new Uran());
+        Hozzaad(new Szen());
+        Hozzaad(new Szen());
+        Hozzaad(new Szen());
     }
 
     /**

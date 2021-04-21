@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -88,6 +88,7 @@ public class Aszteroida implements Mezo, Leptetheto {
      */
     public void Fur() {
         if (kulsoRetegek > 0) kulsoRetegek--;
+
     }
 
 
@@ -192,9 +193,9 @@ public class Aszteroida implements Mezo, Leptetheto {
     	   }
        }
        if (center) {
-    	   for (int i = 0; i < szomszedok.size(); i++) {
-    		   szomszedok.get(i).Napvihar(false);
-    	   }
+           for (Mezo mezo : szomszedok) {
+               mezo.Napvihar(false);
+           }
        }
        
     }

@@ -1,9 +1,6 @@
-package Skeleton;
+package Proto;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringJoiner;
-import java.util.Vector;
+import java.util.*;
 
 /**
  * A telepest megvalosito osztaly.
@@ -91,7 +88,6 @@ public class Telepes extends Hajo implements Leptetheto {
 			}
         	nyersanyagRakter.removeAll(consumed);
         }
-        //TODO ez kell?
         e.Reset();
     }
 
@@ -124,7 +120,6 @@ public class Telepes extends Hajo implements Leptetheto {
 			}
         	nyersanyagRakter.removeAll(consumed);
         }
-        //TODO ez kell?
         e.Reset();
     }
 
@@ -184,7 +179,41 @@ public class Telepes extends Hajo implements Leptetheto {
      */
     @Override
     public void Lepes() {
-        // TODO Auto-generated method stub
+
+
+        String telepes= Jatek.getKeyByValue(Jatek.NamesMap,this);
+        System.out.println("Mit szeretne tenni a "+ telepes+" telepessel?");
+
+
+
+           String  line = Jatek.sc.nextLine();
+        String[] cmd = line.split(" ");
+        if ("telepes".equals(cmd[0]) ||"hajo".equals(cmd[0])) {
+            if ("robotEpit".equals(cmd[1])) {
+                this.RobotEpit(new RobotEpito());
+            } else if ("teleportEpit".equals(cmd[1])) {
+                this.TeleportEpit(new TeleportEpito());
+            } else if ("anyagVisszatesz".equals(cmd[1])) {
+                Nyersanyag nyersanyag = (Nyersanyag) Jatek.NamesMap.get(cmd[3]);
+                this.AnyagVisszatesz(nyersanyag);
+            } else if ("fur".equals(cmd[1])) {
+                this.Fur();
+            } else if ("banyasz".equals(cmd[1])) {
+                this.Banyasz();
+            } else if ("kapuLerak".equals(cmd[1])) {
+                this.KapuLerak((Teleportkapu) Jatek.NamesMap.get(cmd[2]));
+            } else if ("mozog".equals(cmd[1])) {
+                Mezo mezo = (Mezo) Jatek.NamesMap.get(cmd[3]);
+                this.Mozog(mezo);
+            } else if ("tetlen".equals(cmd[1])) {
+                this.Tetlen();
+            }else{
+                System.out.println("Helytelen bemenet - "+telepes+" tetelen");
+            }
+
+    }else{
+            System.out.println("Helytelen bemenet - "+telepes+" tetelen");
+        }
     }
 
     /**
@@ -234,7 +263,6 @@ public class Telepes extends Hajo implements Leptetheto {
         addNyersanyagRakter(n);
     }
 
-    //TODO
     /**
      * Visszater  a telepestulajdonsagait(az  aszteroidaja,  rakterei) tartalmazo stringgel a kimeneti nyelvnek megfelelo formatumban.
      */

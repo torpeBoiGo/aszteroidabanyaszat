@@ -1,0 +1,38 @@
+NYERSANYAGOK
+uran U1 0
+uran U2 0
+uran U3 0
+szen S1
+szen S2
+szen S3
+vas VA1
+vas VA2
+vas VA3
+vizjeg VI1
+vizjeg VI2
+vizjeg VI3
+ASZTEROIDAK
+A1 0 S1 naptavol
+A2 0 S2 naptavol
+A3 0 0 naptavol
+TELEPORTKAPUK
+SZOMSZEDOK
+A1 A2
+A2 A3
+TELEPESEK
+T1 A1
+T2 A2
+ROBOTOK
+UFOK
+UF A3
+RAKTER
+T1 U1
+T1 U2
+T1 U3
+T1 VI1
+T1 VI2
+T1 VI3
+T1 VA1
+T1 VA2
+T1 VA3
+T2 S3

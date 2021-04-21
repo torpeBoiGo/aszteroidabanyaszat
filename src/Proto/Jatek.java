@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 
 import java.io.File;
@@ -8,10 +8,15 @@ import java.util.Map.Entry;
 
 
 public class Jatek {
+
+    /**
+     * A letrejott objektumok neveit tarolo map
+     */
     static HashMap<String, Object> NamesMap = new HashMap<>();
-    //Store names so we can check if sg is null.
-    //TODO nem biztos hogy kell!!!
-    static ArrayList<String> ObjectNames = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+    /**
+     * A palya amin a jatek jatszodik
+     */
     Palya palya = new Palya();
 
     public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
@@ -24,23 +29,32 @@ public class Jatek {
     }
 
     public void Indit() {
-        Scanner sc = new Scanner(System.in);
+
         while (true) {
+
             String line = sc.nextLine();
             String[] cmd = line.split(" ");
-            if ("exit".equals(cmd[0])) break;
+            if ("exit".equals(cmd[0])) {
+                sc.close();
+                break;
+            }
+
+
             DoCommand(cmd);
         }
-        sc.close();
     }
 
+    /**
+     * Egy parancs feldolgozasa
+     *
+     * @param cmd - a parancs amit feldolgozunk
+     */
     private void DoCommand(String[] cmd) {
-        //System.out.println(cmd[0] + " parancs, " + cmd.length + " szo a bemenet");
 
         if ("palya".equals(cmd[0])) {
             if ("load".equals(cmd[1])) {
                 loadPalyaFromFile(cmd[2]);
-                //cmd[2] -ben kell a fajlnev legyen
+
             } else if ("do".equals(cmd[1])) {
                 if ("napvihar".equals(cmd[2])) {
                     if (cmd.length < 4) {
@@ -52,6 +66,7 @@ public class Jatek {
                     Palya.Kor();
                 } else if ("korvege".equals(cmd[2])) {
                     Palya.KorVege();
+
                 }
             } else if ("startGame".equals(cmd[1])) {
                 gameCycle();
@@ -63,10 +78,10 @@ public class Jatek {
                 NamesMap.put(cmd[2], aszteroidaNew);
             } else if ("set".equals(cmd[1])) {
                 if ("kulsoRetegek".equals(cmd[2])) {
-                    aszteroida = (Aszteroida) (NamesMap.get(cmd[3]));    // azert kell, mert mas a parancs hossza, a 3. szo az aszterioda neve
+                    aszteroida = (Aszteroida) (NamesMap.get(cmd[3]));
                     aszteroida.kulsoRetegek = Integer.parseInt(cmd[4]);
                 } else if ("napkozelben".equals(cmd[2])) {
-                    aszteroida = (Aszteroida) (NamesMap.get(cmd[3]));    // azert kell, mert mas a parancs hossza, a 3. szo az aszterioda neve
+                    aszteroida = (Aszteroida) (NamesMap.get(cmd[3]));
                     aszteroida.napkozelben = Integer.parseInt(cmd[4]) == 1;
                 }
             } else if ("add".equals(cmd[1])) {
@@ -101,7 +116,7 @@ public class Jatek {
         } else if ("ufo".equals(cmd[0])) {
             if ("banyasz".equals(cmd[1])) {
                 Ufo ufo = (Ufo) NamesMap.get(cmd[2]);
-                ufo.Banyasz();;
+                ufo.Banyasz();
             }
         } else if ("telepes".equals(cmd[0])) {
             Telepes telepes = (Telepes) NamesMap.get(cmd[2]);
@@ -156,27 +171,48 @@ public class Jatek {
             }
         } else if ("show".equals(cmd[0])) {
             if ("all".equals(cmd[1])) {
+                List<String> abcsorrendben = new ArrayList<>();
+                List<String> abcsorrendbenkeys = new ArrayList<>();
                 for (String key : NamesMap.keySet()) {
+                    abcsorrendben.add(NamesMap.get(key).getClass().getSimpleName());
+                }
+                for (String key : NamesMap.keySet()) {
+                    abcsorrendbenkeys.add(key);
+                }
+                for (int i = 0; i < abcsorrendben.size(); i++) {
+                    for (int j = i; j < abcsorrendben.size(); j++) {
+                        if (abcsorrendben.get(i).compareTo(abcsorrendben.get(j)) > 0) {
+                            String temp = abcsorrendben.get(i);
+                            abcsorrendben.set(i, abcsorrendben.get(j));
+                            abcsorrendben.set(j, temp);
+                            String temp2 = abcsorrendbenkeys.get(i);
+                            abcsorrendbenkeys.set(i, abcsorrendbenkeys.get(j));
+                            abcsorrendbenkeys.set(j, temp2);
+                        }
+                    }
+                }
+                for (String key : abcsorrendbenkeys) {
                     System.out.println(key + ": " + NamesMap.get(key).getClass().getSimpleName());
                     System.out.println(NamesMap.get(key));
                 }
             } else {
-                //ToString magic
+
                 if (NamesMap.get(cmd[1]) != null)
                     System.out.println(cmd[1] + ": " + NamesMap.get(cmd[1]).getClass().getSimpleName());
                 System.out.println(NamesMap.get(cmd[1]));
             }
 
-        } else if ("run".equals(cmd[0])) {
-
-        } else if ("save".equals(cmd[0])) {
-            if ("output".equals(cmd[1])) {
-
-            }
-        } else System.out.println("Helytelen bemenet!");
+        } else if(cmd[0].equals("semmi")){
+        	
+        }else System.out.println("Helytelen bemenet!");
 
     }
 
+    /**
+     * A palya beolvasasa "input" mappaban levo fajlbol
+     *
+     * @param fileName - a futas helyen levo "input" mappaban levo fajl amibol a program olvas
+     */
     void loadPalyaFromFile(String fileName) {
         palya.Reset();
         try {
@@ -193,6 +229,7 @@ public class Jatek {
                 readUfok(myReader);
                 readRakter(myReader);
             } else {
+                myReader.close();
                 throw new RuntimeException("Bad file format");
             }
             myReader.close();
@@ -203,7 +240,10 @@ public class Jatek {
 
     }
 
-    void readNyersanyagok(Scanner reader) { //Uran expozicio szamat kell meg lekezelni
+    /**
+     * A nyersanyagok beolvasasa
+     */
+    void readNyersanyagok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("ASZTEROIDAK")) {
             String[] temp = line.split(" ");
@@ -225,7 +265,6 @@ public class Jatek {
                 case "uran":
                     Uran u = new Uran(Integer.parseInt(temp[2]));
                     NamesMap.put(temp[1], u);
-                    //temp[2]
                     break;
             }
             line = reader.nextLine();
@@ -233,14 +272,16 @@ public class Jatek {
 
     }
 
-    void readAszteroidak(Scanner reader) { //itt egy aszteroidákbl álló arraylistet kéne visszaadni
+    /**
+     * Az aszteroidak beolvasasa
+     */
+    void readAszteroidak(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("TELEPORTKAPUK")) {
             String[] temp = line.split(" ");
 
+            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), ("napkozelben".equals(temp[3])));
 
-            //TODO napkozel vs napkozelben
-            Aszteroida a = new Aszteroida(Integer.parseInt(temp[1]), ("napkozel".equals(temp[3]) || "napkozelben".equals(temp[3])));
             a.SetMag((Nyersanyag) NamesMap.get(temp[2]));
             NamesMap.put(temp[0], a);
 
@@ -249,12 +290,13 @@ public class Jatek {
 
     }
 
+    /**
+     * A teleportkapuk beolvasasa
+     */
     void readTeleportkapuk(Scanner reader) {
-        ArrayList<Teleportkapu> teleportkapuk = new ArrayList<>();
         String line = reader.nextLine();
         while (!line.equals("SZOMSZEDOK")) {
             String[] temp = line.split(" ");
-            //0 aszteroida hibakezeles
             Aszteroida a1, a2;
             Teleportkapu k1, k2;
             if (temp[1].equals("0")) {
@@ -263,7 +305,8 @@ public class Jatek {
                 a1 = (Aszteroida) NamesMap.get(temp[1]);
                 if ("megkergult".equals(temp[2]))
                     k1 = new Teleportkapu(a1, true);
-                else k1 = new Teleportkapu(a1, false); // akarmire ami nem megkergul, azt mondja hogy nem kergul meg
+                else k1 = new Teleportkapu(a1, false);
+
             }
             if (temp[4].equals("0")) {
                 k2 = new Teleportkapu(Boolean.parseBoolean(temp[4]));
@@ -272,8 +315,9 @@ public class Jatek {
 
                 if ("megkergult".equals(temp[5]))
                     k2 = new Teleportkapu(a2, true);
-                else k2 = new Teleportkapu(a2, false); // akarmire ami nem megkergul, azt mondja hogy nem kergul meg
-                //k2 = new Teleportkapu(a2, Boolean.parseBoolean(temp[5]));
+
+                else k2 = new Teleportkapu(a2, false);
+
             }
 
             k1.SetPar(k2);
@@ -288,19 +332,24 @@ public class Jatek {
 
     }
 
-    //TODO
+    /**
+     * A szomszedok beolvasasa
+     */
     void readSzomszedok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("TELEPESEK")) {
             String[] temp = line.split(" ");
             ((Aszteroida) NamesMap.get(temp[0])).AddSzomszed((Mezo) NamesMap.get(temp[1]));
-            ((Aszteroida) NamesMap.get(temp[1])).AddSzomszed((Mezo) NamesMap.get(temp[0])); //ez rossz a masodik nem biztos h aszteroida tc
+            ((Aszteroida) NamesMap.get(temp[1])).AddSzomszed((Mezo) NamesMap.get(temp[0]));
 
             line = reader.nextLine();
         }
 
     }
 
+    /**
+     * A telepesek beolvasasa
+     */
     void readTelepesek(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("ROBOTOK")) {
@@ -312,6 +361,9 @@ public class Jatek {
 
     }
 
+    /**
+     * A robotok beolvasasa
+     */
     void readRobotok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("UFOK")) {
@@ -323,6 +375,9 @@ public class Jatek {
 
     }
 
+    /**
+     * Az UFO-k beolvasasa
+     */
     void readUfok(Scanner reader) {
         String line = reader.nextLine();
         while (!line.equals("RAKTER")) {
@@ -334,26 +389,53 @@ public class Jatek {
 
     }
 
-    //TODO
-    void readRakter(Scanner reader) { //problemas lehet itt
-
+    /**
+     * A rakterek beolvasasa
+     */
+    void readRakter(Scanner reader) {
         while (reader.hasNextLine()) {
             String line = reader.nextLine();
             String[] temp = line.split(" ");
 
-            //TODO ez igy eleg megkerdojelezheto....
-            if (NamesMap.get(temp[1]).getClass().getSimpleName().equals("Teleportkapu"))
-                ((Telepes) NamesMap.get(temp[0])).SetTeleportkapuRakter((Teleportkapu) NamesMap.get(temp[1]));
-            else ((Telepes) NamesMap.get(temp[0])).SetNyersanyagRakter((Nyersanyag) NamesMap.get(temp[1]));
-            //TODO ^ ez elszáll exceptionnel Teszteset42-ben
+
+            if ("Telepes".equals(NamesMap.get(temp[0]).getClass().getSimpleName())) {
+                if (NamesMap.get(temp[1]).getClass().getSimpleName().equals("Teleportkapu"))
+                    ((Telepes) NamesMap.get(temp[0])).SetTeleportkapuRakter((Teleportkapu) NamesMap.get(temp[1]));
+                else ((Telepes) NamesMap.get(temp[0])).SetNyersanyagRakter((Nyersanyag) NamesMap.get(temp[1]));
+            } else {
+                ((Ufo) NamesMap.get(temp[0])).AddNyersanyagRakter((Nyersanyag) NamesMap.get(temp[1]));
+            }
+
         }
 
     }
 
+    /**
+     * A jatek ciklusa, a korok mukodeset kezeli
+     */
     void gameCycle() {
-        while (true) {
-            Palya.Kor();
+        int korokSzama = 1;
+        System.out.println(korokSzama + ". Kor");
+
+        boolean fut = Palya.Kor();
+
+
+        while (fut) {
+
+            System.out.println("Szeretne valamit tenni a korben? (show)");
+
+
+            String line = sc.nextLine();
+            
+            String[] cmd = line.split(" ");
+
+            DoCommand(cmd);
+
+            System.out.println(++korokSzama + ". Kor");
+            fut = Palya.Kor();
+
         }
+
     }
 
 
