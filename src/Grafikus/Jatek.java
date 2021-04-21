@@ -213,10 +213,10 @@ public class Jatek {
      *
      * @param fileName - a futas helyen levo "input" mappaban levo fajl amibol a program olvas
      */
-    void loadPalyaFromFile(String fileName) {
+    public void loadPalyaFromFile(String fileName) {
         palya.Reset();
         try {
-            File myFile = new File("inputs" + File.separator + fileName);
+            File myFile = new File(fileName);
             Scanner myReader = new Scanner(myFile);
             String line = myReader.nextLine();
             if (line.equals("NYERSANYAGOK")) {
