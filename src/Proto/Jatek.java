@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 
 import java.io.File;
@@ -8,20 +8,25 @@ import java.util.Map.Entry;
 
 
 public class Jatek {
-	
-	/**
+
+    /**
      * A letrejott objektumok neveit tarolo map
      */
     static HashMap<String, Object> NamesMap = new HashMap<>();
-    
+    static Scanner sc = new Scanner(System.in);
     /**
      * A palya amin a jatek jatszodik
      */
     Palya palya = new Palya();
 
-
-    static Scanner sc = new Scanner(System.in);
-
+    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
+        for (Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
+    }
 
     public void Indit() {
 
@@ -39,12 +44,10 @@ public class Jatek {
         }
     }
 
-
-
-    
     /**
      * Egy parancs feldolgozasa
-     * @param cmd - a parancs amit feldolgozunk 
+     *
+     * @param cmd - a parancs amit feldolgozunk
      */
     private void DoCommand(String[] cmd) {
 
@@ -113,7 +116,7 @@ public class Jatek {
         } else if ("ufo".equals(cmd[0])) {
             if ("banyasz".equals(cmd[1])) {
                 Ufo ufo = (Ufo) NamesMap.get(cmd[2]);
-                ufo.Banyasz();;
+                ufo.Banyasz();
             }
         } else if ("telepes".equals(cmd[0])) {
             Telepes telepes = (Telepes) NamesMap.get(cmd[2]);
@@ -168,26 +171,26 @@ public class Jatek {
             }
         } else if ("show".equals(cmd[0])) {
             if ("all".equals(cmd[1])) {
-            	List<String> abcsorrendben = new ArrayList<>();
-            	List<String> abcsorrendbenkeys = new ArrayList<>();
-            	for (String key : NamesMap.keySet()) {
+                List<String> abcsorrendben = new ArrayList<>();
+                List<String> abcsorrendbenkeys = new ArrayList<>();
+                for (String key : NamesMap.keySet()) {
                     abcsorrendben.add(NamesMap.get(key).getClass().getSimpleName());
                 }
-            	for (String key : NamesMap.keySet()) {
+                for (String key : NamesMap.keySet()) {
                     abcsorrendbenkeys.add(key);
                 }
-            	for (int i = 0; i < abcsorrendben.size(); i++) {
-            		for (int j = i; j < abcsorrendben.size(); j++) {
-                		if (abcsorrendben.get(i).compareTo(abcsorrendben.get(j)) > 0) {
-                			String temp = abcsorrendben.get(i);
-                			abcsorrendben.set(i, abcsorrendben.get(j));
-                			abcsorrendben.set(j, temp);
-                			String temp2 = abcsorrendbenkeys.get(i);
-                			abcsorrendbenkeys.set(i, abcsorrendbenkeys.get(j));
-                			abcsorrendbenkeys.set(j, temp2);
-                		}
-                	}
-            	}
+                for (int i = 0; i < abcsorrendben.size(); i++) {
+                    for (int j = i; j < abcsorrendben.size(); j++) {
+                        if (abcsorrendben.get(i).compareTo(abcsorrendben.get(j)) > 0) {
+                            String temp = abcsorrendben.get(i);
+                            abcsorrendben.set(i, abcsorrendben.get(j));
+                            abcsorrendben.set(j, temp);
+                            String temp2 = abcsorrendbenkeys.get(i);
+                            abcsorrendbenkeys.set(i, abcsorrendbenkeys.get(j));
+                            abcsorrendbenkeys.set(j, temp2);
+                        }
+                    }
+                }
                 for (String key : abcsorrendbenkeys) {
                     System.out.println(key + ": " + NamesMap.get(key).getClass().getSimpleName());
                     System.out.println(NamesMap.get(key));
@@ -199,18 +202,15 @@ public class Jatek {
                 System.out.println(NamesMap.get(cmd[1]));
             }
 
-        } else if ("run".equals(cmd[0])) {
-
-        } else if ("save".equals(cmd[0])) {
-            if ("output".equals(cmd[1])) {
-
-            }
-        } else System.out.println("Helytelen bemenet!");
+        } else if(cmd[0].equals("semmi")){
+        	
+        }else System.out.println("Helytelen bemenet!");
 
     }
 
     /**
      * A palya beolvasasa "input" mappaban levo fajlbol
+     *
      * @param fileName - a futas helyen levo "input" mappaban levo fajl amibol a program olvas
      */
     void loadPalyaFromFile(String fileName) {
@@ -229,7 +229,7 @@ public class Jatek {
                 readUfok(myReader);
                 readRakter(myReader);
             } else {
-            	myReader.close();
+                myReader.close();
                 throw new RuntimeException("Bad file format");
             }
             myReader.close();
@@ -271,7 +271,6 @@ public class Jatek {
         }
 
     }
-
 
     /**
      * Az aszteroidak beolvasasa
@@ -376,7 +375,6 @@ public class Jatek {
 
     }
 
-    
     /**
      * Az UFO-k beolvasasa
      */
@@ -391,7 +389,6 @@ public class Jatek {
 
     }
 
-    
     /**
      * A rakterek beolvasasa
      */
@@ -400,12 +397,12 @@ public class Jatek {
             String line = reader.nextLine();
             String[] temp = line.split(" ");
 
-            
-            if("Telepes".equals(NamesMap.get(temp[0]).getClass().getSimpleName())) {
-            	if (NamesMap.get(temp[1]).getClass().getSimpleName().equals("Teleportkapu"))
+
+            if ("Telepes".equals(NamesMap.get(temp[0]).getClass().getSimpleName())) {
+                if (NamesMap.get(temp[1]).getClass().getSimpleName().equals("Teleportkapu"))
                     ((Telepes) NamesMap.get(temp[0])).SetTeleportkapuRakter((Teleportkapu) NamesMap.get(temp[1]));
                 else ((Telepes) NamesMap.get(temp[0])).SetNyersanyagRakter((Nyersanyag) NamesMap.get(temp[1]));
-            }else {
+            } else {
                 ((Ufo) NamesMap.get(temp[0])).AddNyersanyagRakter((Nyersanyag) NamesMap.get(temp[1]));
             }
 
@@ -413,26 +410,12 @@ public class Jatek {
 
     }
 
-
-
-    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
-        for (Entry<T, E> entry : map.entrySet()) {
-            if (Objects.equals(value, entry.getValue())) {
-                return entry.getKey();
-            }
-        }
-        return null;
-    }
-
-
-
-   
     /**
      * A jatek ciklusa, a korok mukodeset kezeli
      */
     void gameCycle() {
-       int  korokSzama=1;
-        System.out.println(korokSzama +". Kor");
+        int korokSzama = 1;
+        System.out.println(korokSzama + ". Kor");
 
         boolean fut = Palya.Kor();
 
@@ -443,6 +426,7 @@ public class Jatek {
 
 
             String line = sc.nextLine();
+            
             String[] cmd = line.split(" ");
 
             DoCommand(cmd);

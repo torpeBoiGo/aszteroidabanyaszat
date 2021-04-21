@@ -1,7 +1,16 @@
 NYERSANYAGOK
-uran U 0
-vas VA
-vizjeg VI
+uran U1 0
+uran U2 0
+uran U3 0
+szen S1
+szen S2
+szen S3
+vas VA1
+vas VA2
+vas VA3
+vizjeg VI1
+vizjeg VI2
+vizjeg VI3
 ASZTEROIDAK
 A1 0 VA naptavol
 A2 1 VI napkozelben
@@ -15,8 +24,21 @@ A2 A3
 A3 A4
 TELEPESEK
 T1 A1
+T2 A2
 ROBOTOK
 R1 A2
 UFOK
 UF1 A1
 RAKTER
+T1 U1
+T1 U2
+T1 U3
+T1 VI1
+T1 VI2
+T1 VI3
+T2 S1
+T2 S2
+T2 S3
+T2 VA1
+T2 VA2
+T2 VA3

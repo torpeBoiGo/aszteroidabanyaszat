@@ -1,4 +1,4 @@
-package Skeleton;
+package Proto;
 
 /**
  * A jatekban szereplo nyersanyagok ososztalya
@@ -36,6 +36,6 @@ public abstract class Nyersanyag implements Szallithato{
      * @return igaz, ha a ket nyersanyag azonos tipusu, egyebkent hamis
      */
     public boolean KompatibilisE(Nyersanyag ny) {
-    	return ny.getClass().getSimpleName().equals(this.getClass().getSimpleName());
+        return ny.getClass().getSimpleName().equals(this.getClass().getSimpleName());
     }
 }

@@ -1,17 +1,15 @@
-package Skeleton;
+package Proto;
 
 import java.util.Vector;
 
-
 /**
- * A gyozelem ellenorzesere szolgalo osztaly
+ * A nyerhetoseget vizsgalo epitheto osztaly
  */
-public class Gyozelem extends Epitheto {
-
+public class Nyerheto extends Epitheto {
 	/**
-	 *  A Gyozelem osztaly parameter nelkuli konstruktora, mely hozzaadja az alapanyagokhoz a jatek megnyeresehez szukseges anyagokat.
+	 * A Nyerheto osztaly parameter nelkuli konstruktora, mely hozzaadja az alapanyagokhoz a jatek megnyeresehez szukseges anyagokat.
 	 */
-    public Gyozelem(){
+    public Nyerheto(){
         Hozzaad(new Vas());
         Hozzaad(new Vas());
         Hozzaad(new Vas());
@@ -24,11 +22,10 @@ public class Gyozelem extends Epitheto {
         Hozzaad(new Szen());
         Hozzaad(new Szen());
         Hozzaad(new Szen());
-
     }
-	
-	/**
-     * A gyozelem vizsgalatahoz szukseges
+
+    /**
+     * A nyerhetoseg vizsgalatahoz szukseges
      * @param a Az aszteroida, amin letrejon az objektum
      * @return amiket a telepes rakterbe kell tenni- itt null 
      */
