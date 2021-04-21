@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 /**
  * Szallithato objektumok interfesze 

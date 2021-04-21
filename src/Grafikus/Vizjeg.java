@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 /**
  * A jatekban szereplo vizjeg nyersanyag

@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
