@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="716" height="381"/>
+      <xy x="20" y="20" width="827" height="381"/>
     </constraints>
     <properties>
       <enabled value="true"/>
@@ -23,7 +23,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="ad89d" layout-manager="GridLayoutManager" row-count="1" column-count="13" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+          <grid id="ad89d" layout-manager="GridLayoutManager" row-count="1" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <splitpane position="left"/>
@@ -45,7 +45,7 @@
               </component>
               <hspacer id="3f6bf">
                 <constraints>
-                  <grid row="0" column="12" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                  <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="14" height="68"/>
                   </grid>
                 </constraints>
@@ -80,7 +80,7 @@
                   <text value="Banyaszik"/>
                 </properties>
               </component>
-              <component id="8a081" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+              <component id="8a081" class="javax.swing.JComboBox" binding="MozogBox">
                 <constraints>
                   <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="78" height="30"/>
@@ -91,55 +91,27 @@
                   <toolTipText value="Mozog"/>
                 </properties>
               </component>
-              <component id="73e2e" class="javax.swing.JLabel">
+              <component id="d9e82" class="javax.swing.JComboBox" binding="EpitBox">
                 <constraints>
-                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="37" height="30"/>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="78" height="30"/>
                   </grid>
                 </constraints>
-                <properties>
-                  <text value="Mozog"/>
-                </properties>
+                <properties/>
               </component>
-              <component id="e6e4d" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="20" height="30"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <text value="Epit"/>
-                </properties>
-              </component>
-              <component id="d9e82" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+              <component id="bb3a3" class="javax.swing.JComboBox" binding="LerakBox">
                 <constraints>
                   <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="78" height="30"/>
                   </grid>
                 </constraints>
-                <properties/>
-              </component>
-              <component id="b174c" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="28" height="30"/>
-                  </grid>
-                </constraints>
                 <properties>
-                  <text value="Lerak"/>
+                  <model/>
                 </properties>
               </component>
-              <component id="bb3a3" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+              <component id="7d56e" class="javax.swing.JLabel" binding="telepesTxt">
                 <constraints>
-                  <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="78" height="30"/>
-                  </grid>
-                </constraints>
-                <properties/>
-              </component>
-              <component id="7d56e" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="0" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="45" height="30"/>
                   </grid>
                 </constraints>
@@ -147,14 +119,14 @@
                   <text value="Telepes: "/>
                 </properties>
               </component>
-              <component id="53f60" class="javax.swing.JLabel">
+              <component id="b955f" class="javax.swing.JButton" binding="tetlenButton" default-binding="true">
                 <constraints>
-                  <grid row="0" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="18" height="30"/>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="85" height="30"/>
                   </grid>
                 </constraints>
                 <properties>
-                  <text value="Kör"/>
+                  <text value="Tetlen"/>
                 </properties>
               </component>
             </children>

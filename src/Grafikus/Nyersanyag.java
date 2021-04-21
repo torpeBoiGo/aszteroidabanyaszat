@@ -15,7 +15,7 @@ public abstract class Nyersanyag implements Szallithato{
      */
     public void Megsemmisul() {
     	
-    	Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+    	MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
     }
 
     /**

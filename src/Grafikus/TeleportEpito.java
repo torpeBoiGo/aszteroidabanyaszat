@@ -36,8 +36,8 @@ public class TeleportEpito extends Epitheto {
         kapuk.add(k1);
         kapuk.add(k2);
 
-        Jatek.NamesMap.put("builtTP" + builtNum++, k1);
-        Jatek.NamesMap.put("builtTP" + builtNum++, k2);
+        MainGUI.NamesMap.put("builtTP" + builtNum++, k1);
+        MainGUI.NamesMap.put("builtTP" + builtNum++, k2);
         return kapuk;
     }
 }

@@ -5,12 +5,8 @@ import javax.swing.*;
 
 public class Main {
 	public static void main(String[] args) {
-
-        Jatek jatek = new Jatek();
-		JFrame form = new MainGUI(jatek);
+		JFrame form = new MainGUI();
 		form.setVisible(true);
-        jatek.Indit();
-
 	}
 }
 
