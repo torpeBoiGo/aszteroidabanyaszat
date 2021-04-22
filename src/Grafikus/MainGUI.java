@@ -33,15 +33,14 @@ public class MainGUI extends JFrame {
     private JSplitPane jSplitPane;
     private JSplitPane inner;
     private JPanel pGraphics;
-    private JScrollPane jspInventory;
+    private JPanel jspInventory;
 
     private JMenuBar menuBar;
     private JMenu mFile;
     private JMenuItem mItemStart;
     private JMenuItem mItemLoad;
-
-    private Rectangle drawArea;
-
+    JList<String> inventory;
+    DefaultListModel<String> model = new DefaultListModel<>();
 
     public MainGUI() {
         super("Aszteroida Banyaszat");
@@ -51,6 +50,15 @@ public class MainGUI extends JFrame {
         setMenuListeners();
         createTelepesToolbar();
 
+        Rectangle drawArea = new Rectangle(100,50);
+        pGraphics.add(drawArea);
+        pGraphics.revalidate();
+        this.setMinimumSize(new Dimension(800, 600));
+
+
+        inventory = new JList<>( model);
+        jspInventory.add(inventory);
+        jspInventory.revalidate();
 
         readerInstance.loadPalyaFromFile("inputs" + File.separator + "default.txt");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -67,6 +75,7 @@ public class MainGUI extends JFrame {
         pGraphics.add(drawArea);
         pGraphics.revalidate();
         this.setMinimumSize(new Dimension(800, 600));
+
 
         resetUI();
 
@@ -189,19 +198,25 @@ public class MainGUI extends JFrame {
     public void changeTelepes(Leptetheto uj) {
         resetUI();
         lTelepes.setText("Telepes: " + MainGUI.getKeyByValue(NamesMap, uj) + "  Kor: " + Palya.kor);
+
+        //Mozog menu feltoltese
         cboxMozog.removeAllItems();
         for (Mezo t : ((Telepes) uj).aszteroida.getSzomszedok()) { //TODO itt az aszteroidanak nem kene szabad public-nak lennie tippre
             cboxMozog.insertItemAt(MainGUI.getKeyByValue(NamesMap, t), cboxMozog.getItemCount());
         }
 
+        //Lerak menu feltoltese
         cboxLerak.removeAllItems();
         for (Szallithato t : ((Telepes) uj).getRakterek()) {
             cboxLerak.insertItemAt(MainGUI.getKeyByValue(NamesMap, t), cboxLerak.getItemCount());
         }
-        setRakterUI();
-    }
 
-    private void setRakterUI() {
+        //Rakter megjelitese
+        for (Szallithato t : ((Telepes) uj).getRakterek()) {
+            if("Uran".equals(t.getClass().getSimpleName())){
+                model.addElement(MainGUI.getKeyByValue(NamesMap, t) + " - Exp:" + ((Uran)t).expozicio);
+            }else model.addElement(MainGUI.getKeyByValue(NamesMap, t));
+        }
 
     }
 
