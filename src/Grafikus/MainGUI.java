@@ -39,7 +39,7 @@ public class MainGUI extends JFrame {
     private JMenu mFile;
     private JMenuItem mItemStart;
     private JMenuItem mItemLoad;
-    private DrawArea drawArea;
+
 
     public MainGUI() {
         super("Aszteroida Banyaszat");
@@ -56,8 +56,9 @@ public class MainGUI extends JFrame {
         this.setContentPane(pMain);
         this.pack();
 
-        drawArea = new DrawArea();
+        Rectangle drawArea = new Rectangle(100,50);
         pGraphics.add(drawArea);
+        pGraphics.revalidate();
         this.setMinimumSize(new Dimension(800, 600));
 
         resetUI();
