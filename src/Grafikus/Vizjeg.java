@@ -15,7 +15,12 @@ public class Vizjeg extends Nyersanyag {
         Nyersanyag kinyert = a.Kinyer();
         MainGUI.NamesMap.remove(MainGUI.getKeyByValue(MainGUI.NamesMap, this));
     }
-    
+
+    @Override
+    public String print() {
+        return "Vizjeg";
+    }
+
     /**
      * Kiirja a vizjeg adatait a kimeneti nyelvnek megfeleloen,jelen esetben ures Stringgel ter vissza.
      */

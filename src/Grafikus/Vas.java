@@ -9,4 +9,9 @@ public class Vas extends Nyersanyag{
     public String toString() {
     	return "";
     }
+
+	@Override
+	public String print() {
+		return "Vas";
+	}
 }

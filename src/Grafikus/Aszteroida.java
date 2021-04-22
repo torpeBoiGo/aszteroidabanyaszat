@@ -263,4 +263,8 @@ public class Aszteroida implements Mezo, Leptetheto {
     public Nyersanyag getMag() {
         return mag;
     }
+
+    public Integer getRetegek() {
+        return kulsoRetegek;
+    }
 }

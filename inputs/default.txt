@@ -1,7 +1,7 @@
 NYERSANYAGOK
 uran U1 0
-uran U2 0
-uran U3 0
+uran U2 1
+uran U3 2
 szen S1
 szen S2
 szen S3
@@ -14,11 +14,11 @@ vizjeg VI3
 ASZTEROIDAK
 A1 0 VA1 naptavol
 A2 1 VI1 napkozelben
-A3 0 U napkozelben
-A4 0 0 napkozelben
+A3 0 U3 napkozelben
+A4 0 U2 napkozelben
 A5 0 0 napkozelben
 A6 0 0 napkozelben
-A7 0 0 napkozelben
+A7 0 0 naptavol
 TELEPORTKAPUK
 TP1 A4 nemmegkergult TP2 A2 megkergult
 SZOMSZEDOK
@@ -35,7 +35,6 @@ UF1 A1
 RAKTER
 T1 U1
 T1 U2
-T1 U3
 T1 VI2
 T1 VI3
 T2 S1
