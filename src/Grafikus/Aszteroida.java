@@ -1,7 +1,6 @@
-package Proto;
+package Grafikus;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.StringJoiner;
 
@@ -150,7 +149,7 @@ public class Aszteroida implements Mezo, Leptetheto {
         for (Mezo mezo : szomszedok_temp) mezo.RemoveSzomszed(this);
 
         Palya.RemoveAszteroida(this);
-        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+        MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
     }
 
     /**
@@ -238,20 +237,20 @@ public class Aszteroida implements Mezo, Leptetheto {
         if (mag == null) {
             sb.append("Nyersanyag: null\n");
         } else {
-            sb.append("Nyersanyag: ").append(Jatek.getKeyByValue(Jatek.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
+            sb.append("Nyersanyag: ").append(Jatek.getKeyByValue(MainGUI.NamesMap, mag)).append(": ").append(mag.getClass().getSimpleName()).append("\n");
         }
         sb.append("Napkozelben: ").append(napkozelben).append(" :bool\n");
 
         sb.append("Hajok: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Hajo hajo : hajok) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, hajo) + ": " + hajo.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, hajo) + ": " + hajo.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(" :hajok[0..*]").append("\n");
         lineJoiner = new StringJoiner(",");
         sb.append("Szomszedok: ");
         for (Mezo szomszed : szomszedok) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szomszed) + ":" + szomszed.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, szomszed) + ":" + szomszed.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(":mezo[0..*]").append("\n");
         return sb.toString();

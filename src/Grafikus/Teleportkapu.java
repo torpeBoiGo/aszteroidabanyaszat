@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -134,7 +134,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         }
         if (sajatAszteroida != null) {
         	Palya.RemoveTeleportkapu(this);
-            Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+            MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
         }
         
     }
@@ -172,7 +172,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         }
         
     	Palya.RemoveTeleportkapu(this);
-        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+        MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
         	
     }
 
@@ -187,12 +187,12 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
         if(par==null){
             out += "Par: " + null +"\n";
         }else{
-            out += "Par: " + Jatek.getKeyByValue(Jatek.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
+            out += "Par: " + Jatek.getKeyByValue(MainGUI.NamesMap, par) + ": " + par.getClass().getSimpleName() + "\n";
         }
         if(sajatAszteroida==null){
             out += "SajatAszteroida: " + null +"\n";
         }else{
-            out += "SajatAszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
+            out += "SajatAszteroida: " + Jatek.getKeyByValue(MainGUI.NamesMap, sajatAszteroida) + ": " + sajatAszteroida.getClass().getSimpleName() + "\n";
         }
         return out;
     }

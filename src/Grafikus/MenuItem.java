@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 /**
  * A menu egy elemet irja le

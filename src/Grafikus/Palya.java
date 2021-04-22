@@ -1,10 +1,6 @@
-package Proto;
+package Grafikus;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-import java.util.StringJoiner;
+import java.util.*;
 
 
 public class Palya {
@@ -51,12 +47,25 @@ public class Palya {
      * : 1 kort valosit meg, eloszor a jatekosok lepnek, majd frissiti a valtozasokat a KorVege() fuggveny meghivasaval, majd Napvihar()-t hiv, legvegul jatek veget viszgalja
      * @return a kor utan folytatodik-e a jatek
      */
-    static boolean Kor() {
 
-        for (Leptetheto leptetheto : jatekosVezerli) {
-            leptetheto.Lepes();
+    static int kor = 0;
+
+    static Iterator<Leptetheto> current = null;
+
+    static Leptetheto NextTelepes(){
+        if(current == null){current = jatekosVezerli.iterator(); return current.next();}
+        if(!current.hasNext()){
+            KorAfterPlayers();
+            kor++;
+            current = jatekosVezerli.iterator();
+            return current.next();
         }
+        Leptetheto a = current.next();
 
+        return a;
+    }
+
+    static boolean KorAfterPlayers() {
         KorVege();
 
         // Napvihar();
@@ -193,7 +202,7 @@ public class Palya {
     /**
      * Torli a palyan tarolt �sszes objektumot.
      */
-    public void Reset() {
+    public static void Reset() {
         jatekosVezerli.clear();
         aiVezerli.clear();
         aszteroidak.clear();
@@ -210,25 +219,25 @@ public class Palya {
         StringJoiner lineJoiner = new StringJoiner(",");
         sb.append("JatekosVezerelt: \n");
         for (Leptetheto obj : jatekosVezerli) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": JatekosVezerelt[0..*]\n");
 
         sb.append("AiVezerelt: \n");
         for (Leptetheto obj : aiVezerli) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": AiVezerelt[0..*]\n");
 
         sb.append("Aszteroidak: \n");
         for (Aszteroida obj : aszteroidak) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": Aszteroidak[0..*]\n");
 
         sb.append("Teleportkapuk: \n");
         for (Teleportkapu obj : teleportKapuk) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": Teleportkapuk[0..*]\n");
 

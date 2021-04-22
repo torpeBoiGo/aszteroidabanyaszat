@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 /**
  * Egy mezot ir le aminek szomszedai lehetnek es erkezhetnek ra hajok

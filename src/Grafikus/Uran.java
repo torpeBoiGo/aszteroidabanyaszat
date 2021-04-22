@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 /**
  * A jatekban szereplo uran nyersanyag
@@ -6,7 +6,7 @@ package Proto;
 public class Uran extends Nyersanyag implements Szallithato{
 	/**
 	 * Az uran expozicios szamat tarolja, 
-	 * azt, hogy hanyszor volt mar teljesen atfurt aszteroidában napkozelben, 
+	 * azt, hogy hanyszor volt mar teljesen atfurt aszteroidï¿½ban napkozelben, 
 	 * ha ez meghaladja a kettot, felrobban. 
 	 * Alapertelmezett erteke 0.
 	 */
@@ -38,13 +38,13 @@ public class Uran extends Nyersanyag implements Szallithato{
     	
     	if(expozicio > 2) {
     		a.Robban();
-    		Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+    		MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
     	}
     		
     }
     
     /**
-     * Visszater az uran tulajdonságait tartalmazo Stringgel: expozicios szama, a kimeneti nyelvnek megfelelõ formában
+     * Visszater az uran tulajdonsï¿½gait tartalmazo Stringgel: expozicios szama, a kimeneti nyelvnek megfelelï¿½ formï¿½ban
      */
     @Override
     public String toString() {

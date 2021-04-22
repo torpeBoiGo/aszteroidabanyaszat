@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 import java.util.*;
 
@@ -152,17 +152,17 @@ public class Telepes extends Hajo implements Leptetheto {
 
         for (Szallithato szallithato : temp_nyersanyagRakter) {
             szallithato.Megsemmisul();
-            Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, szallithato));
+            MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, szallithato));
         }
         for (Szallithato szallithato : temp_teleportkapuRakter) {
             szallithato.Megsemmisul();
-            Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, szallithato));
+            MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, szallithato));
         }
         nyersanyagRakter = null;
         teleportkapuRakter = null;
         
         Palya.RemoveJatekosVezerli(this);
-        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+        MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
     }
 
     /**
@@ -181,7 +181,7 @@ public class Telepes extends Hajo implements Leptetheto {
     public void Lepes() {
 
 
-        String telepes= Jatek.getKeyByValue(Jatek.NamesMap,this);
+        String telepes= Jatek.getKeyByValue(MainGUI.NamesMap,this);
         System.out.println("Mit szeretne tenni a "+ telepes+" telepessel?");
 
 
@@ -194,16 +194,16 @@ public class Telepes extends Hajo implements Leptetheto {
             } else if ("teleportEpit".equals(cmd[1])) {
                 this.TeleportEpit(new TeleportEpito());
             } else if ("anyagVisszatesz".equals(cmd[1])) {
-                Nyersanyag nyersanyag = (Nyersanyag) Jatek.NamesMap.get(cmd[3]);
+                Nyersanyag nyersanyag = (Nyersanyag) MainGUI.NamesMap.get(cmd[3]);
                 this.AnyagVisszatesz(nyersanyag);
             } else if ("fur".equals(cmd[1])) {
                 this.Fur();
             } else if ("banyasz".equals(cmd[1])) {
                 this.Banyasz();
             } else if ("kapuLerak".equals(cmd[1])) {
-                this.KapuLerak((Teleportkapu) Jatek.NamesMap.get(cmd[2]));
+                this.KapuLerak((Teleportkapu) MainGUI.NamesMap.get(cmd[2]));
             } else if ("mozog".equals(cmd[1])) {
-                Mezo mezo = (Mezo) Jatek.NamesMap.get(cmd[3]);
+                Mezo mezo = (Mezo) MainGUI.NamesMap.get(cmd[3]);
                 this.Mozog(mezo);
             } else if ("tetlen".equals(cmd[1])) {
                 this.Tetlen();
@@ -263,21 +263,28 @@ public class Telepes extends Hajo implements Leptetheto {
         addNyersanyagRakter(n);
     }
 
+    public List<Szallithato> getRakterek(){
+        List<Szallithato> ossz = new ArrayList<Szallithato>();
+        ossz.addAll(nyersanyagRakter);
+        ossz.addAll(teleportkapuRakter);
+        return ossz;
+    }
+
     /**
      * Visszater  a telepestulajdonsagait(az  aszteroidaja,  rakterei) tartalmazo stringgel a kimeneti nyelvnek megfelelo formatumban.
      */
     public String toString() {
-        System.out.println("Aszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, aszteroida) + ": Aszteroida");
+        System.out.println("Aszteroida: " + Jatek.getKeyByValue(MainGUI.NamesMap, aszteroida) + ": Aszteroida");
         System.out.print("NyersanyagRakter: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Szallithato szallithato : nyersanyagRakter) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
         }
         System.out.println(lineJoiner + ":Nyersanyag[0..10]");
         lineJoiner = new StringJoiner(",");
         System.out.print("TeleportkapuRakter: ");
         for (Szallithato tpkapu : teleportkapuRakter) {
-            lineJoiner.add(Jatek.getKeyByValue(Jatek.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
+            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
         }
         return lineJoiner + ":Teleportkapu[0..3]\n";
     }

@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 import java.util.Vector;
 
@@ -31,7 +31,7 @@ public class RobotEpito extends Epitheto {
     public Vector<Szallithato> Letrejon(Aszteroida a) {
 
         Robot r = new Robot(a);
-        Jatek.NamesMap.put("builtRobot" + builtNum++, r);
+        MainGUI.NamesMap.put("builtRobot" + builtNum++, r);
         return null;
     }
 }

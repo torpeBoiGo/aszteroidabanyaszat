@@ -1,4 +1,4 @@
-package Proto;
+package Grafikus;
 
 
 
@@ -44,7 +44,7 @@ public class Robot extends Hajo implements Leptetheto {
     public void Meghal() {
         aszteroida.HajoElhagy(this);
         Palya.removeAIVezerli(this);
-        Jatek.NamesMap.remove(Jatek.getKeyByValue(Jatek.NamesMap, this));
+        MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
     }
 
     /**
@@ -96,6 +96,6 @@ public class Robot extends Hajo implements Leptetheto {
      */
     @Override
     public String toString() {
-        return "Aszteroida: " + Jatek.getKeyByValue(Jatek.NamesMap, aszteroida) + ": Aszteroida\n";
+        return "Aszteroida: " + Jatek.getKeyByValue(MainGUI.NamesMap, aszteroida) + ": Aszteroida\n";
     }
 }
