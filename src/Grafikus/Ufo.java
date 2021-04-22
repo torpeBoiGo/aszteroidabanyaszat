@@ -62,11 +62,11 @@ public class Ufo extends Hajo implements Leptetheto{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Aszteroida: ").append(Jatek.getKeyByValue(MainGUI.NamesMap, aszteroida)).append(": Aszteroida\n");
+        sb.append("Aszteroida: ").append(MainGUI.getKeyByValue(MainGUI.NamesMap, aszteroida)).append(": Aszteroida\n");
         sb.append("NyersanyagRakter:");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Szallithato szallithato : nyersanyagRakter) {
-            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
+            lineJoiner.add(MainGUI.getKeyByValue(MainGUI.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": Nyersanyag[0..*]\n");
         return sb.toString();
@@ -99,7 +99,7 @@ public class Ufo extends Hajo implements Leptetheto{
         for (Szallithato szallithato : nyersanyagRakter) {
 			szallithato.Megsemmisul();
 		}
-        MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
+        MainGUI.NamesMap.remove(MainGUI.getKeyByValue(MainGUI.NamesMap, this));
 	}
     
 	/**

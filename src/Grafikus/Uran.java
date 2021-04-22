@@ -38,7 +38,7 @@ public class Uran extends Nyersanyag implements Szallithato{
     	
     	if(expozicio > 2) {
     		a.Robban();
-    		MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
+    		MainGUI.NamesMap.remove(MainGUI.getKeyByValue(MainGUI.NamesMap, this));
     	}
     		
     }
