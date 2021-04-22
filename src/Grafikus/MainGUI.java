@@ -28,11 +28,17 @@ public class MainGUI extends JFrame {
     private JLabel lMozog;
     private JLabel lEpit;
     private JLabel lLerak;
+    private JPanel pTop;
+    private JSplitPane jSplitPane;
+    private JSplitPane inner;
+    private JPanel pGraphics;
+    private JScrollPane jspInventory;
 
     private JMenuBar menuBar;
     private JMenu mFile;
     private JMenuItem mItemStart;
     private JMenuItem mItemLoad;
+    private DrawArea drawArea;
 
     public MainGUI() {
         super("Aszteroida Banyaszat");
@@ -42,11 +48,17 @@ public class MainGUI extends JFrame {
         setMenuListeners();
         createTelepesToolbar();
 
+
+
         JatekInstance.loadPalyaFromFile("inputs" + File.separator + "default.txt");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(pMain);
         this.pack();
+
+        drawArea = new DrawArea();
+        pGraphics.add(drawArea);
         this.setMinimumSize(new Dimension(800, 600));
+
         resetUI();
 
     }

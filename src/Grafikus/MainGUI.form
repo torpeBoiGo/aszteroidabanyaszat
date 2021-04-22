@@ -10,7 +10,7 @@
     </properties>
     <border type="none"/>
     <children>
-      <splitpane id="9a25d">
+      <splitpane id="9a25d" binding="jSplitPane">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="200" height="200"/>
@@ -23,7 +23,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="ad89d" layout-manager="GridLayoutManager" row-count="1" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+          <grid id="ad89d" binding="pTop" layout-manager="GridLayoutManager" row-count="1" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <splitpane position="left"/>
@@ -122,7 +122,7 @@
               </component>
             </children>
           </grid>
-          <splitpane id="e9bfb">
+          <splitpane id="e9bfb" binding="inner">
             <constraints>
               <splitpane position="right"/>
             </constraints>
@@ -132,7 +132,7 @@
             </properties>
             <border type="none"/>
             <children>
-              <scrollpane id="2d4fb">
+              <scrollpane id="2d4fb" binding="jspInventory">
                 <constraints>
                   <splitpane position="right"/>
                 </constraints>
@@ -142,7 +142,7 @@
                 <border type="none"/>
                 <children/>
               </scrollpane>
-              <grid id="514d6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="true" hgap="-1" vgap="-1">
+              <grid id="514d6" binding="pGraphics" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="true" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <splitpane position="left"/>
