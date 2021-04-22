@@ -50,10 +50,7 @@ public class MainGUI extends JFrame {
         setMenuListeners();
         createTelepesToolbar();
 
-        Rectangle drawArea = new Rectangle(100,50);
-        pGraphics.add(drawArea);
-        pGraphics.revalidate();
-        this.setMinimumSize(new Dimension(800, 600));
+
 
 
         inventory = new JList<>( model);
@@ -65,7 +62,7 @@ public class MainGUI extends JFrame {
         this.setContentPane(pMain);
         this.pack();
 
-        drawArea = new Rectangle(pGraphics.getWidth(), pGraphics.getHeight(), Palya.aszteroidak.size());
+        Rectangle drawArea = new Rectangle(pGraphics.getWidth(), pGraphics.getHeight(), Palya.aszteroidak.size());
         for (Aszteroida a1 : Palya.aszteroidak) {
             drawArea.addAszteroida(getKeyByValue(NamesMap, a1));
             for (Mezo a2 : a1.getSzomszedok()) {
