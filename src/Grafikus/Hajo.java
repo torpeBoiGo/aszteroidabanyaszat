@@ -17,9 +17,9 @@ abstract class Hajo{
      * @param uj_mezo - az uj mezo amire atmegy a hajo
      */
     public void Mozog(Mezo uj_mezo) {
-        if((uj_mezo!=null) && (Palya.aszteroidak.get(Palya.aszteroidak.indexOf(aszteroida)).getSzomszedok().contains(uj_mezo))) {
-            uj_mezo.HajoErkezik(this);
-        }
+    	if((uj_mezo!=null) && (Palya.aszteroidak.get(Palya.aszteroidak.indexOf(aszteroida)).getSzomszedok().contains(uj_mezo))) {
+    			uj_mezo.HajoErkezik(this);
+    	}
     }
 
     /**
