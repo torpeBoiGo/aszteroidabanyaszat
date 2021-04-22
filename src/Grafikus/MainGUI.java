@@ -209,6 +209,7 @@ public class MainGUI extends JFrame {
         }
 
         //Rakter megjelitese
+        model.clear();
         for (Szallithato t : ((Telepes) uj).getRakterek()) {
             if("Uran".equals(t.getClass().getSimpleName())){
                 model.addElement(MainGUI.getKeyByValue(NamesMap, t) + " - Exp:" + ((Uran)t).expozicio);
