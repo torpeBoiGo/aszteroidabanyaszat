@@ -27,6 +27,7 @@ public class MainGUI extends JFrame {
     private JButton bTetlen;
     private JLabel lMozog;
     private JLabel lEpit;
+    private JLabel lLerak;
 
     private JMenuBar menuBar;
     private JMenu mFile;
@@ -99,8 +100,8 @@ public class MainGUI extends JFrame {
             }
         });
 
-        cboxEpit.addItem("Teleportkapu");
-        cboxEpit.addItem("Robot");
+        cboxEpit.insertItemAt("Teleportkapu", cboxEpit.getItemCount());
+        cboxEpit.insertItemAt("Robot", cboxEpit.getItemCount());
         cboxEpit.addItemListener(arg0 -> {
             if (arg0.getStateChange() == ItemEvent.SELECTED) {
                 if (Objects.equals(cboxEpit.getSelectedItem(), "Teleportkapu")) {
@@ -136,7 +137,7 @@ public class MainGUI extends JFrame {
 
     private void setMenuListeners() {
         mItemStart.addActionListener(e -> {
-            isStarted=true;
+            isStarted = true;
             curr = (Telepes) Palya.NextTelepes();
             changeTelepes(curr);
             mItemStart.setEnabled(false);
@@ -157,16 +158,21 @@ public class MainGUI extends JFrame {
 
     public void changeTelepes(Leptetheto uj) {
         resetUI();
-        lTelepes.setText("Telepes " + Jatek.getKeyByValue(NamesMap, uj) + "  Kor: " + Palya.kor);
+        lTelepes.setText("Telepes: " + Jatek.getKeyByValue(NamesMap, uj) + "  Kor: " + Palya.kor);
         cboxMozog.removeAllItems();
         for (Mezo t : ((Telepes) uj).aszteroida.getSzomszedok()) { //TODO itt az aszteroidanak nem kene szabad public-nak lennie tippre
-            cboxMozog.insertItemAt(Jatek.getKeyByValue(NamesMap, t),cboxMozog.getItemCount());
+            cboxMozog.insertItemAt(Jatek.getKeyByValue(NamesMap, t), cboxMozog.getItemCount());
         }
 
         cboxLerak.removeAllItems();
         for (Szallithato t : ((Telepes) uj).getRakterek()) {
-            cboxLerak.insertItemAt(Jatek.getKeyByValue(NamesMap, t),cboxLerak.getItemCount());
+            cboxLerak.insertItemAt(Jatek.getKeyByValue(NamesMap, t), cboxLerak.getItemCount());
         }
+        setRakterUI();
+    }
+
+    private void setRakterUI() {
+
     }
 
 
