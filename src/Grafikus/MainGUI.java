@@ -40,6 +40,8 @@ public class MainGUI extends JFrame {
     private JMenuItem mItemStart;
     private JMenuItem mItemLoad;
 
+    private Rectangle drawArea;
+
 
     public MainGUI() {
         super("Aszteroida Banyaszat");
@@ -50,13 +52,18 @@ public class MainGUI extends JFrame {
         createTelepesToolbar();
 
 
-
         readerInstance.loadPalyaFromFile("inputs" + File.separator + "default.txt");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(pMain);
         this.pack();
 
-        Rectangle drawArea = new Rectangle(100,50);
+        drawArea = new Rectangle(pGraphics.getWidth(), pGraphics.getHeight(), Palya.aszteroidak.size());
+        for (Aszteroida a1 : Palya.aszteroidak) {
+            drawArea.addAszteroida(getKeyByValue(NamesMap, a1));
+            for (Mezo a2 : a1.getSzomszedok()) {
+                drawArea.addConnection(getKeyByValue(NamesMap, a1), getKeyByValue(NamesMap, a2));
+            }
+        }
         pGraphics.add(drawArea);
         pGraphics.revalidate();
         this.setMinimumSize(new Dimension(800, 600));
@@ -64,6 +71,7 @@ public class MainGUI extends JFrame {
         resetUI();
 
     }
+
     public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
         for (Map.Entry<T, E> entry : map.entrySet()) {
             if (Objects.equals(value, entry.getValue())) {
@@ -167,7 +175,7 @@ public class MainGUI extends JFrame {
         mItemLoad.addActionListener(e -> {
             mItemStart.setEnabled(true);
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+            fileChooser.setCurrentDirectory(new File("."));
             int result = fileChooser.showOpenDialog(null);
             if (result == JFileChooser.APPROVE_OPTION) {
                 Palya.Reset();

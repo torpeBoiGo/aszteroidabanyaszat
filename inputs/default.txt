@@ -16,6 +16,9 @@ A1 0 VA1 naptavol
 A2 1 VI1 napkozelben
 A3 0 U napkozelben
 A4 0 0 napkozelben
+A5 0 0 napkozelben
+A6 0 0 napkozelben
+A7 0 0 napkozelben
 TELEPORTKAPUK
 TP1 A4 nemmegkergult TP2 A2 megkergult
 SZOMSZEDOK
