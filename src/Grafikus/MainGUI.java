@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.ItemEvent;
 import java.io.File;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 
@@ -14,7 +15,7 @@ public class MainGUI extends JFrame {
      */
     static HashMap<String, Object> NamesMap = new HashMap<>();
     static Telepes curr;
-    Jatek JatekInstance;
+    Reader readerInstance;
     boolean isStarted = false;
 
     private JPanel pMain;
@@ -42,7 +43,7 @@ public class MainGUI extends JFrame {
 
     public MainGUI() {
         super("Aszteroida Banyaszat");
-        JatekInstance = new Jatek();
+        readerInstance = new Reader();
 
         createMenu();
         setMenuListeners();
@@ -50,7 +51,7 @@ public class MainGUI extends JFrame {
 
 
 
-        JatekInstance.loadPalyaFromFile("inputs" + File.separator + "default.txt");
+        readerInstance.loadPalyaFromFile("inputs" + File.separator + "default.txt");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(pMain);
         this.pack();
@@ -61,6 +62,14 @@ public class MainGUI extends JFrame {
 
         resetUI();
 
+    }
+    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
+        for (Map.Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
     }
 
     private void resetUI() {
@@ -162,7 +171,7 @@ public class MainGUI extends JFrame {
             if (result == JFileChooser.APPROVE_OPTION) {
                 Palya.Reset();
                 File selectedFile = fileChooser.getSelectedFile();
-                JatekInstance.loadPalyaFromFile(selectedFile.getAbsolutePath());
+                readerInstance.loadPalyaFromFile(selectedFile.getAbsolutePath());
                 System.out.println("Selected file: " + selectedFile.getAbsolutePath());
             }
         });
@@ -170,15 +179,15 @@ public class MainGUI extends JFrame {
 
     public void changeTelepes(Leptetheto uj) {
         resetUI();
-        lTelepes.setText("Telepes: " + Jatek.getKeyByValue(NamesMap, uj) + "  Kor: " + Palya.kor);
+        lTelepes.setText("Telepes: " + MainGUI.getKeyByValue(NamesMap, uj) + "  Kor: " + Palya.kor);
         cboxMozog.removeAllItems();
         for (Mezo t : ((Telepes) uj).aszteroida.getSzomszedok()) { //TODO itt az aszteroidanak nem kene szabad public-nak lennie tippre
-            cboxMozog.insertItemAt(Jatek.getKeyByValue(NamesMap, t), cboxMozog.getItemCount());
+            cboxMozog.insertItemAt(MainGUI.getKeyByValue(NamesMap, t), cboxMozog.getItemCount());
         }
 
         cboxLerak.removeAllItems();
         for (Szallithato t : ((Telepes) uj).getRakterek()) {
-            cboxLerak.insertItemAt(Jatek.getKeyByValue(NamesMap, t), cboxLerak.getItemCount());
+            cboxLerak.insertItemAt(MainGUI.getKeyByValue(NamesMap, t), cboxLerak.getItemCount());
         }
         setRakterUI();
     }

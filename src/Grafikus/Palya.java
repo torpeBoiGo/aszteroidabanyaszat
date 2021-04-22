@@ -43,15 +43,15 @@ public class Palya {
         a.Napvihar(true);
     }
 
-    /**
-     * : 1 kort valosit meg, eloszor a jatekosok lepnek, majd frissiti a valtozasokat a KorVege() fuggveny meghivasaval, majd Napvihar()-t hiv, legvegul jatek veget viszgalja
-     * @return a kor utan folytatodik-e a jatek
-     */
+
 
     static int kor = 0;
 
     static Iterator<Leptetheto> current = null;
-
+    /**
+     * : 1 kort valosit meg, eloszor a jatekosok lepnek, majd frissiti a valtozasokat a KorVege() fuggveny meghivasaval, majd Napvihar()-t hiv, legvegul jatek veget viszgalja
+     * @return a kor utan folytatodik-e a jatek
+     */
     static Leptetheto NextTelepes(){
         if(current == null){current = jatekosVezerli.iterator(); return current.next();}
         if(!current.hasNext()){
@@ -65,21 +65,19 @@ public class Palya {
         return a;
     }
 
-    static boolean KorAfterPlayers() {
+    static void KorAfterPlayers() {
         KorVege();
 
         // Napvihar();
         if (GyozelemE()) {
             System.out.println("Jatek vege - gyozelem");
-            return false;
+            return;
         }
 
         if (!MegnyerhetoE() || jatekosVezerli.size() <= 1) {
             System.out.println("Jatek vege - vereseg");
-            return false;
         }
 
-        return true;
     }
 
     /**
@@ -219,25 +217,25 @@ public class Palya {
         StringJoiner lineJoiner = new StringJoiner(",");
         sb.append("JatekosVezerelt: \n");
         for (Leptetheto obj : jatekosVezerli) {
-            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(MainGUI.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": JatekosVezerelt[0..*]\n");
 
         sb.append("AiVezerelt: \n");
         for (Leptetheto obj : aiVezerli) {
-            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(MainGUI.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": AiVezerelt[0..*]\n");
 
         sb.append("Aszteroidak: \n");
         for (Aszteroida obj : aszteroidak) {
-            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(MainGUI.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": Aszteroidak[0..*]\n");
 
         sb.append("Teleportkapuk: \n");
         for (Teleportkapu obj : teleportKapuk) {
-            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
+            lineJoiner.add(MainGUI.getKeyByValue(MainGUI.NamesMap, obj) + ": " + obj.getClass().getSimpleName());
         }
         sb.append(lineJoiner).append(": Teleportkapuk[0..*]\n");
 

@@ -152,17 +152,17 @@ public class Telepes extends Hajo implements Leptetheto {
 
         for (Szallithato szallithato : temp_nyersanyagRakter) {
             szallithato.Megsemmisul();
-            MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, szallithato));
+            MainGUI.NamesMap.remove(MainGUI.getKeyByValue(MainGUI.NamesMap, szallithato));
         }
         for (Szallithato szallithato : temp_teleportkapuRakter) {
             szallithato.Megsemmisul();
-            MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, szallithato));
+            MainGUI.NamesMap.remove(MainGUI.getKeyByValue(MainGUI.NamesMap, szallithato));
         }
         nyersanyagRakter = null;
         teleportkapuRakter = null;
         
         Palya.RemoveJatekosVezerli(this);
-        MainGUI.NamesMap.remove(Jatek.getKeyByValue(MainGUI.NamesMap, this));
+        MainGUI.NamesMap.remove(MainGUI.getKeyByValue(MainGUI.NamesMap, this));
     }
 
     /**
@@ -181,12 +181,12 @@ public class Telepes extends Hajo implements Leptetheto {
     public void Lepes() {
 
 
-        String telepes= Jatek.getKeyByValue(MainGUI.NamesMap,this);
+        String telepes= MainGUI.getKeyByValue(MainGUI.NamesMap,this);
         System.out.println("Mit szeretne tenni a "+ telepes+" telepessel?");
 
 
 
-           String  line = Jatek.sc.nextLine();
+           String  line = Reader.sc.nextLine();
         String[] cmd = line.split(" ");
         if ("telepes".equals(cmd[0]) ||"hajo".equals(cmd[0])) {
             if ("robotEpit".equals(cmd[1])) {
@@ -264,7 +264,7 @@ public class Telepes extends Hajo implements Leptetheto {
     }
 
     public List<Szallithato> getRakterek(){
-        List<Szallithato> ossz = new ArrayList<Szallithato>();
+        List<Szallithato> ossz = new ArrayList<>();
         ossz.addAll(nyersanyagRakter);
         ossz.addAll(teleportkapuRakter);
         return ossz;
@@ -274,19 +274,18 @@ public class Telepes extends Hajo implements Leptetheto {
      * Visszater  a telepestulajdonsagait(az  aszteroidaja,  rakterei) tartalmazo stringgel a kimeneti nyelvnek megfelelo formatumban.
      */
     public String toString() {
-        System.out.println("Aszteroida: " + Jatek.getKeyByValue(MainGUI.NamesMap, aszteroida) + ": Aszteroida");
+        System.out.println("Aszteroida: " + MainGUI.getKeyByValue(MainGUI.NamesMap, aszteroida) + ": Aszteroida");
         System.out.print("NyersanyagRakter: ");
         StringJoiner lineJoiner = new StringJoiner(",");
         for (Szallithato szallithato : nyersanyagRakter) {
-            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
+            lineJoiner.add(MainGUI.getKeyByValue(MainGUI.NamesMap, szallithato) + ": " + szallithato.getClass().getSimpleName());
         }
         System.out.println(lineJoiner + ":Nyersanyag[0..10]");
         lineJoiner = new StringJoiner(",");
         System.out.print("TeleportkapuRakter: ");
         for (Szallithato tpkapu : teleportkapuRakter) {
-            lineJoiner.add(Jatek.getKeyByValue(MainGUI.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
+            lineJoiner.add(MainGUI.getKeyByValue(MainGUI.NamesMap, tpkapu) + ": " + tpkapu.getClass().getSimpleName());
         }
         return lineJoiner + ":Teleportkapu[0..3]\n";
     }
-
 }
