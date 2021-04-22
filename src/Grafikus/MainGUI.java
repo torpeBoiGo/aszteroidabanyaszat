@@ -64,7 +64,7 @@ public class MainGUI extends JFrame {
 
         Rectangle drawArea = new Rectangle(pGraphics.getWidth(), pGraphics.getHeight(), Palya.aszteroidak.size());
         for (Aszteroida a1 : Palya.aszteroidak) {
-            drawArea.addAszteroida(getKeyByValue(NamesMap, a1));
+            drawArea.addAszteroida(getKeyByValue(NamesMap, a1),a1);
             for (Mezo a2 : a1.getSzomszedok()) {
                 drawArea.addConnection(getKeyByValue(NamesMap, a1), getKeyByValue(NamesMap, a2));
             }

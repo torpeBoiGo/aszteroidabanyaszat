@@ -4,11 +4,16 @@ package Grafikus;
  * A jatekban szereplo szen nyersanyag
  */
 public class Szen extends Nyersanyag {
-	/**
-	 * Kiirja a szen adatait a kimeneti nyelvnek megfeleloen, jelen esetben ures Stringgel ter vissza.
-	 */
-	@Override 
+    /**
+     * Kiirja a szen adatait a kimeneti nyelvnek megfeleloen, jelen esetben ures Stringgel ter vissza.
+     */
+    @Override
     public String toString() {
-    	return "";
+        return "";
+    }
+
+    @Override
+    public String print() {
+        return "Szen";
     }
 }

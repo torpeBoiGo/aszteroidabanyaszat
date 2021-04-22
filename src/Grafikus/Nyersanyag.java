@@ -38,4 +38,6 @@ public abstract class Nyersanyag implements Szallithato{
     public boolean KompatibilisE(Nyersanyag ny) {
         return ny.getClass().getSimpleName().equals(this.getClass().getSimpleName());
     }
+
+    public abstract String print();
 }
