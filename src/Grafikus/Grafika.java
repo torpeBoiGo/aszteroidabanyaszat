@@ -128,7 +128,7 @@ public class Grafika extends JPanel {
         repaint();
     }
 
-    public void addAszteroida(String AszteroidaName, Aszteroida a) {
+    private void addAszteroida(String AszteroidaName, Aszteroida a) {
         int radius = (int) Math.round(Math.min(cCanvas.getX(), cCanvas.getY()) * 2);
         float x = (float) Math.cos(2 * Math.PI / aszterodiak * aszteroidCordinates.keySet().size());
         float y = (float) Math.sin(2 * Math.PI / aszterodiak * aszteroidCordinates.keySet().size());
@@ -137,7 +137,7 @@ public class Grafika extends JPanel {
         aszteroidCordinates.put(AszteroidaName, p);
     }
 
-    public void addConnection(String a1, String a2) {
+    private void addConnection(String a1, String a2) {
         if (pairs.get(a1) != null) {
             pairs.get(a1).add(a2);
         } else {
@@ -147,7 +147,7 @@ public class Grafika extends JPanel {
         }
     }
 
-    public void drawCenteredString(Graphics g, String text, Rectangle rect, Font font) {
+    private void drawCenteredString(Graphics g, String text, Rectangle rect, Font font) {
         // Get the FontMetrics
         FontMetrics metrics = g.getFontMetrics(font);
         // Determine the X coordinate for the text
