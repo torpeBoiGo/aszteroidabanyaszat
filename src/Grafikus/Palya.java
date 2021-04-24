@@ -67,10 +67,10 @@ public class Palya {
         if(current == null){current = jatekosVezerli.listIterator(); return current.next();}
         if(!current.hasNext()){
             KorAfterPlayers();
-            kor++;
+
             if(jatekosVezerli.size() == 0)
                 return null;
-
+            kor++;
             current = jatekosVezerli.listIterator();
             return current.next();
         }
@@ -82,7 +82,7 @@ public class Palya {
     static void KorAfterPlayers() {
         KorVege();
 
-        Napvihar();
+        //Napvihar();
         if (GyozelemE()) {
             System.out.println("Jatek vege - gyozelem");
             Reset();
@@ -224,7 +224,7 @@ public class Palya {
         aiVezerli.clear();
         aszteroidak.clear();
         teleportKapuk.clear();
-
+        kor = -1;
     }
 
     /**

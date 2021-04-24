@@ -79,6 +79,7 @@ public class MainGUI extends JFrame {
 
     private void resetUI() {
         if (!isStarted) {
+            lTelepes.setText("Telepes: -" + "  Kor: -");
             bTetlen.setEnabled(false);
             bFur.setEnabled(false);
             bBanyaszik.setEnabled(false);
@@ -116,11 +117,11 @@ public class MainGUI extends JFrame {
         });
         cboxMozog.addItemListener(arg0 -> {
             if (arg0.getStateChange() == ItemEvent.SELECTED) {
-                System.out.print(curr.toString());
+                //System.out.print(curr.toString());
                 curr.Mozog((Mezo) NamesMap.get((String) cboxMozog.getSelectedItem()));
                 cboxMozog.setSelectedIndex(-1);
-                System.out.println();
-                System.out.print(curr.toString());
+                //System.out.println();
+                //System.out.print(curr.toString());
                 curr = (Telepes) Palya.NextTelepes();
                 changeTelepes(curr);
             }
@@ -191,12 +192,13 @@ public class MainGUI extends JFrame {
     public void changeTelepes(Leptetheto uj) {
         drawArea.Update(Palya.aszteroidak);
         if(uj == null){
-            System.out.println("////////////////////////JATEK VEGE//////////////////////////");
-            if(Palya.state == 1){
-                JOptionPane.showMessageDialog(this, "Jatek vege - gyozelem");
-            }else JOptionPane.showMessageDialog(this, "Jatek vege - veszteseg");
+            //System.out.println("////////////////////////JATEK VEGE//////////////////////////");
             isStarted = false;
             resetUI();
+            if(Palya.state == 1){
+                JOptionPane.showMessageDialog(this, "Jatek vege - gyozelem");
+            }else if(Palya.state == 2) JOptionPane.showMessageDialog(this, "Jatek vege - veszteseg");
+
             return;
         }
 

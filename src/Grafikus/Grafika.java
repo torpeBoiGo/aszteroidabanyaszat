@@ -99,7 +99,7 @@ public class Grafika extends JPanel {
                     graphics2D.draw(elipse2);
 
                     graphics2D.setColor(Color.BLACK);
-                    System.out.println(hajok.get(i).toString());
+                    //System.out.println(hajok.get(i).toString());
                     drawCenteredString(g, getKeyByValue(NamesMap, hajok.get(i)), elipse2.getBounds(),getFont());
 
 
