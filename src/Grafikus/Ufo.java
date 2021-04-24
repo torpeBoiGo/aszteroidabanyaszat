@@ -136,8 +136,6 @@ public class Ufo extends Hajo implements Leptetheto{
     * Ellenorzi az ufo mivel jarulhat hozza a gyozelemhez
     */
     @Override
-    void NyerEllenoriz(Epitheto e) {
-
-    }
+    void NyerEllenoriz(Epitheto e) {}
 
 }

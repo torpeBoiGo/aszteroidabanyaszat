@@ -87,9 +87,7 @@ public class Robot extends Hajo implements Leptetheto {
      * Ellenorzi a robot mivel jarulhat hozza a gyozelemhez
      */
     @Override
-    void NyerEllenoriz(Epitheto e) {
-
-    }
+    void NyerEllenoriz(Epitheto e) {}
     
     /**
      * Visszater a robot tulajdonsagait (az aszteroidaja) tartalmazo stringgel a kimeneti nyelvnek megfelelo formatumban.

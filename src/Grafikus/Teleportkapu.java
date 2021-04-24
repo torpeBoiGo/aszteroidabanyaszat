@@ -212,6 +212,7 @@ public class Teleportkapu implements Mezo, Szallithato, Leptetheto {
             }
 	    	if(!szomsz_aszt.isEmpty()) {
 	    		Random rand = new Random();
+	    		sajatAszteroida.RemoveSzomszed(this);
 	    		this.SetSajatAszteroida((Aszteroida)szomsz_aszt.get(rand.nextInt(szomsz_aszt.size())));
 	    	}
 		}

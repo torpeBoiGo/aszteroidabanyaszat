@@ -1,9 +1,18 @@
 package Grafikus;
 
+import javax.swing.*;
 import java.util.*;
 
 
 public class Palya {
+
+    /**
+     * Tarolja a palyan jelenlegi allapotat.
+     * 0 = jatek
+     * 1 = gyozelem
+     * 2 = veszteseg
+     */
+    static int state = 0;
 
 	/**
      * Tarolja a palyan levo aszteroidakat.
@@ -18,7 +27,7 @@ public class Palya {
     /**
      * Tarolja a palyan levo jatekos vezerelt elemeket(telepes).
      */
-    static List<Leptetheto> jatekosVezerli = new ArrayList<>();
+    static List<Leptetheto> jatekosVezerli = new LinkedList<>();
     
     /**
      * Tarolja a palyan levo teleportkapukat.
@@ -53,29 +62,39 @@ public class Palya {
      * @return a kor utan folytatodik-e a jatek
      */
     static Leptetheto NextTelepes(){
-        if(current == null){current = jatekosVezerli.iterator(); return current.next();}
+        if(jatekosVezerli.size() == 0)
+            return null;
+        if(current == null){current = jatekosVezerli.listIterator(); return current.next();}
         if(!current.hasNext()){
             KorAfterPlayers();
             kor++;
-            current = jatekosVezerli.iterator();
+            if(jatekosVezerli.size() == 0)
+                return null;
+
+            current = jatekosVezerli.listIterator();
             return current.next();
         }
-        Leptetheto a = current.next();
 
-        return a;
+
+        return current.next();
     }
 
     static void KorAfterPlayers() {
         KorVege();
 
-        // Napvihar();
+        Napvihar();
         if (GyozelemE()) {
             System.out.println("Jatek vege - gyozelem");
+            Reset();
+            state = 1;
             return;
         }
 
         if (!MegnyerhetoE() || jatekosVezerli.size() <= 1) {
             System.out.println("Jatek vege - vereseg");
+            Reset();
+            state = 2;
+            return;
         }
 
     }
@@ -168,14 +187,15 @@ public class Palya {
      * @return a jatekot meg lehet-e nyerni
      */
     static boolean MegnyerhetoE() {
-        Nyerheto nyerhetoseg = new Nyerheto();//
+        Nyerheto nyerhetoseg = new Nyerheto();
         for (Aszteroida a : aszteroidak) {
             for (Hajo h : a.hajok) {
                 h.NyerEllenoriz(nyerhetoseg);
             }
+            //System.out.println(MainGUI.getKeyByValue(MainGUI.NamesMap, a) + " ---- " + a.getMag().getClass().getSimpleName());
             nyerhetoseg.KellE(a.getMag());
         }
-
+        Object a = MainGUI.NamesMap.get("");
         return nyerhetoseg.EpithetoE() && (jatekosVezerli.size() > 0);
     }
 
@@ -192,7 +212,6 @@ public class Palya {
                 h.NyerEllenoriz(gyozelemTortenik);
             }
             if (gyozelemTortenik.EpithetoE()) return true;
-            gyozelemTortenik.Reset();
         }
         return false;
     }

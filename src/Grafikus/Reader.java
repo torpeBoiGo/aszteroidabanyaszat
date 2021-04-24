@@ -10,11 +10,6 @@ import java.util.Scanner;
 
 
 public class Reader {
-
-    static Scanner sc = new Scanner(System.in);
-
-
-
     /**
      * A palya beolvasasa "input" mappaban levo fajlbol
      *

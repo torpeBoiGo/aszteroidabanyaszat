@@ -15,7 +15,7 @@ public class MainGUI extends JFrame {
      */
     static HashMap<String, Object> NamesMap = new HashMap<>();
     static Telepes curr;
-    Reader readerInstance;
+    Reader readerInstance = new Reader();
     boolean isStarted = false;
 
     private JPanel pMain;
@@ -30,28 +30,22 @@ public class MainGUI extends JFrame {
     private JLabel lEpit;
     private JLabel lLerak;
     private JPanel pTop;
-    private JSplitPane jSplitPane;
-    private JSplitPane inner;
     private JPanel pGraphics;
     private JPanel jspInventory;
-
     private JMenuBar menuBar;
     private JMenu mFile;
     private JMenuItem mItemStart;
     private JMenuItem mItemLoad;
-    JList<String> inventory;
-    DefaultListModel<String> model = new DefaultListModel<>();
-
+    private JList<String> inventory;
+    private DefaultListModel<String> model = new DefaultListModel<>();
+    private Grafika drawArea;
     public MainGUI() {
         super("Aszteroida Banyaszat");
-        readerInstance = new Reader();
+
 
         createMenu();
         setMenuListeners();
         createTelepesToolbar();
-
-
-
 
         inventory = new JList<>( model);
         jspInventory.add(inventory);
@@ -62,13 +56,9 @@ public class MainGUI extends JFrame {
         this.setContentPane(pMain);
         this.pack();
 
-        Rectangle drawArea = new Rectangle(pGraphics.getWidth(), pGraphics.getHeight(), Palya.aszteroidak.size());
-        for (Aszteroida a1 : Palya.aszteroidak) {
-            drawArea.addAszteroida(getKeyByValue(NamesMap, a1),a1);
-            for (Mezo a2 : a1.getSzomszedok()) {
-                drawArea.addConnection(getKeyByValue(NamesMap, a1), getKeyByValue(NamesMap, a2));
-            }
-        }
+        drawArea = new Grafika(pGraphics.getWidth(), pGraphics.getHeight(), Palya.aszteroidak.size());
+        drawArea.Update(Palya.aszteroidak);
+
         pGraphics.add(drawArea);
         pGraphics.revalidate();
         this.setMinimumSize(new Dimension(800, 600));
@@ -173,10 +163,13 @@ public class MainGUI extends JFrame {
 
     private void setMenuListeners() {
         mItemStart.addActionListener(e -> {
+            mItemStart.setEnabled(false);
+            Palya.state = 0;
             isStarted = true;
+            drawArea.Update(Palya.aszteroidak);
             curr = (Telepes) Palya.NextTelepes();
             changeTelepes(curr);
-            mItemStart.setEnabled(false);
+
         });
         mItemLoad.addActionListener(e -> {
             mItemStart.setEnabled(true);
@@ -185,20 +178,34 @@ public class MainGUI extends JFrame {
             int result = fileChooser.showOpenDialog(null);
             if (result == JFileChooser.APPROVE_OPTION) {
                 Palya.Reset();
+                NamesMap.clear();
                 File selectedFile = fileChooser.getSelectedFile();
                 readerInstance.loadPalyaFromFile(selectedFile.getAbsolutePath());
                 System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+
+                resetUI();
             }
         });
     }
 
     public void changeTelepes(Leptetheto uj) {
+        drawArea.Update(Palya.aszteroidak);
+        if(uj == null){
+            System.out.println("////////////////////////JATEK VEGE//////////////////////////");
+            if(Palya.state == 1){
+                JOptionPane.showMessageDialog(this, "Jatek vege - gyozelem");
+            }else JOptionPane.showMessageDialog(this, "Jatek vege - veszteseg");
+            isStarted = false;
+            resetUI();
+            return;
+        }
+
         resetUI();
         lTelepes.setText("Telepes: " + MainGUI.getKeyByValue(NamesMap, uj) + "  Kor: " + Palya.kor);
 
         //Mozog menu feltoltese
         cboxMozog.removeAllItems();
-        for (Mezo t : ((Telepes) uj).aszteroida.getSzomszedok()) { //TODO itt az aszteroidanak nem kene szabad public-nak lennie tippre
+        for (Mezo t : ((Telepes) uj).aszteroida.getSzomszedok()) { //TODO itt az aszteroidanak lehet nem kene public-nak lennie tippre
             cboxMozog.insertItemAt(MainGUI.getKeyByValue(NamesMap, t), cboxMozog.getItemCount());
         }
 
