@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-24T16:51:47.945Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="d2Q1BSPhTVlHQeV1VGub" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-25T17:13:48.506Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="0wk07NWni2Af2-cEg0IK" version="14.6.6" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1422" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="652" dy="423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -114,6 +114,79 @@
             <mxPoint x="130" y="590" as="sourcePoint" />
             <mxPoint x="30" y="633" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-1" value=":ActionListener" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="180" width="100" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="J828eo5mUb2SYCE7IxUK-1">
+          <mxGeometry x="45" y="80" width="10" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-3" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="940" y="180" width="20" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-4" value="Actionperformed(ActionEvent e)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="1" source="J828eo5mUb2SYCE7IxUK-3" target="J828eo5mUb2SYCE7IxUK-2">
+          <mxGeometry x="-0.021" relative="1" as="geometry">
+            <mxPoint x="1015" y="230" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-5" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="1" source="J828eo5mUb2SYCE7IxUK-2" target="J828eo5mUb2SYCE7IxUK-3">
+          <mxGeometry x="0.1021" y="-58" relative="1" as="geometry">
+            <mxPoint x="1015" y="306" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-6" value="curr: Telepes" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="180" width="100" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="J828eo5mUb2SYCE7IxUK-6">
+          <mxGeometry x="45" y="170" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-8" value="Tetlen()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="1" source="J828eo5mUb2SYCE7IxUK-1" target="J828eo5mUb2SYCE7IxUK-7">
+          <mxGeometry x="-0.0183" relative="1" as="geometry">
+            <mxPoint x="1415" y="335" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-9" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="1" source="J828eo5mUb2SYCE7IxUK-7" target="J828eo5mUb2SYCE7IxUK-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1415" y="411" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-10" value=":Palya" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="180" width="100" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="J828eo5mUb2SYCE7IxUK-10">
+          <mxGeometry x="45" y="250" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-12" value="nextTelepes()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="1" source="J828eo5mUb2SYCE7IxUK-2" target="J828eo5mUb2SYCE7IxUK-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1555" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-13" value="t: Telepes" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="1" source="J828eo5mUb2SYCE7IxUK-11" target="J828eo5mUb2SYCE7IxUK-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1555" y="556" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-14" value="form: MainGui" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="180" width="100" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="J828eo5mUb2SYCE7IxUK-14">
+          <mxGeometry x="45" y="350" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-16" value="changeTelepes(t)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="1" source="J828eo5mUb2SYCE7IxUK-2" target="J828eo5mUb2SYCE7IxUK-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1675" y="610" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-17" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="1" source="J828eo5mUb2SYCE7IxUK-15" target="J828eo5mUb2SYCE7IxUK-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1675" y="686" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J828eo5mUb2SYCE7IxUK-18" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="130" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
