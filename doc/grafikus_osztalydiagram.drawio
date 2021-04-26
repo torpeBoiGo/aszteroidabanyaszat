@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-26T08:47:28.522Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="mK3ZqrFfFNxM0Rz4Sxbg" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-26T08:53:55.843Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="CNrwJLbfzDEoK9Fqt6xN" version="14.6.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2692" dy="1717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2875" dy="1814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -407,7 +407,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ucTf1KPq10wKSSjRMnQ4-6" value="Palya" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-1220" y="-130" width="230" height="330" as="geometry" />
+          <mxGeometry x="-1220" y="-130" width="230" height="370" as="geometry" />
         </mxCell>
         <mxCell id="ucTf1KPq10wKSSjRMnQ4-7" value="&lt;u&gt;+ state: int&lt;br&gt;+ teleportkapuk: List&amp;lt;Teleportkapu&amp;gt;&lt;br&gt;+ kor: int&lt;br&gt;+ current: Iterator&amp;lt;Leptetheto&amp;gt;&lt;br&gt;&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="ucTf1KPq10wKSSjRMnQ4-6" vertex="1">
           <mxGeometry y="26" width="230" height="64" as="geometry" />
@@ -415,8 +415,8 @@
         <mxCell id="ucTf1KPq10wKSSjRMnQ4-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="ucTf1KPq10wKSSjRMnQ4-6" vertex="1">
           <mxGeometry y="90" width="230" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="ucTf1KPq10wKSSjRMnQ4-9" value="&lt;u&gt;+ Napvihar()&lt;br&gt;+ Napvihar(a: Aszteroida)&lt;br&gt;+ NextLepes(): Leptetheto&lt;br&gt;+ KorAfterPlayers()&lt;br&gt;+ Korvege()&lt;br&gt;+ AddTeleportkapu(t: Teleportkapu)&lt;br&gt;+ RemoveTeleportkapu(t: Teleportkapu)&lt;br&gt;+ RemoveAszteroida(a: Aszteroida)&lt;br&gt;+ RemoveJatekosVezerli(l: Leptetheto)&lt;br&gt;+ RemoveAiVezerli(l: Leptetheto)&lt;br&gt;+ AddAiVezerli(l: Leptetheto)&lt;br&gt;+ MegnyerhetoE(): bool&lt;br&gt;+ Reset()&lt;br&gt;+ GyozelemE(): bool&lt;br&gt;+ toString(): String&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="ucTf1KPq10wKSSjRMnQ4-6" vertex="1">
-          <mxGeometry y="98" width="230" height="232" as="geometry" />
+        <mxCell id="ucTf1KPq10wKSSjRMnQ4-9" value="&lt;u&gt;+ Napvihar()&lt;br&gt;+ Napvihar(a: Aszteroida)&lt;br&gt;+ NextLepes(): Leptetheto&lt;br&gt;+ KorAfterPlayers()&lt;br&gt;+ Korvege()&lt;br&gt;+ AddTeleportkapu(t: Teleportkapu)&lt;br&gt;+ RemoveTeleportkapu(t: Teleportkapu)&lt;br&gt;+ AddAszteroida(a: Aszteroida)&lt;br&gt;+ RemoveAszteroida(a: Aszteroida)&lt;br&gt;+ AddJatekosVezerli(l: Leptetheto)&lt;br&gt;+ RemoveJatekosVezerli(l: Leptetheto)&lt;br&gt;+ AddAiVezerli(l: Leptetheto)&lt;br&gt;+ RemoveAiVezerli(l: Leptetheto)&lt;br&gt;+ AddAiVezerli(l: Leptetheto)&lt;br&gt;+ MegnyerhetoE(): bool&lt;br&gt;+ Reset()&lt;br&gt;+ GyozelemE(): bool&lt;br&gt;+ toString(): String&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="ucTf1KPq10wKSSjRMnQ4-6" vertex="1">
+          <mxGeometry y="98" width="230" height="272" as="geometry" />
         </mxCell>
         <mxCell id="ucTf1KPq10wKSSjRMnQ4-11" value="" style="endArrow=open;endFill=1;endSize=12;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ucTf1KPq10wKSSjRMnQ4-6" target="SrYeu7P66OXDtgnoqNnj-8" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
