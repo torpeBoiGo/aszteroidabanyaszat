@@ -44,7 +44,10 @@ public class Uran extends Nyersanyag implements Szallithato {
         }
 
     }
-
+    /**
+     * Az uranhoz ezt a szöveget kell kirajzolni a grafikára
+     * @return A kért szöveg
+     */
     @Override
     public String print() {
         return "Uran-" + expozicio;

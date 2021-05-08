@@ -12,6 +12,10 @@ public class Szen extends Nyersanyag {
         return "";
     }
 
+    /**
+     * A szenhez ezt a szöveget kell kirajzolni a grafikára
+     * @return A kért szöveg
+     */
     @Override
     public String print() {
         return "Szen";

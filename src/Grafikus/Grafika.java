@@ -11,21 +11,52 @@ import java.util.List;
 import static Grafikus.MainGUI.NamesMap;
 import static Grafikus.MainGUI.getKeyByValue;
 
+/**
+ * A játékelemek kirajzolásást végző osztály
+ */
 public class Grafika extends JPanel {
 
+    /**
+     * Aszteroida nevét és a rajzterületen lévő kordinátáját rendeli össze
+     */
     HashMap<String, Point> aszteroidCordinates = new HashMap<>();
+    /**
+     * Az aszteroida nevét és az aszteroida objektumot rendeli össze.
+     */
     HashMap<String, Aszteroida> asteroids = new HashMap<>();
+    /**
+     * Az Aszteroida nevét rendeli össze a szomszédai nevével.
+     */
     HashMap<String, HashSet<String>> pairs = new HashMap<>();
+    /**
+     * A canvas közepét jelőlő pont
+     */
     Point cCanvas;
+    /**
+     * Egy aszteroida sugara
+     */
     int r = 30;
+    /**
+     * Aszteroidák számát tárolja
+     */
     int aszterodiak;
 
+    /**
+     * A Grafika osztály konstruktora
+     * @param w szélessége
+     * @param h magassága
+     * @param AszteroidakSzama aszteroidák száma
+     */
     public Grafika(int w, int h, int AszteroidakSzama) {
         aszterodiak = AszteroidakSzama;
         super.setSize(w, h);
         cCanvas = new Point(super.getWidth() / 2, super.getHeight() / 2);
     }
 
+    /**
+     * Kirajzolja a pályát
+     * @param g A kapott Graphics példány
+     */
     @Override
     public void paint(Graphics g) {
         super.paint(g);
@@ -87,12 +118,16 @@ public class Grafika extends JPanel {
                 float y = (float) Math.sin(2 * Math.PI / (hajok.size() + tp.size()) * (i) ) * 50;
                 float r = 10f;
                 if(i<hajok.size()){
-                    if("Telepes".equals(hajok.get(i).getClass().getSimpleName())){
-                        graphics2D.setColor(new Color(0, 180, 3));
-                    }else if("Robot".equals(hajok.get(i).getClass().getSimpleName())){
-                        graphics2D.setColor(new Color(180, 150, 0));
-                    } else if ("Ufo".equals(hajok.get(i).getClass().getSimpleName())) {
-                        graphics2D.setColor(new Color(0, 180, 140));
+                    switch (hajok.get(i).getClass().getSimpleName()) {
+                        case "Telepes":
+                            graphics2D.setColor(new Color(0, 180, 3));
+                            break;
+                        case "Robot":
+                            graphics2D.setColor(new Color(180, 150, 0));
+                            break;
+                        case "Ufo":
+                            graphics2D.setColor(new Color(0, 180, 140));
+                            break;
                     }
                     Ellipse2D.Float elipse2 = new Ellipse2D.Float(Math.round(c.x + x - r), Math.round(c.y + y - r), 20, 20);
                     graphics2D.fill(elipse2);
@@ -119,6 +154,10 @@ public class Grafika extends JPanel {
 
     }
 
+    /**
+     * Frissíti a pályát
+     * @param aszt A kapott aszteroida objekutmok listája
+     */
     public void Update(List<Aszteroida> aszt){
         asteroids.clear();
         aszteroidCordinates.clear();
@@ -127,6 +166,12 @@ public class Grafika extends JPanel {
         }
         repaint();
     }
+
+    /**
+     * Felrak egy új Aszteroidát a rajzfelületre
+     * @param AszteroidaName Az új aszteroida neve
+     * @param a A kapott Aszteroida
+     */
 
     private void addAszteroida(String AszteroidaName, Aszteroida a) {
         int radius = (int) Math.round(Math.min(cCanvas.getX(), cCanvas.getY()) * 2);
@@ -137,6 +182,11 @@ public class Grafika extends JPanel {
         aszteroidCordinates.put(AszteroidaName, p);
     }
 
+    /**
+     * Behúzza a szomszédsági kapcsolatot
+     * @param a1 egyik aszteroida neve
+     * @param a2 másik aszteroida neve
+     */
     private void addConnection(String a1, String a2) {
         if (pairs.get(a1) != null) {
             pairs.get(a1).add(a2);
@@ -147,6 +197,14 @@ public class Grafika extends JPanel {
         }
     }
 
+    //TODO ez tényleg így van?
+    /**
+     * Kirajzolunk egy szöveget a terület közepére
+     * @param g A kapott Graphics példány
+     * @param text A kirajzolandó szöveg
+     * @param rect A területe, ahová írunk
+     * @param font A betűtípus
+     */
     private void drawCenteredString(Graphics g, String text, Rectangle rect, Font font) {
         // Get the FontMetrics
         FontMetrics metrics = g.getFontMetrics(font);

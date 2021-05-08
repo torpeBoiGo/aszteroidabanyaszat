@@ -39,5 +39,9 @@ public abstract class Nyersanyag implements Szallithato{
         return ny.getClass().getSimpleName().equals(this.getClass().getSimpleName());
     }
 
+    /**
+     * Nyersanyagról ezt a szöveget írjuk ki a grafikára
+     * @return A kért szöveg
+     */
     public abstract String print();
 }

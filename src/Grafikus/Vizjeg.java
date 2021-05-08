@@ -15,7 +15,10 @@ public class Vizjeg extends Nyersanyag {
         Nyersanyag kinyert = a.Kinyer();
         MainGUI.NamesMap.remove(MainGUI.getKeyByValue(MainGUI.NamesMap, this));
     }
-
+    /**
+     * A vizjeghez ezt a szöveget kell kirajzolni a grafikára
+     * @return A kért szöveg
+     */
     @Override
     public String print() {
         return "Vizjeg";

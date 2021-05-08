@@ -9,7 +9,10 @@ public class Vas extends Nyersanyag{
     public String toString() {
     	return "";
     }
-
+	/**
+	 * A vashoz ezt a szöveget kell kirajzolni a grafikára
+	 * @return A kért szöveg
+	 */
 	@Override
 	public String print() {
 		return "Vas";
