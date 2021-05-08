@@ -8,7 +8,9 @@ import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.Scanner;
 
-
+/**
+ * Beolvassa az adott mappaban levo fajl tartalmat a bemeneti nyelvnek megfeleloen.
+ */
 public class Reader {
     /**
      * A palya beolvasasa "input" mappaban levo fajlbol
@@ -42,6 +44,8 @@ public class Reader {
 
     /**
      * A nyersanyagok beolvasasa
+     *
+     * @param reader - a scanner, amirol olvas
      */
     void readNyersanyagok(Scanner reader) {
         String line = reader.nextLine();
@@ -73,6 +77,8 @@ public class Reader {
 
     /**
      * Az aszteroidak beolvasasa
+     *
+     * @param reader - a scanner, amirol olvas
      */
     void readAszteroidak(Scanner reader) {
         String line = reader.nextLine();
@@ -90,6 +96,8 @@ public class Reader {
 
     /**
      * A teleportkapuk beolvasasa
+     *
+     * @param reader - a scanner, amirol olvas
      */
     void readTeleportkapuk(Scanner reader) {
         String line = reader.nextLine();
@@ -126,6 +134,8 @@ public class Reader {
 
     /**
      * A szomszedok beolvasasa
+     *
+     * @param reader - a scanner, amirol olvas
      */
     void readSzomszedok(Scanner reader) {
         String line = reader.nextLine();
@@ -141,6 +151,8 @@ public class Reader {
 
     /**
      * A telepesek beolvasasa
+     *
+     * @param reader - a scanner, amirol olvas
      */
     void readTelepesek(Scanner reader) {
         String line = reader.nextLine();
@@ -155,6 +167,8 @@ public class Reader {
 
     /**
      * A robotok beolvasasa
+     *
+     * @param reader - a scanner, amirol olvas
      */
     void readRobotok(Scanner reader) {
         String line = reader.nextLine();
@@ -169,6 +183,8 @@ public class Reader {
 
     /**
      * Az UFO-k beolvasasa
+     *
+     * @param reader - a scanner, amirol olvas
      */
     void readUfok(Scanner reader) {
         String line = reader.nextLine();
@@ -183,6 +199,8 @@ public class Reader {
 
     /**
      * A rakterek beolvasasa
+     *
+     * @param reader - a scanner, amirol olvas
      */
     void readRakter(Scanner reader) {
         while (reader.hasNextLine()) {

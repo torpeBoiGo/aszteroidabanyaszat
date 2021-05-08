@@ -264,6 +264,10 @@ public class Aszteroida implements Mezo, Leptetheto {
         return mag;
     }
 
+    /**
+     * Visszater az aszteroida kulso retegeinek a szamaval
+     * @return a kulso retegek szama
+     */
     public Integer getRetegek() {
         return kulsoRetegek;
     }
