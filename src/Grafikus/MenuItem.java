@@ -9,14 +9,14 @@ public class MenuItem {
      */
     public String name;
     /**
-     * ?????? TODO
+     * A futtathato hivando dolog
      */
-    public Runnable toCall; //TODO ezt kommentezni
+    public Runnable toCall;
 
     /**
      * A menuItem konstruktora
      * @param n A menü item neve
-     * @param t ??????? //TODO
+     * @param t A toCall parameter erteke
      */
     public MenuItem(String n, Runnable t) {
         name = n;
